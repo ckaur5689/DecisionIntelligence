@@ -1,6 +1,10 @@
 # Welcome
 
-The **Healthcare Decision Intelligence** series uses practical NHS and healthcare examples to explore how healthcare data should be interpreted, questioned and used within complex healthcare systems.
+**Healthcare Decision Intelligence**
+
+Helping healthcare professionals make better decisions through data, evidence and expertise.
+
+Healthcare Decision Intelligence is the ability to bring together data, evidence, analytical methods, professional expertise, lived experience and sound judgement to make informed decisions that improve outcomes, reduce inequalities and maximise value for patients and populations.
 
 ## The series is designed to support:
 
@@ -72,7 +76,9 @@ This series has been developed and written by **Chandan Kaur** as an independent
 
 The content draws upon more than 20 years of experience in analytics, statistics, business intelligence and healthcare, together with current national guidance and recognised evaluation methodologies where appropriate.
 
-The series is intended to evolve over time as new modules are added and existing content is refined.
+The series is intended to evolve over time as new modules are added and existing content is refined. 
+
+Throughout this series, I use the term Healthcare Decision Intelligence to describe the ability to bring together data, evidence, analytical methods, professional expertise, lived experience and sound judgement to make better decisions for patients and populations.
 
 
 ## Use of Artificial Intelligence
