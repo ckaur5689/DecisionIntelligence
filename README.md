@@ -1,6 +1,10 @@
 # 👥 Healthcare Decision Intelligence Series
 
-📖An open educational resource designed to help healthcare professionals using Data, Evidence, Evaluation and AI to Make Better Healthcare Decisions
+**Healthcare Decision Intelligence**
+
+Helping healthcare professionals make better decisions through data, evidence and expertise.
+
+Healthcare Decision Intelligence is the ability to bring together data, evidence, analytical methods, professional expertise, lived experience and sound judgement to make informed decisions that improve outcomes, reduce inequalities and maximise value for patients and populations.
 
 This series bridges the gap between technical analytics and real-world healthcare leadership by explaining not only how analytical methods work, but also when, why and how they should be interpreted in practice.
 
