@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Module 2 — Mean vs Median – Healthcare Decision Intelligence</title>
+<title>Module 8 — Thinking About Evidence &amp; Evaluation – Healthcare Decision Intelligence</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -33,8 +33,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../modules/03-Correlation-vs-Causation.html" rel="next">
-<link href="../modules/01-Counts-vs-Rates.html" rel="prev">
+<link href="../modules/09-Evaluating-Methods-in-Practice.html" rel="next">
+<link href="../modules/07-Theory-Of-Change-&amp;-Logic-Models.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -99,7 +99,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../modules/02-Mean-vs-Median.html"><span class="chapter-title">Module 2 — Mean vs Median</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../modules/08-Thinking-About-Evidence-&amp;-Evaluation.html"><span class="chapter-title">Module 8 — Thinking About Evidence &amp; Evaluation</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -146,7 +146,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../modules/02-Mean-vs-Median.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Module 2 — Mean vs Median</span></a>
+  <a href="../modules/02-Mean-vs-Median.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Module 2 — Mean vs Median</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -176,7 +176,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../modules/08-Thinking-About-Evidence-&amp;-Evaluation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Module 8 — Thinking About Evidence &amp; Evaluation</span></a>
+  <a href="../modules/08-Thinking-About-Evidence-&amp;-Evaluation.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Module 8 — Thinking About Evidence &amp; Evaluation</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -234,25 +234,30 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#why-averages-can-hide-operational-reality" id="toc-why-averages-can-hide-operational-reality" class="nav-link active" data-scroll-target="#why-averages-can-hide-operational-reality">Why Averages Can Hide Operational Reality</a>
+  <li><a href="#did-it-work-or-would-things-have-changed-anyway" id="toc-did-it-work-or-would-things-have-changed-anyway" class="nav-link active" data-scroll-target="#did-it-work-or-would-things-have-changed-anyway"><em>Did it work — or would things have changed anyway?</em></a></li>
+  <li><a href="#module-learning-objective" id="toc-module-learning-objective" class="nav-link" data-scroll-target="#module-learning-objective">Module Learning Objective</a></li>
+  <li><a href="#why-evaluating-healthcare-interventions-matters" id="toc-why-evaluating-healthcare-interventions-matters" class="nav-link" data-scroll-target="#why-evaluating-healthcare-interventions-matters">Why Evaluating Healthcare Interventions Matters</a>
   <ul class="collapse">
-  <li><a href="#what-can-an-average-mean" id="toc-what-can-an-average-mean" class="nav-link" data-scroll-target="#what-can-an-average-mean">What Can an Average Mean?</a></li>
+  <li><a href="#a-practical-healthcare-example" id="toc-a-practical-healthcare-example" class="nav-link" data-scroll-target="#a-practical-healthcare-example">A Practical Healthcare Example</a></li>
   </ul></li>
-  <li><a href="#why-this-matters-in-healthcare" id="toc-why-this-matters-in-healthcare" class="nav-link" data-scroll-target="#why-this-matters-in-healthcare">Why This Matters in Healthcare</a></li>
-  <li><a href="#mean-vs-median" id="toc-mean-vs-median" class="nav-link" data-scroll-target="#mean-vs-median">Mean vs Median</a>
+  <li><a href="#the-biggest-evaluation-mistake-before-and-after-comparisons" id="toc-the-biggest-evaluation-mistake-before-and-after-comparisons" class="nav-link" data-scroll-target="#the-biggest-evaluation-mistake-before-and-after-comparisons">The Biggest Evaluation Mistake: Before-and-After Comparisons</a>
   <ul class="collapse">
-  <li><a href="#why-mean-and-median-diverge" id="toc-why-mean-and-median-diverge" class="nav-link" data-scroll-target="#why-mean-and-median-diverge">Why Mean and Median Diverge</a></li>
+  <li><a href="#why-before-and-after-comparisons-feel-convincing" id="toc-why-before-and-after-comparisons-feel-convincing" class="nav-link" data-scroll-target="#why-before-and-after-comparisons-feel-convincing">Why Before-and-After Comparisons Feel Convincing</a></li>
   </ul></li>
-  <li><a href="#example-length-of-stay-los" id="toc-example-length-of-stay-los" class="nav-link" data-scroll-target="#example-length-of-stay-los">Example — Length of Stay (LoS)</a></li>
-  <li><a href="#why-the-distribution-matters" id="toc-why-the-distribution-matters" class="nav-link" data-scroll-target="#why-the-distribution-matters">Why The Distribution Matters</a></li>
-  <li><a href="#is-it-fair-to-compare-trusts-or-icbs-using-averages" id="toc-is-it-fair-to-compare-trusts-or-icbs-using-averages" class="nav-link" data-scroll-target="#is-it-fair-to-compare-trusts-or-icbs-using-averages">Is It Fair To Compare Trusts or ICBs Using Averages?</a></li>
-  <li><a href="#benchmarking-in-practice-model-hospital" id="toc-benchmarking-in-practice-model-hospital" class="nav-link" data-scroll-target="#benchmarking-in-practice-model-hospital">Benchmarking in Practice — Model Hospital</a></li>
-  <li><a href="#operational-implications" id="toc-operational-implications" class="nav-link" data-scroll-target="#operational-implications">Operational Implications</a>
+  <li><a href="#counterfactual-thinking-what-would-have-happened-anyway" id="toc-counterfactual-thinking-what-would-have-happened-anyway" class="nav-link" data-scroll-target="#counterfactual-thinking-what-would-have-happened-anyway">Counterfactual Thinking: What Would Have Happened Anyway?</a>
   <ul class="collapse">
-  <li><a href="#waiting-time-example" id="toc-waiting-time-example" class="nav-link" data-scroll-target="#waiting-time-example">Waiting Time Example</a></li>
+  <li><a href="#a-simple-example" id="toc-a-simple-example" class="nav-link" data-scroll-target="#a-simple-example">A Simple Example</a></li>
+  <li><a href="#counterfactual-thinking-in-practice" id="toc-counterfactual-thinking-in-practice" class="nav-link" data-scroll-target="#counterfactual-thinking-in-practice">Counterfactual Thinking in Practice</a></li>
+  <li><a href="#why-counterfactual-thinking-matters" id="toc-why-counterfactual-thinking-matters" class="nav-link" data-scroll-target="#why-counterfactual-thinking-matters">Why Counterfactual Thinking Matters</a></li>
+  <li><a href="#multiple-interventions-often-happen-at-the-same-time" id="toc-multiple-interventions-often-happen-at-the-same-time" class="nav-link" data-scroll-target="#multiple-interventions-often-happen-at-the-same-time">Multiple Interventions Often Happen at the Same Time</a></li>
   </ul></li>
+  <li><a href="#levels-of-evaluation-confidence" id="toc-levels-of-evaluation-confidence" class="nav-link" data-scroll-target="#levels-of-evaluation-confidence">Levels of Evaluation Confidence</a>
+  <ul class="collapse">
+  <li><a href="#a-practical-nhs-reality" id="toc-a-practical-nhs-reality" class="nav-link" data-scroll-target="#a-practical-nhs-reality">A Practical NHS Reality</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection">Reflection</a></li>
   <li><a href="#key-takeaways" id="toc-key-takeaways" class="nav-link" data-scroll-target="#key-takeaways">Key Takeaways</a></li>
   <li><a href="#questions-decision-makers-should-ask" id="toc-questions-decision-makers-should-ask" class="nav-link" data-scroll-target="#questions-decision-makers-should-ask">Questions Decision-Makers Should Ask</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -261,7 +266,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">Module 2 — Mean vs Median</span></h1>
+<h1 class="title"><span class="chapter-title">Module 8 — Thinking About Evidence &amp; Evaluation</span></h1>
 </div>
 
 
@@ -278,299 +283,449 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="why-averages-can-hide-operational-reality" class="level2">
-<h2 class="anchored" data-anchor-id="why-averages-can-hide-operational-reality">Why Averages Can Hide Operational Reality</h2>
-<section id="what-can-an-average-mean" class="level3">
-<h3 class="anchored" data-anchor-id="what-can-an-average-mean">What Can an Average Mean?</h3>
-<p>In healthcare analytics, averages are everywhere.</p>
-<p>We regularly see:</p>
-<ul>
-<li>average Length of Stay (LoS)</li>
-<li>average waiting times</li>
-<li>average cost per patient</li>
-<li>average ED attendances</li>
-<li>average theatre utilisation</li>
-</ul>
-<p>Averages are useful because they simplify complex information into a single number that is easy to communicate and compare.</p>
-<p>But healthcare systems are rarely “average”.</p>
-<p>Behind a single average often sits:</p>
-<ul>
-<li>significant variation</li>
-<li>operational complexity</li>
-<li>long-tail demand</li>
-<li>very different patient experiences</li>
-</ul>
-<p>Averages simplify reality — but they can also obscure it.</p>
-<hr>
+<section id="did-it-work-or-would-things-have-changed-anyway" class="level3">
+<h3 class="anchored" data-anchor-id="did-it-work-or-would-things-have-changed-anyway"><em>Did it work — or would things have changed anyway?</em></h3>
 </section>
-</section>
-<section id="why-this-matters-in-healthcare" class="level2">
-<h2 class="anchored" data-anchor-id="why-this-matters-in-healthcare">Why This Matters in Healthcare</h2>
-<p>Suppose two Trusts report the following:</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Trust</th>
-<th>Average Length of Stay</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Trust A</td>
-<td>5.1 days</td>
-</tr>
-<tr class="even">
-<td>Trust B</td>
-<td>7.2 days</td>
-</tr>
-</tbody>
-</table>
-<p>At first glance, Trust B may appear less efficient.</p>
-<p>But is that comparison fair?</p>
-<p>What if Trust B:</p>
-<ul>
-<li>serves an older population</li>
-<li>has higher frailty prevalence</li>
-<li>has more patients with multiple long-term conditions</li>
-<li>experiences delayed discharges due to social care pressures</li>
-<li>operates a tertiary specialist service</li>
-<li>has limited community capacity</li>
-</ul>
-<p>The average alone does not tell us this.</p>
-<p>This is one of the most important principles in healthcare analytics:</p>
+<section id="module-learning-objective" class="level2">
+<h2 class="anchored" data-anchor-id="module-learning-objective">Module Learning Objective</h2>
+<p>This module helps explain:</p>
 <blockquote class="blockquote">
-<p>Averages summarise data — but they do not explain it.</p>
+<p>why evaluating healthcare interventions is often more difficult than it first appears — and how decision-makers can think more critically about whether changes in outcomes are genuinely attributable to a scheme or intervention.</p>
 </blockquote>
-<hr>
-</section>
-<section id="mean-vs-median" class="level2">
-<h2 class="anchored" data-anchor-id="mean-vs-median">Mean vs Median</h2>
-<p>Two commonly used “averages” are:</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Measure</th>
-<th>What it represents</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Mean</td>
-<td>The arithmetic average across all patients</td>
-</tr>
-<tr class="even">
-<td>Median</td>
-<td>The middle patient when values are ordered</td>
-</tr>
-</tbody>
-</table>
-<p>The mean is sensitive to extreme values (outliers).</p>
-<p>The median is often more stable and better reflects the “typical” patient experience.</p>
-<section id="why-mean-and-median-diverge" class="level3">
-<h3 class="anchored" data-anchor-id="why-mean-and-median-diverge">Why Mean and Median Diverge</h3>
-<p>Imagine ten patients stay in hospital for:</p>
-<pre class="text"><code>2, 2, 2, 3, 3, 3, 4, 5, 6, 35</code></pre>
-<p>Most patients stay only a few days.</p>
-<p>But one very long-stay patient changes the average dramatically.</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Measure</th>
-<th style="text-align: right;">Result</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Mean</td>
-<td style="text-align: right;">6.5 days</td>
-</tr>
-<tr class="even">
-<td>Median</td>
-<td style="text-align: right;">3 days</td>
-</tr>
-</tbody>
-</table>
+<p>By the end of this module, readers should feel more confident asking:</p>
 <blockquote class="blockquote">
-<p><strong>The median helps understand the typical patient. The mean helps understand overall system burden and resource use.</strong></p>
+<p><em>Did this intervention actually work — or would things have changed anyway?</em></p>
 </blockquote>
-<p>In healthcare:</p>
+<p>The module focuses on practical healthcare examples, particularly interventions intended to reduce:</p>
+<ul>
+<li>Emergency Department (ED) attendances</li>
+<li>emergency admissions</li>
+<li>avoidable hospital utilisation</li>
+<li>delayed discharge</li>
+<li>operational pressure</li>
+</ul>
+<p>It introduces practical approaches to evaluation without assuming prior statistical knowledge.</p>
+</section>
+<section id="why-evaluating-healthcare-interventions-matters" class="level1">
+<h1>Why Evaluating Healthcare Interventions Matters</h1>
+<p>Healthcare systems frequently introduce schemes designed to improve outcomes or reduce demand.</p>
+<p>Examples may include:</p>
+<ul>
+<li>frailty pathways</li>
+<li>virtual wards</li>
+<li>Same Day Emergency Care (SDEC) services</li>
+<li>care navigation models</li>
+<li>community multidisciplinary teams (MDTs)</li>
+<li>anticipatory care programmes</li>
+<li>admission avoidance services</li>
+<li>discharge coordination schemes</li>
+</ul>
+<p>These interventions are often introduced with positive intentions:</p>
 <blockquote class="blockquote">
-<p><strong>both matter — but for different reasons</strong></p>
+<p>reduce Emergency Department attendance</p>
 </blockquote>
-<hr>
-</section>
-</section>
-<section id="example-length-of-stay-los" class="level2">
-<h2 class="anchored" data-anchor-id="example-length-of-stay-los">Example — Length of Stay (LoS)</h2>
-<p>Length of Stay data is usually heavily right-skewed. The example below shows how mean and median can diverge across different patient groups.</p>
+<blockquote class="blockquote">
+<p>avoid unnecessary admissions</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>improve patient outcomes</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>reduce pressure on services</p>
+</blockquote>
+<p>After implementation, a common question quickly emerges:</p>
+<blockquote class="blockquote">
+<p><strong>Did it work?</strong></p>
+</blockquote>
+<p>It sounds like a simple question.</p>
+<p>Yet in healthcare, it is often one of the hardest questions to answer.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>A Key Principle
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Healthcare systems frequently struggle to distinguish between <strong>genuine intervention effects</strong> and changes that may have happened anyway.</p>
+<p>Observed improvement does <strong>not</strong> automatically mean that an intervention caused the improvement.</p>
+</div>
+</div>
+<p>This is because healthcare systems rarely remain static.</p>
+<p>At the same time as an intervention is introduced:</p>
+<ul>
+<li>winter pressures may occur</li>
+<li>staffing may change</li>
+<li>patient need may shift</li>
+<li>flu or respiratory illness may rise or fall</li>
+<li>other schemes may begin</li>
+<li>pathways may change</li>
+<li>coding practices may evolve</li>
+</ul>
 <p>This means:</p>
+<blockquote class="blockquote">
+<p>Improvement does not automatically imply impact — and observed change does not automatically mean the intervention caused it.</p>
+</blockquote>
+<p>A reduction in Emergency Department attendance does not necessarily mean:</p>
+<blockquote class="blockquote">
+<p><em>the intervention caused the reduction.</em></p>
+</blockquote>
+<section id="a-practical-healthcare-example" class="level2">
+<h2 class="anchored" data-anchor-id="a-practical-healthcare-example">A Practical Healthcare Example</h2>
+<p>Imagine an Integrated Care Board introduces a new frailty service intended to reduce Emergency Department attendance among older adults.</p>
+<p>The service provides:</p>
 <ul>
-<li>most patients stay a relatively short time</li>
-<li>a small number stay much longer</li>
-<li>those long stays pull the mean upward</li>
+<li>proactive frailty assessment</li>
+<li>community MDT support</li>
+<li>medication review</li>
+<li>rapid response care coordination</li>
+</ul>
+<p>After six months:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Measure</th>
+<th style="text-align: right;">Before Scheme</th>
+<th style="text-align: right;">After Scheme</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>ED attendances</td>
+<td style="text-align: right;">1,200</td>
+<td style="text-align: right;">980</td>
+</tr>
+<tr class="even">
+<td>Emergency admissions</td>
+<td style="text-align: right;">450</td>
+<td style="text-align: right;">390</td>
+</tr>
+</tbody>
+</table>
+<p>At first glance:</p>
+<blockquote class="blockquote">
+<p>The scheme appears successful.</p>
+</blockquote>
+<p>ED attendance has fallen.</p>
+<p>Emergency admissions have also fallen.</p>
+<p>But an important question remains:</p>
+<blockquote class="blockquote">
+<p><strong>Would this reduction have happened anyway?</strong></p>
+</blockquote>
+<p>This question sits at the heart of intervention evaluation.</p>
+</section>
+</section>
+<section id="the-biggest-evaluation-mistake-before-and-after-comparisons" class="level1">
+<h1>The Biggest Evaluation Mistake: Before-and-After Comparisons</h1>
+<p>One of the most common mistakes in healthcare evaluation is relying solely on simple before-and-after comparisons.</p>
+<p>For example:</p>
+<pre class="text"><code>Before intervention:
+1,200 ED attendances
+
+After intervention:
+980 ED attendances</code></pre>
+<p>Conclusion:</p>
+<blockquote class="blockquote">
+<p>“The scheme worked.”</p>
+</blockquote>
+<p>Sometimes that conclusion may be correct.</p>
+<p>But sometimes it may not.</p>
+<p>Why?</p>
+<p>Because healthcare systems are full of variation and competing influences.</p>
+<p>For example:</p>
+<ul>
+<li>winter demand may have been milder</li>
+<li>influenza rates may have fallen</li>
+<li>ambulance conveyance patterns may have changed</li>
+<li>another community service may have launched</li>
+<li>hospital admission thresholds may have changed</li>
+<li>random fluctuation may have occurred</li>
+</ul>
+<p>A simple before-and-after comparison cannot easily distinguish:</p>
+<blockquote class="blockquote">
+<p><strong>correlation</strong></p>
+</blockquote>
+<p>from</p>
+<blockquote class="blockquote">
+<p><strong>causation</strong></p>
+</blockquote>
+<p>This links directly back to Module 3:</p>
+<blockquote class="blockquote">
+<p><em>Correlation vs Causation</em></p>
+</blockquote>
+<p>A change occurring after an intervention does not automatically mean:</p>
+<blockquote class="blockquote">
+<p>the intervention caused the change.</p>
+</blockquote>
+<section id="why-before-and-after-comparisons-feel-convincing" class="level2">
+<h2 class="anchored" data-anchor-id="why-before-and-after-comparisons-feel-convincing">Why Before-and-After Comparisons Feel Convincing</h2>
+<p>Simple comparisons are attractive because they are:</p>
+<ul>
+<li>easy to understand</li>
+<li>quick to produce</li>
+<li>intuitive to explain</li>
 </ul>
 <p>For example:</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Patient Group</th>
-<th>Mean LoS</th>
-<th>Median LoS</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>All Patients</td>
-<td>6.6 days</td>
-<td>3 days</td>
-</tr>
-<tr class="even">
-<td>Patients aged 65+</td>
-<td>7.9 days</td>
-<td>3 days</td>
-</tr>
-<tr class="odd">
-<td>Moderate/severe frailty</td>
-<td>10.8 days</td>
-<td>4 days</td>
-</tr>
-<tr class="even">
-<td>Multiple long-term conditions</td>
-<td>12.2 days</td>
-<td>4 days</td>
-</tr>
-</tbody>
-</table>
-<p>The median patient may stay only a few days.</p>
-<p>However, a relatively small number of long-stay patients can account for a disproportionate number of occupied bed days.</p>
-<p>Operationally, this matters enormously.</p>
-<p>The figure below illustrates why mean and median may tell very different stories in healthcare operational data.</p>
-<p>Notice something important:</p>
+<pre class="text"><code>Admissions reduced by 15%</code></pre>
+<p>sounds persuasive.</p>
+<p>But healthcare systems are noisy and complex.</p>
+<p>Without additional context, before-and-after comparisons can create:</p>
+<ul>
+<li>false confidence</li>
+<li>overclaiming of impact</li>
+<li>poor investment decisions</li>
+<li>misleading conclusions</li>
+</ul>
+<p>The question should not simply be:</p>
 <blockquote class="blockquote">
-<p>median LoS changes relatively little, while mean LoS increases substantially as complexity and frailty rise.</p>
+<p><em>Did things improve?</em></p>
 </blockquote>
-<p>This suggests a relatively small number of patients may be driving disproportionate bed occupancy.</p>
-<p><img src="../images/MeanvsMedian_LoS.png" class="img-fluid"></p>
-<hr>
-</section>
-<section id="why-the-distribution-matters" class="level2">
-<h2 class="anchored" data-anchor-id="why-the-distribution-matters">Why The Distribution Matters</h2>
-<p>If we only report the mean:</p>
-<ul>
-<li>we lose visibility of variation</li>
-<li>we may miss operational bottlenecks</li>
-<li>we may misunderstand where pressure originates</li>
-</ul>
-<p>Understanding the full distribution helps answer more meaningful operational questions:</p>
-<ul>
-<li>Who are our longest-stay patients?</li>
-<li>Why are stays prolonged?</li>
-<li>Which patients drive bed occupancy?</li>
-<li>Are delays clinical, social or pathway-related?</li>
-<li>Where would interventions have the greatest operational impact?</li>
-</ul>
-<p>Sometimes:</p>
+<p>Instead, decision-makers should ask:</p>
 <blockquote class="blockquote">
-<p>the story is in the shape of the data, not just the average.</p>
+<p><em>How confident are we that the intervention caused the improvement?</em></p>
 </blockquote>
-<hr>
 </section>
-<section id="is-it-fair-to-compare-trusts-or-icbs-using-averages" class="level2">
-<h2 class="anchored" data-anchor-id="is-it-fair-to-compare-trusts-or-icbs-using-averages">Is It Fair To Compare Trusts or ICBs Using Averages?</h2>
-<p>Averages support benchmarking — but only with context.</p>
-<p>Simple comparison may overlook:</p>
-<ul>
-<li>population need</li>
-<li>frailty burden</li>
-<li>pathway complexity</li>
-<li>social care pressures</li>
-</ul>
-<p>This is why benchmarking should support questions and learning rather than simplistic league tables.</p>
-<p>(We explore fair comparison in more depth in Module 5.)</p>
-<hr>
 </section>
-<section id="benchmarking-in-practice-model-hospital" class="level2">
-<h2 class="anchored" data-anchor-id="benchmarking-in-practice-model-hospital">Benchmarking in Practice — Model Hospital</h2>
-<p>NHS England’s Model Hospital (Model Health System) uses many averages and benchmark metrics including:</p>
-<ul>
-<li>average LoS</li>
-<li>theatre utilisation</li>
-<li>productivity metrics</li>
-<li>operational performance indicators</li>
-</ul>
-<p>However, Model Hospital also attempts to improve fairness by using:</p>
-<ul>
-<li>peer-group comparisons</li>
-<li>specialty-level analysis</li>
-<li>segmentation</li>
-<li>contextual benchmarking</li>
-</ul>
-<p>This reflects an important reality:</p>
+<section id="counterfactual-thinking-what-would-have-happened-anyway" class="level1">
+<h1>Counterfactual Thinking: What Would Have Happened Anyway?</h1>
+<p>One of the most important ideas in evaluation is surprisingly simple.</p>
+<p>To understand whether an intervention worked, we need to ask:</p>
 <blockquote class="blockquote">
-<p>Healthcare operational benchmarking is inherently complex.</p>
+<p><strong>What would likely have happened if we had done nothing?</strong></p>
 </blockquote>
-<p>No single metric tells the whole story.</p>
-<hr>
-</section>
-<section id="operational-implications" class="level2">
-<h2 class="anchored" data-anchor-id="operational-implications">Operational Implications</h2>
-<p>Averages remain useful.</p>
-<p>They help organisations:</p>
-<ul>
-<li>summarise performance quickly</li>
-<li>benchmark over time</li>
-<li>identify broad variation</li>
-</ul>
-<p>But averages alone should rarely drive operational decisions.</p>
-<section id="waiting-time-example" class="level3">
-<h3 class="anchored" data-anchor-id="waiting-time-example">Waiting Time Example</h3>
-<p>An average waiting time of:</p>
+<p>This idea is known as:</p>
 <blockquote class="blockquote">
-<p>4 weeks</p>
+<p><strong>the counterfactual</strong></p>
 </blockquote>
-<p>may sound acceptable.</p>
-<p>But if:</p>
-<ul>
-<li>most patients wait 1–2 weeks</li>
-<li>a smaller group waits 30+ weeks</li>
-</ul>
-<p>the average hides an important operational problem.</p>
-<p>The average waiting time may look acceptable.</p>
-<p>But the patient experience — and operational risk — may not be.</p>
-<p>Again:</p>
+<p>In plain English:</p>
 <blockquote class="blockquote">
-<p>the shape of the distribution matters.</p>
+<p><em>What would probably have happened anyway?</em></p>
 </blockquote>
-<hr>
+<p>This is often the missing question in healthcare evaluation.</p>
+<section id="a-simple-example" class="level2">
+<h2 class="anchored" data-anchor-id="a-simple-example">A Simple Example</h2>
+<p>Imagine ED attendance falls following introduction of a community frailty service.</p>
+<p>Question:</p>
+<blockquote class="blockquote">
+<p>Did the intervention reduce attendance?</p>
+</blockquote>
+<p>Maybe.</p>
+<p>But another possibility exists:</p>
+<p>ED attendance might have reduced anyway because:</p>
+<ul>
+<li>winter demand was lower</li>
+<li>viral illness reduced</li>
+<li>population behaviour changed</li>
+<li>ambulance conveyance thresholds shifted</li>
+<li>other services improved</li>
+</ul>
+<p>Without considering the counterfactual:</p>
+<blockquote class="blockquote">
+<p>we risk mistaking coincidence for impact.</p>
+</blockquote>
 </section>
+<section id="counterfactual-thinking-in-practice" class="level2">
+<h2 class="anchored" data-anchor-id="counterfactual-thinking-in-practice">Counterfactual Thinking in Practice</h2>
+<p>Evaluation becomes stronger when we compare reality with a plausible alternative.</p>
+<p>In simple terms:</p>
+<pre class="text"><code>Observed outcome
+        vs
+What might reasonably have happened anyway</code></pre>
+<p>The closer we can get to a believable counterfactual:</p>
+<blockquote class="blockquote">
+<p>the greater our confidence that the intervention genuinely contributed to the observed change.</p>
+</blockquote>
+</section>
+<section id="why-counterfactual-thinking-matters" class="level2">
+<h2 class="anchored" data-anchor-id="why-counterfactual-thinking-matters">Why Counterfactual Thinking Matters</h2>
+<p>The image below illustrates a common evaluation mistake:</p>
+<p>assuming that improvement after an intervention automatically implies impact.</p>
+<p>Good evaluation instead asks:</p>
+<blockquote class="blockquote">
+<p><em>Compared with what?</em></p>
+</blockquote>
+<p><img src="../images/DidInterventionWork_1.png" class="img-fluid"></p>
+<p>The purpose of counterfactual thinking is not to dismiss improvement.</p>
+<p>Instead, it encourages us to ask:</p>
+<blockquote class="blockquote">
+<p><em>How confident are we that the intervention caused the change?</em></p>
+</blockquote>
+</section>
+<section id="multiple-interventions-often-happen-at-the-same-time" class="level2">
+<h2 class="anchored" data-anchor-id="multiple-interventions-often-happen-at-the-same-time">Multiple Interventions Often Happen at the Same Time</h2>
+<p>One of the greatest challenges in evaluating healthcare improvement is that organisations rarely introduce a single intervention in isolation.</p>
+<p>For example, an Integrated Care Board may simultaneously introduce:</p>
+<ul>
+<li>Same Day Emergency Care (SDEC)</li>
+<li>Virtual Wards</li>
+<li>a frailty pathway</li>
+<li>enhanced community services</li>
+<li>discharge improvement programmes</li>
+<li>Pharmacy First</li>
+<li>care navigation</li>
+</ul>
+<p>Suppose emergency admissions reduce by <strong>8%</strong>.</p>
+<p>An obvious question follows:</p>
+<blockquote class="blockquote">
+<p><strong>Which intervention made the biggest difference?</strong></p>
+</blockquote>
+<p>The honest answer is often:</p>
+<blockquote class="blockquote">
+<p><strong>We cannot know with certainty.</strong></p>
+</blockquote>
+<p>These interventions may:</p>
+<ul>
+<li>work independently</li>
+<li>reinforce one another</li>
+<li>depend on one another to be effective</li>
+<li>influence different patient groups</li>
+<li>produce benefits at different times</li>
+</ul>
+<p>Rather than asking:</p>
+<blockquote class="blockquote">
+<p><em>Which intervention caused the improvement?</em></p>
+</blockquote>
+<p>Decision-makers may instead need to ask:</p>
+<blockquote class="blockquote">
+<p><em>How did each intervention contribute, and how might the interventions have reinforced one another?</em></p>
+</blockquote>
+<p>This illustrates why evaluation often focuses on <strong>contribution rather than simple attribution</strong>, particularly in complex healthcare systems.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Looking Ahead
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This module has focused on evaluating a single intervention.</p>
+<p>In reality, healthcare organisations often introduce <strong>multiple schemes at the same time</strong>, all aiming to improve the same outcome—for example, reducing Emergency Department attendances or emergency admissions.</p>
+<p>Understanding the contribution of each individual intervention becomes increasingly difficult as healthcare systems become more integrated.</p>
+<p><strong>Module 18: Why Evaluating Healthcare Improvement Is Difficult</strong> explores this challenge in more detail, including why attribution becomes increasingly difficult in complex healthcare systems and how organisations can build greater confidence in their evaluation findings despite that complexity.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="levels-of-evaluation-confidence" class="level1">
+<h1>Levels of Evaluation Confidence</h1>
+<p>Not all evaluation approaches provide the same level of confidence.</p>
+<p>Some approaches provide weak evidence.</p>
+<p>Others provide stronger evidence.</p>
+<p>A useful question for decision-makers is:</p>
+<blockquote class="blockquote">
+<p><strong>How confident should we be that the intervention caused the observed change?</strong></p>
+</blockquote>
+<p>The diagram below illustrates a simplified hierarchy of evaluation approaches and the confidence they provide that an intervention caused observed change.</p>
+<p><img src="../images/LevelsofEvaluationConfidence_2.png" class="img-fluid"></p>
+<p>This hierarchy is not about:</p>
+<blockquote class="blockquote">
+<p><em>good versus bad methods</em></p>
+</blockquote>
+<p>Instead, it helps us think about:</p>
+<blockquote class="blockquote">
+<p><strong>how confident we should be in causal conclusions.</strong></p>
+</blockquote>
+<p>Sometimes a simple before-and-after comparison may be all that is practical.</p>
+<p>However:</p>
+<blockquote class="blockquote">
+<p>decision-makers should recognise its limitations.</p>
+</blockquote>
+<section id="a-practical-nhs-reality" class="level2">
+<h2 class="anchored" data-anchor-id="a-practical-nhs-reality">A Practical NHS Reality</h2>
+<p>Healthcare systems rarely operate under ideal evaluation conditions.</p>
+<p>In practice:</p>
+<ul>
+<li>interventions evolve over time</li>
+<li>implementation varies between sites</li>
+<li>operational pressures disrupt delivery</li>
+<li>schemes overlap</li>
+<li>data quality may vary</li>
+<li>funding cycles are short</li>
+</ul>
+<p>This is particularly important in healthcare, where decisions often need to be made despite incomplete evidence and competing operational pressures.</p>
+<p>Healthcare evaluation therefore often involves balancing:</p>
+<blockquote class="blockquote">
+<p><strong>pragmatism</strong></p>
+</blockquote>
+<p>with</p>
+<blockquote class="blockquote">
+<p><strong>confidence in findings</strong></p>
+</blockquote>
+<p>The question is rarely:</p>
+<blockquote class="blockquote">
+<p><em>Can we be completely certain?</em></p>
+</blockquote>
+<p>Instead:</p>
+<blockquote class="blockquote">
+<p><em>How confident should we be?</em></p>
+</blockquote>
+<p>This means decision-makers often need to act before perfect evidence exists.</p>
+<p>Evaluation therefore becomes less about certainty and more about:</p>
+<blockquote class="blockquote">
+<p>making proportionate, evidence-informed judgements.</p>
+</blockquote>
+</section>
+<section id="reflection" class="level2">
+<h2 class="anchored" data-anchor-id="reflection">Reflection</h2>
+<p>Before moving on, ask:</p>
+<blockquote class="blockquote">
+<p><em>If outcomes changed after an intervention, what evidence would genuinely convince us that the intervention caused the change?</em></p>
+</blockquote>
+<p>This module has focused on:</p>
+<blockquote class="blockquote">
+<p><strong>thinking critically about evidence</strong></p>
+</blockquote>
+<p>because healthcare systems frequently observe change without always knowing:</p>
+<blockquote class="blockquote">
+<p>whether the intervention caused it.</p>
+</blockquote>
+<p>Good evaluation therefore moves beyond:</p>
+<blockquote class="blockquote">
+<p><em>Did outcomes improve?</em></p>
+</blockquote>
+<p>to ask:</p>
+<blockquote class="blockquote">
+<p><em>How confident are we that the intervention contributed to improvement?</em></p>
+</blockquote>
 </section>
 <section id="key-takeaways" class="level2">
 <h2 class="anchored" data-anchor-id="key-takeaways">Key Takeaways</h2>
 <ul>
-<li>The mean and median measure different aspects of a population</li>
-<li>Healthcare data is often skewed rather than normally distributed</li>
-<li>A small number of patients can drive disproportionate operational pressure</li>
-<li>The median often reflects the “typical” patient experience, while the mean better reflects system burden</li>
-<li>The distribution may matter more than the average itself</li>
-<li>Fair comparison requires context, not just metrics</li>
-<li>Benchmarking should start conversations, not end them</li>
+<li>improvement alone does not prove intervention impact</li>
+<li>healthcare systems change for many reasons at the same time</li>
+<li>simple before-and-after comparisons can be misleading</li>
+<li>stronger evaluation asks what might have happened anyway</li>
+<li>evaluation is about improving confidence, not proving certainty</li>
+<li>good decision-making balances pragmatism with evidence</li>
 </ul>
-<hr>
+<p>Good evaluation moves beyond:</p>
+<blockquote class="blockquote">
+<p><em>Did outcomes improve?</em></p>
+</blockquote>
+<p>to ask:</p>
+<blockquote class="blockquote">
+<p><em>How confident are we that the intervention genuinely contributed to change?</em></p>
+</blockquote>
 </section>
 <section id="questions-decision-makers-should-ask" class="level2">
 <h2 class="anchored" data-anchor-id="questions-decision-makers-should-ask">Questions Decision-Makers Should Ask</h2>
-<p>When reviewing averages:</p>
+<p>Before acting on evaluation findings, ask:</p>
 <ul>
-<li>What does this average actually represent?</li>
-<li>How variable is the underlying data?</li>
-<li>Are there important outliers?</li>
-<li>Are populations comparable?</li>
-<li>What operational factors sit behind the numbers?</li>
-<li>Does the distribution reveal something the average hides?</li>
-<li>What action is realistically possible?</li>
+<li>What else changed at the same time?</li>
+<li>Would improvement have happened anyway?</li>
+<li>Are we confusing correlation with causation?</li>
+<li>What evidence would increase our confidence?</li>
+<li>How certain do we really need to be before acting?</li>
+<li>What level of confidence is proportionate for this decision?</li>
 </ul>
+<p>In the next module, we explore practical approaches that healthcare systems use to improve confidence in evaluation findings — from pragmatic NHS evaluation methods through to Randomised Controlled Trials, Interrupted Time Series and Difference-in-Differences.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -976,13 +1131,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../modules/01-Counts-vs-Rates.html" class="pagination-link" aria-label="Module 1 - Counts vs Rates">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Module 1 - Counts vs Rates</span></span>
+      <a href="../modules/07-Theory-Of-Change-&amp;-Logic-Models.html" class="pagination-link" aria-label="07-Theory-Of-Change-&amp;-Logic-Models.html">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">07-Theory-Of-Change-&amp;-Logic-Models.html</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../modules/03-Correlation-vs-Causation.html" class="pagination-link" aria-label="Module 3 — Correlation vs Causation">
-        <span class="nav-page-text"><span class="chapter-title">Module 3 — Correlation vs Causation</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../modules/09-Evaluating-Methods-in-Practice.html" class="pagination-link" aria-label="Module 9 — Evaluation Methods in Practice">
+        <span class="nav-page-text"><span class="chapter-title">Module 9 — Evaluation Methods in Practice</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

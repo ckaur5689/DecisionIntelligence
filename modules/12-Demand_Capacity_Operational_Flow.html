@@ -1,0 +1,1141 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Module 12: Demand, Capacity &amp; Operational Flow – Healthcare Decision Intelligence</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../modules/13-Data-Quality-Assurance-Trustworthy-Data.html" rel="next">
+<link href="../Part_2.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-9e3e5b9121e68b3f077afb32f2c64d95.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<!-- Privacy-friendly analytics by Plausible -->
+
+<script async="" src="https://plausible.io/js/pa-coCTmyI_rulN60WT7evG5.js"></script>
+
+<script>
+
+  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+
+  plausible.init()
+
+</script>
+
+
+
+
+
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../modules/12-Demand_Capacity_Operational_Flow.html"><span class="chapter-title">Module 12: Demand, Capacity &amp; Operational Flow</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Healthcare Decision Intelligence</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Book_Cover.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Book_Cover.html</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Welcome</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Part_1.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Part 1 — How do we interpret healthcare data correctly?</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../modules/01-Counts-vs-Rates.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Module 1 - Counts vs Rates</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../modules/02-Mean-vs-Median.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Module 2 — Mean vs Median</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../modules/03-Correlation-vs-Causation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Module 3 — Correlation vs Causation</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../modules/04-Variation-&amp;-Distributions.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Module 4 — Variation &amp; Distributions</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../modules/05-Standardisation-&amp;-Fair-Comparison.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Module 5 — Standardisation &amp; Fair Comparison</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../modules/06-How-to-Read-a-Dashboard.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Module 6 — How to Read a Dashboard</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../modules/07-Theory-Of-Change-&amp;-Logic-Models.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">07-Theory-Of-Change-&amp;-Logic-Models.html</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../modules/08-Thinking-About-Evidence-&amp;-Evaluation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Module 8 — Thinking About Evidence &amp; Evaluation</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../modules/09-Evaluating-Methods-in-Practice.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Module 9 — Evaluation Methods in Practice</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../modules/10-Risk-Probability-Uncertainty.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Module 10: Risk, Probability &amp; Uncertainty</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../modules/11-Common-Analytical-Traps-&amp;-Data-Fallacies.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Module 11: Common Analytical Traps &amp; Data Fallacies</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Part_2.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Part 2 — How do we understand, improve and evaluate complex healthcare systems?</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../modules/12-Demand_Capacity_Operational_Flow.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Module 12: Demand, Capacity &amp; Operational Flow</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../modules/13-Data-Quality-Assurance-Trustworthy-Data.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Module 13: Data Quality, Assurance &amp; Trustworthy Data</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../modules/14-Designing-Better-Healthcare-Pathways.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Module 14: Designing Better Healthcare Pathways</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../modules/15-Health-Economics-&amp;-Value-in-Healthcare-Decision-Making.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Module 15: Health Economics &amp; Value in Healthcare Decision-Making</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Project - Healthcare Decision Intelligence Series</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link active" data-scroll-target="#learning-objectives">Learning Objectives</a></li>
+  <li><a href="#why-this-matters" id="toc-why-this-matters" class="nav-link" data-scroll-target="#why-this-matters">Why This Matters</a></li>
+  <li><a href="#demand-capacity-and-flow-are-interdependent" id="toc-demand-capacity-and-flow-are-interdependent" class="nav-link" data-scroll-target="#demand-capacity-and-flow-are-interdependent">Demand, Capacity and Flow Are Interdependent</a></li>
+  <li><a href="#demand-is-not-the-same-as-activity" id="toc-demand-is-not-the-same-as-activity" class="nav-link" data-scroll-target="#demand-is-not-the-same-as-activity">Demand Is Not The Same As Activity</a></li>
+  <li><a href="#capacity-is-more-than-beds-and-staff" id="toc-capacity-is-more-than-beds-and-staff" class="nav-link" data-scroll-target="#capacity-is-more-than-beds-and-staff">Capacity Is More Than Beds and Staff</a></li>
+  <li><a href="#flow-is-where-systems-succeed-or-fail" id="toc-flow-is-where-systems-succeed-or-fail" class="nav-link" data-scroll-target="#flow-is-where-systems-succeed-or-fail">Flow Is Where Systems Succeed or Fail</a></li>
+  <li><a href="#bottlenecks" id="toc-bottlenecks" class="nav-link" data-scroll-target="#bottlenecks">Bottlenecks</a></li>
+  <li><a href="#why-averages-can-mislead-operational-decisions" id="toc-why-averages-can-mislead-operational-decisions" class="nav-link" data-scroll-target="#why-averages-can-mislead-operational-decisions">Why Averages Can Mislead Operational Decisions</a></li>
+  <li><a href="#variation-creates-queues" id="toc-variation-creates-queues" class="nav-link" data-scroll-target="#variation-creates-queues">Variation Creates Queues</a></li>
+  <li><a href="#high-utilisation-can-reduce-performance" id="toc-high-utilisation-can-reduce-performance" class="nav-link" data-scroll-target="#high-utilisation-can-reduce-performance">High Utilisation Can Reduce Performance</a></li>
+  <li><a href="#a-whole-system-perspective" id="toc-a-whole-system-perspective" class="nav-link" data-scroll-target="#a-whole-system-perspective">A Whole-System Perspective</a></li>
+  <li><a href="#why-this-matters-for-decision-makers" id="toc-why-this-matters-for-decision-makers" class="nav-link" data-scroll-target="#why-this-matters-for-decision-makers">Why This Matters for Decision-Makers</a>
+  <ul class="collapse">
+  <li><a href="#worked-example-why-can-the-waiting-list-grow-while-rtt-performance-improves" id="toc-worked-example-why-can-the-waiting-list-grow-while-rtt-performance-improves" class="nav-link" data-scroll-target="#worked-example-why-can-the-waiting-list-grow-while-rtt-performance-improves">⭐ Worked Example: Why Can the Waiting List Grow While RTT Performance Improves?</a></li>
+  <li><a href="#questions-decision-makers-should-ask" id="toc-questions-decision-makers-should-ask" class="nav-link" data-scroll-target="#questions-decision-makers-should-ask">Questions Decision-Makers Should Ask</a></li>
+  </ul></li>
+  <li><a href="#key-takeaways" id="toc-key-takeaways" class="nav-link" data-scroll-target="#key-takeaways">Key Takeaways</a></li>
+  <li><a href="#questions-decision-makers-should-ask-1" id="toc-questions-decision-makers-should-ask-1" class="nav-link" data-scroll-target="#questions-decision-makers-should-ask-1">Questions Decision-Makers Should Ask</a>
+  <ul class="collapse">
+  <li><a href="#nhs-case-study-delayed-discharge-a-whole-system-problem" id="toc-nhs-case-study-delayed-discharge-a-whole-system-problem" class="nav-link" data-scroll-target="#nhs-case-study-delayed-discharge-a-whole-system-problem">NHS Case Study: Delayed Discharge – A Whole-System Problem</a>
+  <ul class="collapse">
+  <li><a href="#background" id="toc-background" class="nav-link" data-scroll-target="#background">Background</a></li>
+  <li><a href="#initial-response" id="toc-initial-response" class="nav-link" data-scroll-target="#initial-response">Initial Response</a></li>
+  <li><a href="#looking-deeper" id="toc-looking-deeper" class="nav-link" data-scroll-target="#looking-deeper">Looking Deeper</a></li>
+  <li><a href="#understanding-the-system" id="toc-understanding-the-system" class="nav-link" data-scroll-target="#understanding-the-system">Understanding the System</a></li>
+  <li><a href="#applying-systems-thinking" id="toc-applying-systems-thinking" class="nav-link" data-scroll-target="#applying-systems-thinking">Applying Systems Thinking</a></li>
+  <li><a href="#lessons-learned" id="toc-lessons-learned" class="nav-link" data-scroll-target="#lessons-learned">Lessons Learned</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-title">Module 12: Demand, Capacity &amp; Operational Flow</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="learning-objectives" class="level2">
+<h2 class="anchored" data-anchor-id="learning-objectives">Learning Objectives</h2>
+<p>By the end of this module you should be able to:</p>
+<ul>
+<li>Understand the relationship between demand, capacity and flow.</li>
+<li>Recognise why increasing demand does not always require increasing capacity.</li>
+<li>Appreciate how bottlenecks affect the performance of the entire healthcare system.</li>
+<li>Understand why averages often fail to describe operational performance.</li>
+<li>Recognise how variation creates queues and delays.</li>
+<li>Ask better questions when interpreting operational data.</li>
+</ul>
+</section>
+<section id="why-this-matters" class="level1">
+<h1>Why This Matters</h1>
+<p>Every healthcare organisation experiences pressure.</p>
+<p>Emergency Departments become crowded.</p>
+<p>Ambulances queue outside hospitals.</p>
+<p>Elective waiting lists grow.</p>
+<p>Patients experience delayed discharges.</p>
+<p>It is tempting to assume these problems simply reflect insufficient capacity.</p>
+<p>Sometimes they do.</p>
+<p>But often they reflect something different:</p>
+<blockquote class="blockquote">
+<p><strong>How patients move through the healthcare system.</strong></p>
+</blockquote>
+<p>Healthcare behaves as a connected system.</p>
+<p><strong>Improving one part of the healthcare system does not necessarily improve the performance of the whole system.</strong></p>
+<p>Understanding <strong>demand</strong>, <strong>capacity</strong> and <strong>flow</strong> explains why.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>The Central Message of This Module
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Healthcare performance is rarely determined by <strong>demand</strong>, <strong>capacity</strong> or <strong>flow</strong> alone.</p>
+<p>It emerges from the interaction between all three.</p>
+<p>Understanding this interaction is fundamental to improving healthcare systems.</p>
+</div>
+</div>
+</section>
+<section id="demand-capacity-and-flow-are-interdependent" class="level1">
+<h1>Demand, Capacity and Flow Are Interdependent</h1>
+<p>Healthcare systems perform well only when demand, capacity and flow are considered together.</p>
+<p>Focusing on one element in isolation often moves pressure elsewhere rather than solving the underlying problem.</p>
+<p>As shown in the figure below, each element continuously influences the others.</p>
+<p><img src="../images/Demand_Capacity_Flow_Triangle.png" class="img-fluid"></p>
+<p>Demand, Capacity and Flow are interdependent. Sustainable improvement requires balancing all three components.</p>
+<p>For example:</p>
+<ul>
+<li>increasing demand places greater pressure on available capacity</li>
+<li>poor flow reduces the effective use of existing capacity</li>
+<li>insufficient capacity creates delays that further reduce flow</li>
+</ul>
+<p>Improving one component alone rarely produces sustainable improvement.</p>
+</section>
+<section id="demand-is-not-the-same-as-activity" class="level1">
+<h1>Demand Is Not The Same As Activity</h1>
+<p>Demand represents the <strong>need</strong> for healthcare.</p>
+<p>Activity represents the <strong>care that is actually delivered.</strong></p>
+<p>These are not always the same.</p>
+<p>For example:</p>
+<ul>
+<li>patients waiting for appointments still contribute to demand</li>
+<li>delayed patients continue to consume capacity</li>
+<li>unmet need may never appear in operational data</li>
+<li>cancelled appointments reduce activity but not demand</li>
+</ul>
+<p>Understanding this distinction is essential.</p>
+</section>
+<section id="capacity-is-more-than-beds-and-staff" class="level1">
+<h1>Capacity Is More Than Beds and Staff</h1>
+<p>Capacity is often described simply as:</p>
+<ul>
+<li>staff</li>
+<li>beds</li>
+<li>clinics</li>
+<li>theatres</li>
+</ul>
+<p>In reality, capacity also depends on:</p>
+<ul>
+<li>workforce availability</li>
+<li>diagnostics</li>
+<li>discharge processes</li>
+<li>community services</li>
+<li>social care</li>
+<li>digital infrastructure</li>
+</ul>
+<p>A hospital with available beds but no discharge capacity is still constrained.</p>
+<p>Similarly, additional staff cannot improve performance if another part of the system limits patient flow.</p>
+</section>
+<section id="flow-is-where-systems-succeed-or-fail" class="level1">
+<h1>Flow Is Where Systems Succeed or Fail</h1>
+<p>Patients move through a sequence of healthcare services rather than a single department.</p>
+<p>Delays in one part of the pathway rarely remain isolated.</p>
+<p>As illustrated in the figure below, delays at a bottleneck propagate backwards through the system, creating queues upstream.</p>
+<p><img src="../images/Bottleneck_Upstream_Queues.png" class="img-fluid"></p>
+<p>Removing the bottleneck improves performance across the whole pathway.</p>
+<p>Every handover introduces the potential for delay.</p>
+<p>Healthcare therefore behaves as a connected network rather than a collection of independent departments.</p>
+</section>
+<section id="bottlenecks" class="level1">
+<h1>Bottlenecks</h1>
+<p>A bottleneck limits the performance of the entire system.</p>
+<p>Imagine a motorway with four lanes narrowing to one.</p>
+<p>Traffic builds long before the narrowing point.</p>
+<p>Healthcare behaves similarly.</p>
+<p>Common bottlenecks include:</p>
+<ul>
+<li>delayed diagnostics</li>
+<li>inpatient bed availability</li>
+<li>delayed discharge</li>
+<li>theatre capacity</li>
+<li>social care availability</li>
+</ul>
+<p>Improving a non-bottleneck often has surprisingly little effect on overall performance.</p>
+<p>Removing or reducing the bottleneck usually produces the greatest system-wide benefit.</p>
+</section>
+<section id="why-averages-can-mislead-operational-decisions" class="level1">
+<h1>Why Averages Can Mislead Operational Decisions</h1>
+<p>Suppose two Emergency Departments each receive:</p>
+<blockquote class="blockquote">
+<p><strong>300 attendances per day</strong></p>
+</blockquote>
+<p>The averages appear identical.</p>
+<p>However:</p>
+<ul>
+<li>Hospital A receives patients steadily throughout the day.</li>
+<li>Hospital B receives large surges during the afternoon and evening.</li>
+</ul>
+<p>As demonstrated in the figure below, both hospitals experience the same total demand, yet their operational experience is very different.</p>
+<p><img src="../images/Same_Demand_Different_Arrival_Patterns.png" class="img-fluid"></p>
+<p>Two hospitals can experience very different operational pressures because of different arrival patterns.</p>
+<p>Queues form because of <strong>variation</strong>, not simply because of average demand.</p>
+<p>Operational pressure is often created by <strong>patterns of demand</strong>, rather than demand itself.</p>
+</section>
+<section id="variation-creates-queues" class="level1">
+<h1>Variation Creates Queues</h1>
+<p>Healthcare demand is rarely constant.</p>
+<p>Patients do not arrive evenly.</p>
+<p>Similarly:</p>
+<ul>
+<li>staff sickness varies</li>
+<li>discharge timing varies</li>
+<li>theatre utilisation varies</li>
+<li>ambulance arrivals vary</li>
+<li>diagnostic turnaround times vary</li>
+</ul>
+<p>Small variations accumulate throughout the system.</p>
+<p>Queues are therefore a natural consequence of variation.</p>
+<p>Reducing unnecessary variation often improves patient flow without increasing capacity.</p>
+</section>
+<section id="high-utilisation-can-reduce-performance" class="level1">
+<h1>High Utilisation Can Reduce Performance</h1>
+<p>Intuitively, high utilisation appears efficient.</p>
+<p>However, systems operating continuously at maximum utilisation often become less resilient.</p>
+<p>For example:</p>
+<ul>
+<li>fully occupied wards cannot absorb sudden admissions</li>
+<li>fully booked clinics have little flexibility</li>
+<li>operating theatres with no spare capacity struggle to recover from delays</li>
+</ul>
+<p>Healthcare systems require spare capacity to cope with inevitable variation.</p>
+<p>Maximising utilisation is therefore not always the same as maximising performance.</p>
+</section>
+<section id="a-whole-system-perspective" class="level1">
+<h1>A Whole-System Perspective</h1>
+<p>Healthcare behaves as a connected system.</p>
+<p>Changes in one part of the pathway frequently have consequences elsewhere.</p>
+<p><strong>As illustrated in the figure below, improving one part of the healthcare system does not necessarily improve the performance of the whole system.</strong></p>
+<p><img src="../images/Whole_System_Ripple_Effect.png" class="img-fluid"></p>
+<p>Healthcare behaves as a connected system. Changes in one part of the pathway create ripple effects across the wider healthcare system.</p>
+<p>Problems originating outside hospital—such as reduced community capacity or delayed social care—can rapidly affect:</p>
+<ul>
+<li>Emergency Departments</li>
+<li>inpatient wards</li>
+<li>ambulance services</li>
+<li>elective care</li>
+</ul>
+<p>Understanding these ripple effects is essential when designing improvement programmes.</p>
+</section>
+<section id="why-this-matters-for-decision-makers" class="level1">
+<h1>Why This Matters for Decision-Makers</h1>
+<p>Many operational problems cannot be solved simply by increasing resources.</p>
+<p>Sometimes organisations achieve greater improvement by:</p>
+<ul>
+<li>redesigning pathways</li>
+<li>removing bottlenecks</li>
+<li>reducing unnecessary variation</li>
+<li>improving discharge processes</li>
+<li>strengthening community services</li>
+<li>improving patient flow</li>
+</ul>
+<p>The key question is often not:</p>
+<blockquote class="blockquote">
+<p><strong>“Where should we add more capacity?”</strong></p>
+</blockquote>
+<p>Instead it is:</p>
+<blockquote class="blockquote">
+<p><strong>“What is preventing patients flowing through the system?”</strong></p>
+</blockquote>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Remember
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Improving one part of the system rarely improves the whole system.</p>
+<p>Sustainable improvement comes from understanding how demand, capacity and patient flow interact across the entire healthcare system.</p>
+</div>
+</div>
+<section id="worked-example-why-can-the-waiting-list-grow-while-rtt-performance-improves" class="level2">
+<h2 class="anchored" data-anchor-id="worked-example-why-can-the-waiting-list-grow-while-rtt-performance-improves">⭐ Worked Example: Why Can the Waiting List Grow While RTT Performance Improves?</h2>
+<p>Imagine an NHS organisation successfully increases the number of <strong>first outpatient appointments</strong> available in an effort to improve access to elective care.</p>
+<p>More patients are seen sooner following referral, resulting in:</p>
+<ul>
+<li>more <strong>RTT clock starts</strong></li>
+<li>more patients entering the elective treatment pathway</li>
+<li>improved access to specialist assessment</li>
+</ul>
+<p>At first glance, this appears to be an unequivocal improvement.</p>
+<p>However, if treatment capacity (for example, diagnostics, operating theatres or clinical workforce) does <strong>not</strong> increase at the same rate, more patients may enter the waiting list than leave it.</p>
+<p>This creates an important system dynamic:</p>
+<ul>
+<li><strong>RTT clock starts</strong> represent patients entering the waiting list.</li>
+<li><strong>RTT clock finishes</strong> represent patients leaving the waiting list.</li>
+</ul>
+<p>The size of the waiting list therefore depends on the balance between these two flows.</p>
+<p><img src="../images/UnderstandingRTTandWaitingListDynamics.png" class="img-fluid"></p>
+<p>The waiting list behaves like a queue.</p>
+<p><strong>The waiting list is the stock, while RTT clock starts and RTT clock finishes are the flows into and out of that stock.</strong></p>
+<p>If <strong>RTT clock starts exceed RTT clock finishes</strong>, the waiting list grows.</p>
+<p>If <strong>RTT clock finishes exceed RTT clock starts</strong>, the waiting list reduces.</p>
+<p>The balance between these two flows determines whether the waiting list expands, contracts or remains stable.</p>
+<p>One additional complexity is that organisations may improve their reported <strong>18-week RTT performance</strong> by prioritising patients who are approaching the constitutional 18-week standard.</p>
+<p>While this improves performance against the target, it does <strong>not necessarily reduce the overall waiting list</strong> if RTT clock starts continue to exceed RTT clock finishes.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Key Learning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Healthcare systems should be understood as <strong>interconnected stocks and flows</strong>, rather than as isolated performance measures.</p>
+<p>Improving one performance metric does not necessarily mean the overall healthcare system has improved.</p>
+<p>Understanding how patients <strong>enter</strong>, <strong>move through</strong> and <strong>leave</strong> the pathway is often more informative than looking at one performance indicator in isolation.</p>
+</div>
+</div>
+</section>
+<section id="questions-decision-makers-should-ask" class="level2">
+<h2 class="anchored" data-anchor-id="questions-decision-makers-should-ask">Questions Decision-Makers Should Ask</h2>
+<p>Before concluding that elective performance has improved, ask:</p>
+<ul>
+<li>Has referral demand increased?</li>
+<li>Have first outpatient appointments increased?</li>
+<li>Has treatment capacity increased by the same amount?</li>
+<li>Are RTT clock finishes keeping pace with RTT clock starts?</li>
+<li>Is the waiting list growing, shrinking or remaining stable?</li>
+<li>Are we improving patient flow through the whole pathway, or simply optimising one part of it?</li>
+<li>Which metric best reflects the performance of the <strong>whole pathway</strong>, rather than just one part of it?</li>
+</ul>
+<p>Understanding the interaction between <strong>demand</strong>, <strong>capacity</strong> and <strong>patient flow</strong> provides a much richer picture of system performance than any single metric alone.</p>
+<p>Looking at one performance measure in isolation may obscure important pressures elsewhere in the healthcare system.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Looking Beyond Elective Care
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The same principles apply across many areas of healthcare.</p>
+<p>Whether considering <strong>Emergency Departments, diagnostics, community services, mental health, cancer pathways or elective care</strong>, healthcare systems are fundamentally influenced by the interaction between <strong>demand</strong>, <strong>capacity</strong> and <strong>patient flow</strong>.</p>
+<p>Understanding how patients <strong>enter</strong>, <strong>move through</strong> and <strong>leave</strong> a pathway often provides far greater insight than focusing on individual performance measures in isolation.</p>
+<p>This systems perspective is one of the foundations of effective healthcare improvement.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="key-takeaways" class="level1">
+<h1>Key Takeaways</h1>
+<ul>
+<li>Demand and activity are not the same.</li>
+<li>Capacity extends beyond beds and staffing.</li>
+<li>Flow determines how effectively healthcare systems operate.</li>
+<li>Bottlenecks affect the entire pathway.</li>
+<li>Variation creates queues.</li>
+<li>High utilisation is not always efficient.</li>
+<li>Improving non-bottlenecks often has limited impact.</li>
+<li>Whole-system thinking is usually more valuable than optimising individual departments.</li>
+</ul>
+</section>
+<section id="questions-decision-makers-should-ask-1" class="level1">
+<h1>Questions Decision-Makers Should Ask</h1>
+<ul>
+<li>Are we measuring demand or activity?</li>
+<li>Is our constraint really capacity, or is it poor flow?</li>
+<li>Where are patients actually waiting?</li>
+<li>Which bottleneck is limiting overall system performance?</li>
+<li>Are averages hiding important patterns of demand?</li>
+<li>Could improving flow release more capacity than adding additional resources?</li>
+<li>How might changes in one part of the pathway affect another?</li>
+<li>Are we optimising individual services or improving the whole system?</li>
+<li>If this metric improves, what other parts of the system might be affected?</li>
+<li>What unintended consequences might this change create elsewhere in the system?</li>
+</ul>
+<section id="nhs-case-study-delayed-discharge-a-whole-system-problem" class="level2">
+<h2 class="anchored" data-anchor-id="nhs-case-study-delayed-discharge-a-whole-system-problem">NHS Case Study: Delayed Discharge – A Whole-System Problem</h2>
+<section id="background" class="level3">
+<h3 class="anchored" data-anchor-id="background">Background</h3>
+<p>An acute hospital reports:</p>
+<ul>
+<li>Emergency Department waiting times are increasing.</li>
+<li>Ambulances are queuing outside the hospital.</li>
+<li>Bed occupancy is consistently above 98%.</li>
+<li>Elective operations are frequently cancelled.</li>
+</ul>
+<p>The immediate assumption is:</p>
+<blockquote class="blockquote">
+<p><strong>The hospital needs more beds.</strong></p>
+</blockquote>
+</section>
+<section id="initial-response" class="level3">
+<h3 class="anchored" data-anchor-id="initial-response">Initial Response</h3>
+<p>The organisation considers:</p>
+<ul>
+<li>opening additional inpatient beds</li>
+<li>increasing Emergency Department staffing</li>
+<li>recruiting more ward nurses</li>
+</ul>
+<p>Each of these actions may provide short-term relief.</p>
+<p>However, several months later, performance remains largely unchanged.</p>
+</section>
+<section id="looking-deeper" class="level3">
+<h3 class="anchored" data-anchor-id="looking-deeper">Looking Deeper</h3>
+<p>Further investigation reveals that many patients are <strong>medically fit for discharge</strong>, but cannot leave hospital because:</p>
+<ul>
+<li>community rehabilitation capacity is limited</li>
+<li>social care packages are unavailable</li>
+<li>community nursing services are under pressure</li>
+</ul>
+<p>As a result:</p>
+<ul>
+<li>beds remain occupied unnecessarily</li>
+<li>new admissions cannot move from the Emergency Department onto wards</li>
+<li>Emergency Department cubicles remain full</li>
+<li>ambulances cannot offload patients promptly</li>
+</ul>
+<p>The apparent <strong>hospital capacity problem</strong> is actually a <strong>patient flow problem</strong>.</p>
+<p><strong>Increasing inpatient beds without improving discharge processes may simply increase the number of occupied beds rather than improving patient flow.</strong></p>
+</section>
+<section id="understanding-the-system" class="level3">
+<h3 class="anchored" data-anchor-id="understanding-the-system">Understanding the System</h3>
+<p>The visible pressure occurs in the Emergency Department.</p>
+<p>The underlying constraint lies much further downstream.</p>
+<p>Improving discharge capacity may release considerably more effective hospital capacity than simply opening additional inpatient beds.</p>
+<p>This illustrates an important systems principle:</p>
+<blockquote class="blockquote">
+<p><strong>The constraint is not always where the pressure is most visible.</strong></p>
+</blockquote>
+</section>
+<section id="applying-systems-thinking" class="level3">
+<h3 class="anchored" data-anchor-id="applying-systems-thinking">Applying Systems Thinking</h3>
+<p>Rather than asking:</p>
+<blockquote class="blockquote">
+<p><strong>“How do we create more beds?”</strong></p>
+</blockquote>
+<p>decision-makers might instead ask:</p>
+<ul>
+<li>What is preventing timely discharge?</li>
+<li>Which patients experience the longest delays?</li>
+<li>Which organisations influence discharge?</li>
+<li>Would investment in community services have a greater system-wide impact?</li>
+<li>Are we solving the bottleneck—or simply moving it elsewhere?</li>
+</ul>
+</section>
+<section id="lessons-learned" class="level3">
+<h3 class="anchored" data-anchor-id="lessons-learned">Lessons Learned</h3>
+<p>This example demonstrates that:</p>
+<ul>
+<li>operational pressure is often caused by poor patient flow rather than insufficient capacity</li>
+<li>bottlenecks create queues throughout the healthcare system</li>
+<li>increasing resources where pressure is most visible may not address the underlying constraint</li>
+<li>effective improvement requires understanding the entire patient pathway rather than individual services in isolation</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Leadership Reflection
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The greatest pressure within a healthcare system is not always where the underlying problem originates.</p>
+<p>As a leader, ask yourself:</p>
+<p><strong>If I remove pressure here, have I solved the underlying constraint—or simply moved the pressure elsewhere?</strong></p>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>The Big Picture
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Looking at one performance measure in isolation may obscure important pressures elsewhere in the healthcare system.</p>
+<p>Understanding how <strong>demand</strong>, <strong>capacity</strong> and <strong>patient flow</strong> interact is fundamental to improving healthcare systems.</p>
+</div>
+</div>
+
+
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../Part_2.html" class="pagination-link" aria-label="Part 2 — How do we understand, improve and evaluate complex healthcare systems?">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Part 2 — How do we understand, improve and evaluate complex healthcare systems?</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../modules/13-Data-Quality-Assurance-Trustworthy-Data.html" class="pagination-link" aria-label="Module 13: Data Quality, Assurance &amp; Trustworthy Data">
+        <span class="nav-page-text"><span class="chapter-title">Module 13: Data Quality, Assurance &amp; Trustworthy Data</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

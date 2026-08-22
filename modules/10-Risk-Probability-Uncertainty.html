@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Module 2 — Mean vs Median – Healthcare Decision Intelligence</title>
+<title>Module 10: Risk, Probability &amp; Uncertainty – Healthcare Decision Intelligence</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -33,8 +33,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../modules/03-Correlation-vs-Causation.html" rel="next">
-<link href="../modules/01-Counts-vs-Rates.html" rel="prev">
+<link href="../modules/11-Common-Analytical-Traps-&amp;-Data-Fallacies.html" rel="next">
+<link href="../modules/09-Evaluating-Methods-in-Practice.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -99,7 +99,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../modules/02-Mean-vs-Median.html"><span class="chapter-title">Module 2 — Mean vs Median</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../modules/10-Risk-Probability-Uncertainty.html"><span class="chapter-title">Module 10: Risk, Probability &amp; Uncertainty</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -146,7 +146,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../modules/02-Mean-vs-Median.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Module 2 — Mean vs Median</span></a>
+  <a href="../modules/02-Mean-vs-Median.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Module 2 — Mean vs Median</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -186,7 +186,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../modules/10-Risk-Probability-Uncertainty.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Module 10: Risk, Probability &amp; Uncertainty</span></a>
+  <a href="../modules/10-Risk-Probability-Uncertainty.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Module 10: Risk, Probability &amp; Uncertainty</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -234,25 +234,43 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#why-averages-can-hide-operational-reality" id="toc-why-averages-can-hide-operational-reality" class="nav-link active" data-scroll-target="#why-averages-can-hide-operational-reality">Why Averages Can Hide Operational Reality</a>
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link active" data-scroll-target="#learning-objectives">Learning Objectives</a></li>
+  <li><a href="#why-this-matters" id="toc-why-this-matters" class="nav-link" data-scroll-target="#why-this-matters">Why This Matters</a></li>
+  <li><a href="#risk-is-not-certainty" id="toc-risk-is-not-certainty" class="nav-link" data-scroll-target="#risk-is-not-certainty">Risk Is Not Certainty</a></li>
+  <li><a href="#sources-of-uncertainty" id="toc-sources-of-uncertainty" class="nav-link" data-scroll-target="#sources-of-uncertainty">Sources of Uncertainty</a></li>
+  <li><a href="#confidence-intervals" id="toc-confidence-intervals" class="nav-link" data-scroll-target="#confidence-intervals">Confidence Intervals</a></li>
+  <li><a href="#error-bars" id="toc-error-bars" class="nav-link" data-scroll-target="#error-bars">Error Bars</a></li>
+  <li><a href="#interpreting-a-p-value" id="toc-interpreting-a-p-value" class="nav-link" data-scroll-target="#interpreting-a-p-value">Interpreting a P-value</a>
   <ul class="collapse">
-  <li><a href="#what-can-an-average-mean" id="toc-what-can-an-average-mean" class="nav-link" data-scroll-target="#what-can-an-average-mean">What Can an Average Mean?</a></li>
+  <li><a href="#example" id="toc-example" class="nav-link" data-scroll-target="#example">Example</a></li>
+  <li><a href="#poor-interpretation" id="toc-poor-interpretation" class="nav-link" data-scroll-target="#poor-interpretation">Poor Interpretation</a></li>
+  <li><a href="#better-interpretation" id="toc-better-interpretation" class="nav-link" data-scroll-target="#better-interpretation">Better Interpretation</a></li>
+  <li><a href="#poor-interpretation-1" id="toc-poor-interpretation-1" class="nav-link" data-scroll-target="#poor-interpretation-1">Poor Interpretation</a></li>
+  <li><a href="#better-interpretation-1" id="toc-better-interpretation-1" class="nav-link" data-scroll-target="#better-interpretation-1">Better Interpretation</a></li>
+  <li><a href="#poor-interpretation-2" id="toc-poor-interpretation-2" class="nav-link" data-scroll-target="#poor-interpretation-2">Poor Interpretation</a></li>
+  <li><a href="#better-interpretation-2" id="toc-better-interpretation-2" class="nav-link" data-scroll-target="#better-interpretation-2">Better Interpretation</a></li>
   </ul></li>
-  <li><a href="#why-this-matters-in-healthcare" id="toc-why-this-matters-in-healthcare" class="nav-link" data-scroll-target="#why-this-matters-in-healthcare">Why This Matters in Healthcare</a></li>
-  <li><a href="#mean-vs-median" id="toc-mean-vs-median" class="nav-link" data-scroll-target="#mean-vs-median">Mean vs Median</a>
+  <li><a href="#risk-of-action-vs-risk-of-inaction" id="toc-risk-of-action-vs-risk-of-inaction" class="nav-link" data-scroll-target="#risk-of-action-vs-risk-of-inaction">Risk of Action vs Risk of Inaction</a>
   <ul class="collapse">
-  <li><a href="#why-mean-and-median-diverge" id="toc-why-mean-and-median-diverge" class="nav-link" data-scroll-target="#why-mean-and-median-diverge">Why Mean and Median Diverge</a></li>
+  <li><a href="#risks-of-action" id="toc-risks-of-action" class="nav-link" data-scroll-target="#risks-of-action">Risks of Action</a></li>
+  <li><a href="#risks-of-inaction" id="toc-risks-of-inaction" class="nav-link" data-scroll-target="#risks-of-inaction">Risks of Inaction</a></li>
   </ul></li>
-  <li><a href="#example-length-of-stay-los" id="toc-example-length-of-stay-los" class="nav-link" data-scroll-target="#example-length-of-stay-los">Example — Length of Stay (LoS)</a></li>
-  <li><a href="#why-the-distribution-matters" id="toc-why-the-distribution-matters" class="nav-link" data-scroll-target="#why-the-distribution-matters">Why The Distribution Matters</a></li>
-  <li><a href="#is-it-fair-to-compare-trusts-or-icbs-using-averages" id="toc-is-it-fair-to-compare-trusts-or-icbs-using-averages" class="nav-link" data-scroll-target="#is-it-fair-to-compare-trusts-or-icbs-using-averages">Is It Fair To Compare Trusts or ICBs Using Averages?</a></li>
-  <li><a href="#benchmarking-in-practice-model-hospital" id="toc-benchmarking-in-practice-model-hospital" class="nav-link" data-scroll-target="#benchmarking-in-practice-model-hospital">Benchmarking in Practice — Model Hospital</a></li>
-  <li><a href="#operational-implications" id="toc-operational-implications" class="nav-link" data-scroll-target="#operational-implications">Operational Implications</a>
+  <li><a href="#pragmatic-decision-making-under-uncertainty" id="toc-pragmatic-decision-making-under-uncertainty" class="nav-link" data-scroll-target="#pragmatic-decision-making-under-uncertainty">Pragmatic Decision-Making Under Uncertainty</a></li>
+  <li><a href="#a-practical-decision-framework" id="toc-a-practical-decision-framework" class="nav-link" data-scroll-target="#a-practical-decision-framework">A Practical Decision Framework</a></li>
+  <li><a href="#decision-making-under-uncertainty" id="toc-decision-making-under-uncertainty" class="nav-link" data-scroll-target="#decision-making-under-uncertainty">Decision-Making Under Uncertainty</a></li>
+  <li><a href="#poor-interpretation-vs-better-interpretation" id="toc-poor-interpretation-vs-better-interpretation" class="nav-link" data-scroll-target="#poor-interpretation-vs-better-interpretation">Poor Interpretation vs Better Interpretation</a>
   <ul class="collapse">
-  <li><a href="#waiting-time-example" id="toc-waiting-time-example" class="nav-link" data-scroll-target="#waiting-time-example">Waiting Time Example</a></li>
+  <li><a href="#poor-interpretation-3" id="toc-poor-interpretation-3" class="nav-link" data-scroll-target="#poor-interpretation-3">Poor Interpretation</a></li>
+  <li><a href="#better-interpretation-3" id="toc-better-interpretation-3" class="nav-link" data-scroll-target="#better-interpretation-3">Better Interpretation</a></li>
+  <li><a href="#poor-interpretation-4" id="toc-poor-interpretation-4" class="nav-link" data-scroll-target="#poor-interpretation-4">Poor Interpretation</a></li>
+  <li><a href="#better-interpretation-4" id="toc-better-interpretation-4" class="nav-link" data-scroll-target="#better-interpretation-4">Better Interpretation</a></li>
+  <li><a href="#poor-interpretation-5" id="toc-poor-interpretation-5" class="nav-link" data-scroll-target="#poor-interpretation-5">Poor Interpretation</a></li>
+  <li><a href="#better-interpretation-5" id="toc-better-interpretation-5" class="nav-link" data-scroll-target="#better-interpretation-5">Better Interpretation</a></li>
+  <li><a href="#poor-interpretation-6" id="toc-poor-interpretation-6" class="nav-link" data-scroll-target="#poor-interpretation-6">Poor Interpretation</a></li>
+  <li><a href="#better-interpretation-6" id="toc-better-interpretation-6" class="nav-link" data-scroll-target="#better-interpretation-6">Better Interpretation</a></li>
   </ul></li>
-  <li><a href="#key-takeaways" id="toc-key-takeaways" class="nav-link" data-scroll-target="#key-takeaways">Key Takeaways</a></li>
   <li><a href="#questions-decision-makers-should-ask" id="toc-questions-decision-makers-should-ask" class="nav-link" data-scroll-target="#questions-decision-makers-should-ask">Questions Decision-Makers Should Ask</a></li>
+  <li><a href="#key-takeaways" id="toc-key-takeaways" class="nav-link" data-scroll-target="#key-takeaways">Key Takeaways</a></li>
   </ul>
 </nav>
     </div>
@@ -261,7 +279,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">Module 2 — Mean vs Median</span></h1>
+<h1 class="title"><span class="chapter-title">Module 10: Risk, Probability &amp; Uncertainty</span></h1>
 </div>
 
 
@@ -278,296 +296,460 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="why-averages-can-hide-operational-reality" class="level2">
-<h2 class="anchored" data-anchor-id="why-averages-can-hide-operational-reality">Why Averages Can Hide Operational Reality</h2>
-<section id="what-can-an-average-mean" class="level3">
-<h3 class="anchored" data-anchor-id="what-can-an-average-mean">What Can an Average Mean?</h3>
-<p>In healthcare analytics, averages are everywhere.</p>
-<p>We regularly see:</p>
+<section id="learning-objectives" class="level2">
+<h2 class="anchored" data-anchor-id="learning-objectives">Learning Objectives</h2>
+<p>By the end of this module you should be able to:</p>
 <ul>
-<li>average Length of Stay (LoS)</li>
-<li>average waiting times</li>
-<li>average cost per patient</li>
-<li>average ED attendances</li>
-<li>average theatre utilisation</li>
+<li>Understand the difference between risk, probability and certainty.</li>
+<li>Recognise common sources of uncertainty in healthcare data and analysis.</li>
+<li>Interpret risk estimates appropriately.</li>
+<li>Understand why decision-making often occurs despite uncertainty.</li>
+<li>Apply a pragmatic approach to making decisions when evidence is incomplete.</li>
 </ul>
-<p>Averages are useful because they simplify complex information into a single number that is easy to communicate and compare.</p>
-<p>But healthcare systems are rarely “average”.</p>
-<p>Behind a single average often sits:</p>
-<ul>
-<li>significant variation</li>
-<li>operational complexity</li>
-<li>long-tail demand</li>
-<li>very different patient experiences</li>
-</ul>
-<p>Averages simplify reality — but they can also obscure it.</p>
-<hr>
 </section>
+<section id="why-this-matters" class="level2">
+<h2 class="anchored" data-anchor-id="why-this-matters">Why This Matters</h2>
+<p>Healthcare leaders are rarely asked to make decisions with complete certainty.</p>
+<p>Whether considering a new service model, investing in prevention, redesigning a pathway or implementing a digital solution, there will almost always be uncertainty about future outcomes.</p>
+<p>The role of analytics is not to eliminate uncertainty.</p>
+<p>The role of analytics is to help decision-makers understand uncertainty well enough to make better decisions.</p>
+<p>Good decision-makers do not wait for certainty.</p>
+<p>They make informed choices whilst understanding the risks.</p>
 </section>
-<section id="why-this-matters-in-healthcare" class="level2">
-<h2 class="anchored" data-anchor-id="why-this-matters-in-healthcare">Why This Matters in Healthcare</h2>
-<p>Suppose two Trusts report the following:</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Trust</th>
-<th>Average Length of Stay</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Trust A</td>
-<td>5.1 days</td>
-</tr>
-<tr class="even">
-<td>Trust B</td>
-<td>7.2 days</td>
-</tr>
-</tbody>
-</table>
-<p>At first glance, Trust B may appear less efficient.</p>
-<p>But is that comparison fair?</p>
-<p>What if Trust B:</p>
-<ul>
-<li>serves an older population</li>
-<li>has higher frailty prevalence</li>
-<li>has more patients with multiple long-term conditions</li>
-<li>experiences delayed discharges due to social care pressures</li>
-<li>operates a tertiary specialist service</li>
-<li>has limited community capacity</li>
-</ul>
-<p>The average alone does not tell us this.</p>
-<p>This is one of the most important principles in healthcare analytics:</p>
-<blockquote class="blockquote">
-<p>Averages summarise data — but they do not explain it.</p>
-</blockquote>
-<hr>
-</section>
-<section id="mean-vs-median" class="level2">
-<h2 class="anchored" data-anchor-id="mean-vs-median">Mean vs Median</h2>
-<p>Two commonly used “averages” are:</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Measure</th>
-<th>What it represents</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Mean</td>
-<td>The arithmetic average across all patients</td>
-</tr>
-<tr class="even">
-<td>Median</td>
-<td>The middle patient when values are ordered</td>
-</tr>
-</tbody>
-</table>
-<p>The mean is sensitive to extreme values (outliers).</p>
-<p>The median is often more stable and better reflects the “typical” patient experience.</p>
-<section id="why-mean-and-median-diverge" class="level3">
-<h3 class="anchored" data-anchor-id="why-mean-and-median-diverge">Why Mean and Median Diverge</h3>
-<p>Imagine ten patients stay in hospital for:</p>
-<pre class="text"><code>2, 2, 2, 3, 3, 3, 4, 5, 6, 35</code></pre>
-<p>Most patients stay only a few days.</p>
-<p>But one very long-stay patient changes the average dramatically.</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Measure</th>
-<th style="text-align: right;">Result</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Mean</td>
-<td style="text-align: right;">6.5 days</td>
-</tr>
-<tr class="even">
-<td>Median</td>
-<td style="text-align: right;">3 days</td>
-</tr>
-</tbody>
-</table>
-<blockquote class="blockquote">
-<p><strong>The median helps understand the typical patient. The mean helps understand overall system burden and resource use.</strong></p>
-</blockquote>
-<p>In healthcare:</p>
-<blockquote class="blockquote">
-<p><strong>both matter — but for different reasons</strong></p>
-</blockquote>
-<hr>
-</section>
-</section>
-<section id="example-length-of-stay-los" class="level2">
-<h2 class="anchored" data-anchor-id="example-length-of-stay-los">Example — Length of Stay (LoS)</h2>
-<p>Length of Stay data is usually heavily right-skewed. The example below shows how mean and median can diverge across different patient groups.</p>
-<p>This means:</p>
-<ul>
-<li>most patients stay a relatively short time</li>
-<li>a small number stay much longer</li>
-<li>those long stays pull the mean upward</li>
-</ul>
+<section id="risk-is-not-certainty" class="level2">
+<h2 class="anchored" data-anchor-id="risk-is-not-certainty">Risk Is Not Certainty</h2>
+<p>A common misunderstanding is to interpret risk estimates as predictions.</p>
+<p>Risk describes the likelihood that something may happen.</p>
+<p>It does not tell us what will happen for a specific patient, service or population.</p>
 <p>For example:</p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
-<th>Patient Group</th>
-<th>Mean LoS</th>
-<th>Median LoS</th>
+<th>Risk Estimate</th>
+<th>Interpretation</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>All Patients</td>
-<td>6.6 days</td>
-<td>3 days</td>
+<td>80% risk of admission</td>
+<td>More likely to occur than not</td>
 </tr>
 <tr class="even">
-<td>Patients aged 65+</td>
-<td>7.9 days</td>
-<td>3 days</td>
+<td>50% risk of admission</td>
+<td>Outcome remains highly uncertain</td>
 </tr>
 <tr class="odd">
-<td>Moderate/severe frailty</td>
-<td>10.8 days</td>
-<td>4 days</td>
-</tr>
-<tr class="even">
-<td>Multiple long-term conditions</td>
-<td>12.2 days</td>
-<td>4 days</td>
+<td>20% risk of admission</td>
+<td>Less likely, but still possible</td>
 </tr>
 </tbody>
 </table>
-<p>The median patient may stay only a few days.</p>
-<p>However, a relatively small number of long-stay patients can account for a disproportionate number of occupied bed days.</p>
-<p>Operationally, this matters enormously.</p>
-<p>The figure below illustrates why mean and median may tell very different stories in healthcare operational data.</p>
-<p>Notice something important:</p>
-<blockquote class="blockquote">
-<p>median LoS changes relatively little, while mean LoS increases substantially as complexity and frailty rise.</p>
-</blockquote>
-<p>This suggests a relatively small number of patients may be driving disproportionate bed occupancy.</p>
-<p><img src="../images/MeanvsMedian_LoS.png" class="img-fluid"></p>
-<hr>
+<p>An 80% risk does not guarantee admission.</p>
+<p>A 20% risk does not guarantee safety.</p>
+<p>Risk describes probability, not destiny.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A useful question is:</p>
+<p><em>“How often would we expect this outcome to occur in a large group of similar people?”</em></p>
+<p>rather than</p>
+<p><em>“Will this individual definitely experience the outcome?”</em></p>
+</div>
+</div>
 </section>
-<section id="why-the-distribution-matters" class="level2">
-<h2 class="anchored" data-anchor-id="why-the-distribution-matters">Why The Distribution Matters</h2>
-<p>If we only report the mean:</p>
+<section id="sources-of-uncertainty" class="level2">
+<h2 class="anchored" data-anchor-id="sources-of-uncertainty">Sources of Uncertainty</h2>
+<p>Uncertainty exists in all healthcare analyses.</p>
+<p>Common sources include:</p>
 <ul>
-<li>we lose visibility of variation</li>
-<li>we may miss operational bottlenecks</li>
-<li>we may misunderstand where pressure originates</li>
+<li>Random variation.</li>
+<li>Incomplete or missing data.</li>
+<li>Small sample sizes.</li>
+<li>Changes in clinical practice.</li>
+<li>Policy changes.</li>
+<li>Workforce changes.</li>
+<li>Behavioural responses to interventions.</li>
+<li>Unexpected external events.</li>
 </ul>
-<p>Understanding the full distribution helps answer more meaningful operational questions:</p>
-<ul>
-<li>Who are our longest-stay patients?</li>
-<li>Why are stays prolonged?</li>
-<li>Which patients drive bed occupancy?</li>
-<li>Are delays clinical, social or pathway-related?</li>
-<li>Where would interventions have the greatest operational impact?</li>
-</ul>
-<p>Sometimes:</p>
-<blockquote class="blockquote">
-<p>the story is in the shape of the data, not just the average.</p>
-</blockquote>
-<hr>
+<p>The future rarely behaves exactly like the past.</p>
+<p>This means forecasts should always be viewed as estimates rather than promises.</p>
 </section>
-<section id="is-it-fair-to-compare-trusts-or-icbs-using-averages" class="level2">
-<h2 class="anchored" data-anchor-id="is-it-fair-to-compare-trusts-or-icbs-using-averages">Is It Fair To Compare Trusts or ICBs Using Averages?</h2>
-<p>Averages support benchmarking — but only with context.</p>
-<p>Simple comparison may overlook:</p>
-<ul>
-<li>population need</li>
-<li>frailty burden</li>
-<li>pathway complexity</li>
-<li>social care pressures</li>
-</ul>
-<p>This is why benchmarking should support questions and learning rather than simplistic league tables.</p>
-<p>(We explore fair comparison in more depth in Module 5.)</p>
-<hr>
+<section id="confidence-intervals" class="level2">
+<h2 class="anchored" data-anchor-id="confidence-intervals">Confidence Intervals</h2>
+<p>Analysts often report estimates together with a <strong>95% confidence interval</strong>.</p>
+<p>Rather than providing a single value, confidence intervals recognise that every estimate contains some uncertainty.</p>
+<p>For example:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Estimated Readmission Rate</th>
+<th>95% Confidence Interval</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>8.0%</td>
+<td>6.9% – 9.1%</td>
+</tr>
+</tbody>
+</table>
+<pre><code>6.9% ─────●───── 9.1%
+          8%</code></pre>
+<p>The confidence interval provides a range of plausible values for the true underlying estimate.</p>
+<p>Narrow confidence intervals indicate greater precision.</p>
+<p>Wider confidence intervals indicate greater uncertainty.</p>
+<p>For decision-makers, the important message is often not the exact estimate, but <strong>how certain we are about that estimate.</strong></p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A useful question is:</p>
+<p><em>“How much uncertainty surrounds this estimate?”</em></p>
+<p>rather than</p>
+<p><em>“What is the exact number?”</em></p>
+</div>
+</div>
 </section>
-<section id="benchmarking-in-practice-model-hospital" class="level2">
-<h2 class="anchored" data-anchor-id="benchmarking-in-practice-model-hospital">Benchmarking in Practice — Model Hospital</h2>
-<p>NHS England’s Model Hospital (Model Health System) uses many averages and benchmark metrics including:</p>
-<ul>
-<li>average LoS</li>
-<li>theatre utilisation</li>
-<li>productivity metrics</li>
-<li>operational performance indicators</li>
-</ul>
-<p>However, Model Hospital also attempts to improve fairness by using:</p>
-<ul>
-<li>peer-group comparisons</li>
-<li>specialty-level analysis</li>
-<li>segmentation</li>
-<li>contextual benchmarking</li>
-</ul>
-<p>This reflects an important reality:</p>
-<blockquote class="blockquote">
-<p>Healthcare operational benchmarking is inherently complex.</p>
-</blockquote>
-<p>No single metric tells the whole story.</p>
-<hr>
+<section id="error-bars" class="level2">
+<h2 class="anchored" data-anchor-id="error-bars">Error Bars</h2>
+<p>Many dashboards and reports include charts with small lines extending above and below a point or bar.</p>
+<p>These are known as <strong>error bars</strong>.</p>
+<p>Error bars provide a visual indication of uncertainty around an estimate.</p>
+<p>Larger error bars suggest greater uncertainty.</p>
+<p>Smaller error bars suggest greater precision.</p>
+<p>Two organisations may appear to perform differently, but if their error bars overlap substantially, the apparent difference may simply reflect normal variation rather than a meaningful difference.</p>
+<p>Error bars therefore encourage caution when comparing organisations or services.</p>
+<pre><code>Hospital A
+
+    ●
+  ─────
+
+Hospital B
+
+    ●
+──────────</code></pre>
+<p>They remind us that every estimate contains uncertainty.</p>
 </section>
-<section id="operational-implications" class="level2">
-<h2 class="anchored" data-anchor-id="operational-implications">Operational Implications</h2>
-<p>Averages remain useful.</p>
-<p>They help organisations:</p>
+<section id="interpreting-a-p-value" class="level2">
+<h2 class="anchored" data-anchor-id="interpreting-a-p-value">Interpreting a P-value</h2>
+<p>A p-value answers one question: Could this observed difference simply be due to chance?</p>
+<pre><code>                    What does a p-value tell us?
+
+            Observed difference between two groups
+                           |
+                           v
+        Could this difference simply be due to chance?
+                           |
+          +     -+     -+
+          |                                 |
+     p &lt; 0.05                         p &gt;= 0.05
+          |                                 |
+          v                                 v
+Unlikely to be                    Could reasonably be
+explained by chance               explained by chance
+          |                                 |
+          +     -+     -+
+                           v
+          Now ask:
+          - How large is the difference?
+          - How certain are we? (Confidence interval)
+          - Does the difference matter in practice?
+</code></pre>
+<p>Analysts often report a <strong>p-value</strong> when comparing two groups or evaluating an intervention.</p>
+<p>A p-value helps us judge whether an <strong>observed difference is likely to be explained by chance alone</strong>.</p>
+<p>A commonly used threshold is:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 66%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>p-value</th>
+<th>Interpretation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>p &lt; 0.05</strong></td>
+<td>The observed difference is unlikely to be explained by chance alone.</td>
+</tr>
+<tr class="even">
+<td><strong>p ≥ 0.05</strong></td>
+<td>The observed difference could reasonably be explained by chance.</td>
+</tr>
+</tbody>
+</table>
+<p>A p-value <strong>does not prove</strong> that a difference is real.</p>
+<p><strong>It simply helps us judge whether the observed difference is likely to be more than random variation.</strong></p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>What a P-value Doesn’t Tell Us
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A p-value does <strong>not</strong> tell us:</p>
 <ul>
-<li>summarise performance quickly</li>
-<li>benchmark over time</li>
-<li>identify broad variation</li>
+<li>how large the difference is</li>
+<li>whether the difference is clinically or operationally important</li>
+<li>whether we should change practice</li>
 </ul>
-<p>But averages alone should rarely drive operational decisions.</p>
-<section id="waiting-time-example" class="level3">
-<h3 class="anchored" data-anchor-id="waiting-time-example">Waiting Time Example</h3>
-<p>An average waiting time of:</p>
-<blockquote class="blockquote">
-<p>4 weeks</p>
-</blockquote>
-<p>may sound acceptable.</p>
-<p>But if:</p>
+<p>A very small difference can still have a low p-value if enough data are available.</p>
+<p>Likewise, a result that is <strong>not</strong> statistically significant may still be important, particularly when studies are small or evidence is limited.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Always Consider
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>When interpreting a p-value, also ask:</p>
 <ul>
-<li>most patients wait 1–2 weeks</li>
-<li>a smaller group waits 30+ weeks</li>
+<li>How large is the difference?</li>
+<li>How certain are we? (Look at the confidence interval.)</li>
+<li>Does the difference matter in practice?</li>
+<li>What are the costs, benefits and risks?</li>
 </ul>
-<p>the average hides an important operational problem.</p>
-<p>The average waiting time may look acceptable.</p>
-<p>But the patient experience — and operational risk — may not be.</p>
-<p>Again:</p>
 <blockquote class="blockquote">
-<p>the shape of the distribution matters.</p>
+<p><strong>Statistical significance does not necessarily imply practical importance.</strong></p>
 </blockquote>
-<hr>
+</div>
+</div>
+<section id="example" class="level3">
+<h3 class="anchored" data-anchor-id="example">Example</h3>
+<p>A new intervention reduces hospital readmissions from <strong>8.0% to 7.8%</strong>.</p>
+<p>The analysis reports:</p>
+<blockquote class="blockquote">
+<p><strong>p = 0.01</strong></p>
+</blockquote>
+<p><strong>The analysis suggests the observed 0.2% reduction is unlikely to be explained by chance alone.</strong></p>
+<p>However, it does <strong>not</strong> tell us whether a <strong>0.2% reduction</strong> is:</p>
+<ul>
+<li>clinically meaningful</li>
+<li>cost-effective</li>
+<li>sufficient to justify changing practice</li>
+</ul>
+<p>Those decisions require consideration of the <strong>size of the difference</strong>, <strong>confidence intervals</strong>, <strong>costs</strong>, <strong>risks</strong> and the wider clinical context.</p>
 </section>
+<section id="poor-interpretation" class="level3">
+<h3 class="anchored" data-anchor-id="poor-interpretation">Poor Interpretation</h3>
+<blockquote class="blockquote">
+<p>“The p-value is greater than 0.05, so the intervention failed.”</p>
+</blockquote>
+</section>
+<section id="better-interpretation" class="level3">
+<h3 class="anchored" data-anchor-id="better-interpretation">Better Interpretation</h3>
+<blockquote class="blockquote">
+<p>“The evidence is uncertain. We should also consider the size of the difference, the confidence interval, the sample size and the wider context.”</p>
+</blockquote>
+</section>
+<section id="poor-interpretation-1" class="level3">
+<h3 class="anchored" data-anchor-id="poor-interpretation-1">Poor Interpretation</h3>
+<blockquote class="blockquote">
+<p>“The difference is statistically significant, therefore it is important.”</p>
+</blockquote>
+</section>
+<section id="better-interpretation-1" class="level3">
+<h3 class="anchored" data-anchor-id="better-interpretation-1">Better Interpretation</h3>
+<blockquote class="blockquote">
+<p><strong>“The difference is unlikely to be due to chance, but is it large enough to justify changing practice or investing further resources?”</strong></p>
+</blockquote>
+</section>
+<section id="poor-interpretation-2" class="level3">
+<h3 class="anchored" data-anchor-id="poor-interpretation-2">Poor Interpretation</h3>
+<blockquote class="blockquote">
+<p>“The confidence intervals overlap, so there is definitely no difference.”</p>
+</blockquote>
+</section>
+<section id="better-interpretation-2" class="level3">
+<h3 class="anchored" data-anchor-id="better-interpretation-2">Better Interpretation</h3>
+<blockquote class="blockquote">
+<p>“Confidence intervals help us understand uncertainty, but they should be interpreted alongside the size of the difference, study design and the wider body of evidence.”</p>
+</blockquote>
+</section>
+</section>
+<section id="risk-of-action-vs-risk-of-inaction" class="level2">
+<h2 class="anchored" data-anchor-id="risk-of-action-vs-risk-of-inaction">Risk of Action vs Risk of Inaction</h2>
+<p>When considering change, organisations often focus heavily on the risks of doing something.</p>
+<p>However, every decision involves two sets of risks.</p>
+<section id="risks-of-action" class="level3">
+<h3 class="anchored" data-anchor-id="risks-of-action">Risks of Action</h3>
+<ul>
+<li>Financial cost.</li>
+<li>Opportunity cost.</li>
+<li>Implementation challenges.</li>
+<li>Unintended consequences.</li>
+</ul>
+</section>
+<section id="risks-of-inaction" class="level3">
+<h3 class="anchored" data-anchor-id="risks-of-inaction">Risks of Inaction</h3>
+<ul>
+<li>Continuing poor outcomes.</li>
+<li>Increasing demand pressures.</li>
+<li>Worsening inequalities.</li>
+<li>Missed opportunities for improvement.</li>
+</ul>
+<p>Sometimes the greatest risk is doing nothing.</p>
+</section>
+</section>
+<section id="pragmatic-decision-making-under-uncertainty" class="level2">
+<h2 class="anchored" data-anchor-id="pragmatic-decision-making-under-uncertainty">Pragmatic Decision-Making Under Uncertainty</h2>
+<p>Not every decision requires the same level of evidence.</p>
+<p>The level of evidence should be proportionate to the scale of risk.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Decision Type</th>
+<th>Typical Evidence Requirement</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Minor operational change</td>
+<td>Local data and professional judgement</td>
+</tr>
+<tr class="even">
+<td>Small pilot</td>
+<td>Local evaluation and benchmarking</td>
+</tr>
+<tr class="odd">
+<td>Significant investment</td>
+<td>Formal evaluation and business case</td>
+</tr>
+<tr class="even">
+<td>System-wide transformation</td>
+<td>Strong evidence and ongoing evaluation</td>
+</tr>
+</tbody>
+</table>
+<p>Waiting for perfect evidence can sometimes delay beneficial change unnecessarily.</p>
+</section>
+<section id="a-practical-decision-framework" class="level2">
+<h2 class="anchored" data-anchor-id="a-practical-decision-framework">A Practical Decision Framework</h2>
+<p>When faced with uncertainty, consider the following questions:</p>
+<ol type="1">
+<li>What do we know?</li>
+<li>What do we not know?</li>
+<li>What assumptions are being made?</li>
+<li>What are the potential benefits?</li>
+<li>What are the potential harms?</li>
+<li>What happens if we delay?</li>
+<li>Can we test the idea before scaling?</li>
+</ol>
+<p>In many situations the answer is not “implement” or “do not implement”.</p>
+<p>The answer is often:</p>
+<blockquote class="blockquote">
+<p>“Pilot, evaluate, learn and adapt.”</p>
+</blockquote>
+</section>
+<section id="decision-making-under-uncertainty" class="level2">
+<h2 class="anchored" data-anchor-id="decision-making-under-uncertainty">Decision-Making Under Uncertainty</h2>
+<p><img src="../images/MakingDecisionsUnderUncertainty.png" class="img-fluid"></p>
+</section>
+<section id="poor-interpretation-vs-better-interpretation" class="level2">
+<h2 class="anchored" data-anchor-id="poor-interpretation-vs-better-interpretation">Poor Interpretation vs Better Interpretation</h2>
+<section id="poor-interpretation-3" class="level3">
+<h3 class="anchored" data-anchor-id="poor-interpretation-3">Poor Interpretation</h3>
+<blockquote class="blockquote">
+<p>“We don’t know for certain that this will work, so we should wait.”</p>
+</blockquote>
+</section>
+<section id="better-interpretation-3" class="level3">
+<h3 class="anchored" data-anchor-id="better-interpretation-3">Better Interpretation</h3>
+<blockquote class="blockquote">
+<p>“We have uncertainty, but do we have enough evidence to justify testing the intervention safely?”</p>
+</blockquote>
+</section>
+<section id="poor-interpretation-4" class="level3">
+<h3 class="anchored" data-anchor-id="poor-interpretation-4">Poor Interpretation</h3>
+<blockquote class="blockquote">
+<p>“The forecast says demand will increase by 15%.”</p>
+</blockquote>
+</section>
+<section id="better-interpretation-4" class="level3">
+<h3 class="anchored" data-anchor-id="better-interpretation-4">Better Interpretation</h3>
+<blockquote class="blockquote">
+<p>“The forecast suggests demand may increase by around 15%, but there is uncertainty around that estimate.”</p>
+</blockquote>
+</section>
+<section id="poor-interpretation-5" class="level3">
+<h3 class="anchored" data-anchor-id="poor-interpretation-5">Poor Interpretation</h3>
+<blockquote class="blockquote">
+<p>“The intervention might fail, so we shouldn’t proceed.”</p>
+</blockquote>
+</section>
+<section id="better-interpretation-5" class="level3">
+<h3 class="anchored" data-anchor-id="better-interpretation-5">Better Interpretation</h3>
+<blockquote class="blockquote">
+<p>“What are the risks of proceeding, and what are the risks of doing nothing?”</p>
+</blockquote>
+</section>
+<section id="poor-interpretation-6" class="level3">
+<h3 class="anchored" data-anchor-id="poor-interpretation-6">Poor Interpretation</h3>
+<blockquote class="blockquote">
+<p>“We need more data.”</p>
+</blockquote>
+</section>
+<section id="better-interpretation-6" class="level3">
+<h3 class="anchored" data-anchor-id="better-interpretation-6">Better Interpretation</h3>
+<blockquote class="blockquote">
+<p>“Would additional data materially change our decision?”</p>
+</blockquote>
+</section>
+</section>
+<section id="questions-decision-makers-should-ask" class="level2">
+<h2 class="anchored" data-anchor-id="questions-decision-makers-should-ask">Questions Decision-Makers Should Ask</h2>
+<ul>
+<li>What level of uncertainty exists in this analysis?</li>
+<li>How much uncertainty surrounds this estimate?</li>
+<li>Are the confidence intervals sufficiently narrow to support decision-making?</li>
+<li>Is the result statistically significant, and more importantly, is it practically meaningful?</li>
+<li>What assumptions underpin these findings?</li>
+<li>What information is missing or unknown?</li>
+<li>How sensitive are the conclusions to those assumptions?</li>
+<li>What are the risks of acting?</li>
+<li>What are the risks of not acting?</li>
+<li>Is there a lower-risk way to test this first?</li>
+<li>What evidence would increase our confidence?</li>
+<li>Are we delaying action because of genuine uncertainty or because we are seeking certainty that may never exist?</li>
+<li>Can we pilot, evaluate and adapt rather than committing to a full-scale implementation?</li>
+</ul>
 </section>
 <section id="key-takeaways" class="level2">
 <h2 class="anchored" data-anchor-id="key-takeaways">Key Takeaways</h2>
 <ul>
-<li>The mean and median measure different aspects of a population</li>
-<li>Healthcare data is often skewed rather than normally distributed</li>
-<li>A small number of patients can drive disproportionate operational pressure</li>
-<li>The median often reflects the “typical” patient experience, while the mean better reflects system burden</li>
-<li>The distribution may matter more than the average itself</li>
-<li>Fair comparison requires context, not just metrics</li>
-<li>Benchmarking should start conversations, not end them</li>
-</ul>
-<hr>
-</section>
-<section id="questions-decision-makers-should-ask" class="level2">
-<h2 class="anchored" data-anchor-id="questions-decision-makers-should-ask">Questions Decision-Makers Should Ask</h2>
-<p>When reviewing averages:</p>
-<ul>
-<li>What does this average actually represent?</li>
-<li>How variable is the underlying data?</li>
-<li>Are there important outliers?</li>
-<li>Are populations comparable?</li>
-<li>What operational factors sit behind the numbers?</li>
-<li>Does the distribution reveal something the average hides?</li>
-<li>What action is realistically possible?</li>
+<li>Risk is not certainty.</li>
+<li>Probability describes the likelihood of an event, not whether it will definitely occur.</li>
+<li>All analyses contain some degree of uncertainty.</li>
+<li>Confidence intervals communicate uncertainty around an estimate.</li>
+<li>Statistical significance does not necessarily imply practical importance.</li>
+<li>Forecasts and predictions should be interpreted as estimates rather than promises.</li>
+<li>Decisions should consider both the risks of action and the risks of inaction.</li>
+<li>Different decisions require different levels of evidence.</li>
+<li>Waiting for perfect information is itself a decision and may carry risks.</li>
+<li>Effective organisations acknowledge uncertainty, learn quickly and make proportionate decisions using the best evidence available at the time.</li>
 </ul>
 
 
@@ -976,13 +1158,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../modules/01-Counts-vs-Rates.html" class="pagination-link" aria-label="Module 1 - Counts vs Rates">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Module 1 - Counts vs Rates</span></span>
+      <a href="../modules/09-Evaluating-Methods-in-Practice.html" class="pagination-link" aria-label="Module 9 — Evaluation Methods in Practice">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Module 9 — Evaluation Methods in Practice</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../modules/03-Correlation-vs-Causation.html" class="pagination-link" aria-label="Module 3 — Correlation vs Causation">
-        <span class="nav-page-text"><span class="chapter-title">Module 3 — Correlation vs Causation</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../modules/11-Common-Analytical-Traps-&amp;-Data-Fallacies.html" class="pagination-link" aria-label="Module 11: Common Analytical Traps &amp; Data Fallacies">
+        <span class="nav-page-text"><span class="chapter-title">Module 11: Common Analytical Traps &amp; Data Fallacies</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
