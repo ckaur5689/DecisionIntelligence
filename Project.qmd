@@ -100,34 +100,36 @@ Modules:
     - Are these populations really comparable?
 6.  How to Read a Dashboard
     - What story is the dashboard actually telling me?
-7.  Evaluating Interventions & Schemes (Thinking About Evidence)
+7.  Theory of Change & Logic Models
+    - Connecting Interventions to Outcomes
+8.  Evaluating Interventions & Schemes (Thinking About Evidence)
     - How should I think about whether something worked?
-8.  Evaluating Interventions in Practice (Methods)
+9.  Evaluating Interventions in Practice (Methods)
     - How do I evaluate it properly?
-9.  Risk, Probability & Uncertainty
+10.  Risk, Probability & Uncertainty
     - How certain can I be about this evidence?
-10. Common Analytical Traps & Data Fallacies
+11. Common Analytical Traps & Data Fallacies
     - What mistakes could lead me to the wrong conclusion?
 
 # Part 2 — How do we understand, improve and evaluate complex healthcare systems?
 
-11. Demand, Capacity & Operational Flow ⭐
+12. Demand, Capacity & Operational Flow ⭐
     - Why are patients waiting, and where is the bottleneck?
-12. Data Quality, Assurance & Trustworthy Data
+13. Data Quality, Assurance & Trustworthy Data
     - Can we trust the data before making decisions?
-13. Designing Better Healthcare Pathways ⭐
+14. Designing Better Healthcare Pathways ⭐
     - How do we redesign, implement and evaluate better pathways?
-14. Health Economics & Value in Healthcare Decision-Making ⭐
+15. Health Economics & Value in Healthcare Decision-Making ⭐
     - Is the improvement worth the investment?
-15. Evaluating Change in Complex Healthcare Systems ⭐
+16. Evaluating Change in Complex Healthcare Systems ⭐
     - Understanding how multiple interventions, organisations and contextual factors contribute to healthcare improvement. 
-16. Population Health Management & Population Segmentation
+17. Population Health Management & Population Segmentation
     - Who should we intervene with, and why?
-17. Simulation & Scenario Modelling
+18. Simulation & Scenario Modelling
     - What is likely to happen before we make changes?
-18. Integrating Quantitative & Qualitative Evidence for Decision-Making
+19. Integrating Quantitative & Qualitative Evidence for Decision-Making
     - How do we combine different types of evidence into one coherent picture?
-19. Evidence-Informed Decision-Making in Healthcare ⭐
+20. Evidence-Informed Decision-Making in Healthcare ⭐
     - How do healthcare leaders make robust, transparent decisions under uncertainty?
 
 # Part 3 – Advanced Analytics, AI & the Future of Healthcare Decision-Making (to be confirmed)
