@@ -1,4 +1,4 @@
-# Module 13: Designing Better Healthcare Pathways
+# Module 14: Designing Better Healthcare Pathways
 
 ## Learning Objectives
 
@@ -14,7 +14,7 @@ By the end of this module you should be able to:
 - Appreciate why evaluation should be planned before implementation.
 - Ask better questions when reviewing proposals for service redesign.
 
-<!-- Learning Journey & Module Connections figure to be added after Modules 13–19 are finalised -->
+<!-- Learning Journey & Module Connections figure to be added after Modules 13–20 are finalised -->
 
 Builds on:
 - Module X
@@ -53,9 +53,9 @@ A **healthcare pathway** is the coordinated sequence of care that a patient expe
 
 Healthcare pathways often span multiple organisations, professional groups and information systems, making collaboration essential for delivering high-quality, patient-centred care.
 
-![](../images/Figure13_1_Healthcare_Pathways_Cross_Organisational_Boundaries.jpg)
+![](../images/Figure14_1_Healthcare_Pathways_Cross_Organisational_Boundaries.jpg)
 
-*Figure 13.1: Patients experience a single healthcare journey that spans multiple organisations and services. Every interaction creates data that can be used to understand and improve the pathway.*
+*Figure 14.1: Patients experience a single healthcare journey that spans multiple organisations and services. Every interaction creates data that can be used to understand and improve the pathway.*
 :::
 
 Rather than focusing on the performance of individual organisations, pathway thinking focuses on how well the whole system works together to achieve the best possible outcomes for patients.
@@ -88,7 +88,7 @@ For example, discharging patients more quickly may improve hospital performance,
 Organisations often optimise their own performance measures, such as reducing waiting times, increasing throughput or achieving performance targets. While these improvements are valuable, they do not necessarily improve the performance of the pathway as a whole. In some cases, improvements in one part of the system may unintentionally create delays, increase demand or shift pressures elsewhere.
 
 ::: {.callout-example collapse="false"}
-## Example 13.1: Improving Hospital Discharge
+## Example 14.1: Improving Hospital Discharge
 
 An acute hospital may successfully reduce the average length of stay by discharging patients sooner. However, if community rehabilitation services, social care or voluntary sector support are not available when needed, patients may experience delays in recovery, require readmission or place additional pressure on other parts of the health and care system.
 
@@ -184,7 +184,7 @@ A current-state pathway map should show:
 This should be developed collaboratively with the people who deliver and experience the pathway. Analysts can describe patterns within the data, but clinicians, operational teams, patients and carers often reveal informal workarounds, communication failures and practical barriers that are not visible within routine records.
 
 ::: {.callout-example collapse="false"}
-## Example 13.2: The Designed Pathway versus the Real Pathway
+## Example 14.2: The Designed Pathway versus the Real Pathway
 
 A service specification may state that patients referred with suspected heart failure should receive diagnostic testing within two weeks before being reviewed by a specialist.
 
@@ -212,9 +212,9 @@ When linked appropriately, these routine operational data can reveal:
 
 Healthcare organisations already collect much of the information needed to understand pathways. The challenge is often not collecting more data, but connecting existing data to build a complete picture of the patient journey.
 
-![](../images/Figure13_2_Healthcare_Pathway_Digital_Footprint.jpg)
+![](../images/Figure14_2_Healthcare_Pathway_Digital_Footprint.jpg)
 
-*Figure 13.2: Every interaction along a healthcare pathway generates data. When linked together, these routine operational data create a digital footprint that can be used to understand how patients move through the health and care system.*
+*Figure 14.2: Every interaction along a healthcare pathway generates data. When linked together, these routine operational data create a digital footprint that can be used to understand how patients move through the health and care system.*
 
 ::: {.callout-important collapse="false"}
 ## The Digital Footprint Is Not the Whole Pathway
@@ -267,7 +267,7 @@ A pathway should therefore be examined from multiple perspectives, including:
 Considering these together provides a much richer understanding than any single performance measure.
 
 ::: {.callout-example collapse="false"}
-## Example 13.3: Looking Beyond Activity
+## Example 14.3: Looking Beyond Activity
 
 Two hospitals admit a similar number of patients with chronic kidney disease each month.
 
@@ -313,9 +313,9 @@ The purpose of pathway analytics is not to remove all variation, but to understa
 
 :::
 
-![](../images/Figure13_3_Healthcare-Pathway-Variation.jpg)
+![](../images/Figure14_3_Healthcare-Pathway-Variation.jpg)
 
-*Figure 13.3: Variation occurs throughout every stage of a healthcare pathway. Pathway analytics identifies where meaningful differences exist and helps investigate their underlying causes.*
+*Figure 14.3: Variation occurs throughout every stage of a healthcare pathway. Pathway analytics identifies where meaningful differences exist and helps investigate their underlying causes.*
 
 Variation may occur at many different stages of a pathway, including differences in:
 
@@ -411,7 +411,7 @@ Possible explanations include:
 Only after exploring these explanations should conclusions be drawn.
 
 ::: {.callout-example collapse="false"}
-## Example 13.4: Longer Is Not Always Worse
+## Example 14.4: Longer Is Not Always Worse
 
 Hospital A has a median waiting time of six weeks for a specialist clinic.
 
@@ -436,8 +436,8 @@ Understanding pathway variation therefore draws together many of the concepts in
 
 - **Module 4:** Understanding Variation
 - **Module 5:** Standardisation and Fair Comparisons
-- **Module 9:** Reading Dashboards Critically
-- **Module 10:** Evaluating Healthcare Improvement
+- **Module 10:** Reading Dashboards Critically
+- **Module 11:** Evaluating Healthcare Improvement
 
 Together, these provide the analytical foundation for distinguishing genuine opportunities for improvement from normal operational variation.
 
@@ -496,9 +496,9 @@ For example, increasing emergency admissions may initially appear to be the prob
 
 Without understanding these underlying causes, organisations risk implementing solutions that address the visible problem while leaving the real issue unchanged.
 
-![](../images/Figure13_4_Symptoms_Not_Root_Causes.jpg)
+![](../images/Figure14_4_Symptoms_Not_Root_Causes.jpg)
 
-*Figure 13.4: Visible performance issues are often symptoms of deeper system problems. Effective improvement begins by understanding the underlying causes.*
+*Figure 14.4: Visible performance issues are often symptoms of deeper system problems. Effective improvement begins by understanding the underlying causes.*
 
 ### Looking Across the Whole System
 
@@ -520,11 +520,11 @@ Similarly, high emergency admissions may reflect earlier challenges in preventio
 
 Understanding these interactions helps avoid local optimisation that simply moves problems elsewhere within the system.
 
-Figure 13.5 illustrates how effective pathway improvement moves beyond treating visible symptoms. Rather than reacting to problems where they appear, organisations investigate upstream causes, understand the wider system, identify the greatest opportunities for improvement, design interventions that address the underlying issues and finally evaluate whether those changes have achieved their intended impact.
+Figure 14.5 illustrates how effective pathway improvement moves beyond treating visible symptoms. Rather than reacting to problems where they appear, organisations investigate upstream causes, understand the wider system, identify the greatest opportunities for improvement, design interventions that address the underlying issues and finally evaluate whether those changes have achieved their intended impact.
 
 ![](../images/Figure13_5_Looking_Upstream_Pathway.png)
 
-*Figure 13.5: Effective pathway improvement follows a structured process: investigate the problem, understand the wider system, identify high-leverage opportunities, design interventions that address underlying causes and evaluate whether meaningful improvement has been achieved. Problems observed later in the pathway often originate much earlier.*
+*Figure 14.5: Effective pathway improvement follows a structured process: investigate the problem, understand the wider system, identify high-leverage opportunities, design interventions that address underlying causes and evaluate whether meaningful improvement has been achieved. Problems observed later in the pathway often originate much earlier.*
 
 Although shown as a sequence, improvement is rarely a linear process. Findings from implementation and evaluation frequently lead organisations to revisit their understanding of the pathway, refine their assumptions and redesign interventions in an ongoing cycle of learning and improvement.
 
@@ -633,7 +633,7 @@ All encourage organisations to move beyond surface-level observations and develo
 Rather than asking *"What happened?"*, they encourage teams to ask *"Why did it happen?"* and *"What within the system allowed it to happen?"*
 
 ::: {.callout-example collapse="false"}
-## Example 13.5: Reducing Readmissions
+## Example 14.5: Reducing Readmissions
 
 An organisation identifies increasing 30-day readmissions for patients with heart failure.
 
@@ -694,7 +694,7 @@ These unintended consequences do not necessarily mean that an intervention is un
 Effective pathway redesign therefore anticipates how different parts of the healthcare system may respond and plans accordingly.
 
 ::: {.callout-example collapse="false"}
-## Example 13.6: Reducing Length of Stay
+## Example 14.6: Reducing Length of Stay
 
 A hospital successfully reduces average length of stay by introducing earlier discharge planning.
 
@@ -816,13 +816,13 @@ Patients experience one continuous journey through the healthcare system, even w
 
 Although every healthcare pathway is unique, successful redesign tends to share several common principles.
 
-Figure 13.6 provides an overview of these principles. It places the patient journey at the centre of pathway design and distinguishes between the principles that should guide every stage of care and the wider system enablers that allow high-quality pathways to function effectively.
+Figure 14.6 provides an overview of these principles. It places the patient journey at the centre of pathway design and distinguishes between the principles that should guide every stage of care and the wider system enablers that allow high-quality pathways to function effectively.
 
 Good pathway design is not achieved by improving one stage of care in isolation. Instead, patient-centred care, prevention, equity, evidence and coordination should influence the entire journey, while reduced variation, efficient flow, data, digital technologies and AI, sustainable use of resources and continuous learning enable the pathway to perform consistently over time.
 
-![](../images/Figure13_6_Good_Pathway_Design.png)
+![](../images/Figure14_6_Good_Pathway_Design.png)
 
-*Figure 13.6: Good pathway design places the complete patient journey at the centre. Shared principles guide every stage of care, while system-wide enablers support efficient, equitable, sustainable and continuously improving pathways.*
+*Figure 14.6: Good pathway design places the complete patient journey at the centre. Shared principles guide every stage of care, while system-wide enablers support efficient, equitable, sustainable and continuously improving pathways.*
 
 Taken together, these principles mean that well-designed pathways should:
 
@@ -868,7 +868,7 @@ Understanding these experiences often reveals opportunities for improvement that
 When pathways are designed around patient needs rather than organisational convenience, they frequently become both more effective and more efficient.
 
 ::: {.callout-example collapse="false"}
-## Example 13.7: Seeing the Pathway Through the Patient's Eyes
+## Example 14.7: Seeing the Pathway Through the Patient's Eyes
 
 A patient with chronic kidney disease may initially visit their GP before undergoing diagnostic blood tests, attending specialist outpatient clinics, experiencing an emergency admission following acute deterioration and later receiving ongoing support from community services.
 
@@ -1236,9 +1236,9 @@ Different organisations contribute different expertise throughout the improvemen
 
 Rather than working sequentially, these groups should work collaboratively throughout implementation, continually learning from one another and adapting as new evidence emerges.
 
-![](../images/Figure13_7_Mature_Collaborative_Approach.jpg)
+![](../images/Figure14_7_Mature_Collaborative_Approach.jpg)
 
-*Figure 13.7: A mature, collaborative approach to improving healthcare pathways. Strategy, commissioning, providers, analytics and patients each contribute different expertise throughout the pathway improvement cycle.*
+*Figure 14.7: A mature, collaborative approach to improving healthcare pathways. Strategy, commissioning, providers, analytics and patients each contribute different expertise throughout the pathway improvement cycle.*
 
 ::: {.callout-important collapse="false"}
 ## Key Principle
@@ -1280,9 +1280,9 @@ Throughout this process, organisations frequently move backwards and forwards be
 
 Continuous learning allows implementation teams to refine both the pathway and the implementation approach while remaining focused on improving outcomes for patients.
 
-![](../images/Figure13_8_Turning_Pathway_Design_into_Reality.png)
+![](../images/Figure14_8_Turning_Pathway_Design_into_Reality.png)
 
-*Figure 13.8: Turning pathway design into reality. Successful implementation is an iterative process of building shared ownership, preparing for change, managing risk, testing improvements, learning from experience and embedding successful changes into routine practice. Evaluation informs the next cycle of pathway redesign.*
+*Figure 14.8: Turning pathway design into reality. Successful implementation is an iterative process of building shared ownership, preparing for change, managing risk, testing improvements, learning from experience and embedding successful changes into routine practice. Evaluation informs the next cycle of pathway redesign.*
 
 ### Managing Risk During Implementation
 
@@ -1376,7 +1376,7 @@ Instead, organisations should remain committed to improving patient outcomes whi
 Learning during implementation should be viewed as a sign of organisational maturity rather than evidence that the original design was flawed.
 
 ::: {.callout-example collapse="false"}
-## Example 13.8: Learning During Implementation
+## Example 14.8: Learning During Implementation
 
 A redesigned frailty pathway initially aimed to provide rapid community assessment following discharge from hospital.
 
@@ -1657,9 +1657,9 @@ Those lessons should inform future pathway redesign, implementation and evaluati
 
 Healthcare systems that continuously evaluate, learn and improve become increasingly capable of delivering better outcomes for their populations over time.
 
-![](../images/Figure13_9_Continuous_Learning_Cycle.png)
+![](../images/Figure14_9_Continuous_Learning_Cycle.png)
 
-*Figure 13.9: Evaluation is not the end of pathway improvement. Learning from implementation and evaluation informs the next cycle of pathway redesign, creating a continuous improvement cycle.*
+*Figure 14.9: Evaluation is not the end of pathway improvement. Learning from implementation and evaluation informs the next cycle of pathway redesign, creating a continuous improvement cycle.*
 
 ::: {.callout-tip collapse="false"}
 ## Decision-Maker Questions
@@ -1688,9 +1688,9 @@ We then considered how organisations can move beyond understanding pathways to r
 
 Taken together, these stages form a continuous pathway improvement cycle rather than a series of isolated activities.
 
-![](../images/Figure13_10_Pathway_Improvement_Cycle.png)
+![](../images/Figure14_10_Pathway_Improvement_Cycle.png)
 
-*Figure 13.10: The pathway improvement cycle. Understanding, redesigning, implementing, evaluating and learning are part of one continuous process that supports better patient outcomes and better decision-making.*
+*Figure 14.10: The pathway improvement cycle. Understanding, redesigning, implementing, evaluating and learning are part of one continuous process that supports better patient outcomes and better decision-making.*
 
 ::: {.callout-important collapse="false"}
 ## The Ten Key Messages
