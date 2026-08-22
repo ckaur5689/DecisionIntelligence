@@ -53,7 +53,7 @@ A **healthcare pathway** is the coordinated sequence of care that a patient expe
 
 Healthcare pathways often span multiple organisations, professional groups and information systems, making collaboration essential for delivering high-quality, patient-centred care.
 
-![](../images/Figure14_1_Healthcare_Pathways_Cross_Organisational_Boundaries.jpg)
+![](../images/Figure14_1_Healthcare_Pathways_Cross_Organisational_Boundaries.png)
 
 *Figure 14.1: Patients experience a single healthcare journey that spans multiple organisations and services. Every interaction creates data that can be used to understand and improve the pathway.*
 :::
@@ -212,7 +212,7 @@ When linked appropriately, these routine operational data can reveal:
 
 Healthcare organisations already collect much of the information needed to understand pathways. The challenge is often not collecting more data, but connecting existing data to build a complete picture of the patient journey.
 
-![](../images/Figure14_2_Healthcare_Pathway_Digital_Footprint.jpg)
+![](../images/Figure14_2_Healthcare_Pathway_Digital_Footprint.png)
 
 *Figure 14.2: Every interaction along a healthcare pathway generates data. When linked together, these routine operational data create a digital footprint that can be used to understand how patients move through the health and care system.*
 
@@ -313,7 +313,7 @@ The purpose of pathway analytics is not to remove all variation, but to understa
 
 :::
 
-![](../images/Figure14_3_Healthcare-Pathway-Variation.jpg)
+![](../images/Figure14_3_Healthcare-Pathway-Variation.png)
 
 *Figure 14.3: Variation occurs throughout every stage of a healthcare pathway. Pathway analytics identifies where meaningful differences exist and helps investigate their underlying causes.*
 
@@ -496,7 +496,7 @@ For example, increasing emergency admissions may initially appear to be the prob
 
 Without understanding these underlying causes, organisations risk implementing solutions that address the visible problem while leaving the real issue unchanged.
 
-![](../images/Figure14_4_Symptoms_Not_Root_Causes.jpg)
+![](../images/Figure14_4_Symptoms_Not_Root_Causes.png)
 
 *Figure 14.4: Visible performance issues are often symptoms of deeper system problems. Effective improvement begins by understanding the underlying causes.*
 
@@ -1236,7 +1236,7 @@ Different organisations contribute different expertise throughout the improvemen
 
 Rather than working sequentially, these groups should work collaboratively throughout implementation, continually learning from one another and adapting as new evidence emerges.
 
-![](../images/Figure14_7_Mature_Collaborative_Approach.jpg)
+![](../images/Figure14_7_Mature_Collaborative_Approach.png)
 
 *Figure 14.7: A mature, collaborative approach to improving healthcare pathways. Strategy, commissioning, providers, analytics and patients each contribute different expertise throughout the pathway improvement cycle.*
 
