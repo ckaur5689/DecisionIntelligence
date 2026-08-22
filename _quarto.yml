@@ -14,15 +14,16 @@ book:
     - modules/04-Variation-&-Distributions.qmd
     - modules/05-Standardisation-&-Fair-Comparison.qmd
     - modules/06-How-to-Read-a-Dashboard.qmd
-    - modules/07-Thinking-About-Evidence-&-Evaluation.qmd
-    - modules/08-Evaluating-Methods-in-Practice.qmd
-    - modules/09-Risk-Probability-Uncertainty.qmd
-    - modules/10-Common-Analytical-Traps-&-Data-Fallacies.qmd
+    - modules/07-Theory-Of-Change-&-Logic-Models.qmd
+    - modules/08-Thinking-About-Evidence-&-Evaluation.qmd
+    - modules/09-Evaluating-Methods-in-Practice.qmd
+    - modules/10-Risk-Probability-Uncertainty.qmd
+    - modules/11-Common-Analytical-Traps-&-Data-Fallacies.qmd
     - Part_2.qmd
-    - modules/11-Demand_Capacity_Operational_Flow.qmd
-    - modules/12-Data-Quality-Assurance-Trustworthy-Data.qmd
-    - modules/13-Designing-Better-Healthcare-Pathways.qmd
-    - modules/14-Health-Economics-&-Value-in-Healthcare-Decision-Making.qmd
+    - modules/12-Demand_Capacity_Operational_Flow.qmd
+    - modules/13-Data-Quality-Assurance-Trustworthy-Data.qmd
+    - modules/14-Designing-Better-Healthcare-Pathways.qmd
+    - modules/15-Health-Economics-&-Value-in-Healthcare-Decision-Making.qmd
     - Project.qmd
 
 format:
