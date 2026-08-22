@@ -93,10 +93,10 @@ modules:
       - Which measures are outcomes and which are process measures?
       - What action should follow from what the dashboard shows?
 
-  - id: module7
+  - id: module8
     title: Thinking About Evidence and Evaluation
     pathway: Evaluation
-    module_url: "https://ckaur5689.github.io/DecisionIntelligence/modules/07-Thinking-About-Evidence-&-Evaluation.html"
+    module_url: "https://ckaur5689.github.io/DecisionIntelligence/modules/08-Thinking-About-Evidence-&-Evaluation.html"
     keywords: [evidence, evaluation, evaluate, intervention, scheme, pilot, pathway, service change, transformation, initiative, programme, impact, outcome, improvement, effectiveness, has it worked, did it work, made a difference, success, benefits, theory of change, logic model, counterfactual, attribution, unintended consequence, evaluation planning]
     questions:
       - What decision will the evaluation inform?
@@ -110,10 +110,10 @@ modules:
       - Could there be unintended consequences elsewhere in the system?
       - When and how should success be assessed?
 
-  - id: module8
+  - id: module9
     title: Evaluating Methods in Practice
     pathway: Evaluation
-    module_url: "https://ckaur5689.github.io/DecisionIntelligence/modules/08-Evaluating-Methods-in-Practice.html"
+    module_url: "https://ckaur5689.github.io/DecisionIntelligence/modules/09-Evaluating-Methods-in-Practice.html"
     keywords: [evaluate, evaluation, evaluation method, has it worked, did it work, made a difference, intervention, pathway, pilot, scheme, service change, impact, effectiveness, attribution, comparator, comparison, comparison group, control group, counterfactual, before after, before and after, pre post, difference in differences, did, interrupted time series, its, randomised controlled trial, rct, matching, regression to mean, parallel trends]
     questions:
       - Which evaluation design is feasible and proportionate?
@@ -129,10 +129,10 @@ modules:
       - How will uncertainty around the estimated impact be communicated?
       - Could qualitative evidence help explain why the intervention worked or did not work?
 
-  - id: module9
+  - id: module10
     title: Risk, Probability and Uncertainty
     pathway: Foundations
-    module_url: "https://ckaur5689.github.io/DecisionIntelligence/modules/09-Risk-Probability-Uncertainty.html"
+    module_url: "https://ckaur5689.github.io/DecisionIntelligence/modules/10-Risk-Probability-Uncertainty.html"
     keywords: [risk, risks, probability, chance, likelihood, uncertainty, uncertain, confidence, prediction, forecast, estimate, estimated, range, confidence interval, sensitivity, scenario, assumptions, absolute risk, relative risk, false positive, false negative, prediction accuracy, how certain, how confident, likely outcome]
     questions:
       - What exactly does the probability or risk estimate represent?
@@ -146,10 +146,10 @@ modules:
       - How should uncertainty influence the decision?
       - What decision can still be made despite uncertainty?
 
-  - id: module10
+  - id: module11
     title: Common Analytical Traps and Data Fallacies
     pathway: Foundations
-    module_url: "https://ckaur5689.github.io/DecisionIntelligence/modules/10-Common-Analytical-Traps-&-Data-Fallacies.html"
+    module_url: "https://ckaur5689.github.io/DecisionIntelligence/modules/11-Common-Analytical-Traps-&-Data-Fallacies.html"
     keywords: [fallacy, fallacies, bias, biased, trap, analytical trap, misleading, misleading conclusion, wrong conclusion, false conclusion, cherry picking, selective evidence, regression to mean, data quality, missing data, selection bias, confirmation bias, survivorship bias, ecological fallacy, denominator problem, small numbers, confounding, spurious relationship, p hacking, assumption, assumptions, unreliable analysis]
     questions:
       - Could the conclusion be misleading?
@@ -164,10 +164,10 @@ modules:
       - What alternative explanation has not been considered?
       - Would the conclusion still hold with a different measure or comparison period?
 
-  - id: module11
+  - id: module12
     title: Demand, Capacity and Operational Flow
     pathway: Systems
-    module_url: "https://ckaur5689.github.io/DecisionIntelligence/modules/11-Demand_Capacity_Operational_Flow.html"
+    module_url: "https://ckaur5689.github.io/DecisionIntelligence/modules/12-Demand_Capacity_Operational_Flow.html"
     keywords: [demand, capacity, flow, operational flow, patient flow, queue, queues, waiting, waiting time, waiting times, waiting list, waiting lists, backlog, bottleneck, constraint, utilisation, throughput, arrivals, departures, referrals, appointments, outpatient, outpatients, elective, electives, diagnostics, theatre, theatres, admissions, discharge, length of stay, bed occupancy, rtt, referral to treatment, clock starts, clock stops, more appointments, growing waiting list]
     questions:
       - Is the primary issue demand, capacity, flow or a combination of all three?
@@ -185,10 +185,10 @@ modules:
       - Are activity, throughput, waiting time and outcomes being considered together?
       - Which constraint should be addressed first?
 
-  - id: module12
+  - id: module13
     title: Data Quality, Assurance and Trustworthy Data
     pathway: Systems
-    module_url: "https://ckaur5689.github.io/DecisionIntelligence/modules/12-Data-Quality-Assurance-Trustworthy-Data.html"
+    module_url: "https://ckaur5689.github.io/DecisionIntelligence/modules/13-Data-Quality-Assurance-Trustworthy-Data.html"
     keywords: [healthcare data, data quality, data assurance, data maturity, master data, master data management, data governance, data structure, patient record, patient journey, spell, spells, episode, episodes, ward stay, ward stays, attribution, specialty attribution, pathway data, raw data, information, evidence, decision, validation, coding, data definitions, data lineage, data source, data flow, poor quality data]
     questions:
       - Where has this data come from?
