@@ -1,4 +1,4 @@
-# Module 14: Health Economics & Value in Healthcare Decision-Making
+# Module 15: Health Economics & Value in Healthcare Decision-Making
 
 ## 1. Why Health Economics Matters
 
@@ -22,9 +22,9 @@ Rather than focusing solely on costs, health economics considers the relationshi
 
 Its purpose is to help healthcare organisations make better decisions by comparing alternative ways of improving health, reducing inequalities and making the best use of limited resources.
 
-![](../images/Figure14_1_From_Evidence_to_Investment_Decisions.png)
+![](../images/Figure15_1_From_Evidence_to_Investment_Decisions.png)
 
-*Figure 14.1: Evidence that an intervention works is only the beginning. Decision-makers must also consider costs, benefits, value and whether limited resources could achieve greater impact elsewhere.*
+*Figure 15.1: Evidence that an intervention works is only the beginning. Decision-makers must also consider costs, benefits, value and whether limited resources could achieve greater impact elsewhere.*
 
 ::: {.callout-important collapse="false"}
 ## Key Principle
@@ -70,9 +70,9 @@ Good health economics therefore seeks to maximise health gain, patient experienc
 
 This module builds directly on concepts introduced earlier in this series.
 
-Modules 7 and 8 explored how interventions can be evaluated using robust evidence.
+Modules 8 and 9 explored how interventions can be evaluated using robust evidence.
 
-Module 13 demonstrated how healthcare pathways can be redesigned, implemented and evaluated.
+Module 14 demonstrated how healthcare pathways can be redesigned, implemented and evaluated.
 
 Health economics adds another perspective by asking:
 
