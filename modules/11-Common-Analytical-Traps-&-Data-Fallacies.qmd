@@ -1,4 +1,4 @@
-# Module 10: Common Analytical Traps & Data Fallacies
+# Module 11: Common Analytical Traps & Data Fallacies
 
 ## Learning Objectives
 
