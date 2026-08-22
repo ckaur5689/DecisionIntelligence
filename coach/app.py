@@ -230,7 +230,7 @@ with col2:
         key="capacity_card",
         use_container_width=True,
         on_click=select_challenge,
-        args=("athways, Demand & Flow",)
+        args=("Pathways, Demand & Flow",)
     )
 
 with col3:
