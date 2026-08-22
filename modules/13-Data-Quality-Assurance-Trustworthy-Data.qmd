@@ -1,4 +1,4 @@
-# Module 12: Data Quality, Assurance & Trustworthy Data
+# Module 13: Data Quality, Assurance & Trustworthy Data
 
 ## Learning Objectives
 
