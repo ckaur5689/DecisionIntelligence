@@ -22,13 +22,13 @@ Once the problem is clearly defined, different solutions may become possible.
 
 A useful starting point is therefore to ask:
 
-- What problem are we trying to solve?
-- Who experiences the problem?
-- How large is it?
-- What evidence tells us it exists?
-- What are its underlying causes?
-- What happens if we do nothing?
-- What outcome are we ultimately trying to improve?
+        - What problem are we trying to solve?
+        - Who experiences the problem?
+        - How large is it?
+        - What evidence tells us it exists?
+        - What are its underlying causes?
+        - What happens if we do nothing?
+        - What outcome are we ultimately trying to improve?
 
 This prevents teams from designing an evaluation around a solution without first understanding whether it addresses the underlying problem.
 
@@ -91,11 +91,11 @@ It also encourages teams to examine the evidence and assumptions supporting each
 
 At every stage, ask:
 
-What evidence supports this relationship?
-What assumptions are we making?
-What would need to be true for this to happen?
-What could prevent it from happening?
-Are there alternative explanations or approaches?
+        - What evidence supports this relationship?
+        - What assumptions are we making?
+        - What would need to be true for this to happen?
+        - What could prevent it from happening?
+        - Are there alternative explanations or approaches?
 
 This is the foundation of Theory of Change thinking.
 
