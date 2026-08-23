@@ -83,7 +83,9 @@ Rather than beginning with:
 
 Design backwards. Test forwards.
 
-Figure 7.1: Top-down thinking starts with the desired outcome and works backwards to identify what needs to change and what needs to happen. The proposed intervention can then be tested forwards to assess whether the chain of reasoning is plausible.
+**Top-down thinking** starts with the desired outcome and works backwards to identify what needs to change and what needs to happen. The proposed intervention can then be tested forwards to assess whether the chain of reasoning is plausible.
+
+![](../images/TopDownThinking.png)
 
 This process can help prevent organisations from beginning with a preferred solution and then trying to construct a rationale around it afterwards.
 
