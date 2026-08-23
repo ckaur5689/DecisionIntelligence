@@ -386,11 +386,11 @@ A **Theory of Change** asks:
 
 It encourages us to explore the reasoning behind the intervention:
 
-- Why should these activities lead to the expected outcomes?
-- What needs to happen along the way?
-- What assumptions are we making?
-- What contextual factors might help or hinder change?
-- What evidence supports the links in our reasoning?
+        - Why should these activities lead to the expected outcomes?
+        - What needs to happen along the way?
+        - What assumptions are we making?
+        - What contextual factors might help or hinder change?
+        - What evidence supports the links in our reasoning?
 
 A **Logic Model** asks:
 
@@ -412,12 +412,12 @@ For example, a Theory of Change might help a team explore **why** providing spec
 
 The discussion might identify that:
 
-- patients need to be identified earlier
-- deterioration needs to be recognised sooner
-- primary care teams need access to specialist advice
-- appropriate treatment changes need to occur
-- patients need to engage with monitoring and treatment
-- sufficient primary and community care capacity needs to exist.
+        - patients need to be identified earlier
+        - deterioration needs to be recognised sooner
+        - primary care teams need access to specialist advice
+        - appropriate treatment changes need to occur
+        - patients need to engage with monitoring and treatment
+        - sufficient primary and community care capacity needs to exist.
 
 A Logic Model could then organise that thinking into the resources required, activities to be undertaken, outputs expected and short-, intermediate- and longer-term outcomes to be monitored.
 
@@ -457,13 +457,13 @@ The purpose is to make the reasoning behind an intervention:
 
 That means being able to explain:
 
-- the problem we are trying to solve
-- the outcomes we are trying to achieve
-- why we believe the proposed intervention will create those outcomes
-- what needs to happen along the way
-- what assumptions we are making
-- what external factors could influence success
-- what evidence we will need to determine whether the expected changes occurred.
+        - the problem we are trying to solve
+        - the outcomes we are trying to achieve
+        - why we believe the proposed intervention will create those outcomes
+        - what needs to happen along the way
+        - what assumptions we are making
+        - what external factors could influence success
+        - what evidence we will need to determine whether the expected changes occurred.
 
 ::: {.callout-important collapse="false"}
 ## The Important Point
