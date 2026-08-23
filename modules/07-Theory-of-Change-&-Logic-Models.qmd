@@ -49,37 +49,37 @@ A useful way to approach service improvement is to start with the outcome we ult
 
 Rather than beginning with:
 
-"What intervention should we introduce?"
+        "What intervention should we introduce?"
+        
+        begin with:
+        
+        "What outcome are we trying to achieve?"
+        
+        Then ask:
+        
+        "What would need to change for that outcome to happen?"
+        
+        and then:
+        
+        "What would need to happen to create those changes?"
+        
+        Only then should we ask:
+        
+        "What intervention or activities could reasonably make that happen?"
+        
+        This can be thought of as designing backwards from the desired outcome.
+        
+        Once the proposed intervention has been identified, the reasoning can then be tested in the opposite direction.
+        
+        Ask:
+        
+        "If we undertake these activities, will they realistically create the changes we expect?"
+        
+        and:
+        
+        "If those changes occur, is it plausible that they will contribute to the outcome we ultimately want?"
 
-begin with:
-
-"What outcome are we trying to achieve?"
-
-Then ask:
-
-"What would need to change for that outcome to happen?"
-
-and then:
-
-"What would need to happen to create those changes?"
-
-Only then should we ask:
-
-"What intervention or activities could reasonably make that happen?"
-
-This can be thought of as designing backwards from the desired outcome.
-
-Once the proposed intervention has been identified, the reasoning can then be tested in the opposite direction.
-
-Ask:
-
-"If we undertake these activities, will they realistically create the changes we expect?"
-
-and:
-
-"If those changes occur, is it plausible that they will contribute to the outcome we ultimately want?"
-
-This creates a useful discipline:
+##This creates a useful discipline:##
 
 Design backwards. Test forwards.
 
@@ -207,23 +207,24 @@ What resources are required?
 
 Examples might include:
 
-specialist renal clinicians
-primary care staff time
-data and analytical support
-digital infrastructure
-programme funding
-training and education.
+      - specialist renal clinicians
+      - primary care staff time
+      - data and analytical support
+      - digital infrastructure
+      - programme funding
+      - training and education.
+        
 Activities
 
 What will we actually do?
 
 For example:
 
-   - identify patients at higher risk
-   - undertake proactive reviews
-   - optimise medication and care plans
-   - provide specialist advice to primary care
-   - support patient self-management.
+    - identify patients at higher risk
+    - undertake proactive reviews
+    - optimise medication and care plans
+    - provide specialist advice to primary care
+    - support patient self-management.
  
 Outputs
 
@@ -331,15 +332,7 @@ Neither needs to become a complicated academic exercise.
 
 The purpose is to make the reasoning behind an intervention:
 
-visible
-
-discussable
-
-challengeable
-
-and
-
-testable.
+**visible, discussable, challengeable and testable.**
 
 ::: {.callout-important collapse="false"}
 
@@ -354,33 +347,33 @@ If it becomes so complicated that only the person who created it understands it,
 
 Theory of Change and Logic Models are particularly valuable when developed collaboratively.
 
-Different partners see different parts of the system.
+##Different partners see different parts of the system.##
 
-A commissioner may understand the intended strategic outcomes.
-
-A provider may understand how the intervention will operate in practice.
-
-Clinicians may understand how patient care needs to change.
-
-Patients and carers may identify barriers or outcomes that professionals have overlooked.
-
-Analysts may identify what can realistically be measured.
-
-Evaluation specialists may challenge assumptions about attribution and causality.
-
-Health economists may identify important resource consequences, costs and opportunity costs.
-
-Bringing these perspectives together can reveal disagreements that might otherwise remain hidden until implementation.
+        A commissioner may understand the intended strategic outcomes.
+        
+        A provider may understand how the intervention will operate in practice.
+        
+        Clinicians may understand how patient care needs to change.
+        
+        Patients and carers may identify barriers or outcomes that professionals have overlooked.
+        
+        Analysts may identify what can realistically be measured.
+        
+        Evaluation specialists may challenge assumptions about attribution and causality.
+        
+        Health economists may identify important resource consequences, costs and opportunity costs.
+        
+        Bringing these perspectives together can reveal disagreements that might otherwise remain hidden until implementation.
 
 For example, commissioners may believe that introducing additional community capacity will reduce hospital admissions.
 
-Providers may believe the main benefit will instead be shorter hospital stays.
-
-Patients may value continuity of care more highly than either measure.
-
-These are not simply differences in measurement.
-
-They may reveal fundamentally different assumptions about what the intervention is intended to achieve.
+        Providers may believe the main benefit will instead be shorter hospital stays.
+        
+        Patients may value continuity of care more highly than either measure.
+        
+        These are not simply differences in measurement.
+        
+        They may reveal fundamentally different assumptions about what the intervention is intended to achieve.
 
 Developing the Theory of Change together creates an opportunity to surface and resolve these differences before implementation.
 
