@@ -860,6 +860,26 @@
     ]
   },
   {
+    "objectID": "modules/07-Theory-Of-Change-&-Logic-Models.html",
+    "href": "modules/07-Theory-Of-Change-&-Logic-Models.html",
+    "title": "Module 7 — Theory of Change and Logic Modules",
+    "section": "",
+    "text": "1. Start With the Problem, Not the Solution\nOne of the most common risks in improvement work is beginning with an intervention before clearly defining the problem.\nFor example:\nis a proposed solution.\nIt does not explain the problem the organisation is trying to solve.\nThe underlying problem might instead be:\nThat distinction matters.\nOnce the problem is clearly defined, different solutions may become possible.\nA useful starting point is therefore to ask:\nThis prevents teams from designing an evaluation around a solution without first understanding whether it addresses the underlying problem.",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Module 7 — Theory of Change and Logic Modules</span>"
+    ]
+  },
+  {
+    "objectID": "modules/07-Theory-Of-Change-&-Logic-Models.html#example-linking-the-logic-model-to-evaluation-questions",
+    "href": "modules/07-Theory-Of-Change-&-Logic-Models.html#example-linking-the-logic-model-to-evaluation-questions",
+    "title": "Module 7 — Theory of Change and Logic Modules",
+    "section": "Example: Linking the Logic Model to Evaluation Questions",
+    "text": "Example: Linking the Logic Model to Evaluation Questions\nA Theory of Change or Logic Model can help identify the questions that should be answered at each stage of an intervention.\n\n\n\n\n\n\n\nStage\nExample Question\n\n\n\n\nActivity\nDid proactive reviews actually take place?\n\n\nOutput\nHow many eligible patients received a review?\n\n\nShort-term outcome\nDid monitoring or treatment improve?\n\n\nIntermediate outcome\nDid deterioration reduce?\n\n\nLonger-term outcome\nDid emergency admissions fall?\n\n\nEquity\nDid outcomes improve across different population groups?\n\n\nExperience\nHow did patients and staff experience the change?\n\n\n\nThe important point is that evaluation should not focus only on the final outcome. It should also examine whether the intervention was delivered as intended, whether the expected intermediate changes occurred, and whether benefits were experienced equitably.",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Module 7 — Theory of Change and Logic Modules</span>"
+    ]
+  },
+  {
     "objectID": "modules/08-Thinking-About-Evidence-&-Evaluation.html",
     "href": "modules/08-Thinking-About-Evidence-&-Evaluation.html",
     "title": "Module 8 — Thinking About Evidence & Evaluation",
