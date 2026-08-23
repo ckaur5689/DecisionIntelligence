@@ -79,7 +79,7 @@ Rather than beginning with:
         
         "If those changes occur, is it plausible that they will contribute to the outcome we ultimately want?"
 
-##This creates a useful discipline:##
+This creates a useful discipline:
 
 Design backwards. Test forwards.
 
@@ -140,12 +140,12 @@ That statement contains a chain of assumptions.
 
 For it to work:
 
-    - appropriate patients must be identified
-    - primary care teams must have capacity to respond
-    - specialist capacity must be available
-    - recommended interventions must be implemented
-    - patients must engage with monitoring and treatment
-    - earlier management must genuinely reduce deterioration.
+         - appropriate patients must be identified
+         - primary care teams must have capacity to respond
+         - specialist capacity must be available
+         - recommended interventions must be implemented
+         - patients must engage with monitoring and treatment
+         - earlier management must genuinely reduce deterioration.
 
 Making these assumptions visible allows them to be questioned and tested.
 
@@ -155,19 +155,46 @@ The finished diagram can be useful, but the real value often lies in the thinkin
 
 A Theory of Change should encourage partners to explore:
 
-    - what success actually means
-    - how change is expected to happen
-    - what assumptions underpin the proposed approach
-    - what evidence supports those assumptions
-    - what contextual factors may influence success
-    - what information will be needed to determine whether change occurred.
+         - what success actually means
+         - how change is expected to happen
+         - what assumptions underpin the proposed approach
+         - what evidence supports those assumptions
+         - what contextual factors may influence success
+         - what information will be needed to determine whether change occurred.
 
 A simple template can help structure that conversation.
 
-Figure 7.2: A Theory of Change template can help partners work backwards from the desired impact, articulate the expected pathway of change, identify assumptions and external influences, and agree what evidence would demonstrate progress.
+There is no single correct format for a Theory of Change. The level of detail required will depend on the intervention, the decision being made and the people involved.
 
-The template is not intended to be completed by one person in isolation.
+The following templates illustrate two possible approaches: a more detailed facilitated template for developing the Theory of Change collaboratively, and a simpler one-page structure for summarising and communicating it.
 
+### A Detailed Theory of Change Template
+
+This version provides a more structured approach for working through the **problem, intended impact, outcomes, intervention, assumptions, external influences and evidence** with partners.
+
+![](../images/ToCTemplate1.png)
+
+### A Simplified Theory of Change Template
+
+This version provides a simpler one-page structure for summarising the pathway from **resources and activities through to outcomes and impact**, while making assumptions, external influences and evidence explicit.
+
+![](../images/ToCTemplate2.png)
+
+Both approaches can help partners work backwards from the desired impact, articulate the expected pathway of change, identify assumptions and external influences, and agree what evidence would demonstrate progress.
+
+Importantly, these templates are not intended to be completed by one person in isolation.
+
+Their greatest value comes from **bringing different perspectives into the same conversation**.
+
+::: {.callout-tip collapse="false"}
+## The Template Is a Tool, Not the Goal
+
+There is no need to follow a particular Theory of Change template simply because it is widely used.
+
+Choose or adapt a format that helps the people involved answer the important questions:
+
+**What are we trying to achieve? Why do we believe this intervention will achieve it? What needs to happen along the way? What assumptions are we making? And what evidence will tell us whether our reasoning was right?**
+:::
 Its greatest value comes from bringing different perspectives into the same conversation.
 
 # 4. What Is a Logic Model?
@@ -209,12 +236,12 @@ What resources are required?
 
 Examples might include:
 
-      - specialist renal clinicians
-      - primary care staff time
-      - data and analytical support
-      - digital infrastructure
-      - programme funding
-      - training and education.
+       - specialist renal clinicians
+       - primary care staff time
+       - data and analytical support
+       - digital infrastructure
+       - programme funding
+       - training and education.
         
 Activities
 
@@ -222,11 +249,11 @@ What will we actually do?
 
 For example:
 
-    - identify patients at higher risk
-    - undertake proactive reviews
-    - optimise medication and care plans
-    - provide specialist advice to primary care
-    - support patient self-management.
+     - identify patients at higher risk
+     - undertake proactive reviews
+     - optimise medication and care plans
+     - provide specialist advice to primary care
+     - support patient self-management.
  
 Outputs
 
@@ -275,7 +302,29 @@ For example:
     - more sustainable use of healthcare resources
     - better outcomes for patients and populations.
 
-Figure 7.3: A worked Logic Model showing how the problem, resources, activities, outputs, outcomes and longer-term impact can be connected, while recognising the assumptions and contextual factors that influence whether the expected pathway occurs.
+A worked Logic Model showing how the problem, resources, activities, outputs, outcomes and longer-term impact can be connected, while recognising the assumptions and contextual factors that influence whether the expected pathway occurs.
+
+### Choosing a Logic Model
+
+As with Theory of Change, there is no single correct format for a Logic Model. The appropriate level of detail will depend on the intervention and how the model will be used.
+
+The following templates illustrate two possible approaches: a simple Logic Model for describing the core pathway from resources and activities to outcomes, and an expanded version that also makes assumptions, contextual influences and evidence requirements explicit.
+
+#### A Simple Logic Model
+
+This version provides a straightforward way of showing how the resources invested and activities undertaken are expected to lead to outputs, outcomes and longer-term impact.
+
+![](../images/LogicModelTemplate1.png)
+
+#### An Expanded Logic Model
+
+For more complex interventions, the basic Logic Model can be extended to consider the assumptions being made, external or contextual influences, and the evidence that will be used to assess whether each stage occurred as expected.
+
+![](../images/LogicModelTemplate2.png)
+
+Both approaches serve the same fundamental purpose: to make the relationship between **what we invest, what we do, what we deliver and what we hope to change** visible.
+
+The appropriate model is the one that helps the people involved understand the intervention and make better decisions—not necessarily the one with the most detail.
 
 # 5. From Activity to Outcomes
 
@@ -301,48 +350,129 @@ Conversely, poor implementation may mean that an effective intervention never ha
 
 A Logic Model therefore helps distinguish between two different questions:
 
-Did we deliver what we intended?
-
-and:
-
-Did delivering it lead to the outcomes we expected?
+        Did we deliver what we intended?
+        
+        and:
+        
+        Did delivering it lead to the outcomes we expected?
 
 Both questions matter.
 
-# 6. Theory of Change and Logic Models: What Is the Difference?
+## 6. Theory of Change and Logic Models: What Is the Difference?
 
-The terms are sometimes used interchangeably, and different organisations may apply them differently.
+The terms **Theory of Change** and **Logic Model** are sometimes used interchangeably, and different organisations may define or apply them slightly differently.
 
-For practical purposes, it can be useful to think of them as complementary.
+For practical purposes, it is useful to think of them as **complementary rather than competing approaches**.
 
-Theory of Change	Logic Model
-Explains how and why change is expected to happen	Provides a structured representation of the intervention
-Explores assumptions and causal reasoning	Links inputs, activities, outputs and outcomes
-Considers mechanisms and context	Often provides a concise visual summary
-Helps explain why particular activities should create change	Helps show what should happen at each stage
-Often broader and more explanatory	Often more structured and operational
+They both help make explicit the relationship between an intervention and the outcomes it is intended to achieve, but they tend to place emphasis on different aspects of that relationship.
 
-A Theory of Change therefore asks:
+::: {.callout-note collapse="false"}
+## Theory of Change vs Logic Model
 
-Why and under what circumstances should this intervention create change?
+| **Theory of Change** | **Logic Model** |
+|---|---|
+| Explains **how and why** change is expected to happen | Provides a **structured representation** of how an intervention is expected to work |
+| Explores **assumptions and causal reasoning** | Links **inputs, activities, outputs, outcomes and impact** |
+| Considers **mechanisms, context and external influences** | Shows the main stages through which the intervention is expected to operate |
+| Helps explain **why particular activities should lead to change** | Helps show **what should happen at each stage** |
+| Often broader and more explanatory | Often more structured and operational |
+:::
 
-A Logic Model asks:
+### A Simple Way to Think About the Difference
 
-What needs to happen between the resources we invest, the activities we undertake and the outcomes we hope to achieve?
+A **Theory of Change** asks:
 
-Neither needs to become a complicated academic exercise.
+> **Why and under what circumstances should this intervention create change?**
+
+It encourages us to explore the reasoning behind the intervention:
+
+- Why should these activities lead to the expected outcomes?
+- What needs to happen along the way?
+- What assumptions are we making?
+- What contextual factors might help or hinder change?
+- What evidence supports the links in our reasoning?
+
+A **Logic Model** asks:
+
+> **How do the resources we invest and the activities we undertake connect to the outputs, outcomes and impact we hope to achieve?**
+
+It provides a more structured way of representing the intervention:
+
+**Problem → Inputs → Activities → Outputs → Outcomes → Impact**
+
+### They Can Be Used Together
+
+In practice, there is no need to choose one approach and exclude the other.
+
+A **Theory of Change** can help partners explore, discuss and challenge the reasoning behind an intervention.
+
+A **Logic Model** can then provide a concise structure for showing how the different components of the intervention connect.
+
+For example, a Theory of Change might help a team explore **why** providing specialist renal support in primary care could reduce avoidable hospital admissions.
+
+The discussion might identify that:
+
+- patients need to be identified earlier
+- deterioration needs to be recognised sooner
+- primary care teams need access to specialist advice
+- appropriate treatment changes need to occur
+- patients need to engage with monitoring and treatment
+- sufficient primary and community care capacity needs to exist.
+
+A Logic Model could then organise that thinking into the resources required, activities to be undertaken, outputs expected and short-, intermediate- and longer-term outcomes to be monitored.
+
+::: {.callout-tip collapse="false"}
+## Think of Them as Different Views of the Same Intervention
+
+        **Theory of Change**
+        
+        **Why should this work?**
+        
+        ↓
+        
+        Explores the **reasoning, assumptions, mechanisms and context**
+        
+        **Logic Model**
+        
+        **What should happen?**
+        
+        ↓
+        
+        Structures the **inputs, activities, outputs, outcomes and impact**
+
+Used together, they can provide a stronger foundation for designing, implementing and evaluating an intervention.
+:::
+
+### Do Not Get Too Concerned About the Terminology
+
+Neither approach needs to become a complicated academic exercise.
+
+Different organisations, evaluation frameworks and practitioners may use slightly different terminology or structures.
+
+The purpose is not to produce the "correct" diagram.
 
 The purpose is to make the reasoning behind an intervention:
 
-**visible, discussable, challengeable and testable.**
+**Visible → Discussable → Challengeable → Testable**
+
+That means being able to explain:
+
+- the problem we are trying to solve
+- the outcomes we are trying to achieve
+- why we believe the proposed intervention will create those outcomes
+- what needs to happen along the way
+- what assumptions we are making
+- what external factors could influence success
+- what evidence we will need to determine whether the expected changes occurred.
 
 ::: {.callout-important collapse="false"}
+## The Important Point
 
-Keep It Useful
+Do not become too concerned about whether something should technically be called a **Theory of Change** or a **Logic Model**.
 
-A Theory of Change or Logic Model should help people think.
+What matters is whether the process helps everyone involved develop a **shared understanding of the problem, the intended change, how and why that change is expected to happen, the assumptions being made and the evidence needed to assess whether it did**.
 
-If it becomes so complicated that only the person who created it understands it, it has probably stopped serving its purpose.
+If the framework improves that conversation, it is doing its job.
 :::
 
 # 7. Build It Together
