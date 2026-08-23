@@ -22,7 +22,7 @@ Rather than focusing solely on costs, health economics considers the relationshi
 
 Its purpose is to help healthcare organisations make better decisions by comparing alternative ways of improving health, reducing inequalities and making the best use of limited resources.
 
-![](../images/Figure15_1_From_Evidence_to_Investment_Decisions.png)
+![](../images/FromEvidenceToInvestmentDecisions.png)
 
 *Figure 15.1: Evidence that an intervention works is only the beginning. Decision-makers must also consider costs, benefits, value and whether limited resources could achieve greater impact elsewhere.*
 
