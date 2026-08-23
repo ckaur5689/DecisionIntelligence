@@ -508,7 +508,7 @@ Ask:
 This keeps measurement focused on information that is useful for decision-making rather than generating additional reporting for its own sake.
 :::
 
-11. Do Not Wait Until the End
+# 11. Do Not Wait Until the End
 
 A common mistake is to develop the evaluation after an intervention has already started.
 
@@ -533,13 +533,13 @@ Evaluating Interventions in Practice: Methods introduces practical approaches fo
 
 Later in the series, Evaluating Change in Complex Healthcare Systems explores what happens when several interventions, organisations and contextual factors interact and simple attribution becomes much more difficult.
 
-12. Useful Resources
+# 12. Useful Resources
 
 This module provides an introduction rather than a comprehensive guide to Theory of Change or Logic Models.
 
 The following resources provide more detailed guidance, examples and practical tools.
 
-# NHS Evaluation Toolkit
+## NHS Evaluation Toolkit
 
 The NHS Evaluation Toolkit provides practical guidance for planning evaluation in health and care.
 
@@ -549,7 +549,7 @@ It also signposts resources relating to Theory of Change and Logic Models.
 
 https://nhsevaluationtoolkit.net/
 
-# Health Innovation West of England — Theory of Change
+## Health Innovation West of England — Theory of Change
 
 Health Innovation West of England provides evidence and evaluation resources designed to support healthcare improvement, including practical guidance relating to Theory of Change.
 
@@ -557,7 +557,7 @@ This is particularly relevant for people working in health and care who want to 
 
 https://www.healthinnowest.net/our-work/west-of-england-academy/evidence-and-evaluation/theory-of-change/
 
-# NIHR ARC West — Theory of Change
+## NIHR ARC West — Theory of Change
 
 NIHR Applied Research Collaboration West provides learning resources on Theory of Change for people involved in health and care research, innovation, implementation and evaluation.
 
@@ -565,7 +565,7 @@ The resources explore Theory of Change, how it can be developed and how it can s
 
 https://arc-w.nihr.ac.uk/training-and-capacity-building/arc-west-courses/theory-of-change/
 
-# The Strategy Unit — Using Logic Models in Evaluation
+## The Strategy Unit — Using Logic Models in Evaluation
 
 The Strategy Unit has produced NHS-focused guidance and practical resources on using Logic Models in evaluation.
 
@@ -573,7 +573,7 @@ These resources are useful for understanding how Logic Models can support stakeh
 
 https://www.strategyunitwm.nhs.uk/publications/tools-templates-using-logic-models-evaluation
 
-# GOV.UK — Creating a Logic Model for an Intervention
+## GOV.UK — Creating a Logic Model for an Intervention
 
 The Office for Health Improvement and Disparities provides detailed guidance on creating Logic Models for health and wellbeing interventions.
 
@@ -588,7 +588,7 @@ The guidance considers:
 
 https://www.gov.uk/guidance/evaluation-in-health-and-wellbeing-creating-a-logic-model
 
-# Top-Down Thinking
+## Top-Down Thinking
 
 Top-down thinking provides a useful complementary way of approaching Theory of Change.
 
@@ -600,7 +600,7 @@ https://prezi.com/sqysrut0_r7s/top-down-thinking-explained/
 
 ::: {.callout-note collapse="false"}
 
-# A Starting Point, Not a Prescription
+## A Starting Point, Not a Prescription
 
 There is no single correct format for a Theory of Change or Logic Model.
 
@@ -623,17 +623,17 @@ to:
 
 Remember:
 
-start with the problem, not the preferred solution
-start with the outcome and work backwards
-then test the logic forwards
-distinguish activities and outputs from outcomes
-make assumptions explicit
-consider context and external influences
-involve different partners and perspectives
-identify measurement requirements before implementation
-use the model to inform evaluation rather than creating it retrospectively
-revisit it as the intervention and evidence evolve
-keep it simple enough to remain useful.
+                start with the problem, not the preferred solution
+                start with the outcome and work backwards
+                then test the logic forwards
+                distinguish activities and outputs from outcomes
+                make assumptions explicit
+                consider context and external influences
+                involve different partners and perspectives
+                identify measurement requirements before implementation
+                use the model to inform evaluation rather than creating it retrospectively
+                revisit it as the intervention and evidence evolve
+                keep it simple enough to remain useful.
 
 ::: {.callout-important collapse="false"}
 
