@@ -128,9 +128,9 @@ Modules:
 18. Simulation & Scenario Modelling
     - What is likely to happen before we make changes?
 19. Bringing Evidence Together for Decision-Making ⭐
-   - How do we combine quantitative evidence, qualitative insight, evaluation, professional expertise and lived experience into a coherent picture?
+    - How do we combine quantitative evidence, qualitative insight, evaluation, professional expertise and lived experience into a coherent picture?
 20. Making Better Healthcare Decisions ⭐
-  - How do we turn evidence into robust, transparent decisions when there are trade-offs, competing priorities and uncertainty?
+    - How do we turn evidence into robust, transparent decisions when there are trade-offs, competing priorities and uncertainty?
 
 # Part 3 – Advanced Analytics, AI & the Future of Healthcare Decision-Making (to be confirmed)
 
