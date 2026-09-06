@@ -29,6 +29,7 @@ book:
 format:
   html:
     theme: cosmo
+    css: styles.css
     toc: true
     number-sections: false
     html-math-method: mathjax
