@@ -1,0 +1,148 @@
+/* =========================================================
+   HEALTHCARE DECISION INTELLIGENCE
+   Additional styling for the Quarto book
+   ========================================================= */
+
+
+/* =========================================================
+   PRINT BUTTON
+   ========================================================= */
+
+/* Appearance of the Print this module button on screen */
+
+.print-button {
+  display: inline-block;
+  border: 1px solid #005eb8;
+  background-color: #ffffff;
+  color: #005eb8;
+  padding: 8px 14px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.print-button:hover {
+  background-color: #005eb8;
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   PRINT STYLES
+   Only applied when printing or saving as PDF
+   ========================================================= */
+
+@media print {
+
+  /* -------------------------------------------------------
+     Hide website navigation and controls
+     ------------------------------------------------------- */
+
+  .print-button,
+  #quarto-sidebar,
+  #quarto-margin-sidebar,
+  .quarto-secondary-nav,
+  .navbar,
+  .page-navigation,
+  .nav-footer,
+  footer {
+    display: none !important;
+  }
+
+
+  /* -------------------------------------------------------
+     Use the full printable page
+     ------------------------------------------------------- */
+
+  body {
+    font-size: 11pt;
+    line-height: 1.4;
+    background: #ffffff !important;
+  }
+
+  main,
+  main.content,
+  #quarto-document-content {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+
+  /* -------------------------------------------------------
+     Headings
+     Avoid headings becoming separated from their content
+     ------------------------------------------------------- */
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+
+  /* -------------------------------------------------------
+     Images and figures
+     Keep diagrams within the printable page
+     ------------------------------------------------------- */
+
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  figure {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+
+  /* -------------------------------------------------------
+     Tables
+     ------------------------------------------------------- */
+
+  table {
+    max-width: 100% !important;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+
+  /* -------------------------------------------------------
+     Quarto callout boxes
+     Try to keep callouts together on one page
+     ------------------------------------------------------- */
+
+  .callout {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+
+  /* -------------------------------------------------------
+     Links
+     Don't print raw URLs after hyperlinks
+     ------------------------------------------------------- */
+
+  a[href]::after {
+    content: none !important;
+  }
+
+
+  /* -------------------------------------------------------
+     Prevent awkward page breaks
+     ------------------------------------------------------- */
+
+  p,
+  li {
+    orphans: 3;
+    widows: 3;
+  }
+
+}
