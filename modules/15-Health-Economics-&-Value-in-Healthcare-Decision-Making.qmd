@@ -142,9 +142,6 @@ It is to help decision-makers become more informed consumers of economic evidenc
 
 ## 2. Cost Is Not the Same as Value
 
-
-## 2. Cost Is Not the Same as Value
-
 A common mistake is to equate value with spending less.
 
 But these are different concepts.
@@ -197,7 +194,6 @@ or
 
 The important question is what we achieve with the resources available.
 :::
-
 
 ## 3. Opportunity Cost: What Else Could We Do?
 
@@ -254,7 +250,6 @@ Could it:
 
 The existence of benefit does not, by itself, demonstrate that an intervention represents the **best use of scarce resources**.
 :::
-
 
 ## 4. Follow the Costs and Benefits Across the System
 
@@ -355,7 +350,6 @@ For integrated care systems, the important question is:
 **What happens to resources, outcomes and inequalities across the whole pathway?**
 :::
 
-
 ## 5. Financial Savings Are Not the Same as Economic Benefits
 
 Another important distinction is between:
@@ -421,7 +415,6 @@ These concepts should not be treated as interchangeable.
 :::
 
 This distinction is particularly important when developing business cases or reporting benefits realisation.
-
 
 ## 6. Think About Marginal Decisions
 
@@ -550,7 +543,6 @@ A proposal may represent excellent value but still exceed the resources availabl
 Conversely, an intervention may be inexpensive enough to fund but deliver too little benefit to justify continuing it.
 :::
 
-
 ## 9. Health Economics Should Start Before Implementation
 
 Economic evaluation is sometimes considered only after an intervention has already been implemented.
@@ -604,7 +596,6 @@ The **economic evaluation** helps us understand whether the benefits achieved ju
 
 These questions should ideally be designed together.
 :::
-
 
 ## 10. A Practical Value Framework for ICB Decisions
 
@@ -746,7 +737,6 @@ They can help teams think more clearly about:
 before an intervention is implemented.
 :::
 
-
 ## 12. Economic Evaluation: Terms You May Encounter
 
 This module is not intended to teach the technical methods of economic evaluation.
@@ -808,7 +798,6 @@ It is being able to ask:
 - **And is this evidence relevant to the decision we actually need to make?**
 :::
 
-
 ## 13. Uncertainty Matters
 
 Economic cases inevitably rely on assumptions.
@@ -859,7 +848,6 @@ It is to understand whether the preferred decision remains reasonable when plaus
 
 If a small change in one assumption completely reverses the conclusion, decision-makers should know that before committing significant resources.
 :::
-
 
 ## 14. From Business Case to Learning System
 
@@ -915,8 +903,6 @@ Ask:
 This turns economic thinking into part of **continuous learning**, rather than a one-off business case exercise.
 :::
 
-
-
 ## Bringing It All Together
 
 Health economics is not simply about calculating whether something is "cost-effective".
@@ -963,7 +949,6 @@ towards:
 13. **What evidence will we collect to determine whether the expected value was realised?**
 :::
 
-
 ## Key Takeaways
 
 - **Health economics is fundamentally about choices under constrained resources.**
@@ -991,8 +976,6 @@ Ask:
 
 **"Is this the best use of the resources available to improve outcomes for our population?"**
 :::
-
-
 
 ## Useful Resources
 
@@ -1065,7 +1048,6 @@ For smaller decisions, the **Seven Questions of Value** introduced in this modul
 
 For larger, higher-risk or strategically important decisions, specialist health economics input and more formal appraisal may be appropriate.
 :::
-
 
 ## The Bigger Picture
 
