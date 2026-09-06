@@ -22,8 +22,6 @@ However, correlation alone does not prove that one variable directly causes the 
 
 This distinction matters enormously in healthcare analytics because healthcare systems are complex, interconnected and influenced by many overlapping factors.
 
----
-
 ## What Is Correlation?
 
 Imagine we observe:
@@ -70,8 +68,6 @@ But correlation alone cannot tell us:
 * whether the relationship is direct
 * whether other factors are involved
 
----
-
 ## Correlation Does Not Automatically Mean Causation
 
 Suppose we observe:
@@ -100,8 +96,6 @@ Deprivation may instead be linked to:
 * environmental factors
 
 In reality, deprivation often acts as a marker for a wider set of underlying risks and system pressures.
-
----
 
 ## Example — Stroke Outcomes and Inequalities
 
@@ -149,9 +143,6 @@ Better interpretation:
 
 > “Deprivation is associated with a set of behavioural, environmental, biological and access-related risks that may contribute to stroke outcomes.”
 
-
----
-
 ## Confounding Variables
 
 A confounding variable is a factor that influences both variables being studied.
@@ -174,7 +165,6 @@ Healthcare datasets often contain many confounding variables simultaneously.
 
 This is one reason why interpreting healthcare analytics requires caution.
 
----
 
 ## Why Adjustment Matters
 
@@ -217,8 +207,6 @@ If interested, see:
 
 for a more detailed explanation of adjustment approaches used in healthcare analytics.
 
----
-
 ## Correlation Can Still Be Extremely Useful
 
 Importantly:
@@ -240,8 +228,6 @@ Without correlation analysis:
 The key is understanding that:
 
 > correlation should start questions, not end them.
-
----
 
 ## Operational Implications
 
@@ -278,8 +264,6 @@ This moves analytics from:
   towards:
 * operational understanding and intervention.
 
----
-
 ## From Correlation to Operational Action
 
 Effective healthcare analytics often follows this progression:
@@ -293,10 +277,7 @@ Effective healthcare analytics often follows this progression:
 | Operational targeting | Focus intervention |
 | Pathway redesign | Improve outcomes |
 
-
 This is where healthcare analytics becomes most valuable — moving from observation to better intervention design.
-
----
 
 ## Why Healthcare Data Is Particularly Complex
 
@@ -312,8 +293,6 @@ This is why healthcare analytics requires:
 
 > **interpretation, context and operational understanding — not statistical outputs alone**
 
----
-
 ## Key Takeaways
 
 * Correlation describes relationships between variables
@@ -324,8 +303,6 @@ This is why healthcare analytics requires:
 * Adjustment helps improve fairness and understanding
 * Correlation remains extremely valuable for identifying patterns and prioritising investigation
 * Healthcare analytics should support better questions, not simplistic conclusions
-
----
 
 ## Questions Decision-Makers Should Ask
 
@@ -340,6 +317,5 @@ When reviewing correlated healthcare metrics:
 * What intervention opportunities exist?
 * What additional analysis is needed before acting?
 
----
 
 
