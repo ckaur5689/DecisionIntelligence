@@ -108,6 +108,7 @@ This is the foundation of Theory of Change thinking.
 A Theory of Change describes how and why an intervention is expected to lead to a desired outcome.
 
 ::: {.callout-note collapse="false"}
+
 ## A Simple Theory of Change
 
 A Theory of Change connects the problem we are trying to solve with the outcomes we ultimately want to achieve:
