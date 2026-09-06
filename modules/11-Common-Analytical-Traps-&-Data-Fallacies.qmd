@@ -10,8 +10,6 @@ By the end of this module you should be able to:
 * Recognise the influence of incentives, observation and selection effects.
 * Apply a more critical approach to interpreting healthcare data and evidence.
 
----
-
 # Why This Matters
 
 Healthcare organisations are increasingly data-driven.
@@ -35,8 +33,6 @@ Many of these concepts build directly on ideas introduced in previous modules, p
 * Standardisation & Fair Comparison
 * Evaluating Interventions & Schemes
 * Evaluating Methods in Practice
-
----
 
 # Correlation Does Not Equal Causation
 
@@ -68,8 +64,6 @@ An observed relationship does not automatically explain why it exists.
 
 Correlation should start questions, not end them.
 
----
-
 # Regression to the Mean
 
 ### Observed
@@ -95,8 +89,6 @@ This phenomenon is known as:
 ### Why This Matters
 
 Without an appropriate comparison group, natural variation can easily be mistaken for intervention impact.
-
----
 
 # The Hawthorne Effect
 
@@ -127,8 +119,6 @@ A key question is:
 
 > Would the improvement still occur if nobody knew they were being measured?
 
----
-
 # Selection Bias
 
 ### Observed
@@ -153,8 +143,6 @@ For example:
 
 The observed outcomes may reflect differences between groups rather than the intervention itself.
 
----
-
 # Survivorship Bias
 
 ### Observed
@@ -178,8 +166,6 @@ Failed pilots may:
 ### Why This Matters
 
 Looking only at successful examples can create an unrealistic view of effectiveness.
-
----
 
 # Financial Incentive Effects
 
@@ -208,8 +194,6 @@ A key question is:
 
 > Are we observing the effect of the intervention, the effect of the incentive, or both?
 
----
-
 # The League Table Fallacy
 
 ### Observed
@@ -233,8 +217,6 @@ Rankings may be influenced by:
 ### Why This Matters
 
 League tables often simplify complex realities and should rarely be interpreted in isolation.
-
----
 
 # The Precision Fallacy
 
@@ -265,8 +247,6 @@ Decision-makers should focus on:
 
 rather than precision alone.
 
----
-
 # Confirmation Bias
 
 ### Observed
@@ -289,8 +269,6 @@ Good analytical practice requires asking:
 * What alternative explanations exist?
 * What information might we be missing?
 
----
-
 # Key Takeaways
 
 * Correlation does not automatically imply causation.
@@ -303,8 +281,6 @@ Good analytical practice requires asking:
 * Precision does not guarantee accuracy.
 * Confirmation bias affects everyone.
 * Better decisions come from questioning interpretations, not simply accepting results.
-
----
 
 # Questions Decision-Makers Should Ask
 
@@ -319,7 +295,6 @@ Good analytical practice requires asking:
 * Are we mistaking precision for certainty?
 * What evidence might challenge our current interpretation?
 
----
 
 # Part 1 Knowledge Check
 
@@ -334,7 +309,6 @@ What is a possible alternative explanation?
 * [ ] Selection bias
 * [ ] Standardisation
 
----
 
 ## Question 2
 
@@ -347,7 +321,6 @@ What effect may be present?
 * [ ] Collider bias
 * [ ] Precision bias
 
----
 
 ## Question 3
 
@@ -360,7 +333,6 @@ What bias may exist?
 * [ ] Regression to the mean
 * [ ] Standardisation bias
 
----
 
 ## Question 4
 
@@ -373,7 +345,6 @@ Which statement is most accurate?
 * [x] Statistical comparability does not guarantee operational comparability
 * [ ] One rate must be incorrect
 
----
 
 ## Question 5
 
@@ -386,7 +357,6 @@ What should you remember?
 * [x] Precision does not guarantee accuracy
 * [ ] Forecasts are objective facts
 
----
 
 ## Question 6
 
@@ -401,7 +371,6 @@ Which explanation should also be considered?
 * [ ] Standardisation
 * [ ] Simpson's paradox
 
----
 
 # Final Reflection
 
