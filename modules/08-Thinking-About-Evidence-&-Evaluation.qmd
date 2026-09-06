@@ -2,6 +2,8 @@
 
 ### *Did it work — or would things have changed anyway?*
 
+<button class="print-button" onclick="window.print()">🖨️ Print this module</button>
+
 ## Module Learning Objective
 
 This module helps explain:
