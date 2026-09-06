@@ -1,5 +1,7 @@
 # Module 7 — Theory of Change and Logic Modules
 
+<button class="print-button" onclick="window.print()">🖨️ Print this module</button>
+
 # 1. Start With the Problem, Not the Solution
 
 One of the most common risks in improvement work is beginning with an intervention before clearly defining the problem.
