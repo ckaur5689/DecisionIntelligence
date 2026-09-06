@@ -2,6 +2,8 @@
 
 ## Why relationships in healthcare data are rarely straightforward
 
+<button class="print-button" onclick="window.print()">🖨️ Print this module</button>
+
 #### When two things move together, does one cause the other?
 
 Healthcare analytics frequently identifies relationships between variables.
