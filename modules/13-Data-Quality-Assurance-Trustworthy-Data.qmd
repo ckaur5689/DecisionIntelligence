@@ -1,5 +1,7 @@
 # Module 13: Data Quality, Assurance & Trustworthy Data
 
+<button class="print-button" onclick="window.print()">🖨️ Print this module</button>
+
 ## Learning Objectives
 
 By the end of this module you should be able to:
