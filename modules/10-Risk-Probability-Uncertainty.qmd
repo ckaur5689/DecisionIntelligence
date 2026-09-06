@@ -12,8 +12,6 @@ By the end of this module you should be able to:
 * Understand why decision-making often occurs despite uncertainty.
 * Apply a pragmatic approach to making decisions when evidence is incomplete.
 
- 
-
 ## Why This Matters
 
 Healthcare leaders are rarely asked to make decisions with complete certainty.
@@ -27,8 +25,6 @@ The role of analytics is to help decision-makers understand uncertainty well eno
 Good decision-makers do not wait for certainty.
 
 They make informed choices whilst understanding the risks.
-
- 
 
 ## Risk Is Not Certainty
 
@@ -62,8 +58,6 @@ rather than
 *"Will this individual definitely experience the outcome?"*
 :::
 
- 
-
 ## Sources of Uncertainty
 
 Uncertainty exists in all healthcare analyses.
@@ -82,8 +76,6 @@ Common sources include:
 The future rarely behaves exactly like the past.
 
 This means forecasts should always be viewed as estimates rather than promises.
-
- 
 
 ## Confidence Intervals
 
@@ -119,8 +111,6 @@ rather than
 
 *"What is the exact number?"*
 :::
-
- 
 
 ## Error Bars
 
@@ -242,7 +232,6 @@ However, it does **not** tell us whether a **0.2% reduction** is:
 
 Those decisions require consideration of the **size of the difference**, **confidence intervals**, **costs**, **risks** and the wider clinical context.
 
- 
 
 ### Poor Interpretation
 
@@ -250,10 +239,8 @@ Those decisions require consideration of the **size of the difference**, **confi
 
 ### Better Interpretation
 
-> "The evidence is uncertain. We should also consider the size of the difference, the confidence interval, the sample size and the wider context."
-
+> "The evidence is uncertain. We should also consider the size of the difference, the confidence interval, the sample size and the wider context.
  
-
 ### Poor Interpretation
 
 > "The difference is statistically significant, therefore it is important."
@@ -262,8 +249,6 @@ Those decisions require consideration of the **size of the difference**, **confi
 
 > **"The difference is unlikely to be due to chance, but is it large enough to justify changing practice or investing further resources?"**
 
- 
-
 ### Poor Interpretation
 
 > "The confidence intervals overlap, so there is definitely no difference."
@@ -271,8 +256,6 @@ Those decisions require consideration of the **size of the difference**, **confi
 ### Better Interpretation
 
 > "Confidence intervals help us understand uncertainty, but they should be interpreted alongside the size of the difference, study design and the wider body of evidence."
-
- 
 
 ## Risk of Action vs Risk of Inaction
 
@@ -296,8 +279,6 @@ However, every decision involves two sets of risks.
 
 Sometimes the greatest risk is doing nothing.
 
- 
-
 ## Pragmatic Decision-Making Under Uncertainty
 
 Not every decision requires the same level of evidence.
@@ -311,9 +292,7 @@ The level of evidence should be proportionate to the scale of risk.
 | Significant investment | Formal evaluation and business case |
 | System-wide transformation | Strong evidence and ongoing evaluation |
 
-Waiting for perfect evidence can sometimes delay beneficial change unnecessarily.
-
- 
+Waiting for perfect evidence can sometimes delay beneficial change unnecessarily. 
 
 ## A Practical Decision Framework
 
@@ -333,14 +312,11 @@ The answer is often:
 
 > "Pilot, evaluate, learn and adapt."
 
- 
 
 ## Decision-Making Under Uncertainty
 
 ![](../images/MakingDecisionsUnderUncertainty.png)
-
  
-
 ## Poor Interpretation vs Better Interpretation
 
 ### Poor Interpretation
@@ -351,8 +327,6 @@ The answer is often:
 
 > "We have uncertainty, but do we have enough evidence to justify testing the intervention safely?"
 
- 
-
 ### Poor Interpretation
 
 > "The forecast says demand will increase by 15%."
@@ -360,8 +334,6 @@ The answer is often:
 ### Better Interpretation
 
 > "The forecast suggests demand may increase by around 15%, but there is uncertainty around that estimate."
-
- 
 
 ### Poor Interpretation
 
@@ -371,8 +343,6 @@ The answer is often:
 
 > "What are the risks of proceeding, and what are the risks of doing nothing?"
 
- 
-
 ### Poor Interpretation
 
 > "We need more data."
@@ -381,7 +351,6 @@ The answer is often:
 
 > "Would additional data materially change our decision?"
 
- 
 
 ## Questions Decision-Makers Should Ask
 
@@ -399,7 +368,6 @@ The answer is often:
 * Are we delaying action because of genuine uncertainty or because we are seeking certainty that may never exist?
 * Can we pilot, evaluate and adapt rather than committing to a full-scale implementation?
 
- 
 
 ## Key Takeaways
 
