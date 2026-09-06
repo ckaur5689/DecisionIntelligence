@@ -148,19 +148,6 @@ A common mistake is to equate value with spending less.
 
 But these are different concepts.
 
-Consider two hypothetical interventions:
-
-| | Intervention A | Intervention B |
-|---|---:|---:|
-| **Cost** | £500,000 | £700,000 |
-| **Expected benefit** | Modest | Substantial |
-| **Population reached** | 500 | 2,000 |
-| **Impact on inequalities** | Neutral | Likely improvement |
-
-Intervention A costs less.
-
-That does **not** automatically mean it represents better value.
-
 Value requires us to consider what is achieved **in relation to the resources used**.
 
 A useful way to think about this is:
@@ -183,6 +170,18 @@ They may include:
 - increased capacity elsewhere in the pathway
 - benefits to carers and families.
 
+### Cost Is Not the Same as Value
+
+![](../images/CostIsNotTheSameAsValue.png)
+
+*Figure 15.2: Cost alone does not determine value. A higher-cost intervention may still represent good value when the additional benefits justify the additional resources required.*
+
+The figure illustrates why neither **low cost** nor **high benefit** should be considered in isolation.
+
+A lower-cost intervention that delivers relatively little benefit may represent poor use of scarce resources. Conversely, a higher-cost intervention may still represent good value if the additional benefits are sufficiently important.
+
+The comparison with **realistic alternatives** is therefore critical.
+
 ::: {.callout-important collapse="false"}
 ## Cost ≠ Value
 
@@ -196,6 +195,7 @@ or
 
 The important question is what we achieve with the resources available.
 :::
+
 
 ## 3. Opportunity Cost: What Else Could We Do?
 
@@ -392,31 +392,52 @@ That still has value.
 
 But it is not necessarily a **cash-releasing saving**.
 
+### Not All Savings Are Cash Savings
+
+![](../images/NotAllSavingsAreCashSavings.png)
+
+*Figure 15.5: Interventions can create value in different ways. Cash-releasing savings, cost avoidance, released capacity and wider economic and social benefits should not be treated as interchangeable.*
+
+The distinction matters because different types of benefit have different implications for decision-making.
+
+For example, reducing hospital activity may create valuable **capacity** that can be used to treat other patients without reducing the hospital's expenditure. Similarly, preventing future demand may represent **cost avoidance**, even though no money is immediately released from a budget.
+
+Wider benefits may also occur beyond the organisation—or even beyond the NHS—through improved independence, productivity, wellbeing or reduced need for other public services.
+
 ::: {.callout-important collapse="false"}
 ## Avoid False Savings
 
-Always distinguish between:
+When assessing the impact of an intervention, distinguish between:
 
-### Cash-Releasing Savings
-
+**Cash-releasing savings**  
 Actual expenditure that can genuinely be removed from a budget.
 
-### Cost Avoidance
-
+**Cost avoidance**  
 Future expenditure or additional resource requirements that may no longer be needed.
 
-### Capacity Released
-
+**Capacity released**  
 Resources that become available to treat other patients or undertake other activities.
 
-### Wider Economic Benefit
-
-The broader value created by improved outcomes, patient experience, independence or more efficient resource use.
+**Wider economic and social benefits**  
+Benefits to patients, families, communities or the wider system that may not appear directly in an NHS budget.
 
 These concepts should not be treated as interchangeable.
 :::
 
-This distinction is particularly important when developing business cases or reporting benefits realisation.
+::: {.callout-tip collapse="false"}
+## Decision-Maker Questions
+
+When someone claims that an intervention will "save money", ask:
+
+- Is this genuinely a cash-releasing saving?
+- Or are we actually releasing capacity?
+- Are we avoiding future costs rather than reducing current expenditure?
+- Where in the system will the benefit occur?
+- When will the benefit be realised?
+- Can released capacity actually be used for something else?
+- Are there wider benefits that will not appear in an NHS budget?
+:::
+
 
 ## 6. Think About Marginal Decisions
 
@@ -708,7 +729,6 @@ A good investment decision considers the **whole picture**:
 
 The aim is to use limited resources in the way most likely to improve outcomes and create the greatest value for patients and populations.
 :::
-
 
 ## 11. When Do We Need a Health Economist?
 
