@@ -1,5 +1,7 @@
 # Module 11: Common Analytical Traps & Data Fallacies
 
+<button class="print-button" onclick="window.print()">🖨️ Print this module</button>
+
 ## Learning Objectives
 
 By the end of this module you should be able to:
