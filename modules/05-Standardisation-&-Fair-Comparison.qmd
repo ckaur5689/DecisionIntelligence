@@ -1,5 +1,7 @@
 # Module 5 — Standardisation & Fair Comparison
 
+<button class="print-button" onclick="window.print()">🖨️ Print this module</button>
+
 Healthcare organisations often compare:
 - admission rates
 - mortality
