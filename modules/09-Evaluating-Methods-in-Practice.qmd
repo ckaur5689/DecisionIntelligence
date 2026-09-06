@@ -2,6 +2,8 @@
 
 ### *How healthcare systems improve confidence in evaluation findings*
 
+<button class="print-button" onclick="window.print()">🖨️ Print this module</button>
+
 ## Module Learning Objective
 
 This module helps explain:
