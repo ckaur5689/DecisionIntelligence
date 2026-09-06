@@ -3,6 +3,8 @@
 ## Why Averages Can Hide Operational Reality
 ### What Can an Average Mean?
 
+<button class="print-button" onclick="window.print()">🖨️ Print this module</button>
+
 In healthcare analytics, averages are everywhere.
 
 We regularly see:
@@ -56,8 +58,6 @@ This is one of the most important principles in healthcare analytics:
 
 > Averages summarise data — but they do not explain it.
 
----
-
 ## Mean vs Median
 
 Two commonly used “averages” are:
@@ -93,8 +93,6 @@ But one very long-stay patient changes the average dramatically.
 In healthcare:
 
 > **both matter — but for different reasons**
-
----
 
 ## Example — Length of Stay (LoS)
 
@@ -132,8 +130,6 @@ This suggests a relatively small number of patients may be driving disproportion
 
 ![](../images/MeanvsMedian_LoS.png)
 
----
-
 ## Why The Distribution Matters
 
 If we only report the mean:
@@ -154,8 +150,6 @@ Sometimes:
 
 > the story is in the shape of the data, not just the average.
 
----
-
 ## Is It Fair To Compare Trusts or ICBs Using Averages?
 
 Averages support benchmarking — but only with context.
@@ -170,8 +164,6 @@ Simple comparison may overlook:
 This is why benchmarking should support questions and learning rather than simplistic league tables.
 
 (We explore fair comparison in more depth in Module 5.)
-
----
 
 ## Benchmarking in Practice — Model Hospital
 
@@ -194,8 +186,6 @@ This reflects an important reality:
 > Healthcare operational benchmarking is inherently complex.
 
 No single metric tells the whole story.
-
----
 
 ## Operational Implications
 
@@ -232,8 +222,6 @@ Again:
 
 > the shape of the distribution matters.
 
----
-
 ## Key Takeaways
 
 * The mean and median measure different aspects of a population
@@ -243,8 +231,6 @@ Again:
 * The distribution may matter more than the average itself
 * Fair comparison requires context, not just metrics
 * Benchmarking should start conversations, not end them
-
----
 
 ## Questions Decision-Makers Should Ask
 
