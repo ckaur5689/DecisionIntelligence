@@ -6,8 +6,6 @@ Timeline: May 2026 to December 2026
 
 Author: Chandan Kaur  
 
-Collaborators: 
-
 Audience: Analysts and Decision Makers in healthcare systems
 
 # Project Overview
