@@ -104,7 +104,7 @@ Modules:
     - How should I think about whether something worked?
 9.  Evaluating Interventions in Practice (Methods)
     - How do I evaluate it properly?
-10.  Risk, Probability & Uncertainty
+10. Risk, Probability & Uncertainty
     - How certain can I be about this evidence?
 11. Common Analytical Traps & Data Fallacies
     - What mistakes could lead me to the wrong conclusion?
@@ -119,7 +119,7 @@ Modules:
     - How do we redesign, implement and evaluate better pathways?
 15. Health Economics & Value in Healthcare Decision-Making ⭐
     - Is the improvement worth the investment?
-16.  Methods for Applying Health Economics to Healthcare Decisions 
+16. Methods for Applying Health Economics to Healthcare Decisions 
     - Comparing options, costs, outcomes and value
 17. Understanding What Made the Difference ⭐
     - Evaluating Multiple Interventions in Complex Healthcare Systems 
