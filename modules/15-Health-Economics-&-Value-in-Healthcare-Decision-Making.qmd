@@ -352,7 +352,7 @@ For integrated care systems, the important question is:
 **What happens to resources, outcomes and inequalities across the whole pathway?**
 :::
 
-## 5. Financial Savings Are Not the Same as Economic Benefits
+## 5. Not All Savings Are Cash Savings
 
 Another important distinction is between:
 
@@ -398,6 +398,92 @@ But it is not necessarily a **cash-releasing saving**.
 
 *Figure 15.5: Interventions can create value in different ways. Cash-releasing savings, cost avoidance, released capacity and wider economic and social benefits should not be treated as interchangeable.*
 
+### Understanding Different Types of "Saving"
+
+When evaluating a new service or intervention, it is important to be precise about what is meant by a **saving**.
+
+A reduction in healthcare activity does not automatically result in money being released from a budget.
+
+For example, if an intervention prevents hospital admissions but the hospital continues to employ the same staff, operate the same beds and maintain the same estate, valuable capacity may have been released—but expenditure has not necessarily fallen.
+
+It is therefore useful to distinguish between different types of financial and economic benefit.
+
+| Type | What does it mean? | Example | What does it represent? |
+|---|---|---|---|
+| **Cash-releasing saving** | Existing expenditure genuinely disappears from the budget | A contract is ended, agency shifts are removed or expenditure on consumables falls | **Actual budget reduction** |
+| **Capacity released** | Existing resources become available to undertake other activity | Bed days, clinic slots or staff time become available | **Productivity or capacity benefit, not automatically cash** |
+| **Cost avoided** | Future expenditure or additional resource requirements are prevented or delayed | Avoiding growth in admissions means additional capacity is not required | **Future resource requirement avoided** |
+| **Value realised elsewhere** | The organisation investing is different from the organisation receiving the benefit | Investment in community care reduces demand on acute hospital services | **Whole-system benefit, but not necessarily a saving to the organisation investing** |
+| **Wider economic or social benefit** | Benefits occur beyond immediate healthcare expenditure | Improved independence, ability to work or reduced social care need | **Wider public or societal value** |
+
+::: {.callout-important collapse="false"}
+## A Reduction in Activity Is Not Automatically a Cash Saving
+
+Suppose a new intervention costs **£1 million** and is expected to reduce hospital activity valued at **£2 million**.
+
+It would be misleading to conclude automatically that:
+
+**£2 million benefit − £1 million investment = £1 million cash saving**
+
+The important question is what actually changes as a result of the reduced activity.
+
+If staff, beds, estate and other expenditure remain in place, the intervention may have created valuable **capacity**, but the £2 million has not necessarily become spendable cash.
+
+There may also initially be **double-running or stranded costs** if the new model is introduced while the existing service and its associated costs remain in place.
+:::
+
+### The Cash-Releasing Test
+
+Claims that an intervention will "save £X" should therefore be examined carefully.
+
+::: {.callout-tip collapse="false"}
+## Decision-Maker Questions
+
+When someone claims that an intervention will **"save £X"**, ask:
+
+1. **Which specific expenditure will actually reduce?**
+2. **Can staff, beds, estate, contracts or other resources genuinely be removed or reduced?**
+3. **When will that reduction occur?**
+4. **Are there implementation, transition, double-running or stranded costs?**
+5. **Is the benefit actually cash released, capacity released, cost avoided or value realised elsewhere?**
+
+If the specific expenditure that will disappear cannot be identified, the claimed benefit should not automatically be described as a **cash-releasing saving**.
+:::
+
+### Where the Benefit Occurs and What Kind of Benefit It Is
+
+There are therefore two related but different questions when assessing value:
+
+**Where is the benefit realised?**
+
+This might be in:
+
+- primary care
+- community services
+- acute care
+- social care
+- another part of the public sector
+- patients, families or the wider economy.
+
+And:
+
+**What type of benefit is it?**
+
+This might be:
+
+- cash released
+- capacity released
+- cost avoided
+- value realised elsewhere
+- wider economic or social benefit.
+
+This distinction connects directly to the whole-system perspective introduced earlier in this module.
+
+**Figure 15.4 asks where the benefit occurs; Figure 15.5 asks what kind of benefit it is.**
+
+For integrated care systems, both questions matter.
+
+
 The distinction matters because different types of benefit have different implications for decision-making.
 
 For example, reducing hospital activity may create valuable **capacity** that can be used to treat other patients without reducing the hospital's expenditure. Similarly, preventing future demand may represent **cost avoidance**, even though no money is immediately released from a budget.
@@ -405,7 +491,6 @@ For example, reducing hospital activity may create valuable **capacity** that ca
 Wider benefits may also occur beyond the organisation—or even beyond the NHS—through improved independence, productivity, wellbeing or reduced need for other public services.
 
 ::: {.callout-important collapse="false"}
-## Avoid False Savings
 
 When assessing the impact of an intervention, distinguish between:
 
@@ -924,6 +1009,20 @@ Ask:
 
 This turns economic thinking into part of **continuous learning**, rather than a one-off business case exercise.
 :::
+
+### When More Than One Intervention Is Creating Change
+
+There is a further challenge in complex healthcare systems.
+
+Interventions rarely operate in isolation. Several services or programmes may target the **same population**, operate at different points in the **same pathway**, and seek to influence the **same outcomes**.
+
+For example, a person living with frailty might receive proactive case finding, community frailty support, Urgent Community Response and virtual ward care. If emergency admissions subsequently fall, it may be difficult to determine which intervention contributed to the improvement—or whether the benefit resulted from the interventions working together.
+
+This also creates a risk that the **same outcome or financial benefit is claimed by more than one programme**.
+
+Understanding value therefore sometimes requires us to move beyond evaluating individual interventions and consider the **combined contribution of a portfolio of interventions**.
+
+A later module explores this challenge in more detail.
 
 ## Bringing It All Together
 
