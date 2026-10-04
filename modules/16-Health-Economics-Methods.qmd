@@ -1,1 +1,3 @@
-This Module will focus on the methods health economists use and the decision questions those methods help answer.
+# Module 16: Health Economics Methods (coming soon!)
+
+This Module will focus on which health economic methods can help answer different decision questions.
