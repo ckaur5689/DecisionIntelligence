@@ -43,25 +43,25 @@ Topics include:
 
 1.  Counts vs Rates
     - What number should I be comparing?
-3.  Mean vs Median
+2.  Mean vs Median
     - What is the best way to summarise the data? 
-4.  Correlation vs Causation
+3.  Correlation vs Causation
     - Does this relationship actually imply cause and effect?
-5.  Variation & Distributions
+4.  Variation & Distributions
     - Is this difference meaningful or simply normal variation?
-6.  Standardisation & Fair Comparison
+5.  Standardisation & Fair Comparison
     - Are these populations really comparable?
-7.  How to Read a Dashboard
+6.  How to Read a Dashboard
     - What story is the dashboard actually telling me?
-8.  Theory of Change & Logic Models 
+7.  Theory of Change & Logic Models
     - Connecting Interventions to Outcomes
-9.  Evaluating Interventions & Schemes (Thinking About Evidence)
+8.  Evaluating Interventions & Schemes (Thinking About Evidence)
     - How should I think about whether something worked?
-10.  Evaluating Interventions in Practice (Methods)
+9.  Evaluating Interventions in Practice (Methods)
     - How do I evaluate it properly?
-11.  Risk, Probability & Uncertainty
+10. Risk, Probability & Uncertainty
     - How certain can I be about this evidence?
-13. Common Analytical Traps & Data Fallacies
+11. Common Analytical Traps & Data Fallacies
     - What mistakes could lead me to the wrong conclusion?
 
 # Part 2 — How do we understand, improve and evaluate complex healthcare systems?
@@ -72,10 +72,10 @@ Topics include:
     - Can we trust the data before making decisions?
 14. Designing Better Healthcare Pathways ⭐
     - How do we redesign, implement and evaluate better pathways?
-15. Health Economics & Value in Healthcare Decision-Making⭐
+15. Health Economics & Value in Healthcare Decision-Making ⭐
     - Is the improvement worth the investment?
-16.  Applying Health Economics to Healthcare Decisions
-    - Comparing costs, outcomes and value
+16. Methods for Applying Health Economics to Healthcare Decisions 
+    - Comparing options, costs, outcomes and value
 17. Understanding What Made the Difference ⭐
     - Evaluating Multiple Interventions in Complex Healthcare Systems 
 18. Population Health Management & Population Segmentation
