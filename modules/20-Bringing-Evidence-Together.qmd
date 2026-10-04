@@ -88,14 +88,4 @@ They should not.
 
 A useful way to think about them is as **two sides of the same coin**.
 
-```{mermaid}
-flowchart LR
-
-    QN["QUANTITATIVE EVIDENCE<br/><br/>How many?<br/>How often?<br/>Where?<br/>For whom?<br/>How much variation?<br/>What changed?"]
-
-    C(("UNDERSTANDING<br/>THE POPULATION<br/>AND SYSTEM"))
-
-    QL["QUALITATIVE EVIDENCE<br/><br/>Why?<br/>How?<br/>What was experienced?<br/>What matters?<br/>What are the barriers?<br/>What is the context?"]
-
-    QN --> C
-    QL --> C
+![](//Two-Sides-to-Better-Decisions.png)
