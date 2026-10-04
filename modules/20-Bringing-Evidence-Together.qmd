@@ -1,0 +1,101 @@
+# Module 20: Bringing Evidence Together (BETA)
+
+## Building an evidence spine for better healthcare decisions
+
+<button class="print-button" onclick="window.print()">🖨️ Print this module</button>
+
+> **How do we combine different forms of evidence into a coherent picture?**
+
+## 1. Why This Module Matters
+
+Healthcare decisions are rarely adequately explained by a single dataset, metric or research study.
+
+Decision-makers may know that:
+
+- emergency admissions are increasing
+- referral rates differ between localities
+- uptake of a service is lower in some population groups
+- waiting times have increased
+- outcomes differ between pathways
+- a new intervention appears to be associated with improvement.
+
+These findings are important.
+
+But they often lead to another question:
+
+> **Why?**
+
+Quantitative analysis can identify the **scale, distribution and pattern** of a problem.
+
+It can show:
+
+- how many
+- how often
+- where
+- when
+- for whom
+- whether something is changing
+- whether variation exists.
+
+But numbers alone may not explain:
+
+- why people do not access a service
+- why clinicians use pathways differently
+- why an intervention works well in one place but not another
+- why apparently similar populations experience different outcomes
+- how patients experience a pathway
+- what implementation barriers exist
+- whether the outcomes being measured are the outcomes that matter most to people.
+
+Qualitative evidence can help answer these questions.
+
+::: {.callout-important collapse="false"}
+## Key Principle
+
+**Quantitative and qualitative evidence are not competing forms of evidence.**
+
+They are different ways of understanding the same healthcare system.
+
+Quantitative evidence can help us understand **what is happening, how much, where and for whom**.
+
+Qualitative evidence can help us understand **how, why and under what circumstances it is happening**.
+
+Healthcare Decision Intelligence requires both.
+:::
+
+## Learning Objectives
+
+By the end of this module, you should be able to:
+
+- understand why healthcare decisions often require multiple forms of evidence
+- distinguish quantitative and qualitative evidence without creating an artificial hierarchy between them
+- recognise different sources of qualitative evidence
+- understand the role of patient and community insight
+- understand the role of professional and operational insight
+- use literature and existing research alongside local evidence
+- recognise the difference between anecdote and systematically gathered qualitative evidence
+- understand triangulation
+- identify agreement, complementarity and disagreement between evidence sources
+- construct an evidence spine around a healthcare decision
+- identify important evidence gaps
+- communicate a balanced evidence picture to decision-makers.
+
+# 2. Two Sides of the Same Coin
+
+Quantitative and qualitative evidence are sometimes treated as if they sit in separate analytical worlds.
+
+They should not.
+
+A useful way to think about them is as **two sides of the same coin**.
+
+```{mermaid}
+flowchart LR
+
+    QN["QUANTITATIVE EVIDENCE<br/><br/>How many?<br/>How often?<br/>Where?<br/>For whom?<br/>How much variation?<br/>What changed?"]
+
+    C(("UNDERSTANDING<br/>THE POPULATION<br/>AND SYSTEM"))
+
+    QL["QUALITATIVE EVIDENCE<br/><br/>Why?<br/>How?<br/>What was experienced?<br/>What matters?<br/>What are the barriers?<br/>What is the context?"]
+
+    QN --> C
+    QL --> C
