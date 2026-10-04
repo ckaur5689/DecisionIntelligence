@@ -88,4 +88,5 @@ They should not.
 
 A useful way to think about them is as **two sides of the same coin**.
 
-![](//Two-Sides-to-Better-Decisions.png)
+![](../images/Two-Sides-to-Better-Decisions.png)
+
