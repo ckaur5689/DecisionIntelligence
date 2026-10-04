@@ -1,1 +1,953 @@
+# Module 17: Understanding What Made the Difference (DRAFT)
 
+## Evaluating Multiple Interventions in Complex Healthcare Systems
+
+<button class="print-button" onclick="window.print()">🖨️ Print this module</button>
+
+## 1. Why This Module Matters
+
+Healthcare systems rarely introduce one intervention at a time.
+
+An Integrated Care Board (ICB) may invest simultaneously in:
+
+- proactive frailty care
+- enhanced care home support
+- Urgent Community Response (UCR)
+- virtual wards
+- enhanced end-of-life care.
+
+These programmes may reach the **same people**, operate at different points along the **same pathway**, and seek improvements in the **same outcomes**.
+
+Suppose emergency admissions among people living with severe frailty fall by 8%.
+
+Several programme reports describe admissions avoided.
+
+Which intervention made the difference?
+
+Did the interventions work together?
+
+Were some patients counted more than once?
+
+And did the combined investment represent good value?
+
+This module moves beyond evaluating schemes individually towards understanding the **contribution and value of a portfolio of interventions**.
+
+::: {.callout-important collapse="false"}
+## The Central Question
+
+**What combination of interventions appears to be creating value, for whom, through what mechanisms, and how confident are we?**
+
+The purpose is not to award each programme a share of the improvement when the evidence cannot support that conclusion.
+:::
+
+### Building on Earlier Modules
+
+This module brings together ideas introduced throughout the series.
+
+- **Theory of Change and Logic Models** make expected mechanisms, outcomes and assumptions explicit.
+- **The evaluation modules** introduce counterfactual thinking, comparison groups, Interrupted Time Series (ITS), Difference-in-Differences (DiD) and proportionate evaluation design.
+- **Module 15** distinguishes economic value, affordability, opportunity cost and different types of financial and non-financial benefit.
+- **Module 16** introduces methods for applying health economics, including approaches to comparing competing uses of resources and STAR.
+
+Module 17 brings these perspectives together in a realistic commissioning scenario.
+
+It is a guide to asking better questions and designing a credible evaluation — **not** a technical manual for estimating causal effects or conducting STAR calculations.
+
+## Learning Objectives
+
+By the end of this module, you should be able to:
+
+- recognise when separate programme evaluations are insufficient because populations and outcomes overlap
+- distinguish **association**, **attribution** and **contribution**
+- understand why intervention exposure and **timing** matter
+- recognise selection bias and the need for a credible counterfactual
+- consider whether interventions are independent, complementary, sequential, substitutive or duplicative
+- identify the risk of double-counting avoided activity and financial benefits
+- bring quantitative, qualitative and implementation evidence together
+- use portfolio-level evaluation findings to inform STAR-style consideration of alternative investments and configurations
+- recognise how contradictory evidence, equity and uncertainty can change a commissioning discussion
+- describe conclusions proportionately when linked data or strong comparisons are unavailable.
+
+# 2. Start with the Patient, Not the Programme
+
+Imagine Margaret, aged 84, who lives with severe frailty and multiple long-term conditions.
+
+During one year she receives:
+
+1. proactive frailty assessment
+2. a medication review
+3. community frailty support
+4. Urgent Community Response when her condition deteriorates
+5. virtual ward care at a later point
+6. enhanced end-of-life support as her needs change.
+
+If Margaret does not attend an Emergency Department, which service prevented the attendance?
+
+There may be no meaningful single answer.
+
+Early care planning may have made rapid community treatment possible.
+
+UCR may have provided an alternative to conveyance.
+
+The virtual ward may have offered an alternative to admission at a later point.
+
+End-of-life support may subsequently have helped ensure that care reflected Margaret's preferences.
+
+Some services may therefore influence the effectiveness of other services.
+
+Others may primarily influence patient experience rather than hospital activity.
+
+::: {.callout-tip collapse="false"}
+## Decision-Maker Question
+
+Instead of asking only:
+
+> **Did Programme A work?**
+
+ask:
+
+> **What combination of care did this population receive, and how was that associated with subsequent outcomes?**
+:::
+
+# 3. The Worked Example: An ICB Frailty and End-of-Life Portfolio
+
+*All populations, activity figures, costs and findings in this example are illustrative. They demonstrate reasoning rather than representing observed NHS results.*
+
+An ICB has invested in five interventions.
+
+Each has its own operational measures and benefits narrative, but their eligibility criteria and target populations overlap.
+
+| Intervention | Intended mechanism | Possible outcomes | Important overlap |
+|---|---|---|---|
+| Proactive frailty care | Identify needs earlier and coordinate multidisciplinary support | Better planning; less deterioration; patient experience | UCR, care home support, virtual wards |
+| Enhanced care home support | Proactive clinical review and timely treatment | Fewer unwanted transfers; improved resident care | Frailty care, UCR, end-of-life care |
+| Urgent Community Response | Respond rapidly to acute deterioration | Appropriate treatment at home; fewer ED attendances | Frailty care, virtual wards, end-of-life care |
+| Virtual wards | Provide hospital-level monitoring and treatment at home for suitable patients | Alternative to admission or earlier discharge; bed days | UCR, frailty care |
+| Enhanced end-of-life care | Anticipatory planning, symptom management and coordinated support | Preference-concordant care; comfort; fewer unwanted transfers | All of the above |
+
+## Agree the Question Before Starting the Analysis
+
+The commissioning team identifies three possible strategic choices to revisit once the evaluation is complete:
+
+1. maintain the existing portfolio
+2. expand proactive frailty care alongside UCR
+3. retarget virtual wards while strengthening coordination with end-of-life care.
+
+The choices are introduced **before** the analysis so that the evaluation collects evidence relevant to an actual decision rather than producing five disconnected programme reports.
+
+They are not assumed to be mutually exclusive.
+
+The ICB agrees the following portfolio-level question:
+
+> **To what extent has the combined portfolio improved outcomes for people living with severe frailty and those approaching the end of life, and what opportunities exist to improve its value?**
+
+Severe frailty is the main analytical cohort.
+
+People approaching the end of life form an important **overlapping group**, rather than an interchangeable subgroup.
+
+This means outcomes should be considered separately.
+
+| Cohort | Illustrative outcomes to consider |
+|---|---|
+| Severe frailty | Potentially avoidable ED attendances and emergency admissions; time at home; independence; patient experience; inequalities |
+| Approaching end of life | Symptom control; continuity; patient and carer experience; whether care aligns with recorded preferences; unwanted ED attendances or transfers |
+
+::: {.callout-important collapse="false"}
+## An Outcome Is Only Valuable in Context
+
+An emergency admission may be appropriate and beneficial.
+
+For someone approaching the end of life, avoiding hospital is not automatically better if hospital care reflects their needs and preferences.
+
+Evaluation must therefore consider **appropriateness and experience**, not simply count activity reductions.
+:::
+
+# 4. Make the Theory of Change Visible
+
+Before examining outcomes, programme leads, clinicians, patients, carers, commissioners and analysts map how each intervention is expected to create change.
+
+| Intervention | Mechanism | Intermediate change | Potential final outcome |
+|---|---|---|---|
+| Frailty care | Early identification and proactive management | Better care plans and earlier response | Reduced preventable deterioration |
+| UCR | Rapid assessment during deterioration | Treatment at home where appropriate | Fewer avoidable ED attendances |
+| Virtual ward | Suitable hospital-level care at home | Alternative to admission or earlier discharge | Fewer occupied hospital bed days |
+| End-of-life care | Anticipatory planning and coordination | Care aligned with needs and preferences | Better experience and fewer unwanted transfers |
+
+This reveals something important.
+
+The programmes may influence **different parts of the same causal pathway**.
+
+It also identifies intermediate measures worth collecting rather than judging every intervention using the same emergency admission indicator.
+
+The Theory of Change makes assumptions:
+
+> **Visible → Discussable → Challengeable → Testable**
+
+For example:
+
+> Does proactive frailty care improve the effectiveness of UCR because clinicians can access an existing care plan?
+
+That is a very different question from simply asking whether the frailty programme independently reduced admissions.
+
+# 5. Map the Population, Exposure and Timing
+
+The ICB identifies an illustrative cohort of **5,000 people living with severe frailty** over a defined period.
+
+Some are also approaching the end of life.
+
+| Service | People recorded as receiving support |
+|---|---:|
+| Proactive frailty care | 1,800 |
+| Enhanced care home support | 900 |
+| UCR | 1,200 |
+| Virtual wards | 500 |
+| Enhanced end-of-life care | 700 |
+| **Total recorded service exposures** | **5,100** |
+
+But:
+
+> **5,100 service exposures does not mean 5,100 different patients.**
+
+One person may receive several interventions.
+
+Eligibility, referral and recording rules may also differ between services.
+
+## Three Patients, Different Combinations of Care
+
+The following fictional pathways make this overlap more tangible.
+
+They illustrate **exposure**, rather than demonstrating that an intervention caused an outcome.
+
+| Person | Characteristics | Sequence of support | Relevant outcome question |
+|---|---|---|---|
+| A | Severe frailty; lives at home | Frailty assessment → shared care plan → UCR | Was deterioration managed appropriately, and what might have happened otherwise? |
+| B | Severe frailty; care home resident | Enhanced care home support → UCR → hospital admission | Was the admission clinically appropriate, and did earlier support improve the pathway? |
+| C | Severe frailty; approaching end of life | Frailty support → anticipatory care planning → end-of-life support | Did care reflect recorded preferences, control symptoms and support carers? |
+
+The same outcome does not necessarily mean the same thing for all three people.
+
+Patient C's care should not be judged principally by admissions avoided.
+
+Nor should Patient B's appropriate admission automatically be classified as programme failure.
+
+## Build the Patient Journey Through the Data
+
+Where governance and data access permit, the evaluation team develops a longitudinal dataset:
+
+> **Patient → Baseline characteristics → Intervention exposure(s) → Timing → Outcomes**
+
+Relevant characteristics might include:
+
+- age
+- frailty
+- multimorbidity
+- deprivation
+- care home residence
+- previous emergency activity
+- living circumstances
+- end-of-life status where appropriately identified.
+
+Dates matter.
+
+The team should ideally know:
+
+- when someone became eligible
+- when they were referred
+- when they actually received an intervention
+- how long support continued
+- when subsequent outcomes occurred.
+
+An intervention cannot reasonably claim an effect on an event that occurred **before the patient received it**.
+
+Similarly, defining an intervention group using care that patients only received later during follow-up can introduce serious bias.
+
+::: {.callout-tip collapse="false"}
+## Questions for the Analyst
+
+- How many **unique people** received each intervention or combination?
+- When did each intervention begin?
+- What was the patient's baseline risk **before** exposure?
+- Which outcomes occurred after the relevant exposure?
+- Are referral, eligibility and activity records sufficiently complete?
+:::
+
+# 6. Establish What Changed — Without Assuming Why
+
+Suppose the ICB reports an:
+
+> **8% reduction in emergency admissions**
+
+among its severe frailty population after the portfolio was introduced.
+
+That is useful descriptive evidence.
+
+It is **not yet a causal estimate**.
+
+Admissions might also have changed because of:
+
+- seasonal demand
+- underlying trends
+- population changes
+- changes in coding
+- other services
+- hospital admission practices
+- changes in ambulance conveyance
+- changes in the characteristics of the frailty cohort.
+
+The evaluation therefore examines:
+
+- absolute activity
+- rates
+- baseline trends
+- population denominators
+- geographical variation
+- inequalities
+- changes in cohort composition
+- other relevant patient outcomes.
+
+## Association, Attribution and Contribution
+
+These concepts should not be used interchangeably.
+
+### Association
+
+An intervention and an outcome occur together.
+
+> Patients receiving the intervention subsequently had fewer admissions.
+
+This does not establish why.
+
+### Attribution
+
+Evidence supports the conclusion that an intervention **caused** a specified change.
+
+This requires a credible evaluation design and counterfactual.
+
+### Contribution
+
+Evidence supports the conclusion that an intervention was **one factor helping to produce change**, while recognising the influence of other interventions and contextual factors.
+
+In complex healthcare systems, contribution may sometimes be more defensible than precise attribution.
+
+# 7. Construct a Credible Counterfactual
+
+The evaluation modules introduced an essential question:
+
+> **What would probably have happened without the intervention?**
+
+Module 17 makes that question harder.
+
+Several interventions may have been introduced together.
+
+Patients receiving those interventions may also be systematically different from patients who do not.
+
+For example, people referred to UCR or virtual wards may have greater clinical need and higher underlying admission risk.
+
+A simple comparison between recipients and non-recipients could therefore be misleading.
+
+## Select the Strongest Feasible Evaluation Design
+
+| Evaluation approach | What it might add | Important limitation |
+|---|---|---|
+| Descriptive trends | Show how outcomes and reach changed | Cannot establish what caused the change |
+| Risk-adjusted comparison | Account for measured differences in baseline risk | Unmeasured differences may remain |
+| Matching or weighting | Improve comparability of observed characteristics | Does not remove unmeasured confounding |
+| Interrupted Time Series | Examine changes in level or trend around implementation | Concurrent changes make attribution difficult |
+| Difference-in-Differences | Compare changes across suitable localities or phased roll-outs | Requires a defensible comparison and plausible parallel trends |
+| Mixed-method contribution analysis | Test mechanisms and alternative explanations using multiple sources | Does not automatically produce intervention-specific causal estimates |
+
+If several programmes begin at the same time across the entire ICB, ITS may help estimate a **portfolio-level change**.
+
+It will usually be much harder to isolate each programme's individual effect.
+
+Where implementation varies across places or time, stronger comparisons may be possible — provided the assumptions are credible.
+
+The evaluation design should follow:
+
+> **the decision question and available evidence**
+
+rather than:
+
+> **the statistical method an analyst happens to have available.**
+
+## Match the Strength of the Claim to the Evidence
+
+A proportionate assurance framework can help decision-makers understand what the available evaluation can support.
+
+These are **illustrative assurance categories**, not universal standards or guarantees of causality.
+
+| Assurance | Illustrative evidence | What the ICB may reasonably conclude |
+|---|---|---|
+| **Bronze** | Aggregate trends, programme activity, implementation accounts and qualitative evidence | What changed, who was reached and which contributions are plausible — but not an attributed impact estimate |
+| **Silver** | More reliable exposure data, baseline-risk adjustment, a defensible comparator where available, plus implementation evidence | A more informative estimate of possible impact, conditional on comparability and other assumptions |
+| **Gold** | Credible quasi-experimental or other strong evaluation design, appropriate longitudinal analysis and triangulation | Stronger causal conclusions about the portfolio or clearly distinguishable changes, where the design genuinely identifies them |
+
+A complex statistical model does not automatically produce Gold evidence.
+
+Simultaneous roll-out of several interventions may prevent separate causal estimates even with excellent linked data.
+
+Assurance should therefore be assessed **for each claim**.
+
+::: {.callout-tip collapse="false"}
+## How Much Evidence Is Enough?
+
+Ask:
+
+**What could go wrong if we act now, how reversible is the decision, and which missing evidence could realistically change it?**
+
+A low-cost, reversible improvement may justify proportionate monitoring.
+
+A major and difficult-to-reverse reallocation requires more demanding scrutiny.
+:::
+
+# 8. Examine Combinations, Not Just Individual Services
+
+The evaluation now moves beyond individual programmes.
+
+The team maps patients to meaningful combinations of care.
+
+For example:
+
+| Exposure group | Question |
+|---|---|
+| Neither proactive frailty care nor UCR | What happened under other existing care arrangements? |
+| Frailty care only | What changes followed proactive support? |
+| UCR only | What changes followed rapid response? |
+| Frailty care + UCR | Is there evidence that proactive support enabled more effective crisis response? |
+
+These groups are **not automatically comparable**.
+
+People receiving both interventions may be more complex or have different levels of risk.
+
+Exposure also changes over time.
+
+The analysis must therefore account for selection and timing as far as the available data and evaluation design permit.
+
+## How Might Interventions Relate to One Another?
+
+Interventions may be:
+
+**Independent**  
+Each operates through largely separate mechanisms.
+
+**Complementary**  
+One increases the effectiveness of another.
+
+**Sequential**  
+One enables a later stage of care.
+
+**Substitutive**  
+One provides an alternative to another.
+
+**Duplicative**  
+Two services provide substantially overlapping activity without additional benefit.
+
+This distinction matters for commissioning.
+
+A programme with a small apparent isolated effect may still be important if it enables another service to work effectively.
+
+Conversely, two apparently successful services may partly duplicate one another.
+
+::: {.callout-example collapse="false"}
+## Illustrative Interaction — Not an Impact Estimate
+
+Imagine separate analyses suggest different outcomes among people receiving:
+
+- proactive frailty care
+- UCR
+- both interventions.
+
+The combination might perform differently from the sum of the individual effects because early planning enables more effective rapid response.
+
+That possibility should be **tested rather than assumed**.
+
+Crude comparisons between exposure groups cannot establish synergy because the patients may differ in risk, timing and clinical need.
+:::
+
+# 9. Triangulate Quantitative, Qualitative and Implementation Evidence
+
+Numbers alone may not explain how the portfolio works.
+
+The team combines:
+
+### Quantitative evidence
+
+Outcome trends, comparisons, reach, timing, variation and uncertainty.
+
+### Qualitative evidence
+
+Patient and carer experience, professional perspectives, barriers and unintended consequences.
+
+### Implementation evidence
+
+Referral criteria, staffing, fidelity, capacity, actual uptake and coordination between services.
+
+### Theory of Change
+
+Whether the mechanisms expected to create change actually occurred.
+
+For example, interviews might reveal that UCR works more effectively when patients already have an accessible frailty care plan.
+
+Alternatively, they might reveal that overlapping referral routes delay access.
+
+Neither finding alone proves an effect on admissions.
+
+But both can help explain observed patterns and identify what should be tested or redesigned.
+
+A proportionate conclusion might therefore be:
+
+> **The available comparative, implementation and qualitative evidence is consistent with proactive frailty care and UCR making complementary contributions to the observed improvement, although their separate causal effects remain uncertain.**
+
+The strength of the language should match the strength of the evidence.
+
+## When the Evidence Disagrees
+
+Real-world evidence rarely fits together perfectly.
+
+Imagine the comparative analysis suggests that the frailty portfolio is associated with fewer emergency admissions.
+
+However:
+
+- patient interviews describe delays and inconsistent continuity
+- UCR staff report that referrals frequently exceed capacity
+- analysis suggests people in more deprived neighbourhoods are less likely to receive proactive frailty assessment.
+
+These findings should not be resolved by taking an average or selecting whichever result supports the original business case.
+
+Instead ask:
+
+> **Why are the findings different?**
+
+The team might investigate:
+
+- whether improvements are concentrated in certain localities
+- whether access differs between population groups
+- whether implementation varies
+- whether the selected outcome measures overlook important experiences.
+
+A defensible synthesis might conclude:
+
+> **Some evidence supports improvement in hospital activity, but access, delivery and patient-experience concerns limit confidence in the portfolio's overall value.**
+
+Module 20 explores broader evidence synthesis in greater depth.
+
+## Test Whether Benefits Are Equitably Distributed
+
+For the severe frailty cohort, examine:
+
+> **Eligible population → Referred → Accepted → Actually treated → Outcomes**
+
+Where possible, examine this by:
+
+- locality
+- deprivation
+- living arrangements
+- care home status
+- other relevant population characteristics.
+
+A fall in admissions at ICB level can coexist with unequal access.
+
+Lower uptake in deprived neighbourhoods might reflect unmet need, different eligibility, patient preferences, service availability or incomplete recording.
+
+The evaluation should investigate rather than assume the explanation.
+
+For people approaching the end of life, preference-concordant outcomes should be assessed separately.
+
+# 10. Reconcile Programme Claims and Avoid Double-Counting
+
+Suppose three programme reports present the following illustrative estimates:
+
+| Programme | Claimed avoided emergency admissions |
+|---|---:|
+| Proactive frailty care | 250 |
+| UCR | 300 |
+| Virtual wards | 200 |
+| **Sum of programme claims** | **750** |
+
+It would be tempting to report:
+
+> **750 admissions avoided**
+
+But that conclusion may be wrong.
+
+The programme estimates might involve:
+
+- overlapping patients
+- different counterfactual assumptions
+- different time periods
+- different definitions
+- the same underlying pathway change.
+
+Suppose a separate, credible **portfolio-level evaluation** estimates:
+
+> **470 fewer admissions than the counterfactual**
+
+with appropriate uncertainty.
+
+The ICB now has two different findings:
+
+**Individual programme claims = 750**
+
+**Portfolio-level estimate = 470**
+
+This does **not** prove that exactly 280 admissions were double-counted.
+
+The difference may also reflect:
+
+- different methods
+- different populations
+- different time periods
+- different assumptions
+- statistical uncertainty.
+
+Nor does simply deduplicating patient records tell us how many admissions were avoided.
+
+An **avoided admission is a counterfactual event**.
+
+It is something estimated to have happened less often than it otherwise would have done.
+
+The team therefore reconciles definitions and methods, identifies overlapping claims and reports the portfolio-level estimate separately.
+
+It should not divide the 470 between programmes unless the evaluation design genuinely supports that attribution.
+
+::: {.callout-important collapse="false"}
+## One Outcome Cannot Be Claimed Several Times
+
+**Adding programme-level avoided-activity estimates is not a valid portfolio impact estimate when interventions overlap.**
+
+First establish whether the estimates refer to compatible populations, periods, outcomes and counterfactuals.
+
+Then use the strongest defensible portfolio analysis.
+:::
+
+## A Financial Caution
+
+Suppose the average reported cost of an emergency admission is £3,000.
+
+It would be tempting to calculate:
+
+> **470 × £3,000 = £1.41 million saved**
+
+But this does not automatically represent a **£1.41 million cash-releasing saving**.
+
+Staff may remain employed.
+
+Beds may remain open.
+
+Estate costs may remain.
+
+Capacity might instead be used by other patients.
+
+The economic interpretation might therefore involve:
+
+- capacity released
+- cost avoided
+- value realised elsewhere
+- potentially some cash-releasing saving
+- wider patient or societal value.
+
+Similarly, monetised ED attendances, admissions and bed days should not simply be added if they represent overlapping consequences of the same patient episode.
+
+# 11. Bring the Findings into a STAR-Informed Portfolio Review
+
+Module 16 introduces **STAR and approaches to resource allocation**.
+
+Module 17 applies those principles to a more complicated situation:
+
+> **What if the effectiveness and value of one intervention depend partly on another?**
+
+The ICB brings together:
+
+- commissioners
+- analysts
+- finance
+- health economics
+- clinicians
+- providers
+- patients and carers.
+
+Instead of treating each programme as an isolated investment, they consider realistic **portfolio configurations**.
+
+| Portfolio option | Question for the evidence review |
+|---|---|
+| Maintain current portfolio | What outcomes, resources and uncertainties are associated with current arrangements? |
+| Expand proactive frailty care | Which additional patients could benefit and what incremental effect is plausible? |
+| Strengthen frailty care and UCR together | Is there evidence that the combination creates additional benefit? |
+| Target virtual wards differently | Could revised eligibility improve outcomes or resource use? |
+| Improve coordination with end-of-life care | Could better integration improve preference-concordant care and reduce unwanted transfers? |
+
+For each feasible option, the team considers:
+
+- population who could benefit
+- incremental resource requirements
+- expected incremental benefit
+- uncertainty
+- distributional effects
+- what alternative use of those resources would be forgone.
+
+The emphasis is on:
+
+> **incremental value**
+
+rather than adding together the historical benefit claims of individual programmes.
+
+## Worked Comparison: What Would Change from Today's Portfolio?
+
+Suppose the current portfolio costs:
+
+> **£4.0 million per year**
+
+The earlier portfolio evaluation produced an illustrative estimate of:
+
+> **470 fewer emergency admissions than its counterfactual**
+
+with substantial uncertainty.
+
+That is a **historical portfolio-level estimate**.
+
+It is not the benefit of any new proposal.
+
+For the next planning year, the ICB considers three scenarios.
+
+The figures below are hypothetical planning assumptions used only to demonstrate the decision process.
+
+| Scenario versus current arrangements | Additional annual cost | Additional people reached | Illustrative incremental health benefit | Important uncertainty or dependency |
+|---|---:|---:|---:|---|
+| **A. Maintain existing portfolio** | £0 | 0 | Reference case | Existing benefits and delivery pressures require continued monitoring |
+| **B. Expand frailty care and integrate UCR** | £450,000 | 600 | 25–55 additional QALYs *if the combined pathway works as modelled* | UCR staffing, access to care plans, patient selection and interaction effects |
+| **C. Retarget virtual wards and coordinate end-of-life care** | £250,000 | 350 | 10–35 additional QALYs *for outcomes appropriately captured by QALYs* | Clinical eligibility, safe alternatives and measurement of preference-concordant care |
+
+All costs, reach and benefits are **incremental relative to Option A**.
+
+The QALY ranges are illustrative assumptions to be populated through appropriate health-economic analysis.
+
+They are **not inferred from the 470 avoided admissions**.
+
+Nor should the QALY ranges be interpreted as confidence intervals.
+
+Options B and C may also reach some of the same people.
+
+Their costs and benefits therefore cannot automatically be added together to create another option.
+
+::: {.callout-example collapse="false"}
+## A Decision Conference, Not an Automatic Winner
+
+Option B appears to offer greater potential population reach, but depends heavily on additional UCR capacity.
+
+Option C has a lower stated incremental cost but greater uncertainty around how end-of-life benefits should be measured.
+
+Stakeholders might therefore decide to:
+
+- request stronger evidence
+- revise eligibility
+- phase implementation
+- develop a combined option
+- strengthen outcome measurement
+- reconsider assumptions.
+
+**The numbers inform the decision. They do not make it.**
+:::
+
+## Separate Economic Value from Budget Impact
+
+For each option, distinguish between:
+
+| Type of benefit | Portfolio example |
+|---|---|
+| Cash-releasing saving | Specific expenditure genuinely removed from a budget |
+| Capacity released | Hospital capacity becomes available for other patients |
+| Cost avoided | Future additional capacity or expenditure is no longer required |
+| Value realised elsewhere | Community investment produces benefit in acute or social care |
+| Wider economic or social benefit | Greater independence or reduced burden on carers |
+
+Implementation, transition, double-running and stranded costs also matter.
+
+A portfolio might:
+
+> **improve health + release capacity + increase net expenditure**
+
+and still represent good value.
+
+But it should not be presented as a cash-saving intervention if expenditure has not actually fallen.
+
+# 12. What If Linked Patient-Level Data Are Unavailable?
+
+Linked patient-level data would strengthen many aspects of this evaluation.
+
+But its absence should change:
+
+> **the strength of the conclusions**
+
+rather than prevent all evaluation.
+
+The team might still use:
+
+- aggregate trends
+- service activity
+- implementation dates
+- variation between places
+- published evidence
+- hospital and community datasets
+- audits
+- structured qualitative evidence.
+
+Where rollout differs between localities, appropriately designed comparisons may still be possible.
+
+However, without reliable patient-level exposure and timing, it may be impossible to accurately measure:
+
+- patient overlap
+- sequences of interventions
+- particular combinations of care.
+
+An aggregate improvement should therefore not be presented as proof that a particular programme caused it.
+
+::: {.callout-tip collapse="false"}
+## Match the Claim to the Evidence
+
+**Stronger design**
+
+> “The analysis estimates a change associated with implementation of the portfolio, subject to the stated assumptions and uncertainty.”
+
+**More limited evidence**
+
+> “The available evidence is consistent with the portfolio contributing to improvement, but the contribution of individual interventions cannot be isolated.”
+
+Do not manufacture precise percentages of contribution where the evidence cannot support them.
+:::
+
+# 13. A Practical Portfolio Evidence Summary
+
+Before the commissioning discussion, the team prepares a **shared portfolio evidence summary** rather than five separate and potentially incompatible benefit reports.
+
+| Intervention or combination | Reach and overlap | Evidence of contribution | Important dependencies | Incremental resources | Benefits and where realised | Uncertainty |
+|---|---|---|---|---|---|---|
+| Proactive frailty care | To be established | Evaluation findings | UCR and wider community care | To be estimated | Patient outcomes and possible downstream capacity | Explicit limitations |
+| UCR | To be established | Evaluation findings | Referral and care planning | To be estimated | Appropriate care at home; potential ED impact | Explicit limitations |
+| Frailty care + UCR | To be established | Combination-specific evidence where feasible | Shared plans and coordination | Joint or incremental costs | Possible complementary value | Interaction uncertainty |
+| Virtual wards | To be established | Evaluation findings | Suitable eligibility and pathways | To be estimated | Alternative to admission / earlier discharge | Selection and timing |
+| End-of-life care | To be established | Outcome-specific evidence | Coordination across services | To be estimated | Preference-concordant care and experience | Outcome measurement |
+
+This is **not a league table**.
+
+Its purpose is to make visible:
+
+- assumptions
+- dependencies
+- costs
+- evidence
+- uncertainty
+- interactions.
+
+The ICB can then consider whether to:
+
+- maintain
+- target
+- combine
+- redesign
+- scale
+- further evaluate
+- disinvest.
+
+## Turn the Discussion into a Testable Commissioning Plan
+
+Suppose, for illustration, that the ICB decides to pilot closer integration between proactive frailty care and UCR in selected localities while reviewing virtual ward eligibility and the experience of people approaching the end of life.
+
+This does **not** mean the previous evaluation proved that this was the correct option.
+
+It demonstrates how a decision can be turned into a testable next step.
+
+| Decision component | Illustrative commitment |
+|---|---|
+| **Reason for change** | Test whether accessible care plans and coordinated rapid response improve appropriate care at home |
+| **Population and equity** | Specify eligibility and monitor uptake across deprivation groups, living arrangements and localities |
+| **Resources** | Identify incremental investment, staffing and double-running costs; do not promise cash savings without a cost-removal plan |
+| **Evaluation** | Record baseline trends, phased start dates where feasible, patient exposure and an appropriate comparator |
+| **Outcomes** | Assess appropriate admissions and ED use, patient and carer experience, implementation and unintended effects; separately assess preference-concordant end-of-life care |
+| **Reassessment** | Agree when to review uptake, implementation, incremental costs, effects and the original assumptions |
+
+The cycle becomes:
+
+> **Decide → Specify expected value → Implement → Monitor → Evaluate → Revisit the decision**
+
+This avoids treating either the original business case or a single evaluation as the final word.
+
+::: {.callout-tip collapse="false"}
+## Questions for the Commissioning Discussion
+
+1. Are programmes reaching the same people, and at what points in their pathway?
+2. Are their intended outcomes genuinely the same?
+3. What comparison supports the portfolio's estimated impact?
+4. Could baseline risk or timing explain apparent differences?
+5. Which services are complementary, sequential, substitutive or duplicative?
+6. Have avoided outcomes or monetised benefits been claimed more than once?
+7. What **incremental** benefits and costs would realistic alternative configurations create?
+8. Who benefits, who might be excluded and what happens to inequalities?
+9. Which benefits release cash, which release capacity and which arise elsewhere?
+10. What remains uncertain, and what additional evidence would change the decision?
+:::
+
+# Bringing It All Together
+
+The worked example follows one connected decision pathway:
+
+**Shared population and outcomes**
+
+↓
+
+**Theory of Change and intervention map**
+
+↓
+
+**Exposure, timing and baseline risk**
+
+↓
+
+**Credible counterfactual and evaluation design**
+
+↓
+
+**Interaction and contribution analysis**
+
+↓
+
+**Quantitative, qualitative and implementation evidence**
+
+↓
+
+**Reconciled portfolio benefits**
+
+↓
+
+**STAR-informed comparison of realistic portfolio options**
+
+↓
+
+**Transparent commissioning judgement and continued learning**
+
+The important shift is from:
+
+> **Which programme can claim the improvement?**
+
+to:
+
+> **What combination of interventions appears to create value for this population, what would change under realistic alternatives, and how confident are we?**
+
+# Key Takeaways
+
+- The **patient and population**, rather than the programme business case, should help define the evaluation.
+- Shared outcomes do not mean interventions have identical mechanisms or target exactly the same people.
+- A fall in admissions is not, on its own, proof of portfolio impact — and is not always the right outcome for end-of-life care.
+- **Exposure, timing, selection bias and the counterfactual** are central to credible evaluation.
+- Interventions can be complementary, sequential, substitutive or duplicative; their benefits should not automatically be added.
+- **Contribution** may be more defensible than precise intervention-specific attribution.
+- Programme claims need reconciliation before estimating portfolio impact or financial value.
+- **STAR-informed resource allocation** should compare feasible portfolio alternatives and incremental value, with interactions and uncertainty made explicit.
+- When linked data are limited, triangulate available evidence and match the strength of the claim to the strength of the design.
+- Compare **incremental** costs and benefits against the current portfolio rather than treating past portfolio impact as the benefit of a new option.
+- Make equity, contradictory findings, decision assumptions and plans for reassessment explicit.
+
+::: {.callout-important collapse="false"}
+## The Question to Remember
+
+**Are we evaluating separate services — or understanding what combination of care makes the greatest difference for the people we serve?**
+:::
