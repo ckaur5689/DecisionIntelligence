@@ -74,7 +74,7 @@ Topics include:
     - How do we redesign, implement and evaluate better pathways?
 15. Health Economics & Value in Healthcare Decision-Making⭐
     - Is the improvement worth the investment?
-16  Applying Health Economics to Healthcare Decisions
+16.  Applying Health Economics to Healthcare Decisions
     - Comparing costs, outcomes and value
 17. Understanding What Made the Difference ⭐
     - Evaluating Multiple Interventions in Complex Healthcare Systems 
