@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Module 20: Bringing Evidence Together (BETA) – Healthcare Decision Intelligence</title>
+<title>Module 20: Bringing Evidence Together – Healthcare Decision Intelligence</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -86,6 +86,9 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+<script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 <link rel="stylesheet" href="../styles.css">
@@ -100,7 +103,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../modules/20-Bringing-Evidence-Together.html"><span class="chapter-title">Module 20: Bringing Evidence Together (BETA)</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../modules/20-Bringing-Evidence-Together.html"><span class="chapter-title">Module 20: Bringing Evidence Together</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -227,22 +230,22 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../modules/17-Understanding-What-Made-the-Difference.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Module 17: Understanding What Made the Difference (BETA)</span></a>
+  <a href="../modules/17-Understanding-What-Made-the-Difference.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Module 17: Understanding What Made the Difference</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../modules/18-Population-Health-Management-&amp;-Population-Segmentation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Module 18: Population Health Management &amp; Population Segmentation (BETA)</span></a>
+  <a href="../modules/18-Population-Health-Management-&amp;-Population-Segmentation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Module 18: Population Health Management &amp; Population Segmentation</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../modules/19-Testing-Decisions-Before-We-Make-Them.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Module 19: Testing Decisions Before We Make Them (BETA)</span></a>
+  <a href="../modules/19-Testing-Decisions-Before-We-Make-Them.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Module 19: Testing Decisions Before We Make Them</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../modules/20-Bringing-Evidence-Together.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Module 20: Bringing Evidence Together (BETA)</span></a>
+  <a href="../modules/20-Bringing-Evidence-Together.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Module 20: Bringing Evidence Together</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -264,6 +267,42 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#why-this-module-matters" id="toc-why-this-module-matters" class="nav-link" data-scroll-target="#why-this-module-matters">1. Why This Module Matters</a></li>
   <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives">Learning Objectives</a></li>
   <li><a href="#two-sides-of-the-same-coin" id="toc-two-sides-of-the-same-coin" class="nav-link" data-scroll-target="#two-sides-of-the-same-coin">2. Two Sides of the Same Coin</a></li>
+  <li><a href="#different-evidence-answers-different-questions" id="toc-different-evidence-answers-different-questions" class="nav-link" data-scroll-target="#different-evidence-answers-different-questions">3. Different Evidence Answers Different Questions</a></li>
+  <li><a href="#what-counts-as-qualitative-evidence" id="toc-what-counts-as-qualitative-evidence" class="nav-link" data-scroll-target="#what-counts-as-qualitative-evidence">4. What Counts as Qualitative Evidence?</a>
+  <ul class="collapse">
+  <li><a href="#patient-and-public-experience" id="toc-patient-and-public-experience" class="nav-link" data-scroll-target="#patient-and-public-experience">Patient and Public Experience</a></li>
+  <li><a href="#community-and-voluntary-sector-insight" id="toc-community-and-voluntary-sector-insight" class="nav-link" data-scroll-target="#community-and-voluntary-sector-insight">Community and Voluntary Sector Insight</a></li>
+  <li><a href="#professional-and-clinical-insight" id="toc-professional-and-clinical-insight" class="nav-link" data-scroll-target="#professional-and-clinical-insight">Professional and Clinical Insight</a></li>
+  <li><a href="#operational-insight" id="toc-operational-insight" class="nav-link" data-scroll-target="#operational-insight">Operational Insight</a></li>
+  <li><a href="#formal-qualitative-research" id="toc-formal-qualitative-research" class="nav-link" data-scroll-target="#formal-qualitative-research">Formal Qualitative Research</a></li>
+  <li><a href="#existing-engagement-evidence" id="toc-existing-engagement-evidence" class="nav-link" data-scroll-target="#existing-engagement-evidence">Existing Engagement Evidence</a></li>
+  <li><a href="#literature-and-existing-research" id="toc-literature-and-existing-research" class="nav-link" data-scroll-target="#literature-and-existing-research">Literature and Existing Research</a></li>
+  </ul></li>
+  <li><a href="#qualitative-evidence-is-more-than-anecdote" id="toc-qualitative-evidence-is-more-than-anecdote" class="nav-link" data-scroll-target="#qualitative-evidence-is-more-than-anecdote">5. Qualitative Evidence Is More Than Anecdote</a></li>
+  <li><a href="#what-is-an-evidence-spine" id="toc-what-is-an-evidence-spine" class="nav-link" data-scroll-target="#what-is-an-evidence-spine">6. What Is an Evidence Spine?</a></li>
+  <li><a href="#triangulation-looking-across-the-evidence" id="toc-triangulation-looking-across-the-evidence" class="nav-link" data-scroll-target="#triangulation-looking-across-the-evidence">7. Triangulation: Looking Across the Evidence</a>
+  <ul class="collapse">
+  <li><a href="#convergence" id="toc-convergence" class="nav-link" data-scroll-target="#convergence">Convergence</a></li>
+  <li><a href="#complementarity" id="toc-complementarity" class="nav-link" data-scroll-target="#complementarity">Complementarity</a></li>
+  <li><a href="#disagreement" id="toc-disagreement" class="nav-link" data-scroll-target="#disagreement">Disagreement</a></li>
+  </ul></li>
+  <li><a href="#worked-example-understanding-emergency-admissions-among-people-living-with-frailty" id="toc-worked-example-understanding-emergency-admissions-among-people-living-with-frailty" class="nav-link" data-scroll-target="#worked-example-understanding-emergency-admissions-among-people-living-with-frailty">8. Worked Example: Understanding Emergency Admissions Among People Living with Frailty</a>
+  <ul class="collapse">
+  <li><a href="#step-1-establish-the-quantitative-picture" id="toc-step-1-establish-the-quantitative-picture" class="nav-link" data-scroll-target="#step-1-establish-the-quantitative-picture">Step 1 — Establish the Quantitative Picture</a></li>
+  <li><a href="#step-2-review-existing-qualitative-evidence" id="toc-step-2-review-existing-qualitative-evidence" class="nav-link" data-scroll-target="#step-2-review-existing-qualitative-evidence">Step 2 — Review Existing Qualitative Evidence</a></li>
+  <li><a href="#step-3-gather-professional-and-operational-insight" id="toc-step-3-gather-professional-and-operational-insight" class="nav-link" data-scroll-target="#step-3-gather-professional-and-operational-insight">Step 3 — Gather Professional and Operational Insight</a></li>
+  <li><a href="#step-4-look-for-convergence-and-difference" id="toc-step-4-look-for-convergence-and-difference" class="nav-link" data-scroll-target="#step-4-look-for-convergence-and-difference">Step 4 — Look for Convergence and Difference</a></li>
+  <li><a href="#step-5-construct-the-evidence-spine" id="toc-step-5-construct-the-evidence-spine" class="nav-link" data-scroll-target="#step-5-construct-the-evidence-spine">Step 5 — Construct the Evidence Spine</a></li>
+  </ul></li>
+  <li><a href="#evidence-should-generate-better-questions" id="toc-evidence-should-generate-better-questions" class="nav-link" data-scroll-target="#evidence-should-generate-better-questions">9. Evidence Should Generate Better Questions</a></li>
+  <li><a href="#do-not-give-every-piece-of-evidence-equal-weight" id="toc-do-not-give-every-piece-of-evidence-equal-weight" class="nav-link" data-scroll-target="#do-not-give-every-piece-of-evidence-equal-weight">10. Do Not Give Every Piece of Evidence Equal Weight</a></li>
+  <li><a href="#whose-voice-is-missing" id="toc-whose-voice-is-missing" class="nav-link" data-scroll-target="#whose-voice-is-missing">11. Whose Voice Is Missing?</a></li>
+  <li><a href="#evidence-gaps-are-part-of-the-evidence-spine" id="toc-evidence-gaps-are-part-of-the-evidence-spine" class="nav-link" data-scroll-target="#evidence-gaps-are-part-of-the-evidence-spine">12. Evidence Gaps Are Part of the Evidence Spine</a></li>
+  <li><a href="#presenting-the-evidence-to-decision-makers" id="toc-presenting-the-evidence-to-decision-makers" class="nav-link" data-scroll-target="#presenting-the-evidence-to-decision-makers">13. Presenting the Evidence to Decision-Makers</a></li>
+  <li><a href="#from-evidence-spine-to-decision" id="toc-from-evidence-spine-to-decision" class="nav-link" data-scroll-target="#from-evidence-spine-to-decision">14. From Evidence Spine to Decision</a></li>
+  <li><a href="#decision-maker-questions" id="toc-decision-maker-questions" class="nav-link" data-scroll-target="#decision-maker-questions">15. Decision-Maker Questions</a></li>
+  <li><a href="#bringing-it-all-together" id="toc-bringing-it-all-together" class="nav-link" data-scroll-target="#bringing-it-all-together">Bringing It All Together</a></li>
+  <li><a href="#key-takeaways" id="toc-key-takeaways" class="nav-link" data-scroll-target="#key-takeaways">Key Takeaways</a></li>
   </ul>
 </nav>
     </div>
@@ -272,7 +311,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">Module 20: Bringing Evidence Together (BETA)</span></h1>
+<h1 class="title"><span class="chapter-title">Module 20: Bringing Evidence Together</span></h1>
 </div>
 
 
@@ -310,32 +349,12 @@ ul.task-list li input[type="checkbox"] {
 <li>outcomes differ between pathways</li>
 <li>a new intervention appears to be associated with improvement.</li>
 </ul>
-<p>These findings are important.</p>
-<p>But they often lead to another question:</p>
+<p>These findings are important. But they often lead to another question:</p>
 <blockquote class="blockquote">
 <p><strong>Why?</strong></p>
 </blockquote>
-<p>Quantitative analysis can identify the <strong>scale, distribution and pattern</strong> of a problem.</p>
-<p>It can show:</p>
-<ul>
-<li>how many</li>
-<li>how often</li>
-<li>where</li>
-<li>when</li>
-<li>for whom</li>
-<li>whether something is changing</li>
-<li>whether variation exists.</li>
-</ul>
-<p>But numbers alone may not explain:</p>
-<ul>
-<li>why people do not access a service</li>
-<li>why clinicians use pathways differently</li>
-<li>why an intervention works well in one place but not another</li>
-<li>why apparently similar populations experience different outcomes</li>
-<li>how patients experience a pathway</li>
-<li>what implementation barriers exist</li>
-<li>whether the outcomes being measured are the outcomes that matter most to people.</li>
-</ul>
+<p>Quantitative analysis can identify the <strong>scale, distribution and pattern</strong> of a problem. It can show how many, how often, where, when, for whom, whether something is changing and whether variation exists.</p>
+<p>But numbers alone may not explain why people do not access a service, why clinicians use pathways differently, why an intervention works well in one place but not another, why apparently similar populations experience different outcomes, how patients experience a pathway, what implementation barriers exist, or whether the outcomes being measured are the outcomes that matter most to people.</p>
 <p>Qualitative evidence can help answer these questions.</p>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="true" aria-label="Toggle callout">
@@ -378,10 +397,697 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="two-sides-of-the-same-coin" class="level1">
 <h1>2. Two Sides of the Same Coin</h1>
+<p>Quantitative and qualitative evidence are sometimes treated as if they sit in separate analytical worlds. They should not.</p>
+<p>A useful way to think about them is as <strong>two sides of the same coin</strong>.</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+    QN["QUANTITATIVE EVIDENCE&lt;br/&gt;&lt;br/&gt;How many?&lt;br/&gt;How often?&lt;br/&gt;Where?&lt;br/&gt;For whom?&lt;br/&gt;How much variation?&lt;br/&gt;What changed?"]
+    C(("UNDERSTANDING&lt;br/&gt;THE POPULATION&lt;br/&gt;AND SYSTEM"))
+    QL["QUALITATIVE EVIDENCE&lt;br/&gt;&lt;br/&gt;Why?&lt;br/&gt;How?&lt;br/&gt;What was experienced?&lt;br/&gt;What matters?&lt;br/&gt;What are the barriers?&lt;br/&gt;What is the context?"]
+    QN --&gt; C
+    QL --&gt; C
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<p><strong>Quantitative evidence</strong> might tell us that uptake of a community service is 30% lower in one population group.</p>
+<p><strong>Qualitative evidence</strong> might help explain why. For example, people may not understand the service; referral processes may be difficult to navigate; transport may be a barrier; appointment times may be unsuitable; clinicians may apply eligibility criteria differently; or previous experiences may affect willingness to engage.</p>
+<p>Neither form of evidence provides the complete picture on its own.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Two Sides of the Same Coin
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<p><strong>Numbers tell us about patterns.</strong></p>
+<p><strong>People and context help us understand those patterns.</strong></p>
+<p>Bringing the two together gives decision-makers a more complete understanding of the problem.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="different-evidence-answers-different-questions" class="level1">
+<h1>3. Different Evidence Answers Different Questions</h1>
+<p>The purpose of combining evidence is not to collect as much information as possible. It is to answer the <strong>decision question</strong>.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Question</th>
+<th>Potential evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>How large is the problem?</td>
+<td>Population data, activity, prevalence, rates</td>
+</tr>
+<tr class="even">
+<td>Who is most affected?</td>
+<td>Demographic, clinical, geographical and inequality analysis</td>
+</tr>
+<tr class="odd">
+<td>Where does variation exist?</td>
+<td>Comparative quantitative analysis</td>
+</tr>
+<tr class="even">
+<td>What has changed?</td>
+<td>Trends, evaluation, outcome data</td>
+</tr>
+<tr class="odd">
+<td>Why might this be happening?</td>
+<td>Interviews, focus groups, operational insight</td>
+</tr>
+<tr class="even">
+<td>What do patients experience?</td>
+<td>Patient stories, engagement findings, complaints, interviews</td>
+</tr>
+<tr class="odd">
+<td>What matters to communities?</td>
+<td>Community engagement, voluntary sector insight</td>
+</tr>
+<tr class="even">
+<td>What do professionals observe?</td>
+<td>Clinical and operational insight</td>
+</tr>
+<tr class="odd">
+<td>What does wider research tell us?</td>
+<td>Literature reviews, published studies, guidelines</td>
+</tr>
+<tr class="even">
+<td>Did an intervention make a difference?</td>
+<td>Evaluation evidence</td>
+</tr>
+<tr class="odd">
+<td>What might happen if we change the system?</td>
+<td>Scenario and simulation modelling</td>
+</tr>
+<tr class="even">
+<td>What remains uncertain?</td>
+<td>Evidence gaps, conflicting findings, sensitivity analysis</td>
+</tr>
+</tbody>
+</table>
+<p>No single evidence source is expected to answer all of these questions. The objective is to construct a coherent picture from the sources most relevant to the decision.</p>
+</section>
+<section id="what-counts-as-qualitative-evidence" class="level1">
+<h1>4. What Counts as Qualitative Evidence?</h1>
+<p>Qualitative evidence is broader than formal interviews and focus groups. Healthcare organisations already hold substantial qualitative intelligence. The challenge is often recognising it, accessing it and using it systematically.</p>
+<section id="patient-and-public-experience" class="level2">
+<h2 class="anchored" data-anchor-id="patient-and-public-experience">Patient and Public Experience</h2>
+<p>Examples include patient interviews, focus groups, listening exercises, patient stories, community conversations, engagement exercises, public consultations, surveys containing free-text responses, complaints, compliments, Patient Advice and Liaison Service information and Healthwatch reports.</p>
+<p>These sources can provide insight into barriers to access, experiences of care, communication, continuity, dignity, trust, preferences and outcomes that matter to patients.</p>
+</section>
+<section id="community-and-voluntary-sector-insight" class="level2">
+<h2 class="anchored" data-anchor-id="community-and-voluntary-sector-insight">Community and Voluntary Sector Insight</h2>
+<p>Voluntary, community, faith and social enterprise organisations may hold important knowledge about populations that healthcare services do not routinely see.</p>
+<p>This might include barriers experienced by particular communities, unmet need, reasons for low service uptake, social circumstances, trust in services, digital exclusion, transport, language and cultural factors.</p>
+<p>These organisations may act as <strong>trusted intermediaries</strong> between communities and statutory organisations. Their existing insight can therefore be an important component of the evidence picture.</p>
+</section>
+<section id="professional-and-clinical-insight" class="level2">
+<h2 class="anchored" data-anchor-id="professional-and-clinical-insight">Professional and Clinical Insight</h2>
+<p>Healthcare professionals observe the system from within. Potential sources include clinicians, nurses, pharmacists, allied health professionals, care coordinators, social care professionals and primary care teams.</p>
+<p>They may identify pathway problems, inappropriate referrals, gaps between services, duplicated processes, eligibility problems, unintended consequences and changing patient complexity.</p>
+<p>Professional opinion should not automatically be treated as fact. But neither should it be dismissed simply because it is not quantitative. It can provide important hypotheses and contextual explanations that can subsequently be tested against other evidence.</p>
+</section>
+<section id="operational-insight" class="level2">
+<h2 class="anchored" data-anchor-id="operational-insight">Operational Insight</h2>
+<p>Operational teams often understand practical constraints that are poorly represented in routine datasets. Examples include workforce constraints, referral processes, administrative delays, scheduling problems, capacity constraints, pathway workarounds and data recording practices.</p>
+<p>This can be particularly important when quantitative data show unexplained variation.</p>
+</section>
+<section id="formal-qualitative-research" class="level2">
+<h2 class="anchored" data-anchor-id="formal-qualitative-research">Formal Qualitative Research</h2>
+<p>More structured approaches include:</p>
+<ul>
+<li>semi-structured interviews</li>
+<li>in-depth interviews</li>
+<li>focus groups</li>
+<li>observation</li>
+<li>ethnographic approaches</li>
+<li>case studies.</li>
+</ul>
+<p>These approaches allow researchers to explore experiences, mechanisms and context systematically.</p>
+</section>
+<section id="existing-engagement-evidence" class="level2">
+<h2 class="anchored" data-anchor-id="existing-engagement-evidence">Existing Engagement Evidence</h2>
+<p>New engagement should not automatically be the first response to every evidence gap.</p>
+<p>Relevant engagement may already have been undertaken by NHS organisations, local authorities, Healthwatch, voluntary organisations, community organisations, universities, charities and service providers.</p>
+<p>The first question can therefore be:</p>
+<blockquote class="blockquote">
+<p><strong>What do we already know?</strong></p>
+</blockquote>
+<p>rather than:</p>
+<blockquote class="blockquote">
+<p><em>Who should we ask again?</em></p>
+</blockquote>
+</section>
+<section id="literature-and-existing-research" class="level2">
+<h2 class="anchored" data-anchor-id="literature-and-existing-research">Literature and Existing Research</h2>
+<p>Qualitative evidence also exists within published research. Literature reviews can identify known barriers to access, patient experiences, implementation challenges, behavioural factors, mechanisms through which interventions may work and evidence from similar populations or settings.</p>
+<p>Local qualitative evidence and published research can therefore complement one another.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Existing Insight Has Value
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<p><strong>Do not assume that every decision requires a new engagement exercise.</strong></p>
+<p>Start by understanding what patients, communities, professionals and researchers have already told us.</p>
+<p>Then identify what remains unknown.</p>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="qualitative-evidence-is-more-than-anecdote" class="level1">
+<h1>5. Qualitative Evidence Is More Than Anecdote</h1>
+<p>A common criticism of qualitative evidence is:</p>
+<blockquote class="blockquote">
+<p><em>That’s just anecdotal.</em></p>
+</blockquote>
+<p>Sometimes it is. One individual’s experience should not automatically be assumed to represent an entire population.</p>
+<p>But systematically gathered qualitative evidence is different from an isolated anecdote. Its strength can be improved through clear questions, transparent sampling, inclusion of diverse perspectives, systematic coding or thematic analysis, documentation of methods, searching for contradictory views, comparing findings across sources and triangulation with quantitative evidence.</p>
+<p>The objective is not necessarily to estimate <strong>how many people</strong> hold a particular view. It may instead be to understand:</p>
+<blockquote class="blockquote">
+<p><strong>What experiences exist, why they occur, and what they might mean for the decision.</strong></p>
+</blockquote>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Different Evidence Requires Different Tests
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<p>We should not judge qualitative evidence using exactly the same criteria used for quantitative analysis.</p>
+<p>The relevant questions include:</p>
+<ul>
+<li>Whose voices are represented?</li>
+<li>Whose voices might be missing?</li>
+<li>How was the evidence gathered?</li>
+<li>Are themes consistent across sources?</li>
+<li>Are contradictory experiences visible?</li>
+<li>Is the interpretation transparent?</li>
+<li>Does other evidence support or challenge the findings?</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="what-is-an-evidence-spine" class="level1">
+<h1>6. What Is an Evidence Spine?</h1>
+<p>An <strong>evidence spine</strong> provides a structured connection between the decision being considered and the evidence supporting it.</p>
+<p>It prevents decision-making from becoming a collection of disconnected statistics, reports and opinions.</p>
 <p>Quantitative and qualitative evidence are sometimes treated as if they sit in separate analytical worlds.</p>
 <p>They should not.</p>
 <p>A useful way to think about them is as <strong>two sides of the same coin</strong>.</p>
 <p><img src="../images/Two-Sides-to-Better-Decisions.png" class="img-fluid"></p>
+<p>The evidence spine does not imply that evidence is always linear. Rather, it creates a disciplined way of asking:</p>
+<ol type="1">
+<li>What decision are we trying to make?</li>
+<li>What do we know about the population and need?</li>
+<li>What does the quantitative evidence tell us?</li>
+<li>What does qualitative evidence tell us?</li>
+<li>What does existing research and evaluation tell us?</li>
+<li>Where do these sources agree?</li>
+<li>Where do they provide different but complementary information?</li>
+<li>Where do they conflict?</li>
+<li>What remains uncertain?</li>
+<li>What does this collectively mean for the decision?</li>
+</ol>
+</section>
+<section id="triangulation-looking-across-the-evidence" class="level1">
+<h1>7. Triangulation: Looking Across the Evidence</h1>
+<p>Triangulation means examining a question using more than one source or form of evidence. The purpose is not simply to see whether everything agrees.</p>
+<section id="convergence" class="level2">
+<h2 class="anchored" data-anchor-id="convergence">Convergence</h2>
+<p>Different evidence sources point towards a similar conclusion.</p>
+<p><strong>Quantitative evidence:</strong> uptake of a service is substantially lower in deprived neighbourhoods.</p>
+<p><strong>Qualitative evidence:</strong> patients report transport and appointment-time barriers.</p>
+<p><strong>Professional insight:</strong> staff report difficulty reaching people who cannot attend standard clinic appointments.</p>
+<p>Together, these strengthen the hypothesis that <strong>access may be contributing to lower uptake</strong>.</p>
+</section>
+<section id="complementarity" class="level2">
+<h2 class="anchored" data-anchor-id="complementarity">Complementarity</h2>
+<p>Different evidence sources tell different parts of the story.</p>
+<p><strong>Quantitative evidence:</strong> emergency admissions are higher among people living with severe frailty.</p>
+<p><strong>Qualitative evidence:</strong> patients and carers describe difficulty obtaining support during deterioration outside normal working hours.</p>
+<p>The qualitative evidence does not simply confirm the quantitative result. It adds an explanation that was not visible in the numbers.</p>
+</section>
+<section id="disagreement" class="level2">
+<h2 class="anchored" data-anchor-id="disagreement">Disagreement</h2>
+<p>Evidence sources may conflict.</p>
+<p><strong>Routine data:</strong> access appears broadly similar between two populations.</p>
+<p>But <strong>community insight:</strong> one population reports substantial difficulty accessing the service.</p>
+<p>This should not automatically lead us to discard one source. Instead ask whether we are measuring the right form of access, whether the dataset captures unsuccessful attempts to access care, whether averages conceal subgroup differences, whether the qualitative evidence is drawn from a particular population, whether the service has changed recently, or whether there are data quality problems.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Disagreement Is Useful Evidence
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<p><strong>Triangulation is not about forcing all evidence to agree.</strong></p>
+<p>Disagreement can reveal measurement problems, hidden inequalities, different perspectives, missing variables, evidence gaps and incorrect assumptions.</p>
+<p>Sometimes the most useful insight comes from asking:</p>
+<blockquote class="blockquote">
+<p><strong>Why don’t these sources agree?</strong></p>
+</blockquote>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="worked-example-understanding-emergency-admissions-among-people-living-with-frailty" class="level1">
+<h1>8. Worked Example: Understanding Emergency Admissions Among People Living with Frailty</h1>
+<p>Consider an ICB trying to answer:</p>
+<blockquote class="blockquote">
+<p><strong>Why are emergency admissions among people living with frailty higher in some neighbourhoods, and where might intervention make the greatest difference?</strong></p>
+</blockquote>
+<section id="step-1-establish-the-quantitative-picture" class="level2">
+<h2 class="anchored" data-anchor-id="step-1-establish-the-quantitative-picture">Step 1 — Establish the Quantitative Picture</h2>
+<p>Analysis finds that emergency admission rates are higher in several neighbourhoods. These neighbourhoods also have older populations; severe frailty is more prevalent; multimorbidity is higher; deprivation is higher in some areas; and community service utilisation varies substantially.</p>
+<p>After adjusting for age and other available measures of need, some variation remains.</p>
+<p>This tells decision-makers <strong>where the problem appears greatest and which populations are most affected</strong>, but it does not fully explain why.</p>
+</section>
+<section id="step-2-review-existing-qualitative-evidence" class="level2">
+<h2 class="anchored" data-anchor-id="step-2-review-existing-qualitative-evidence">Step 2 — Review Existing Qualitative Evidence</h2>
+<p>Rather than immediately commissioning new engagement, the Insight team reviews existing sources, including Healthwatch reports, previous patient engagement, voluntary sector intelligence, complaints and free-text feedback, community service reviews, published qualitative research on frailty and existing interviews with carers.</p>
+<p>Several themes emerge:</p>
+<ul>
+<li>difficulty navigating services</li>
+<li>carers being unsure whom to contact during deterioration</li>
+<li>concerns about accessing support outside normal hours</li>
+<li>poor continuity between services</li>
+<li>patients repeating their story to multiple professionals.</li>
+</ul>
+<p>These themes provide potential explanations for some of the observed quantitative patterns.</p>
+</section>
+<section id="step-3-gather-professional-and-operational-insight" class="level2">
+<h2 class="anchored" data-anchor-id="step-3-gather-professional-and-operational-insight">Step 3 — Gather Professional and Operational Insight</h2>
+<p>Discussions with professionals identify additional issues:</p>
+<ul>
+<li>variation in referral thresholds</li>
+<li>differences in awareness of community alternatives</li>
+<li>inconsistent availability of rapid response services</li>
+<li>workforce constraints</li>
+<li>variation in how frailty is recorded.</li>
+</ul>
+<p>This generates hypotheses that can be checked against available data. For example:</p>
+<blockquote class="blockquote">
+<p><strong>Do areas with lower UCR utilisation have higher emergency admission rates after accounting for population need?</strong></p>
+</blockquote>
+<p>The qualitative evidence has therefore generated a <strong>testable analytical question</strong>.</p>
+</section>
+<section id="step-4-look-for-convergence-and-difference" class="level2">
+<h2 class="anchored" data-anchor-id="step-4-look-for-convergence-and-difference">Step 4 — Look for Convergence and Difference</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Evidence</th>
+<th>Finding</th>
+<th>What it contributes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Population analysis</td>
+<td>Higher frailty and multimorbidity in some areas</td>
+<td>Explains part of variation</td>
+</tr>
+<tr class="even">
+<td>Admission analysis</td>
+<td>Variation remains after adjusting for available need measures</td>
+<td>Suggests further investigation</td>
+</tr>
+<tr class="odd">
+<td>Community activity</td>
+<td>UCR utilisation differs between areas</td>
+<td>Identifies possible pathway variation</td>
+</tr>
+<tr class="even">
+<td>Patient/carer insight</td>
+<td>Difficulty accessing urgent support</td>
+<td>Suggests potential mechanism</td>
+</tr>
+<tr class="odd">
+<td>Professional insight</td>
+<td>Referral thresholds vary</td>
+<td>Suggests pathway explanation</td>
+</tr>
+<tr class="even">
+<td>Operational evidence</td>
+<td>Workforce availability differs</td>
+<td>Provides implementation context</td>
+</tr>
+<tr class="odd">
+<td>Literature</td>
+<td>Timely community support may help some people remain at home</td>
+<td>Provides external evidence</td>
+</tr>
+</tbody>
+</table>
+<p>No single row answers the commissioning question. Together they create a much stronger evidence picture.</p>
+</section>
+<section id="step-5-construct-the-evidence-spine" class="level2">
+<h2 class="anchored" data-anchor-id="step-5-construct-the-evidence-spine">Step 5 — Construct the Evidence Spine</h2>
+<blockquote class="blockquote">
+<p><strong>Population need</strong></p>
+<p>Older population + frailty + multimorbidity</p>
+<p>↓</p>
+<p><strong>Observed pattern</strong></p>
+<p>Higher emergency admissions in some neighbourhoods</p>
+<p>↓</p>
+<p><strong>Unexplained variation</strong></p>
+<p>Population need explains some, but not all, of the difference</p>
+<p>↓</p>
+<p><strong>Qualitative insight</strong></p>
+<p>Patients and carers describe difficulties accessing timely support</p>
+<p>↓</p>
+<p><strong>Professional and operational insight</strong></p>
+<p>Referral practices and community capacity vary</p>
+<p>↓</p>
+<p><strong>External evidence</strong></p>
+<p>Timely community responses may support some people safely at home</p>
+<p>↓</p>
+<p><strong>Intervention hypothesis</strong></p>
+<p>More consistent access to proactive and urgent community support may reduce avoidable escalation for some people with frailty</p>
+<p>↓</p>
+<p><strong>Decision</strong></p>
+<p>Consider whether targeted pathway redesign should be developed and evaluated.</p>
+</blockquote>
+<p>Notice what the evidence spine <strong>does not</strong> say:</p>
+<blockquote class="blockquote">
+<p><em>Community services will definitely reduce emergency admissions.</em></p>
+</blockquote>
+<p>The evidence supports a plausible intervention hypothesis. It does not remove uncertainty.</p>
+</section>
+</section>
+<section id="evidence-should-generate-better-questions" class="level1">
+<h1>9. Evidence Should Generate Better Questions</h1>
+<p>One of the most useful relationships between quantitative and qualitative evidence is that each can generate questions for the other.</p>
+<p><strong>Quantitative finding:</strong> service uptake is unexpectedly low in one locality.</p>
+<p>This generates a qualitative question:</p>
+<blockquote class="blockquote">
+<p><strong>Why are people not using the service?</strong></p>
+</blockquote>
+<p>Qualitative investigation might identify transport and opening hours as important barriers.</p>
+<p>That generates another quantitative question:</p>
+<blockquote class="blockquote">
+<p><strong>Is lower uptake concentrated among people living further from the service or among particular population groups?</strong></p>
+</blockquote>
+<p>The process becomes iterative:</p>
+<blockquote class="blockquote">
+<p><strong>Quantitative → Qualitative → New hypothesis → Quantitative testing → Further insight</strong></p>
+</blockquote>
+<p>This is more powerful than treating quantitative and qualitative analysis as separate workstreams.</p>
+</section>
+<section id="do-not-give-every-piece-of-evidence-equal-weight" class="level1">
+<h1>10. Do Not Give Every Piece of Evidence Equal Weight</h1>
+<p>Bringing evidence together does not mean treating every source as equally reliable.</p>
+<p>A national systematic review and a single local anecdote should not automatically carry the same evidential weight. Similarly, a large administrative dataset may be statistically precise but still measure the wrong thing.</p>
+<p>Evidence should be considered in terms of:</p>
+<ul>
+<li>relevance</li>
+<li>quality</li>
+<li>timeliness</li>
+<li>population applicability</li>
+<li>methodological strength</li>
+<li>consistency</li>
+<li>completeness</li>
+<li>potential bias.</li>
+</ul>
+<p>The key question is:</p>
+<blockquote class="blockquote">
+<p><strong>How much confidence should this evidence contribute to this particular decision?</strong></p>
+</blockquote>
+<p>This requires judgement. It should also be transparent.</p>
+</section>
+<section id="whose-voice-is-missing" class="level1">
+<h1>11. Whose Voice Is Missing?</h1>
+<p>An evidence spine can look comprehensive while still excluding important populations.</p>
+<p>For example, engagement evidence may disproportionately represent people who already use services, speak English, can participate digitally, have time to attend meetings or are comfortable engaging with statutory organisations.</p>
+<p>Decision-makers should therefore ask:</p>
+<ul>
+<li>Which populations are represented?</li>
+<li>Which populations are missing?</li>
+<li>Are people with the greatest need visible?</li>
+<li>Are we relying primarily on people already connected to services?</li>
+<li>Could trusted community organisations provide insight from populations we rarely hear from?</li>
+</ul>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Absence of Evidence Is Not Evidence of Absence
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<p>A lack of complaints, engagement or service use does not necessarily indicate a lack of need or a positive experience.</p>
+<p>Some populations may simply be less visible to the system.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="evidence-gaps-are-part-of-the-evidence-spine" class="level1">
+<h1>12. Evidence Gaps Are Part of the Evidence Spine</h1>
+<p>A good evidence synthesis should not hide uncertainty. It should make it visible.</p>
+<p><strong>What we know:</strong> emergency admissions are higher in several neighbourhoods.</p>
+<p><strong>What we think may explain it:</strong> differences in population need, community access and referral practices.</p>
+<p><strong>What we do not yet know:</strong> the relative contribution of each factor.</p>
+<p><strong>What we need to learn:</strong> whether changing access to community support improves outcomes.</p>
+<p>This is often more useful to decision-makers than an artificially confident conclusion.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Good Evidence Synthesis Makes Uncertainty Visible
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-7" class="callout-7-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<p>The purpose of an evidence spine is not to create certainty where certainty does not exist.</p>
+<p>It is to make clear:</p>
+<blockquote class="blockquote">
+<p><strong>What we know, what we think, what we do not know, and what we need to learn next.</strong></p>
+</blockquote>
+</div>
+</div>
+</div>
+</section>
+<section id="presenting-the-evidence-to-decision-makers" class="level1">
+<h1>13. Presenting the Evidence to Decision-Makers</h1>
+<p>Decision-makers rarely need every analytical output. They need a coherent synthesis.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Evidence question</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>What is the decision?</strong></td>
+<td>The decision that needs to be made</td>
+</tr>
+<tr class="even">
+<td><strong>Who is affected?</strong></td>
+<td>Population and inequalities</td>
+</tr>
+<tr class="odd">
+<td><strong>What does quantitative evidence show?</strong></td>
+<td>Scale, trends, variation and outcomes</td>
+</tr>
+<tr class="even">
+<td><strong>What does qualitative evidence show?</strong></td>
+<td>Experience, barriers, mechanisms and context</td>
+</tr>
+<tr class="odd">
+<td><strong>What does wider research show?</strong></td>
+<td>Relevant external evidence</td>
+</tr>
+<tr class="even">
+<td><strong>Where does evidence converge?</strong></td>
+<td>Areas of stronger confidence</td>
+</tr>
+<tr class="odd">
+<td><strong>Where does evidence conflict?</strong></td>
+<td>Important contradictions</td>
+</tr>
+<tr class="even">
+<td><strong>What remains uncertain?</strong></td>
+<td>Evidence gaps</td>
+</tr>
+<tr class="odd">
+<td><strong>What are the plausible options?</strong></td>
+<td>Available choices</td>
+</tr>
+<tr class="even">
+<td><strong>What should happen next?</strong></td>
+<td>Decision, further analysis, implementation or evaluation</td>
+</tr>
+</tbody>
+</table>
+<p>This creates a concise <strong>evidence spine</strong> from which a decision can be made. The detailed analysis can sit behind it.</p>
+</section>
+<section id="from-evidence-spine-to-decision" class="level1">
+<h1>14. From Evidence Spine to Decision</h1>
+<p>Bringing evidence together is not the same as making the decision.</p>
+<p>The evidence spine helps decision-makers understand the population, the problem, its scale, who is affected, plausible explanations, lived experience, implementation context, what research suggests and what remains uncertain.</p>
+<p>The next question is:</p>
+<blockquote class="blockquote">
+<p><strong>Given this evidence, what should we do?</strong></p>
+</blockquote>
+<p>That requires consideration of benefits, harms, costs, opportunity costs, affordability, equity, feasibility, workforce, implementation, uncertainty and organisational priorities.</p>
+<p>That is the focus of the final module:</p>
+<blockquote class="blockquote">
+<p><strong>Module 21 — From Evidence to Decision</strong></p>
+</blockquote>
+</section>
+<section id="decision-maker-questions" class="level1">
+<h1>15. Decision-Maker Questions</h1>
+<p>When presented with an evidence synthesis, ask:</p>
+<ol type="1">
+<li><strong>What decision are we actually trying to inform?</strong></li>
+<li>What does the quantitative evidence tell us?</li>
+<li>What does it not explain?</li>
+<li>What qualitative evidence already exists?</li>
+<li>Whose experiences are represented?</li>
+<li>Whose experiences may be missing?</li>
+<li>What do patients and carers tell us?</li>
+<li>What do communities and trusted intermediaries tell us?</li>
+<li>What do professionals and operational teams observe?</li>
+<li>What does published research tell us?</li>
+<li>Where do different evidence sources converge?</li>
+<li>Where do they provide complementary information?</li>
+<li>Where do they disagree?</li>
+<li>Could disagreement reveal something important?</li>
+<li>How strong and relevant is each source of evidence?</li>
+<li>What important evidence gaps remain?</li>
+<li>What do we know with reasonable confidence?</li>
+<li>What are we assuming?</li>
+<li>What do we still need to learn?</li>
+<li><strong>Is the evidence sufficient to make a proportionate decision?</strong></li>
+</ol>
+</section>
+<section id="bringing-it-all-together" class="level1">
+<h1>Bringing It All Together</h1>
+<p>Healthcare decisions are strengthened when different forms of evidence are connected rather than considered separately.</p>
+<blockquote class="blockquote">
+<p><strong>Decision question</strong></p>
+<p>↓</p>
+<p><strong>Population and need</strong></p>
+<p>↓</p>
+<p><strong>Quantitative evidence — What is happening?</strong></p>
+<ul>
+<li></li>
+</ul>
+<p><strong>Qualitative evidence — Why, how and what is being experienced?</strong></p>
+<ul>
+<li></li>
+</ul>
+<p><strong>Research and evaluation — What is already known?</strong></p>
+<p>↓</p>
+<p><strong>Triangulation — Where does evidence converge, complement or conflict?</strong></p>
+<p>↓</p>
+<p><strong>Evidence gaps and uncertainty</strong></p>
+<p>↓</p>
+<p><strong>Evidence spine</strong></p>
+<p>↓</p>
+<p><strong>Options and trade-offs</strong></p>
+<p>↓</p>
+<p><strong>Decision</strong></p>
+</blockquote>
+<p>The aim is not to eliminate uncertainty. It is to provide decision-makers with a sufficiently coherent, transparent and balanced understanding of the evidence to make a better decision.</p>
+</section>
+<section id="key-takeaways" class="level1">
+<h1>Key Takeaways</h1>
+<ul>
+<li>No single dataset provides a complete understanding of a healthcare system.</li>
+<li><strong>Quantitative and qualitative evidence are two sides of the same coin.</strong></li>
+<li>Quantitative evidence helps identify scale, patterns, variation and outcomes.</li>
+<li>Qualitative evidence helps explain experience, mechanisms, barriers and context.</li>
+<li>Qualitative evidence can come from patients, communities, voluntary organisations, professionals, operational teams, formal research and existing engagement.</li>
+<li>Existing qualitative evidence should be reviewed before automatically commissioning new engagement.</li>
+<li>Qualitative evidence is not synonymous with anecdote.</li>
+<li>Triangulation does not mean forcing different evidence sources to agree.</li>
+<li><strong>Convergence, complementarity and disagreement can all be informative.</strong></li>
+<li>Disagreement between quantitative and qualitative evidence may reveal hidden inequalities, measurement problems or incorrect assumptions.</li>
+<li>Evidence sources should be weighted according to their relevance, quality and limitations rather than automatically treated equally.</li>
+<li>Always ask whose voice may be missing.</li>
+<li>An evidence spine connects the decision question to population need, quantitative evidence, qualitative evidence, research, interpretation and options.</li>
+<li>Evidence gaps and uncertainty should be made visible rather than hidden.</li>
+<li><strong>Bringing evidence together informs the decision; it does not make the decision.</strong></li>
+</ul>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>The Question to Remember
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-8" class="callout-8-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<p>When faced with a healthcare decision, do not ask only:</p>
+<blockquote class="blockquote">
+<p><strong>What do the numbers tell us?</strong></p>
+</blockquote>
+<p>Also ask:</p>
+<blockquote class="blockquote">
+<p><strong>What do people, experience and context tell us — and what does the evidence tell us when we bring both sides together?</strong></p>
+</blockquote>
+</div>
+</div>
+</div>
 
 
 </section>
@@ -789,8 +1495,8 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../modules/19-Testing-Decisions-Before-We-Make-Them.html" class="pagination-link" aria-label="Module 19: Testing Decisions Before We Make Them (BETA)">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Module 19: Testing Decisions Before We Make Them (BETA)</span></span>
+      <a href="../modules/19-Testing-Decisions-Before-We-Make-Them.html" class="pagination-link" aria-label="Module 19: Testing Decisions Before We Make Them">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Module 19: Testing Decisions Before We Make Them</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
