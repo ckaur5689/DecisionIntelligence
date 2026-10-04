@@ -80,8 +80,8 @@ Topics include:
     - Evaluating Multiple Interventions in Complex Healthcare Systems 
 18. Population Health Management & Population Segmentation
     - Who should we intervene with, and why?
-19. Simulation & Scenario Modelling
-    - What is likely to happen before we make changes?
+19. Testing Decisions Before We Make Them ⭐
+    - Using scenarios and simulation to explore possible consequences
 20. Bringing Evidence Together ⭐
     - How do we combine different forms of evidence into a coherent picture?
 21. Making Better Healthcare Decisions ⭐
