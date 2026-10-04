@@ -2,9 +2,10 @@
 
 ## Using Data, Evidence, Evaluation and AI to Make Better Healthcare Decisions
 
-Timeline: May 2026 to December 2026
+Timeline: May 2026 to November 2026
 
-Author: Chandan Kaur  
+Author: Chandan Kaur, Head of Insight, NHS Coventry & Warwickshire and NHS Herefordshire & Worcestershire ICBs 
+Email:chandan.kaur1@nhs.net 
 
 Audience: Analysts and Decision Makers in healthcare systems
 
