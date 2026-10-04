@@ -28,6 +28,7 @@ book:
     - modules/17-Understanding-What-Made-the-Difference.qmd
     - modules/18-Population-Health-Management-&-Population-Segmentation.qmd
     - modules/19-Testing-Decisions-Before-We-Make-Them.qmd
+    - modules/20-Bringing-Evidence-Together.qmd
     - Project.qmd
 
 format:
