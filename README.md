@@ -72,10 +72,10 @@ Topics include:
     - Can we trust the data before making decisions?
 14. Designing Better Healthcare Pathways ⭐
     - How do we redesign, implement and evaluate better pathways?
-15. Health Economics & Value in Healthcare Decision-Making ⭐
+15. Health Economics & Value in Healthcare Decision-Making⭐
     - Is the improvement worth the investment?
-16.  Methods for Applying Health Economics to Healthcare Decisions
-    - Comparing options, costs, outcomes and value
+16  Applying Health Economics to Healthcare Decisions
+    - Comparing costs, outcomes and value
 17. Understanding What Made the Difference ⭐
     - Evaluating Multiple Interventions in Complex Healthcare Systems 
 18. Population Health Management & Population Segmentation
