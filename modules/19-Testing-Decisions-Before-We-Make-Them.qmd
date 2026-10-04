@@ -1,4 +1,4 @@
-# Module 19: Testing Decisions Before We Make Them
+# Module 19: Testing Decisions Before We Make Them (BETA)
 
 ## Using scenarios and simulation to explore possible consequences
 
