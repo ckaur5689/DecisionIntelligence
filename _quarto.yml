@@ -27,6 +27,7 @@ book:
     - modules/16-Health-Economics-Methods.qmd
     - modules/17-Understanding-What-Made-the-Difference.qmd
     - modules/18-Population-Health-Management-&-Population-Segmentation.qmd
+    - modules/19-Testing-Decisions-Before-We-Make-Them.qmd
     - Project.qmd
 
 format:
