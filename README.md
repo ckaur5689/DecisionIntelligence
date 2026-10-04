@@ -76,15 +76,15 @@ Topics include:
     - Is the improvement worth the investment?
 16.  Methods for Applying Health Economics to Healthcare Decisions
     - Comparing options, costs, outcomes and value
-18. Understanding What Made the Difference ⭐
+17. Understanding What Made the Difference ⭐
     - Evaluating Multiple Interventions in Complex Healthcare Systems 
-19. Population Health Management & Population Segmentation
+18. Population Health Management & Population Segmentation
     - Who should we intervene with, and why?
-20. Simulation & Scenario Modelling
+19. Simulation & Scenario Modelling
     - What is likely to happen before we make changes?
-21. Bringing Evidence Together ⭐
+20. Bringing Evidence Together ⭐
     - How do we combine different forms of evidence into a coherent picture?
-22. Making Better Healthcare Decisions ⭐
+21. Making Better Healthcare Decisions ⭐
     - How do we turn evidence into robust, transparent decisions when there are trade-offs, competing priorities and uncertainty?
 
 # Part 3 – Advanced Analytics, AI & the Future of Healthcare Decision-Making (to be confirmed)
