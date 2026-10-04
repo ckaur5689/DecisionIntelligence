@@ -132,31 +132,6 @@ Modules:
 21. From Evidence to Decision ⭐⭐
     - Making transparent decisions when there are trade-offs and uncertainty
 
-# Beyond the Series – Advanced Analytics, AI & the Future of Healthcare Decision-Making
-
-Parts 1 and 2 of **Healthcare Decision Intelligence** provide a freely available practical foundation for using data, evidence, evaluation, health economics, population insight and analytical methods to support better healthcare decisions.
-
-The next stage will explore how **advanced analytics and artificial intelligence are changing healthcare decision-making**.
-
-Rather than extending the online series, this material will be developed as a **separate published book**.
-
-The book will build on the principles introduced in Healthcare Decision Intelligence and explore how healthcare organisations can use advanced analytics and AI responsibly, transparently and effectively — while recognising that technology should support, rather than replace, professional judgement and human decision-making.
-
-Planned themes include:
-
-- Predictive Modelling & Risk Stratification
-- Explainable AI in Healthcare
-- From Business Intelligence to Augmented Analytics
-- AI Assistants and Agentic AI
-- Evaluating AI-Supported Decision-Making
-- Responsible AI & AI Governance
-- Bias, Fairness & Health Inequalities
-- Implementing and Scaling AI in Healthcare Organisations
-- The Changing Role of Analysts and Decision-Makers
-- The Future of Healthcare Decision Intelligence
-
-**Further details about the book will be announced here in due course.**
-
 # The project will include:
 
 - Publicly accessible Quarto/GitHub Pages digital book
@@ -289,11 +264,35 @@ The series may later evolve into:
 “Good healthcare analytics is not just about producing numbers.
 It is about helping people interpret, question and use those numbers responsibly within complex healthcare systems.”
 
-
 ________________________________________
 ## Sign-Off:
 Name: Chandan Kaur		      
 A passionate advocate of decision intelligence and decision analytics in healthcare
+
+# Beyond the Series – Advanced Analytics, AI & the Future of Healthcare Decision-Making
+
+Parts 1 and 2 of **Healthcare Decision Intelligence** provide a freely available practical foundation for using data, evidence, evaluation, health economics, population insight and analytical methods to support better healthcare decisions.
+
+The next stage will explore how **advanced analytics and artificial intelligence are changing healthcare decision-making**.
+
+Rather than extending the online series, this material will be developed as a **separate published book**.
+
+The book will build on the principles introduced in Healthcare Decision Intelligence and explore how healthcare organisations can use advanced analytics and AI responsibly, transparently and effectively — while recognising that technology should support, rather than replace, professional judgement and human decision-making.
+
+Planned themes include:
+
+- Predictive Modelling & Risk Stratification
+- Explainable AI in Healthcare
+- From Business Intelligence to Augmented Analytics
+- AI Assistants and Agentic AI
+- Evaluating AI-Supported Decision-Making
+- Responsible AI & AI Governance
+- Bias, Fairness & Health Inequalities
+- Implementing and Scaling AI in Healthcare Organisations
+- The Changing Role of Analysts and Decision-Makers
+- The Future of Healthcare Decision Intelligence
+
+**Further details about the book will be announced here in due course.**
 
 			
 			
