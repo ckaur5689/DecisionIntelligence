@@ -87,14 +87,6 @@ Topics include:
 21. From Evidence to Decision ⭐⭐
     - Making transparent decisions when there are trade-offs and uncertainty
 
-# Part 3 – Advanced Analytics, AI & the Future of Healthcare Decision-Making (to be confirmed)
-
-* Predictive Modelling & Risk Stratification
-* Explainable AI in Healthcare
-* From Business Intelligence to Augmented Analytics
-* Responsible AI & AI Governance
-* Additional topics under consideration
-
 ## Why this project exists
 
 Healthcare organisations generate vast quantities of data.
@@ -134,3 +126,28 @@ The aim is to help analysts and decision-makers develop a shared understanding o
 Ultimately, the ambition is simple:
 
 To improve the quality of questions healthcare organisations ask of their data—so that data can better support decision-making in its truest sense.
+
+# Beyond the Series – Advanced Analytics, AI & the Future of Healthcare Decision-Making
+
+Parts 1 and 2 of **Healthcare Decision Intelligence** provide a freely available practical foundation for using data, evidence, evaluation, health economics, population insight and analytical methods to support better healthcare decisions.
+
+The next stage will explore how **advanced analytics and artificial intelligence are changing healthcare decision-making**.
+
+Rather than extending the online series, this material will be developed as a **separate published book**.
+
+The book will build on the principles introduced in Healthcare Decision Intelligence and explore how healthcare organisations can use advanced analytics and AI responsibly, transparently and effectively — while recognising that technology should support, rather than replace, professional judgement and human decision-making.
+
+Planned themes include:
+
+- Predictive Modelling & Risk Stratification
+- Explainable AI in Healthcare
+- From Business Intelligence to Augmented Analytics
+- AI Assistants and Agentic AI
+- Evaluating AI-Supported Decision-Making
+- Responsible AI & AI Governance
+- Bias, Fairness & Health Inequalities
+- Implementing and Scaling AI in Healthcare Organisations
+- The Changing Role of Analysts and Decision-Makers
+- The Future of Healthcare Decision Intelligence
+
+**Further details about the book will be announced here in due course.**
