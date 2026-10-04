@@ -1,0 +1,1688 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Module 19: Testing Decisions Before We Make Them (BETA) – Healthcare Decision Intelligence</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../Project.html" rel="next">
+<link href="../modules/18-Population-Health-Management-&amp;-Population-Segmentation.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-9e3e5b9121e68b3f077afb32f2c64d95.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<!-- Privacy-friendly analytics by Plausible -->
+
+<script async="" src="https://plausible.io/js/pa-coCTmyI_rulN60WT7evG5.js"></script>
+
+<script>
+
+  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+
+  plausible.init()
+
+</script>
+
+
+
+
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../modules/19-Testing-Decisions-Before-We-Make-Them.html"><span class="chapter-title">Module 19: Testing Decisions Before We Make Them (BETA)</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Healthcare Decision Intelligence</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Book_Cover.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Book_Cover.html</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Welcome</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Part_1.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Part 1 — How do we interpret healthcare data correctly?</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../modules/01-Counts-vs-Rates.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Module 1 - Counts vs Rates</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../modules/02-Mean-vs-Median.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Module 2 — Mean vs Median</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../modules/03-Correlation-vs-Causation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Module 3 — Correlation vs Causation</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../modules/04-Variation-&amp;-Distributions.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Module 4 — Variation &amp; Distributions</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../modules/05-Standardisation-&amp;-Fair-Comparison.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Module 5 — Standardisation &amp; Fair Comparison</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../modules/06-How-to-Read-a-Dashboard.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Module 6 — How to Read a Dashboard</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../modules/07-Theory-Of-Change-&amp;-Logic-Models.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Module 7 — Theory of Change and Logic Modules</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../modules/08-Thinking-About-Evidence-&amp;-Evaluation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Module 8 — Thinking About Evidence &amp; Evaluation</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../modules/09-Evaluating-Methods-in-Practice.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Module 9 — Evaluation Methods in Practice</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../modules/10-Risk-Probability-Uncertainty.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Module 10: Risk, Probability &amp; Uncertainty</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../modules/11-Common-Analytical-Traps-&amp;-Data-Fallacies.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Module 11: Common Analytical Traps &amp; Data Fallacies</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Part_2.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Part 2 — How do we understand, improve and evaluate complex healthcare systems?</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../modules/12-Demand_Capacity_Operational_Flow.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Module 12: Demand, Capacity &amp; Operational Flow</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../modules/13-Data-Quality-Assurance-Trustworthy-Data.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Module 13: Data Quality, Assurance &amp; Trustworthy Data</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../modules/14-Designing-Better-Healthcare-Pathways.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Module 14: Designing Better Healthcare Pathways</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../modules/15-Health-Economics-&amp;-Value-in-Healthcare-Decision-Making.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Module 15: Health Economics &amp; Value in Healthcare Decision-Making</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../modules/16-Health-Economics-Methods.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Module 16: Methods for Applying Health Economics to Healthcare Decisions (coming soon!)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../modules/17-Understanding-What-Made-the-Difference.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Module 17: Understanding What Made the Difference (BETA)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../modules/18-Population-Health-Management-&amp;-Population-Segmentation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Module 18: Population Health Management &amp; Population Segmentation (BETA)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../modules/19-Testing-Decisions-Before-We-Make-Them.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Module 19: Testing Decisions Before We Make Them (BETA)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Project - Healthcare Decision Intelligence Series</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#using-scenarios-and-simulation-to-explore-possible-consequences" id="toc-using-scenarios-and-simulation-to-explore-possible-consequences" class="nav-link active" data-scroll-target="#using-scenarios-and-simulation-to-explore-possible-consequences">Using scenarios and simulation to explore possible consequences</a></li>
+  <li><a href="#why-this-module-matters" id="toc-why-this-module-matters" class="nav-link" data-scroll-target="#why-this-module-matters">1. Why This Module Matters</a></li>
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives">Learning Objectives</a></li>
+  <li><a href="#start-with-the-decision-not-the-model" id="toc-start-with-the-decision-not-the-model" class="nav-link" data-scroll-target="#start-with-the-decision-not-the-model">2. Start with the Decision, Not the Model</a></li>
+  <li><a href="#different-questions-require-different-approaches" id="toc-different-questions-require-different-approaches" class="nav-link" data-scroll-target="#different-questions-require-different-approaches">3. Different Questions Require Different Approaches</a>
+  <ul class="collapse">
+  <li><a href="#forecasting" id="toc-forecasting" class="nav-link" data-scroll-target="#forecasting">Forecasting</a></li>
+  <li><a href="#scenario-analysis" id="toc-scenario-analysis" class="nav-link" data-scroll-target="#scenario-analysis">Scenario Analysis</a></li>
+  <li><a href="#demand-and-capacity-modelling" id="toc-demand-and-capacity-modelling" class="nav-link" data-scroll-target="#demand-and-capacity-modelling">Demand and Capacity Modelling</a></li>
+  <li><a href="#simulation" id="toc-simulation" class="nav-link" data-scroll-target="#simulation">Simulation</a></li>
+  </ul></li>
+  <li><a href="#why-averages-can-mislead" id="toc-why-averages-can-mislead" class="nav-link" data-scroll-target="#why-averages-can-mislead">4. Why Averages Can Mislead</a></li>
+  <li><a href="#healthcare-is-a-system-of-queues-and-constraints" id="toc-healthcare-is-a-system-of-queues-and-constraints" class="nav-link" data-scroll-target="#healthcare-is-a-system-of-queues-and-constraints">5. Healthcare Is a System of Queues and Constraints</a></li>
+  <li><a href="#modelling-the-left-shift" id="toc-modelling-the-left-shift" class="nav-link" data-scroll-target="#modelling-the-left-shift">6. Modelling the “Left Shift”</a></li>
+  <li><a href="#a-worked-scenario-redesigning-a-frailty-pathway" id="toc-a-worked-scenario-redesigning-a-frailty-pathway" class="nav-link" data-scroll-target="#a-worked-scenario-redesigning-a-frailty-pathway">7. A Worked Scenario: Redesigning a Frailty Pathway</a></li>
+  <li><a href="#when-do-we-need-simulation" id="toc-when-do-we-need-simulation" class="nav-link" data-scroll-target="#when-do-we-need-simulation">8. When Do We Need Simulation?</a></li>
+  <li><a href="#discrete-event-simulation" id="toc-discrete-event-simulation" class="nav-link" data-scroll-target="#discrete-event-simulation">9. Discrete Event Simulation</a></li>
+  <li><a href="#other-forms-of-simulation" id="toc-other-forms-of-simulation" class="nav-link" data-scroll-target="#other-forms-of-simulation">10. Other Forms of Simulation</a>
+  <ul class="collapse">
+  <li><a href="#system-dynamics" id="toc-system-dynamics" class="nav-link" data-scroll-target="#system-dynamics">System Dynamics</a></li>
+  <li><a href="#monte-carlo-simulation" id="toc-monte-carlo-simulation" class="nav-link" data-scroll-target="#monte-carlo-simulation">Monte Carlo Simulation</a></li>
+  </ul></li>
+  <li><a href="#models-depend-on-assumptions" id="toc-models-depend-on-assumptions" class="nav-link" data-scroll-target="#models-depend-on-assumptions">11. Models Depend on Assumptions</a></li>
+  <li><a href="#test-the-assumptions" id="toc-test-the-assumptions" class="nav-link" data-scroll-target="#test-the-assumptions">12. Test the Assumptions</a></li>
+  <li><a href="#validate-the-model-against-reality" id="toc-validate-the-model-against-reality" class="nav-link" data-scroll-target="#validate-the-model-against-reality">13. Validate the Model Against Reality</a></li>
+  <li><a href="#what-simulation-cannot-tell-us" id="toc-what-simulation-cannot-tell-us" class="nav-link" data-scroll-target="#what-simulation-cannot-tell-us">14. What Simulation Cannot Tell Us</a></li>
+  <li><a href="#avoid-false-precision" id="toc-avoid-false-precision" class="nav-link" data-scroll-target="#avoid-false-precision">15. Avoid False Precision</a></li>
+  <li><a href="#from-phm-to-simulation-to-evaluation" id="toc-from-phm-to-simulation-to-evaluation" class="nav-link" data-scroll-target="#from-phm-to-simulation-to-evaluation">16. From PHM to Simulation to Evaluation</a></li>
+  <li><a href="#decision-maker-questions" id="toc-decision-maker-questions" class="nav-link" data-scroll-target="#decision-maker-questions">17. Decision-Maker Questions</a></li>
+  <li><a href="#bringing-it-all-together" id="toc-bringing-it-all-together" class="nav-link" data-scroll-target="#bringing-it-all-together">Bringing It All Together</a></li>
+  <li><a href="#key-takeaways" id="toc-key-takeaways" class="nav-link" data-scroll-target="#key-takeaways">Key Takeaways</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-title">Module 19: Testing Decisions Before We Make Them (BETA)</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="using-scenarios-and-simulation-to-explore-possible-consequences" class="level2">
+<h2 class="anchored" data-anchor-id="using-scenarios-and-simulation-to-explore-possible-consequences">Using scenarios and simulation to explore possible consequences</h2>
+<button class="print-button" onclick="window.print()">
+🖨️ Print this module
+</button>
+<blockquote class="blockquote">
+<p><strong>What might happen if we make this change?</strong></p>
+</blockquote>
+</section>
+<section id="why-this-module-matters" class="level2">
+<h2 class="anchored" data-anchor-id="why-this-module-matters">1. Why This Module Matters</h2>
+<p>Healthcare decisions often involve changing systems before we can know exactly what the consequences will be.</p>
+<p>An organisation might decide to:</p>
+<ul>
+<li>move activity from hospital to community services</li>
+<li>introduce a new clinical pathway</li>
+<li>expand virtual wards</li>
+<li>increase diagnostic capacity</li>
+<li>redesign outpatient services</li>
+<li>change workforce models</li>
+<li>introduce a new triage process</li>
+<li>increase preventative activity</li>
+<li>consolidate services</li>
+<li>respond to expected population growth.</li>
+</ul>
+<p>Each decision is based on assumptions about what might happen next.</p>
+<p>For example:</p>
+<blockquote class="blockquote">
+<p><em>If we increase community capacity, emergency admissions will fall.</em></p>
+</blockquote>
+<p>Or:</p>
+<blockquote class="blockquote">
+<p><em>If we reduce length of stay, enough hospital capacity will be released to meet future demand.</em></p>
+</blockquote>
+<p>Or:</p>
+<blockquote class="blockquote">
+<p><em>If more care moves closer to home, pressure on acute services will reduce.</em></p>
+</blockquote>
+<p>These may be reasonable hypotheses.</p>
+<p>But healthcare systems are complex.</p>
+<p>Changing one part of a pathway can affect several others.</p>
+<p>A reduction in hospital activity may require substantial additional capacity elsewhere. Removing one bottleneck may simply create another.</p>
+<p>Simulation and scenario modelling provide ways of exploring these consequences <strong>before changes are fully implemented</strong>.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Key Principle
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<p><strong>Simulation is not about predicting the future with certainty.</strong></p>
+<p>It is about exploring:</p>
+<blockquote class="blockquote">
+<p><strong>What might happen under different assumptions and different decisions?</strong></p>
+</blockquote>
+</div>
+</div>
+</div>
+</section>
+<section id="learning-objectives" class="level2">
+<h2 class="anchored" data-anchor-id="learning-objectives">Learning Objectives</h2>
+<p>By the end of this module, you should be able to:</p>
+<ul>
+<li>understand why modelling future scenarios can improve healthcare decisions</li>
+<li>distinguish forecasting, scenario analysis, demand and capacity modelling, and simulation</li>
+<li>recognise when simple scenario analysis may be sufficient</li>
+<li>understand when more sophisticated simulation may add value</li>
+<li>recognise how changes in one part of a pathway can affect other services</li>
+<li>understand the importance of variability, queues, bottlenecks and resource constraints</li>
+<li>interpret simulation outputs without treating them as predictions</li>
+<li>challenge the assumptions underlying a model</li>
+<li>understand the importance of sensitivity and scenario testing</li>
+<li>recognise when modelling complexity is proportionate to the decision being made.</li>
+</ul>
+</section>
+<section id="start-with-the-decision-not-the-model" class="level1">
+<h1>2. Start with the Decision, Not the Model</h1>
+<p>A common mistake is to begin by asking:</p>
+<blockquote class="blockquote">
+<p><em>Should we build a simulation model?</em></p>
+</blockquote>
+<p>The better starting point is:</p>
+<blockquote class="blockquote">
+<p><strong>What decision are we trying to make, and what uncertainty are we trying to understand?</strong></p>
+</blockquote>
+<p>Consider an ICB planning a new community frailty pathway.</p>
+<p>The decision might be:</p>
+<blockquote class="blockquote">
+<p><strong>How much community capacity would be required if more people with frailty were supported outside hospital?</strong></p>
+</blockquote>
+<p>This could lead to several questions:</p>
+<ul>
+<li>How many people might use the pathway?</li>
+<li>How quickly might demand grow?</li>
+<li>What proportion might currently attend hospital?</li>
+<li>How much community capacity would be required?</li>
+<li>How many staff would be needed?</li>
+<li>How long would people remain on the pathway?</li>
+<li>What happens during periods of peak demand?</li>
+<li>Could the new service itself develop a waiting list?</li>
+<li>What happens if the intervention achieves less than expected?</li>
+<li>What happens as the population ages?</li>
+</ul>
+<p>Only after defining these questions should we decide what analytical approach is required.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Decision-Maker Question
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<p>Before commissioning a model, ask:</p>
+<blockquote class="blockquote">
+<p><strong>What decision would this model help us make?</strong></p>
+</blockquote>
+<p>If that cannot be answered clearly, building a more sophisticated model is unlikely to help.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="different-questions-require-different-approaches" class="level1">
+<h1>3. Different Questions Require Different Approaches</h1>
+<p>Not every decision requires simulation.</p>
+<p>There is a progression from relatively simple analysis to more sophisticated modelling.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Approach</th>
+<th>Typical question</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Forecasting</strong></td>
+<td>What might happen if current patterns continue?</td>
+</tr>
+<tr class="even">
+<td><strong>Scenario analysis</strong></td>
+<td>What might happen under different assumptions?</td>
+</tr>
+<tr class="odd">
+<td><strong>Demand and capacity modelling</strong></td>
+<td>Can available resources meet expected demand?</td>
+</tr>
+<tr class="even">
+<td><strong>Simulation</strong></td>
+<td>How might patients, queues and resources interact over time?</td>
+</tr>
+</tbody>
+</table>
+<p>These approaches overlap.</p>
+<p>The important issue is selecting an approach proportionate to the decision.</p>
+<section id="forecasting" class="level2">
+<h2 class="anchored" data-anchor-id="forecasting">Forecasting</h2>
+<p>Forecasting typically uses historical patterns to estimate future activity.</p>
+<p>For example:</p>
+<blockquote class="blockquote">
+<p><em>If current trends continue, how many emergency admissions might we expect in three years?</em></p>
+</blockquote>
+<p>Forecasting can incorporate:</p>
+<ul>
+<li>historical trends</li>
+<li>population growth</li>
+<li>ageing</li>
+<li>seasonality</li>
+<li>changing prevalence</li>
+<li>known service changes.</li>
+</ul>
+<p>But forecasting generally assumes that historical relationships provide useful information about the future.</p>
+<p>That assumption may become less reliable when the system itself is changing.</p>
+</section>
+<section id="scenario-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="scenario-analysis">Scenario Analysis</h2>
+<p>Scenario analysis asks:</p>
+<blockquote class="blockquote">
+<p><strong>What happens if we change our assumptions?</strong></p>
+</blockquote>
+<p>For example:</p>
+<ul>
+<li>What if referrals increase by 5%?</li>
+<li>What if they increase by 15%?</li>
+<li>What if workforce capacity falls by 10%?</li>
+<li>What if an intervention reduces admissions by 5%, 10% or 15%?</li>
+<li>What if the 85+ population grows faster than expected?</li>
+</ul>
+<p>These scenarios are not predictions.</p>
+<p>They allow decision-makers to explore a range of plausible futures.</p>
+</section>
+<section id="demand-and-capacity-modelling" class="level2">
+<h2 class="anchored" data-anchor-id="demand-and-capacity-modelling">Demand and Capacity Modelling</h2>
+<p>Demand and capacity modelling asks whether the resources available are sufficient to meet expected demand.</p>
+<p>For example:</p>
+<blockquote class="blockquote">
+<p><strong>How many appointments are required each week, and how many can the service realistically provide?</strong></p>
+</blockquote>
+<p>This can expose mismatches between:</p>
+<ul>
+<li>demand</li>
+<li>workforce</li>
+<li>appointment capacity</li>
+<li>operating hours</li>
+<li>bed capacity</li>
+<li>diagnostic capacity</li>
+<li>treatment capacity.</li>
+</ul>
+</section>
+<section id="simulation" class="level2">
+<h2 class="anchored" data-anchor-id="simulation">Simulation</h2>
+<p>Simulation becomes particularly useful when the system contains:</p>
+<ul>
+<li>multiple pathways</li>
+<li>queues</li>
+<li>variable arrival rates</li>
+<li>resource constraints</li>
+<li>different patient groups</li>
+<li>different service times</li>
+<li>interactions between services</li>
+<li>uncertainty.</li>
+</ul>
+<p>Rather than analysing only averages, simulation can represent how the system behaves over time.</p>
+</section>
+</section>
+<section id="why-averages-can-mislead" class="level1">
+<h1>4. Why Averages Can Mislead</h1>
+<p>Healthcare demand is rarely constant.</p>
+<p>Imagine a service that receives an average of <strong>20 referrals per day</strong> and can process <strong>20 patients per day</strong>.</p>
+<p>At first glance:</p>
+<blockquote class="blockquote">
+<p>Demand = Capacity</p>
+</blockquote>
+<p>So the service might appear balanced.</p>
+<p>But referrals do not arrive at exactly the same rate every day.</p>
+<p>For example:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Day</th>
+<th style="text-align: right;">Referrals</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Monday</td>
+<td style="text-align: right;">28</td>
+</tr>
+<tr class="even">
+<td>Tuesday</td>
+<td style="text-align: right;">24</td>
+</tr>
+<tr class="odd">
+<td>Wednesday</td>
+<td style="text-align: right;">15</td>
+</tr>
+<tr class="even">
+<td>Thursday</td>
+<td style="text-align: right;">18</td>
+</tr>
+<tr class="odd">
+<td>Friday</td>
+<td style="text-align: right;">15</td>
+</tr>
+</tbody>
+</table>
+<p>Average demand is still 20.</p>
+<p>But queues may develop early in the week.</p>
+<p>If unused capacity later in the week cannot fully recover that backlog, waiting times may increase even though <strong>average capacity equals average demand</strong>.</p>
+<p>This is why variability matters.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Averages Can Hide Operational Pressure
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<p><strong>Matching average demand with average capacity does not guarantee that a service will have no queues or delays.</strong></p>
+<p>Variability, timing and resource availability matter.</p>
+</div>
+</div>
+</div>
+<p>This is one reason simulation can sometimes reveal problems that simple averages cannot.</p>
+</section>
+<section id="healthcare-is-a-system-of-queues-and-constraints" class="level1">
+<h1>5. Healthcare Is a System of Queues and Constraints</h1>
+<p>Many healthcare pathways can be thought of as patients moving through a sequence of activities.</p>
+<p>For example:</p>
+<blockquote class="blockquote">
+<p><strong>Referral → Assessment → Diagnostic test → Clinical decision → Treatment → Follow-up</strong></p>
+</blockquote>
+<p>At each stage there may be:</p>
+<ul>
+<li>demand arriving</li>
+<li>a queue</li>
+<li>an activity</li>
+<li>a resource</li>
+<li>limited capacity.</li>
+</ul>
+<p>Resources might include:</p>
+<ul>
+<li>clinicians</li>
+<li>beds</li>
+<li>scanners</li>
+<li>theatres</li>
+<li>consultation rooms</li>
+<li>community teams</li>
+<li>ambulances.</li>
+</ul>
+<p>A bottleneck occurs where available capacity constrains the flow of patients through the system.</p>
+<p>But bottlenecks can move.</p>
+<p>Increasing diagnostic capacity, for example, may increase the number of patients subsequently requiring treatment.</p>
+<p>Improving discharge processes may reduce length of stay but increase demand on community services.</p>
+<p>Increasing community case finding may identify previously unmet need and initially <strong>increase</strong>, rather than reduce, service demand.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Systems Principle
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<p><strong>Improving one part of a pathway does not necessarily improve the whole pathway.</strong></p>
+<p>Removing one constraint can reveal another.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="modelling-the-left-shift" class="level1">
+<h1>6. Modelling the “Left Shift”</h1>
+<p>Consider an ICB seeking to move care upstream.</p>
+<p>The intended change might be:</p>
+<blockquote class="blockquote">
+<p><strong>Hospital care → Community care → Prevention</strong></p>
+</blockquote>
+<p>The expected benefit might be reduced hospital demand.</p>
+<p>But activity does not simply disappear.</p>
+<p>Suppose proactive frailty care and Urgent Community Response reduce some emergency hospital activity.</p>
+<p>The new pathway might look like:</p>
+<blockquote class="blockquote">
+<p><strong>Population with frailty</strong></p>
+</blockquote>
+<p>↓</p>
+<blockquote class="blockquote">
+<p><strong>Proactive identification</strong></p>
+</blockquote>
+<p>↓</p>
+<blockquote class="blockquote">
+<p><strong>Community frailty support</strong></p>
+</blockquote>
+<p>↓</p>
+<blockquote class="blockquote">
+<p><strong>Urgent Community Response when deterioration occurs</strong></p>
+</blockquote>
+<p>↓</p>
+<blockquote class="blockquote">
+<p><strong>Treatment at home / Virtual Ward</strong></p>
+</blockquote>
+<p>↓</p>
+<blockquote class="blockquote">
+<p><strong>Community follow-up</strong></p>
+</blockquote>
+<p>This could reduce some hospital activity.</p>
+<p>But it could simultaneously increase demand for:</p>
+<ul>
+<li>community nursing</li>
+<li>therapy</li>
+<li>GP support</li>
+<li>diagnostics</li>
+<li>pharmacy</li>
+<li>virtual wards</li>
+<li>remote monitoring</li>
+<li>social care.</li>
+</ul>
+<p>The decision therefore should not simply ask:</p>
+<blockquote class="blockquote">
+<p><em>How many admissions might we avoid?</em></p>
+</blockquote>
+<p>It should also ask:</p>
+<blockquote class="blockquote">
+<p><strong>What capacity would be required elsewhere to make the new pathway work?</strong></p>
+</blockquote>
+<p>This is where scenario and simulation modelling can become particularly useful.</p>
+</section>
+<section id="a-worked-scenario-redesigning-a-frailty-pathway" class="level1">
+<h1>7. A Worked Scenario: Redesigning a Frailty Pathway</h1>
+<p>Imagine an ICB is considering expanding proactive frailty care and Urgent Community Response.</p>
+<p>The current pathway is broadly:</p>
+<blockquote class="blockquote">
+<p><strong>Deterioration → Ambulance → ED → Admission</strong></p>
+</blockquote>
+<p>The proposed pathway is:</p>
+<blockquote class="blockquote">
+<p><strong>Earlier identification → Community support → UCR → Treatment at home where appropriate</strong></p>
+</blockquote>
+<p>The ICB estimates that approximately <strong>2,000 people each year</strong> might potentially use the redesigned pathway.</p>
+<p>But several assumptions are uncertain.</p>
+<p>For example:</p>
+<ul>
+<li>uptake might be 50%, 65% or 80%</li>
+<li>only some emergency admissions may be preventable</li>
+<li>UCR response times may vary</li>
+<li>staffing availability may vary</li>
+<li>some patients may still require hospital admission</li>
+<li>demand may increase as the population ages.</li>
+</ul>
+<p>A simple scenario analysis could begin with three scenarios:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 26%">
+<col style="width: 26%">
+<col style="width: 26%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Assumption</th>
+<th style="text-align: right;">Lower-impact scenario</th>
+<th style="text-align: right;">Central scenario</th>
+<th style="text-align: right;">Higher-impact scenario</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Eligible population</td>
+<td style="text-align: right;">2,000</td>
+<td style="text-align: right;">2,000</td>
+<td style="text-align: right;">2,000</td>
+</tr>
+<tr class="even">
+<td>Pathway uptake</td>
+<td style="text-align: right;">50%</td>
+<td style="text-align: right;">65%</td>
+<td style="text-align: right;">80%</td>
+</tr>
+<tr class="odd">
+<td>People using pathway</td>
+<td style="text-align: right;">1,000</td>
+<td style="text-align: right;">1,300</td>
+<td style="text-align: right;">1,600</td>
+</tr>
+<tr class="even">
+<td>Hospital activity affected</td>
+<td style="text-align: right;">Lower</td>
+<td style="text-align: right;">Moderate</td>
+<td style="text-align: right;">Higher</td>
+</tr>
+<tr class="odd">
+<td>Community capacity required</td>
+<td style="text-align: right;">Lower</td>
+<td style="text-align: right;">Moderate</td>
+<td style="text-align: right;">Higher</td>
+</tr>
+</tbody>
+</table>
+<p>The exact numbers would depend on local evidence.</p>
+<p>But even this relatively simple exercise can expose an important issue:</p>
+<blockquote class="blockquote">
+<p><strong>The scenario producing the largest reduction in hospital demand may also require the greatest increase in community capacity.</strong></p>
+</blockquote>
+<p>This is a more useful decision question than simply asking whether the intervention is expected to reduce admissions.</p>
+</section>
+<section id="when-do-we-need-simulation" class="level1">
+<h1>8. When Do We Need Simulation?</h1>
+<p>Simple scenarios may be sufficient when:</p>
+<ul>
+<li>the pathway is straightforward</li>
+<li>there are few interacting services</li>
+<li>averages provide a reasonable approximation</li>
+<li>the decision does not depend heavily on queues</li>
+<li>uncertainty can be represented using a small number of scenarios.</li>
+</ul>
+<p>Simulation becomes more useful when:</p>
+<ul>
+<li>patients follow different pathways</li>
+<li>arrivals vary over time</li>
+<li>resources are shared</li>
+<li>queues matter</li>
+<li>capacity constraints interact</li>
+<li>patient characteristics affect pathways</li>
+<li>timing matters</li>
+<li>the system contains feedback or complex interactions.</li>
+</ul>
+<p>The analytical sophistication should be proportionate to the decision.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>More Complex Is Not Automatically Better
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<p>A sophisticated simulation model is not necessarily more useful than a simple scenario model.</p>
+<p>The appropriate model is the <strong>simplest model capable of informing the decision credibly</strong>.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="discrete-event-simulation" class="level1">
+<h1>9. Discrete Event Simulation</h1>
+<p>One commonly used healthcare simulation approach is <strong>Discrete Event Simulation (DES)</strong>.</p>
+<p>DES represents individual entities moving through a system over time.</p>
+<p>In healthcare, the entity is often a patient.</p>
+<p>A simplified pathway might be:</p>
+<blockquote class="blockquote">
+<p><strong>Patient arrives</strong></p>
+</blockquote>
+<p>↓</p>
+<blockquote class="blockquote">
+<p><strong>Waits for assessment</strong></p>
+</blockquote>
+<p>↓</p>
+<blockquote class="blockquote">
+<p><strong>Assessment</strong></p>
+</blockquote>
+<p>↓</p>
+<blockquote class="blockquote">
+<p><strong>Waits for diagnostic test</strong></p>
+</blockquote>
+<p>↓</p>
+<blockquote class="blockquote">
+<p><strong>Diagnostic test</strong></p>
+</blockquote>
+<p>↓</p>
+<blockquote class="blockquote">
+<p><strong>Clinical decision</strong></p>
+</blockquote>
+<p>↓</p>
+<blockquote class="blockquote">
+<p><strong>Treatment or discharge</strong></p>
+</blockquote>
+<p>The model can represent:</p>
+<ul>
+<li>different patient types</li>
+<li>arrival patterns</li>
+<li>queues</li>
+<li>service times</li>
+<li>resource availability</li>
+<li>different routes through the pathway</li>
+<li>capacity constraints.</li>
+</ul>
+<p>For example, a DES model could explore:</p>
+<blockquote class="blockquote">
+<p><em>What happens to waiting times if referrals increase by 15% but workforce remains unchanged?</em></p>
+</blockquote>
+<p>Or:</p>
+<blockquote class="blockquote">
+<p><em>How many additional staff would be required to maintain a four-hour response standard?</em></p>
+</blockquote>
+<p>Or:</p>
+<blockquote class="blockquote">
+<p><em>Would adding diagnostic capacity reduce overall waiting time, or would the bottleneck simply move to treatment?</em></p>
+</blockquote>
+<p>Decision-makers do not need to know how to program a DES model.</p>
+<p>They do need to understand:</p>
+<ul>
+<li>what question it answers</li>
+<li>what assumptions it contains</li>
+<li>what data it requires</li>
+<li>whether it reflects the real pathway</li>
+<li>how uncertainty has been represented</li>
+<li>how its outputs should be interpreted.</li>
+</ul>
+</section>
+<section id="other-forms-of-simulation" class="level1">
+<h1>10. Other Forms of Simulation</h1>
+<p>DES is not the only simulation approach.</p>
+<p>Different approaches represent different types of system.</p>
+<section id="system-dynamics" class="level2">
+<h2 class="anchored" data-anchor-id="system-dynamics">System Dynamics</h2>
+<p>System dynamics is useful when the main interest is how parts of a system influence one another over time.</p>
+<p>For example:</p>
+<blockquote class="blockquote">
+<p>Workforce shortages → increased workload → burnout → sickness/turnover → further workforce shortages</p>
+</blockquote>
+<p>It focuses more on feedback relationships and system behaviour than individual patient journeys.</p>
+</section>
+<section id="monte-carlo-simulation" class="level2">
+<h2 class="anchored" data-anchor-id="monte-carlo-simulation">Monte Carlo Simulation</h2>
+<p>Monte Carlo methods repeatedly sample uncertain values from specified distributions.</p>
+<p>They can help answer questions such as:</p>
+<blockquote class="blockquote">
+<p><em>Given uncertainty in demand, intervention effect and costs, what range of outcomes might occur?</em></p>
+</blockquote>
+<p>The purpose is not to identify a single precise future.</p>
+<p>It is to represent uncertainty more realistically.</p>
+<p>For most decision-makers, knowing <strong>which approach is appropriate and why</strong> is more important than understanding the technical mathematics behind it.</p>
+</section>
+</section>
+<section id="models-depend-on-assumptions" class="level1">
+<h1>11. Models Depend on Assumptions</h1>
+<p>Every model simplifies reality.</p>
+<p>Assumptions might concern:</p>
+<ul>
+<li>future demand</li>
+<li>population growth</li>
+<li>referral rates</li>
+<li>intervention uptake</li>
+<li>intervention effectiveness</li>
+<li>workforce availability</li>
+<li>service times</li>
+<li>length of stay</li>
+<li>patient pathways</li>
+<li>operating hours</li>
+<li>resource availability.</li>
+</ul>
+<p>Some assumptions may be strongly supported by evidence.</p>
+<p>Others may be based on:</p>
+<ul>
+<li>historical data</li>
+<li>published research</li>
+<li>professional judgement</li>
+<li>local operational knowledge</li>
+<li>planning assumptions.</li>
+</ul>
+<p>These should not be hidden.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>A Model Is Conditional
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<p>A model does not say:</p>
+<blockquote class="blockquote">
+<p><strong>This is what will happen.</strong></p>
+</blockquote>
+<p>It says:</p>
+<blockquote class="blockquote">
+<p><strong>If these assumptions are approximately correct, this is what the model suggests might happen.</strong></p>
+</blockquote>
+</div>
+</div>
+</div>
+<p>The assumptions should therefore be visible, discussable and challengeable.</p>
+</section>
+<section id="test-the-assumptions" class="level1">
+<h1>12. Test the Assumptions</h1>
+<p>A useful model should not produce only one answer.</p>
+<p>Suppose a business case assumes that a new pathway will reduce emergency admissions by 15%.</p>
+<p>Decision-makers should ask:</p>
+<blockquote class="blockquote">
+<p><strong>What happens if the effect is only 5%?</strong></p>
+</blockquote>
+<p>Or:</p>
+<blockquote class="blockquote">
+<p><strong>What if uptake is 40% rather than 70%?</strong></p>
+</blockquote>
+<p>Or:</p>
+<blockquote class="blockquote">
+<p><strong>What if workforce capacity is 10% lower than planned?</strong></p>
+</blockquote>
+<p>This is the role of <strong>sensitivity analysis</strong> and <strong>scenario testing</strong>.</p>
+<p>For example:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Scenario</th>
+<th style="text-align: right;">Admission reduction</th>
+<th style="text-align: right;">Uptake</th>
+<th style="text-align: right;">Workforce available</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Optimistic</td>
+<td style="text-align: right;">15%</td>
+<td style="text-align: right;">80%</td>
+<td style="text-align: right;">100%</td>
+</tr>
+<tr class="even">
+<td>Central</td>
+<td style="text-align: right;">10%</td>
+<td style="text-align: right;">65%</td>
+<td style="text-align: right;">90%</td>
+</tr>
+<tr class="odd">
+<td>Pessimistic</td>
+<td style="text-align: right;">5%</td>
+<td style="text-align: right;">50%</td>
+<td style="text-align: right;">80%</td>
+</tr>
+</tbody>
+</table>
+<p>The important question is not simply:</p>
+<blockquote class="blockquote">
+<p><em>Which scenario is most likely?</em></p>
+</blockquote>
+<p>It is:</p>
+<blockquote class="blockquote">
+<p><strong>Would the decision still make sense under a reasonable range of assumptions?</strong></p>
+</blockquote>
+<p>This links directly to decision-making under uncertainty.</p>
+</section>
+<section id="validate-the-model-against-reality" class="level1">
+<h1>13. Validate the Model Against Reality</h1>
+<p>A model should not only be mathematically correct.</p>
+<p>It should also behave sufficiently like the real system to be useful.</p>
+<p>Validation might include:</p>
+<ul>
+<li>comparing model outputs with historical activity</li>
+<li>checking waiting times against observed waiting times</li>
+<li>comparing simulated pathway flows with operational data</li>
+<li>reviewing assumptions with clinicians and operational staff</li>
+<li>testing extreme scenarios</li>
+<li>examining whether model behaviour makes practical sense.</li>
+</ul>
+<p>The people who understand the pathway should therefore be involved in model development.</p>
+<p>A model built without operational knowledge may accurately reproduce the data available to the analyst while misunderstanding how the service actually works.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Ask the People Who Run the System
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-7" class="callout-7-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<p>Useful modelling often requires both:</p>
+<p><strong>data about the pathway</strong></p>
+<p>and</p>
+<p><strong>knowledge of how the pathway actually operates.</strong></p>
+</div>
+</div>
+</div>
+</section>
+<section id="what-simulation-cannot-tell-us" class="level1">
+<h1>14. What Simulation Cannot Tell Us</h1>
+<p>Simulation has important limitations.</p>
+<p>A model cannot remove uncertainty.</p>
+<p>It cannot guarantee:</p>
+<ul>
+<li>how clinicians will behave</li>
+<li>how patients will respond</li>
+<li>whether implementation will succeed</li>
+<li>whether workforce can actually be recruited</li>
+<li>whether intervention effectiveness will transfer from another setting</li>
+<li>whether policy or service conditions will change.</li>
+</ul>
+<p>Nor can simulation demonstrate that an intervention <strong>caused</strong> an observed outcome.</p>
+<p>That remains an evaluation question.</p>
+<p>There is therefore an important distinction:</p>
+<blockquote class="blockquote">
+<p><strong>Evaluation asks what difference an intervention made.</strong></p>
+</blockquote>
+<blockquote class="blockquote">
+<p><strong>Simulation asks what might happen under specified assumptions if the system changes.</strong></p>
+</blockquote>
+<p>The two can complement one another.</p>
+<p>Evaluation findings can provide better parameters for future simulation.</p>
+<p>Simulation can identify assumptions and outcomes that should subsequently be evaluated.</p>
+</section>
+<section id="avoid-false-precision" class="level1">
+<h1>15. Avoid False Precision</h1>
+<p>Models often produce precise-looking numbers.</p>
+<p>For example:</p>
+<blockquote class="blockquote">
+<p>Predicted bed requirement = 127.4 beds.</p>
+</blockquote>
+<p>That precision can be misleading.</p>
+<p>The assumptions underlying the model may be considerably more uncertain than the decimal point suggests.</p>
+<p>It may be more useful to say:</p>
+<blockquote class="blockquote">
+<p>Under plausible assumptions, expected bed requirements range from approximately <strong>120–140 beds</strong>.</p>
+</blockquote>
+<p>Similarly, presenting several scenarios may be more informative than presenting a single estimate.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Precision Is Not Certainty
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-8" class="callout-8-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<p><strong>A precise model output can still be highly uncertain.</strong></p>
+<p>Decision-makers should understand the range of plausible outcomes and the assumptions driving them.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="from-phm-to-simulation-to-evaluation" class="level1">
+<h1>16. From PHM to Simulation to Evaluation</h1>
+<p>Modules 17, 18 and 19 answer related but different questions.</p>
+<p><strong>Population Health Management</strong></p>
+<blockquote class="blockquote">
+<p>Who might benefit from intervention, and where is the opportunity?</p>
+</blockquote>
+<p>↓</p>
+<p><strong>Scenario and Simulation Modelling</strong></p>
+<blockquote class="blockquote">
+<p>What might happen if we change the pathway?</p>
+</blockquote>
+<p>↓</p>
+<p><strong>Implementation</strong></p>
+<blockquote class="blockquote">
+<p>Make the change.</p>
+</blockquote>
+<p>↓</p>
+<p><strong>Evaluation</strong></p>
+<blockquote class="blockquote">
+<p>What actually happened, and what difference did the intervention make?</p>
+</blockquote>
+<p>This creates a learning cycle.</p>
+<p>Evidence from evaluation can then improve future population analysis and modelling.</p>
+<p>For example:</p>
+<blockquote class="blockquote">
+<p><strong>PHM identifies opportunity → Simulation tests options → Decision → Implementation → Evaluation → Better evidence → Revised model</strong></p>
+</blockquote>
+<p>Healthcare Decision Intelligence therefore does not treat models as one-off predictions.</p>
+<p>They are tools for learning and improving decisions.</p>
+</section>
+<section id="decision-maker-questions" class="level1">
+<h1>17. Decision-Maker Questions</h1>
+<p>When presented with a forecast, scenario or simulation model, ask:</p>
+<ol type="1">
+<li><strong>What decision is this model intended to inform?</strong></li>
+<li>What exactly is being modelled?</li>
+<li>What is outside the model?</li>
+<li>Where have the demand assumptions come from?</li>
+<li>Have population growth and changing need been considered?</li>
+<li>How are patient pathways represented?</li>
+<li>Have variability and peak demand been represented, or only averages?</li>
+<li>What resources constrain the system?</li>
+<li>Could removing one bottleneck create another?</li>
+<li>What assumptions have been made about intervention uptake and effectiveness?</li>
+<li>Which assumptions have the greatest influence on the result?</li>
+<li>Have optimistic, central and pessimistic scenarios been explored?</li>
+<li>Has the model been validated against the existing system?</li>
+<li>Have clinicians and operational teams challenged the assumptions?</li>
+<li>Are results presented as ranges rather than false precision?</li>
+<li>What important factors cannot be represented?</li>
+<li><strong>Would the decision change under a reasonable alternative set of assumptions?</strong></li>
+</ol>
+</section>
+<section id="bringing-it-all-together" class="level1">
+<h1>Bringing It All Together</h1>
+<p>Healthcare decisions frequently involve acting before the consequences are fully known.</p>
+<p>Scenario and simulation modelling allow decision-makers to explore those consequences before committing fully to a change.</p>
+<p>The process should begin with the decision:</p>
+<blockquote class="blockquote">
+<p><strong>What are we considering changing?</strong></p>
+</blockquote>
+<p>↓</p>
+<blockquote class="blockquote">
+<p><strong>What consequences are uncertain?</strong></p>
+</blockquote>
+<p>↓</p>
+<blockquote class="blockquote">
+<p><strong>What is the simplest useful modelling approach?</strong></p>
+</blockquote>
+<p>↓</p>
+<blockquote class="blockquote">
+<p><strong>What assumptions are required?</strong></p>
+</blockquote>
+<p>↓</p>
+<blockquote class="blockquote">
+<p><strong>What happens under different scenarios?</strong></p>
+</blockquote>
+<p>↓</p>
+<blockquote class="blockquote">
+<p><strong>Where might bottlenecks or unintended consequences emerge?</strong></p>
+</blockquote>
+<p>↓</p>
+<blockquote class="blockquote">
+<p><strong>Which assumptions matter most?</strong></p>
+</blockquote>
+<p>↓</p>
+<blockquote class="blockquote">
+<p><strong>Would the decision remain sensible under uncertainty?</strong></p>
+</blockquote>
+<p>↓</p>
+<blockquote class="blockquote">
+<p><strong>Implement, monitor and evaluate</strong></p>
+</blockquote>
+<p>The objective is not to build the most sophisticated model.</p>
+<p>It is to make a better-informed decision.</p>
+</section>
+<section id="key-takeaways" class="level1">
+<h1>Key Takeaways</h1>
+<ul>
+<li>Simulation and scenario modelling help explore the possible consequences of decisions <strong>before changes are fully implemented</strong>.</li>
+<li>Start with the decision and uncertainty, not the modelling technique.</li>
+<li>Forecasting, scenario analysis, demand and capacity modelling, and simulation answer different questions.</li>
+<li>Not every decision requires a sophisticated simulation.</li>
+<li><strong>The simplest model capable of informing the decision credibly is often the best starting point.</strong></li>
+<li>Average demand and average capacity can conceal queues and operational pressure.</li>
+<li>Healthcare pathways contain interacting resources, queues and constraints.</li>
+<li>Improving one part of a pathway can move pressure somewhere else.</li>
+<li>This is particularly important when modelling shifts from hospital to community care.</li>
+<li>Simulation does not predict the future with certainty.</li>
+<li>Every model depends on assumptions that should be visible and challengeable.</li>
+<li>Sensitivity analysis helps determine whether conclusions are robust to reasonable changes in assumptions.</li>
+<li>Models should be validated against both observed data and operational knowledge.</li>
+<li>Precise model outputs should not be confused with certainty.</li>
+<li>Evaluation and simulation answer different questions but can strengthen one another.</li>
+<li><strong>The purpose of modelling is not to produce an impressive model. It is to support a better decision.</strong></li>
+</ul>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>The Question to Remember
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-9" class="callout-9-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<p>Before making a major change to a healthcare system, ask:</p>
+<blockquote class="blockquote">
+<p><strong>What might happen if our assumptions are wrong — and would we still make the same decision?</strong></p>
+</blockquote>
+</div>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../modules/18-Population-Health-Management-&amp;-Population-Segmentation.html" class="pagination-link" aria-label="Module 18: Population Health Management &amp; Population Segmentation (BETA)">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Module 18: Population Health Management &amp; Population Segmentation (BETA)</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../Project.html" class="pagination-link" aria-label="Project - Healthcare Decision Intelligence Series">
+        <span class="nav-page-text"><span class="chapter-title">Project - Healthcare Decision Intelligence Series</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
