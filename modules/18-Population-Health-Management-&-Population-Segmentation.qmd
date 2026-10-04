@@ -1,1 +1,844 @@
+# Module 18: Population Health Management & Population Segmentation (DRAFT)
 
+## Who should we intervene with, and why?
+
+<button class="print-button" onclick="window.print()">🖨️ Print this module</button>
+
+## 1. Why Population Health Management Matters
+
+Healthcare organisations generate enormous amounts of information about services:
+
+- GP appointments
+- referrals
+- Emergency Department attendances
+- hospital admissions
+- community contacts
+- waiting lists
+- procedures
+- prescribing
+- outcomes.
+
+These data are essential for understanding how services are being used.
+
+But Population Health Management (PHM) starts with a different question:
+
+> **What does our population need, and where might a different approach improve outcomes?**
+
+This changes the perspective from managing individual services towards understanding populations across organisational and pathway boundaries.
+
+Instead of asking only:
+
+> *How many emergency admissions did we have?*
+
+PHM encourages us to ask:
+
+> *Which populations are experiencing emergency admissions, how does this relate to their underlying need, what other care are they receiving, where does variation exist, and where might there be an opportunity to intervene differently?*
+
+::: {.callout-important collapse="false"}
+## Key Principle
+
+**Population Health Management is not simply about identifying people who use the most healthcare.**
+
+It is about understanding **population need, variation, inequalities and opportunities for intervention** well enough to support better decisions.
+:::
+
+## Learning Objectives
+
+By the end of this module, you should be able to:
+
+- distinguish population need from observed service demand
+- understand why defining the population and denominator comes before segmentation
+- recognise what linked patient-level datasets allow us to investigate
+- understand what linked data cannot tell us on their own
+- apply PHM principles when linked datasets are unavailable
+- distinguish segmentation, risk stratification and case finding
+- distinguish need, utilisation, risk and capacity to benefit
+- use population intelligence to investigate variation and inequalities
+- understand the opportunities and limitations of predictive risk
+- translate population insight into an actionable intervention opportunity
+- recognise when a question moves from PHM into evaluation.
+
+# 2. Population Need Is Not the Same as Service Demand
+
+One of the most important ideas in PHM is that **observed healthcare activity is not the same thing as population need**.
+
+The relationship is more complicated:
+
+> **Population need → Access → Help-seeking → Eligibility → Referral → Capacity → Service use**
+
+People with similar underlying needs may therefore use healthcare very differently.
+
+For example, one population may have high emergency admission rates because it has:
+
+- an older population
+- higher levels of frailty
+- more multimorbidity
+- greater deprivation
+- poorer access to preventative services
+- less community capacity
+- different referral patterns
+- different hospital admission practices.
+
+Conversely, low service use does not necessarily mean low need.
+
+It may reflect:
+
+- barriers to access
+- unmet need
+- different eligibility criteria
+- lower service availability
+- differences in help-seeking
+- incomplete recording.
+
+::: {.callout-important collapse="false"}
+## Activity Is Not Need
+
+**High activity does not automatically mean high need.**
+
+And:
+
+**Low activity does not automatically mean low need.**
+
+Understanding the difference is fundamental to interpreting variation fairly.
+:::
+
+# 3. Start by Defining the Population
+
+Before segmenting a population or developing a risk model, establish **who the population actually is**.
+
+This sounds straightforward but can substantially change the conclusions.
+
+Questions include:
+
+- Are we analysing the resident or GP-registered population?
+- What geography are we using?
+- What age groups are included?
+- What time period are we examining?
+- Have inclusion criteria changed?
+- Are population denominators consistent?
+- Has the population grown or aged?
+- Are particular groups systematically missing?
+
+A rise in emergency admissions, for example, may look very different once population growth and changing age structure are taken into account.
+
+Similarly, comparing two localities using raw activity counts may be misleading if their population sizes and levels of need differ substantially.
+
+::: {.callout-tip collapse="false"}
+## Decision-Maker Questions
+
+Before asking why activity differs, ask:
+
+1. **Who is in the population?**
+2. **How large is the population?**
+3. **How has it changed?**
+4. **How does its underlying need differ?**
+:::
+
+# 4. What Linked Data Allow Us to See
+
+Healthcare data often sit in separate organisational or service datasets.
+
+Without linkage, we might see:
+
+> **Primary care | Community | Ambulance | ED | Inpatient | Mental health**
+
+Each dataset tells us something useful.
+
+But each describes only part of a person's interaction with the system.
+
+Patient-level linkage can create a more longitudinal view:
+
+> **Person → Characteristics → Conditions → Service contacts → Interventions → Pathway → Outcomes over time**
+
+This substantially increases the questions that PHM analysis can explore.
+
+Linked data may allow us to investigate:
+
+- how many people use multiple parts of the healthcare system
+- patterns of multimorbidity
+- what happened before an emergency admission
+- what happened following discharge
+- repeated movement between services
+- which people received particular interventions
+- sequences and combinations of care
+- subsequent outcomes
+- differences in pathways by frailty, deprivation, geography or other characteristics
+- overlap between programmes or services.
+
+Rather than seeing an emergency admission as an isolated event, we can begin to examine the **journey around it**.
+
+For example:
+
+> **Frailty identified → GP contacts → Community support → UCR → ED → Admission → Discharge → Community follow-up**
+
+This can reveal opportunities that are difficult to identify from individual service datasets.
+
+# 5. What Linked Data Cannot Tell Us on Their Own
+
+Linked data are powerful.
+
+But linking more data does not automatically answer every decision question.
+
+Suppose linked data show that people receiving proactive frailty support subsequently experience 15% fewer emergency admissions.
+
+That tells us something important about the observed population.
+
+It does **not**, by itself, establish that:
+
+> **Proactive frailty support caused a 15% reduction in emergency admissions.**
+
+People receiving proactive support may differ from other patients in:
+
+- age
+- severity
+- frailty
+- multimorbidity
+- previous healthcare use
+- deprivation
+- access to services
+- clinical selection
+- willingness to engage.
+
+Some important factors may not be recorded at all.
+
+This distinction connects PHM directly with the evaluation principles introduced earlier in this series.
+
+::: {.callout-important collapse="false"}
+## Observation Is Not Causation
+
+**Linkage improves what we can observe.**
+
+**Evaluation design determines what we can infer.**
+:::
+
+Linked datasets may also contain limitations including:
+
+- missing services
+- incomplete community or social care information
+- inconsistent coding
+- data latency
+- changing definitions
+- incorrect or incomplete identifiers
+- linkage errors
+- incomplete intervention exposure
+- missing contextual information
+- selection effects
+- information governance constraints.
+
+There is another important limitation.
+
+> **Absence from a healthcare dataset does not necessarily mean absence of need.**
+
+People who interact least with healthcare services may sometimes have substantial unmet need.
+
+Linked healthcare activity can therefore provide a richer picture of the people the system **sees**, while still providing an incomplete picture of everyone who might benefit from support.
+
+# 6. What Can We Do Without Linked Data?
+
+The absence of a comprehensive linked patient-level dataset should **not become a reason to postpone PHM**.
+
+Many useful PHM questions can be investigated using population, geographical, cohort and service-level information.
+
+::: {.callout-important collapse="false"}
+## PHM Is a Way of Thinking, Not a Dataset
+
+**Do not wait for the perfect linked dataset before applying PHM principles.**
+
+Start with the population, the decision and the best available evidence.
+
+Linked data can deepen the analysis, but their absence should not prevent us from understanding population need, variation and opportunity.
+:::
+
+Without patient-level linkage, we can still:
+
+| Without linked patient-level data, we can still… | Example |
+|---|---|
+| Describe population need | Age, deprivation, prevalence, frailty estimates and population projections |
+| Compare populations | Rates by locality, neighbourhood, PCN or deprivation group |
+| Examine inequalities | Compare need, access, utilisation and outcomes across groups |
+| Identify geographical variation | Emergency admissions, referrals or service uptake by area |
+| Compare need with service provision | High-need populations compared with service capacity or activity |
+| Examine pathway stages separately | Referrals, acceptance, activity and outcomes |
+| Examine trends over time | Is activity changing faster than population need? |
+| Use published evidence | Which populations might benefit from an intervention? |
+| Generate hypotheses | Where does variation suggest further investigation? |
+| Prioritise better data | Which additional linkage would materially improve the next decision? |
+
+The conclusions must simply reflect the strength and granularity of the available data.
+
+# 7. Working at Different Levels of Data Maturity
+
+PHM can operate at different levels of analytical maturity.
+
+The important question is not:
+
+> *Do we have the perfect PHM dataset?*
+
+It is:
+
+> **What questions can we answer credibly with the information currently available?**
+
+## Level 1 — Population Intelligence
+
+No patient-level linkage is required.
+
+Potential information includes:
+
+- demographics
+- deprivation
+- disease prevalence
+- population projections
+- service activity
+- outcomes
+- geographical variation.
+
+The main question is:
+
+> **Where might need or unexplained variation exist?**
+
+## Level 2 — Cohort and Service Intelligence
+
+Some identifiable cohorts or service-level information are available, but linkage across the pathway is incomplete.
+
+Potential information includes:
+
+- disease registers
+- frailty cohorts
+- service cohorts
+- referral activity
+- acceptance rates
+- service uptake
+- utilisation profiles
+- locality comparisons.
+
+The question becomes:
+
+> **Which populations appear to experience different access, utilisation or outcomes?**
+
+## Level 3 — Linked Population Intelligence
+
+Person-level linkage across services enables more detailed longitudinal analysis.
+
+Potential analysis includes:
+
+- multimorbidity
+- longitudinal pathways
+- service overlap
+- intervention exposure
+- sequences of care
+- outcomes following exposure
+- more sophisticated segmentation
+- risk stratification.
+
+The question becomes:
+
+> **How do people move through the system, which combinations of care do they receive, and what happens subsequently?**
+
+## When the Question Changes
+
+More linked data do not automatically create another level of PHM.
+
+If the question becomes:
+
+> **Did this intervention cause the improvement?**
+
+we have moved into **evaluation**.
+
+Linked data may make a stronger evaluation possible.
+
+But linkage itself is **not an evaluation design**.
+
+# 8. From Populations to Meaningful Segments
+
+A population of hundreds of thousands of people is rarely homogeneous.
+
+Segmentation divides that population into groups that share characteristics relevant to a particular decision.
+
+Possible approaches include:
+
+- demographic segmentation
+- clinical segmentation
+- condition-based segmentation
+- frailty or complexity
+- multimorbidity
+- utilisation
+- socioeconomic characteristics
+- geography
+- combinations of these factors.
+
+For example, an ICB might distinguish between:
+
+- generally healthy adults
+- people with a single stable long-term condition
+- people with multiple long-term conditions
+- people living with moderate frailty
+- people living with severe frailty
+- people with very high levels of healthcare utilisation.
+
+But producing segments is not the objective.
+
+The important question is:
+
+> **What would we do differently because this population belongs to this segment?**
+
+::: {.callout-important collapse="false"}
+## Actionable Segmentation
+
+**A useful segment should support a different decision — not simply describe an interesting group.**
+:::
+
+# 9. Segmentation, Risk Stratification and Case Finding Are Different
+
+These terms are sometimes used interchangeably, but they answer different questions.
+
+| Approach | Main question |
+|---|---|
+| **Segmentation** | What meaningful groups exist within our population? |
+| **Risk stratification** | Who is more likely to experience a particular future outcome? |
+| **Case finding** | Which identifiable people might warrant assessment or intervention? |
+
+For example:
+
+**Segmentation**
+
+> Which groups of people with frailty have different needs and patterns of service use?
+
+**Risk stratification**
+
+> Which people are at greatest risk of emergency admission during the next 12 months?
+
+**Case finding**
+
+> Which people should be considered for proactive clinical assessment?
+
+The three approaches can complement one another.
+
+But they should not be confused.
+
+In particular, population segmentation can remain useful even when individual-level case finding is impossible because linked patient-level data are unavailable.
+
+# 10. Need, Utilisation, Risk and Capacity to Benefit Are Different
+
+One of the dangers of PHM is assuming that the people who use the most healthcare must automatically be those who should receive the next intervention.
+
+Consider four different concepts:
+
+**Need**  
+The underlying health or care requirement.
+
+**Utilisation**  
+The healthcare that someone currently receives.
+
+**Risk**  
+The probability of a future outcome.
+
+**Capacity to benefit**  
+The extent to which an appropriate intervention could realistically improve outcomes.
+
+These are related.
+
+They are not equivalent.
+
+::: {.callout-important collapse="false"}
+## The Distinction to Remember
+
+**High utilisation ≠ High need ≠ High risk ≠ High capacity to benefit**
+:::
+
+A person may have very high predicted risk because they have advanced illness and complex needs.
+
+But that does not necessarily mean an intervention designed to prevent hospital admission can substantially alter their risk.
+
+Conversely, someone at moderate risk may have a highly modifiable problem and considerable capacity to benefit.
+
+This changes the decision question from:
+
+> *Who is highest risk?*
+
+to:
+
+> **Who might benefit from a different intervention?**
+
+# 11. Look for Unexplained Variation and Inequalities
+
+Variation is one of the most useful starting points for PHM.
+
+Suppose emergency admission rates for people living with frailty differ substantially between localities.
+
+Possible explanations include:
+
+- different age structures
+- different levels of frailty
+- multimorbidity
+- deprivation
+- service availability
+- access
+- referral behaviour
+- community capacity
+- hospital practice
+- random variation.
+
+The first question should therefore not be:
+
+> *Which locality is performing badly?*
+
+It should be:
+
+> **What might explain the variation?**
+
+::: {.callout-important collapse="false"}
+## Variation Is a Signal
+
+**Variation is a signal to investigate — not automatically evidence of poor performance.**
+:::
+
+Where linked data are available, the analysis may examine the pathway:
+
+> **Eligible population → Referred → Accepted → Treated → Outcome**
+
+and investigate where differences emerge.
+
+Where linked data are unavailable, these stages can still be examined separately using service and population-level information.
+
+The limitation is that we may not be able to demonstrate that the same individuals moved through each stage.
+
+This distinction should remain explicit.
+
+## Looking for Inequalities
+
+Population averages can conceal important differences.
+
+For example, an ICB may show an overall increase in proactive frailty assessment while uptake remains substantially lower in its most deprived neighbourhoods.
+
+PHM can therefore examine variation by relevant characteristics such as:
+
+- deprivation
+- age
+- geography
+- ethnicity where data quality permits
+- care home residence
+- living circumstances
+- clinical complexity.
+
+The purpose is not simply to identify differences.
+
+It is to investigate whether those differences reflect:
+
+- differing levels of need
+- access
+- eligibility
+- service availability
+- patient choice
+- pathway design
+- data quality
+- potentially avoidable inequalities.
+
+# 12. Predictive Risk: Useful, but Not the Decision
+
+Linked longitudinal datasets can support predictive models that estimate the probability of future outcomes.
+
+For example:
+
+> **What is the probability that this patient will experience an emergency admission during the next 12 months?**
+
+Such models may use information including:
+
+- age
+- diagnoses
+- previous admissions
+- medications
+- frailty
+- multimorbidity
+- previous service utilisation.
+
+Risk stratification can help identify populations requiring further attention.
+
+But a risk prediction is not a treatment recommendation.
+
+::: {.callout-important collapse="false"}
+## Prediction and Intervention Are Different Questions
+
+A predictive model asks:
+
+> **Who is likely to experience the outcome?**
+
+The commissioning question is often:
+
+> **Who is likely to benefit if we intervene?**
+
+These are not the same question.
+:::
+
+Decision-makers should therefore consider:
+
+- how accurately the model identifies risk
+- whether predicted probabilities are well calibrated
+- false positives and false negatives
+- whether performance differs between population groups
+- whether the data reflect current service arrangements
+- regression to the mean
+- whether the identified risk is modifiable
+- whether an effective intervention actually exists.
+
+Sophisticated prediction should also not become a prerequisite for PHM.
+
+Sometimes relatively simple population analysis can identify a more useful intervention opportunity.
+
+# 13. Worked Example: Severe Frailty at Different Levels of Data Maturity
+
+Consider the following commissioning question:
+
+> **Where might proactive frailty support make the greatest difference?**
+
+The question remains relevant whether or not the ICB has a comprehensive linked dataset.
+
+What changes is the **precision with which it can be answered**.
+
+## Scenario A — Population-Level Data
+
+Suppose the ICB has:
+
+- population estimates
+- age profiles
+- deprivation
+- estimated frailty prevalence
+- emergency admission rates
+- information about community service provision.
+
+The team can compare neighbourhoods and ask:
+
+- Where is severe frailty likely to be most prevalent?
+- Which areas have higher emergency admission rates?
+- Does variation remain after considering age and population size?
+- How does community provision vary?
+- Which areas appear to have high need relative to current service provision?
+
+This can identify **areas for further investigation**.
+
+It cannot identify individual patients or determine which people received particular services.
+
+## Scenario B — Cohort and Service Data
+
+Suppose the ICB can identify a severe-frailty cohort and has separate information about service activity.
+
+The team can additionally examine:
+
+- size of the severe-frailty cohort
+- referral rates
+- service uptake
+- locality differences
+- changes over time
+- outcomes at cohort level.
+
+This provides a more focused picture.
+
+But if datasets cannot be linked, the team may still be unable to follow individuals across the entire pathway.
+
+## Scenario C — Linked Patient-Level Data
+
+Suppose primary care, community and hospital information can be linked at patient level.
+
+The team can now examine:
+
+> **Person → Frailty → Multimorbidity → Previous utilisation → Intervention exposure → Subsequent pathway → Outcome**
+
+This might allow investigation of:
+
+- combinations of long-term conditions
+- previous emergency activity
+- who receives proactive frailty support
+- who receives UCR
+- overlap between services
+- sequences of care
+- subsequent emergency activity
+- variation between patient groups.
+
+This provides a much richer PHM picture.
+
+But an important boundary remains.
+
+Suppose people receiving proactive frailty care subsequently have fewer admissions.
+
+That observation alone still does not establish:
+
+> **Proactive frailty care caused the reduction.**
+
+That is an evaluation question requiring an appropriate counterfactual and evaluation design.
+
+::: {.callout-important collapse="false"}
+## The Question Does Not Disappear Because the Data Are Imperfect
+
+**The precision of the answer changes.**
+
+Use the best available evidence now while improving the information required for the next decision.
+:::
+
+# 14. From Population Insight to an Actionable Opportunity
+
+PHM should not end with an interesting dashboard or segmentation model.
+
+The purpose is to support action.
+
+A useful progression is:
+
+> **Population**
+
+↓
+
+> **Need**
+
+↓
+
+> **Variation**
+
+↓
+
+> **Segmentation**
+
+↓
+
+> **Potentially modifiable opportunity**
+
+↓
+
+> **Intervention hypothesis**
+
+↓
+
+> **Theory of Change**
+
+↓
+
+> **Evaluation**
+
+For example:
+
+**Observation**
+
+> One locality has substantially higher emergency admission rates among people with severe frailty.
+
+**Understand need**
+
+> How much of the difference can be explained by population size, age, frailty, multimorbidity and deprivation?
+
+**Investigate the pathway**
+
+> Are there differences in access to proactive frailty care, UCR or other community support?
+
+**Identify the population**
+
+> Which population appears most affected?
+
+**Develop the intervention hypothesis**
+
+> Could improving proactive support for this population plausibly change the pathway?
+
+**Test rather than assume**
+
+> Define the Theory of Change and design an evaluation capable of determining whether the change makes a difference.
+
+This is the point at which PHM connects to the wider Healthcare Decision Intelligence cycle.
+
+::: {.callout-important collapse="false"}
+## From Insight to Action
+
+**Use the best available evidence now, while improving the data needed for the next decision.**
+
+Better data should improve decision-making.
+
+Waiting indefinitely for perfect data should not become a substitute for decision-making.
+:::
+
+# 15. Decision-Maker Questions
+
+When presented with PHM analysis, ask:
+
+1. **What population are we trying to understand?**
+2. What denominator has been used?
+3. Are we measuring underlying need or observed service utilisation?
+4. How has the population changed over time?
+5. What can we answer with the data we already have?
+6. Which questions genuinely require patient-level linkage?
+7. Which populations or services are missing from the data?
+8. Are we identifying high utilisation, high need, high risk or capacity to benefit?
+9. What variation remains unexplained after considering population need?
+10. Who may not be accessing services despite having need?
+11. Is the segmentation actionable?
+12. Could the proposed approach widen inequalities?
+13. Would better data or linkage materially change the decision?
+14. Can we make a proportionate decision now while improving the evidence?
+15. **What decision would we make differently because of this analysis?**
+
+# Bringing It All Together
+
+Population Health Management starts with the **population**, rather than the service.
+
+The analytical journey might look like:
+
+> **Define the population**
+
+↓
+
+> **Understand population need**
+
+↓
+
+> **Examine utilisation and outcomes**
+
+↓
+
+> **Segment where useful**
+
+↓
+
+> **Investigate variation and inequalities**
+
+↓
+
+> **Use linked data where available**
+
+↓
+
+> **Identify potentially modifiable opportunities**
+
+↓
+
+> **Develop an intervention hypothesis**
+
+↓
+
+> **Evaluate whether changing care actually improves outcomes**
+
+Linked patient-level datasets can substantially strengthen this process.
+
+They allow us to understand pathways, service overlap, multimorbidity and sequences of care that cannot easily be seen in separate datasets.
+
+But linked data are an **enabler**, not the definition of PHM.
+
+Useful population intelligence can still be developed from population, geographical, cohort and service-level information.
+
+Equally, having a sophisticated linked dataset does not mean every question has been answered.
+
+> **Linkage improves what we can observe. Evaluation design determines what we can infer.**
+
+# Key Takeaways
+
+- **Population need and observed healthcare activity are not the same thing.**
+- Define the population and denominator before interpreting variation.
+- Linked patient-level data can reveal pathways, overlap, multimorbidity, intervention exposure and longitudinal outcomes.
+- Linked data do not automatically establish causation, appropriateness or unmet need.
+- **PHM does not require perfect linked data before useful analysis can begin.**
+- Work at the level of data maturity available and make the limitations explicit.
+- Segmentation, risk stratification and case finding answer different questions.
+- **High utilisation, high need, high risk and high capacity to benefit are not interchangeable concepts.**
+- Prediction identifies who may experience an outcome; it does not automatically identify who will benefit from intervention.
+- Variation should prompt investigation before judgement.
+- PHM should ultimately identify **actionable opportunities**, not simply interesting population segments.
+- Better data should improve future decisions without becoming a reason to postpone proportionate action today.
+- When the question changes from **“What is happening to this population?”** to **“Did our intervention cause the change?”**, evaluation becomes necessary.
+
+::: {.callout-important collapse="false"}
+## The Question to Remember
+
+**Are we simply identifying who uses healthcare — or using population intelligence to understand where a different approach could make the greatest difference?**
+:::
