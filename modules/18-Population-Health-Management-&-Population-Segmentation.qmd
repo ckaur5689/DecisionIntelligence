@@ -1,4 +1,4 @@
-# Module 18: Population Health Management & Population Segmentation (BETA)
+# Module 18: Population Health Management & Population Segmentation
 
 ## Who should we intervene with, and why?
 
