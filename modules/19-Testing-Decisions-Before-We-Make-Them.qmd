@@ -1,0 +1,826 @@
+# Module 19: Testing Decisions Before We Make Them
+
+## Using scenarios and simulation to explore possible consequences
+
+<button class="print-button" onclick="window.print()">🖨️ Print this module</button>
+
+> **What might happen if we make this change?**
+
+## 1. Why This Module Matters
+
+Healthcare decisions often involve changing systems before we can know exactly what the consequences will be.
+
+An organisation might decide to:
+
+- move activity from hospital to community services
+- introduce a new clinical pathway
+- expand virtual wards
+- increase diagnostic capacity
+- redesign outpatient services
+- change workforce models
+- introduce a new triage process
+- increase preventative activity
+- consolidate services
+- respond to expected population growth.
+
+Each decision is based on assumptions about what might happen next.
+
+For example:
+
+> *If we increase community capacity, emergency admissions will fall.*
+
+Or:
+
+> *If we reduce length of stay, enough hospital capacity will be released to meet future demand.*
+
+Or:
+
+> *If more care moves closer to home, pressure on acute services will reduce.*
+
+These may be reasonable hypotheses.
+
+But healthcare systems are complex.
+
+Changing one part of a pathway can affect several others.
+
+A reduction in hospital activity may require substantial additional capacity elsewhere. Removing one bottleneck may simply create another.
+
+Simulation and scenario modelling provide ways of exploring these consequences **before changes are fully implemented**.
+
+::: {.callout-important collapse="false"}
+## Key Principle
+
+**Simulation is not about predicting the future with certainty.**
+
+It is about exploring:
+
+> **What might happen under different assumptions and different decisions?**
+:::
+
+## Learning Objectives
+
+By the end of this module, you should be able to:
+
+- understand why modelling future scenarios can improve healthcare decisions
+- distinguish forecasting, scenario analysis, demand and capacity modelling, and simulation
+- recognise when simple scenario analysis may be sufficient
+- understand when more sophisticated simulation may add value
+- recognise how changes in one part of a pathway can affect other services
+- understand the importance of variability, queues, bottlenecks and resource constraints
+- interpret simulation outputs without treating them as predictions
+- challenge the assumptions underlying a model
+- understand the importance of sensitivity and scenario testing
+- recognise when modelling complexity is proportionate to the decision being made.
+
+# 2. Start with the Decision, Not the Model
+
+A common mistake is to begin by asking:
+
+> *Should we build a simulation model?*
+
+The better starting point is:
+
+> **What decision are we trying to make, and what uncertainty are we trying to understand?**
+
+Consider an ICB planning a new community frailty pathway.
+
+The decision might be:
+
+> **How much community capacity would be required if more people with frailty were supported outside hospital?**
+
+This could lead to several questions:
+
+- How many people might use the pathway?
+- How quickly might demand grow?
+- What proportion might currently attend hospital?
+- How much community capacity would be required?
+- How many staff would be needed?
+- How long would people remain on the pathway?
+- What happens during periods of peak demand?
+- Could the new service itself develop a waiting list?
+- What happens if the intervention achieves less than expected?
+- What happens as the population ages?
+
+Only after defining these questions should we decide what analytical approach is required.
+
+::: {.callout-tip collapse="false"}
+## Decision-Maker Question
+
+Before commissioning a model, ask:
+
+> **What decision would this model help us make?**
+
+If that cannot be answered clearly, building a more sophisticated model is unlikely to help.
+:::
+
+# 3. Different Questions Require Different Approaches
+
+Not every decision requires simulation.
+
+There is a progression from relatively simple analysis to more sophisticated modelling.
+
+| Approach | Typical question |
+|---|---|
+| **Forecasting** | What might happen if current patterns continue? |
+| **Scenario analysis** | What might happen under different assumptions? |
+| **Demand and capacity modelling** | Can available resources meet expected demand? |
+| **Simulation** | How might patients, queues and resources interact over time? |
+
+These approaches overlap.
+
+The important issue is selecting an approach proportionate to the decision.
+
+## Forecasting
+
+Forecasting typically uses historical patterns to estimate future activity.
+
+For example:
+
+> *If current trends continue, how many emergency admissions might we expect in three years?*
+
+Forecasting can incorporate:
+
+- historical trends
+- population growth
+- ageing
+- seasonality
+- changing prevalence
+- known service changes.
+
+But forecasting generally assumes that historical relationships provide useful information about the future.
+
+That assumption may become less reliable when the system itself is changing.
+
+## Scenario Analysis
+
+Scenario analysis asks:
+
+> **What happens if we change our assumptions?**
+
+For example:
+
+- What if referrals increase by 5%?
+- What if they increase by 15%?
+- What if workforce capacity falls by 10%?
+- What if an intervention reduces admissions by 5%, 10% or 15%?
+- What if the 85+ population grows faster than expected?
+
+These scenarios are not predictions.
+
+They allow decision-makers to explore a range of plausible futures.
+
+## Demand and Capacity Modelling
+
+Demand and capacity modelling asks whether the resources available are sufficient to meet expected demand.
+
+For example:
+
+> **How many appointments are required each week, and how many can the service realistically provide?**
+
+This can expose mismatches between:
+
+- demand
+- workforce
+- appointment capacity
+- operating hours
+- bed capacity
+- diagnostic capacity
+- treatment capacity.
+
+## Simulation
+
+Simulation becomes particularly useful when the system contains:
+
+- multiple pathways
+- queues
+- variable arrival rates
+- resource constraints
+- different patient groups
+- different service times
+- interactions between services
+- uncertainty.
+
+Rather than analysing only averages, simulation can represent how the system behaves over time.
+
+# 4. Why Averages Can Mislead
+
+Healthcare demand is rarely constant.
+
+Imagine a service that receives an average of **20 referrals per day** and can process **20 patients per day**.
+
+At first glance:
+
+> Demand = Capacity
+
+So the service might appear balanced.
+
+But referrals do not arrive at exactly the same rate every day.
+
+For example:
+
+| Day | Referrals |
+|---|---:|
+| Monday | 28 |
+| Tuesday | 24 |
+| Wednesday | 15 |
+| Thursday | 18 |
+| Friday | 15 |
+
+Average demand is still 20.
+
+But queues may develop early in the week.
+
+If unused capacity later in the week cannot fully recover that backlog, waiting times may increase even though **average capacity equals average demand**.
+
+This is why variability matters.
+
+::: {.callout-important collapse="false"}
+## Averages Can Hide Operational Pressure
+
+**Matching average demand with average capacity does not guarantee that a service will have no queues or delays.**
+
+Variability, timing and resource availability matter.
+:::
+
+This is one reason simulation can sometimes reveal problems that simple averages cannot.
+
+# 5. Healthcare Is a System of Queues and Constraints
+
+Many healthcare pathways can be thought of as patients moving through a sequence of activities.
+
+For example:
+
+> **Referral → Assessment → Diagnostic test → Clinical decision → Treatment → Follow-up**
+
+At each stage there may be:
+
+- demand arriving
+- a queue
+- an activity
+- a resource
+- limited capacity.
+
+Resources might include:
+
+- clinicians
+- beds
+- scanners
+- theatres
+- consultation rooms
+- community teams
+- ambulances.
+
+A bottleneck occurs where available capacity constrains the flow of patients through the system.
+
+But bottlenecks can move.
+
+Increasing diagnostic capacity, for example, may increase the number of patients subsequently requiring treatment.
+
+Improving discharge processes may reduce length of stay but increase demand on community services.
+
+Increasing community case finding may identify previously unmet need and initially **increase**, rather than reduce, service demand.
+
+::: {.callout-important collapse="false"}
+## Systems Principle
+
+**Improving one part of a pathway does not necessarily improve the whole pathway.**
+
+Removing one constraint can reveal another.
+:::
+
+# 6. Modelling the "Left Shift"
+
+Consider an ICB seeking to move care upstream.
+
+The intended change might be:
+
+> **Hospital care → Community care → Prevention**
+
+The expected benefit might be reduced hospital demand.
+
+But activity does not simply disappear.
+
+Suppose proactive frailty care and Urgent Community Response reduce some emergency hospital activity.
+
+The new pathway might look like:
+
+> **Population with frailty**
+
+↓
+
+> **Proactive identification**
+
+↓
+
+> **Community frailty support**
+
+↓
+
+> **Urgent Community Response when deterioration occurs**
+
+↓
+
+> **Treatment at home / Virtual Ward**
+
+↓
+
+> **Community follow-up**
+
+This could reduce some hospital activity.
+
+But it could simultaneously increase demand for:
+
+- community nursing
+- therapy
+- GP support
+- diagnostics
+- pharmacy
+- virtual wards
+- remote monitoring
+- social care.
+
+The decision therefore should not simply ask:
+
+> *How many admissions might we avoid?*
+
+It should also ask:
+
+> **What capacity would be required elsewhere to make the new pathway work?**
+
+This is where scenario and simulation modelling can become particularly useful.
+
+# 7. A Worked Scenario: Redesigning a Frailty Pathway
+
+Imagine an ICB is considering expanding proactive frailty care and Urgent Community Response.
+
+The current pathway is broadly:
+
+> **Deterioration → Ambulance → ED → Admission**
+
+The proposed pathway is:
+
+> **Earlier identification → Community support → UCR → Treatment at home where appropriate**
+
+The ICB estimates that approximately **2,000 people each year** might potentially use the redesigned pathway.
+
+But several assumptions are uncertain.
+
+For example:
+
+- uptake might be 50%, 65% or 80%
+- only some emergency admissions may be preventable
+- UCR response times may vary
+- staffing availability may vary
+- some patients may still require hospital admission
+- demand may increase as the population ages.
+
+A simple scenario analysis could begin with three scenarios:
+
+| Assumption | Lower-impact scenario | Central scenario | Higher-impact scenario |
+|---|---:|---:|---:|
+| Eligible population | 2,000 | 2,000 | 2,000 |
+| Pathway uptake | 50% | 65% | 80% |
+| People using pathway | 1,000 | 1,300 | 1,600 |
+| Hospital activity affected | Lower | Moderate | Higher |
+| Community capacity required | Lower | Moderate | Higher |
+
+The exact numbers would depend on local evidence.
+
+But even this relatively simple exercise can expose an important issue:
+
+> **The scenario producing the largest reduction in hospital demand may also require the greatest increase in community capacity.**
+
+This is a more useful decision question than simply asking whether the intervention is expected to reduce admissions.
+
+# 8. When Do We Need Simulation?
+
+Simple scenarios may be sufficient when:
+
+- the pathway is straightforward
+- there are few interacting services
+- averages provide a reasonable approximation
+- the decision does not depend heavily on queues
+- uncertainty can be represented using a small number of scenarios.
+
+Simulation becomes more useful when:
+
+- patients follow different pathways
+- arrivals vary over time
+- resources are shared
+- queues matter
+- capacity constraints interact
+- patient characteristics affect pathways
+- timing matters
+- the system contains feedback or complex interactions.
+
+The analytical sophistication should be proportionate to the decision.
+
+::: {.callout-important collapse="false"}
+## More Complex Is Not Automatically Better
+
+A sophisticated simulation model is not necessarily more useful than a simple scenario model.
+
+The appropriate model is the **simplest model capable of informing the decision credibly**.
+:::
+
+# 9. Discrete Event Simulation
+
+One commonly used healthcare simulation approach is **Discrete Event Simulation (DES)**.
+
+DES represents individual entities moving through a system over time.
+
+In healthcare, the entity is often a patient.
+
+A simplified pathway might be:
+
+> **Patient arrives**
+
+↓
+
+> **Waits for assessment**
+
+↓
+
+> **Assessment**
+
+↓
+
+> **Waits for diagnostic test**
+
+↓
+
+> **Diagnostic test**
+
+↓
+
+> **Clinical decision**
+
+↓
+
+> **Treatment or discharge**
+
+The model can represent:
+
+- different patient types
+- arrival patterns
+- queues
+- service times
+- resource availability
+- different routes through the pathway
+- capacity constraints.
+
+For example, a DES model could explore:
+
+> *What happens to waiting times if referrals increase by 15% but workforce remains unchanged?*
+
+Or:
+
+> *How many additional staff would be required to maintain a four-hour response standard?*
+
+Or:
+
+> *Would adding diagnostic capacity reduce overall waiting time, or would the bottleneck simply move to treatment?*
+
+Decision-makers do not need to know how to program a DES model.
+
+They do need to understand:
+
+- what question it answers
+- what assumptions it contains
+- what data it requires
+- whether it reflects the real pathway
+- how uncertainty has been represented
+- how its outputs should be interpreted.
+
+# 10. Other Forms of Simulation
+
+DES is not the only simulation approach.
+
+Different approaches represent different types of system.
+
+## System Dynamics
+
+System dynamics is useful when the main interest is how parts of a system influence one another over time.
+
+For example:
+
+> Workforce shortages → increased workload → burnout → sickness/turnover → further workforce shortages
+
+It focuses more on feedback relationships and system behaviour than individual patient journeys.
+
+## Monte Carlo Simulation
+
+Monte Carlo methods repeatedly sample uncertain values from specified distributions.
+
+They can help answer questions such as:
+
+> *Given uncertainty in demand, intervention effect and costs, what range of outcomes might occur?*
+
+The purpose is not to identify a single precise future.
+
+It is to represent uncertainty more realistically.
+
+For most decision-makers, knowing **which approach is appropriate and why** is more important than understanding the technical mathematics behind it.
+
+# 11. Models Depend on Assumptions
+
+Every model simplifies reality.
+
+Assumptions might concern:
+
+- future demand
+- population growth
+- referral rates
+- intervention uptake
+- intervention effectiveness
+- workforce availability
+- service times
+- length of stay
+- patient pathways
+- operating hours
+- resource availability.
+
+Some assumptions may be strongly supported by evidence.
+
+Others may be based on:
+
+- historical data
+- published research
+- professional judgement
+- local operational knowledge
+- planning assumptions.
+
+These should not be hidden.
+
+::: {.callout-important collapse="false"}
+## A Model Is Conditional
+
+A model does not say:
+
+> **This is what will happen.**
+
+It says:
+
+> **If these assumptions are approximately correct, this is what the model suggests might happen.**
+:::
+
+The assumptions should therefore be visible, discussable and challengeable.
+
+# 12. Test the Assumptions
+
+A useful model should not produce only one answer.
+
+Suppose a business case assumes that a new pathway will reduce emergency admissions by 15%.
+
+Decision-makers should ask:
+
+> **What happens if the effect is only 5%?**
+
+Or:
+
+> **What if uptake is 40% rather than 70%?**
+
+Or:
+
+> **What if workforce capacity is 10% lower than planned?**
+
+This is the role of **sensitivity analysis** and **scenario testing**.
+
+For example:
+
+| Scenario | Admission reduction | Uptake | Workforce available |
+|---|---:|---:|---:|
+| Optimistic | 15% | 80% | 100% |
+| Central | 10% | 65% | 90% |
+| Pessimistic | 5% | 50% | 80% |
+
+The important question is not simply:
+
+> *Which scenario is most likely?*
+
+It is:
+
+> **Would the decision still make sense under a reasonable range of assumptions?**
+
+This links directly to decision-making under uncertainty.
+
+# 13. Validate the Model Against Reality
+
+A model should not only be mathematically correct.
+
+It should also behave sufficiently like the real system to be useful.
+
+Validation might include:
+
+- comparing model outputs with historical activity
+- checking waiting times against observed waiting times
+- comparing simulated pathway flows with operational data
+- reviewing assumptions with clinicians and operational staff
+- testing extreme scenarios
+- examining whether model behaviour makes practical sense.
+
+The people who understand the pathway should therefore be involved in model development.
+
+A model built without operational knowledge may accurately reproduce the data available to the analyst while misunderstanding how the service actually works.
+
+::: {.callout-tip collapse="false"}
+## Ask the People Who Run the System
+
+Useful modelling often requires both:
+
+**data about the pathway**
+
+and
+
+**knowledge of how the pathway actually operates.**
+:::
+
+# 14. What Simulation Cannot Tell Us
+
+Simulation has important limitations.
+
+A model cannot remove uncertainty.
+
+It cannot guarantee:
+
+- how clinicians will behave
+- how patients will respond
+- whether implementation will succeed
+- whether workforce can actually be recruited
+- whether intervention effectiveness will transfer from another setting
+- whether policy or service conditions will change.
+
+Nor can simulation demonstrate that an intervention **caused** an observed outcome.
+
+That remains an evaluation question.
+
+There is therefore an important distinction:
+
+> **Evaluation asks what difference an intervention made.**
+
+> **Simulation asks what might happen under specified assumptions if the system changes.**
+
+The two can complement one another.
+
+Evaluation findings can provide better parameters for future simulation.
+
+Simulation can identify assumptions and outcomes that should subsequently be evaluated.
+
+# 15. Avoid False Precision
+
+Models often produce precise-looking numbers.
+
+For example:
+
+> Predicted bed requirement = 127.4 beds.
+
+That precision can be misleading.
+
+The assumptions underlying the model may be considerably more uncertain than the decimal point suggests.
+
+It may be more useful to say:
+
+> Under plausible assumptions, expected bed requirements range from approximately **120–140 beds**.
+
+Similarly, presenting several scenarios may be more informative than presenting a single estimate.
+
+::: {.callout-important collapse="false"}
+## Precision Is Not Certainty
+
+**A precise model output can still be highly uncertain.**
+
+Decision-makers should understand the range of plausible outcomes and the assumptions driving them.
+:::
+
+# 16. From PHM to Simulation to Evaluation
+
+Modules 17, 18 and 19 answer related but different questions.
+
+**Population Health Management**
+
+> Who might benefit from intervention, and where is the opportunity?
+
+↓
+
+**Scenario and Simulation Modelling**
+
+> What might happen if we change the pathway?
+
+↓
+
+**Implementation**
+
+> Make the change.
+
+↓
+
+**Evaluation**
+
+> What actually happened, and what difference did the intervention make?
+
+This creates a learning cycle.
+
+Evidence from evaluation can then improve future population analysis and modelling.
+
+For example:
+
+> **PHM identifies opportunity → Simulation tests options → Decision → Implementation → Evaluation → Better evidence → Revised model**
+
+Healthcare Decision Intelligence therefore does not treat models as one-off predictions.
+
+They are tools for learning and improving decisions.
+
+# 17. Decision-Maker Questions
+
+When presented with a forecast, scenario or simulation model, ask:
+
+1. **What decision is this model intended to inform?**
+2. What exactly is being modelled?
+3. What is outside the model?
+4. Where have the demand assumptions come from?
+5. Have population growth and changing need been considered?
+6. How are patient pathways represented?
+7. Have variability and peak demand been represented, or only averages?
+8. What resources constrain the system?
+9. Could removing one bottleneck create another?
+10. What assumptions have been made about intervention uptake and effectiveness?
+11. Which assumptions have the greatest influence on the result?
+12. Have optimistic, central and pessimistic scenarios been explored?
+13. Has the model been validated against the existing system?
+14. Have clinicians and operational teams challenged the assumptions?
+15. Are results presented as ranges rather than false precision?
+16. What important factors cannot be represented?
+17. **Would the decision change under a reasonable alternative set of assumptions?**
+
+# Bringing It All Together
+
+Healthcare decisions frequently involve acting before the consequences are fully known.
+
+Scenario and simulation modelling allow decision-makers to explore those consequences before committing fully to a change.
+
+The process should begin with the decision:
+
+> **What are we considering changing?**
+
+↓
+
+> **What consequences are uncertain?**
+
+↓
+
+> **What is the simplest useful modelling approach?**
+
+↓
+
+> **What assumptions are required?**
+
+↓
+
+> **What happens under different scenarios?**
+
+↓
+
+> **Where might bottlenecks or unintended consequences emerge?**
+
+↓
+
+> **Which assumptions matter most?**
+
+↓
+
+> **Would the decision remain sensible under uncertainty?**
+
+↓
+
+> **Implement, monitor and evaluate**
+
+The objective is not to build the most sophisticated model.
+
+It is to make a better-informed decision.
+
+# Key Takeaways
+
+- Simulation and scenario modelling help explore the possible consequences of decisions **before changes are fully implemented**.
+- Start with the decision and uncertainty, not the modelling technique.
+- Forecasting, scenario analysis, demand and capacity modelling, and simulation answer different questions.
+- Not every decision requires a sophisticated simulation.
+- **The simplest model capable of informing the decision credibly is often the best starting point.**
+- Average demand and average capacity can conceal queues and operational pressure.
+- Healthcare pathways contain interacting resources, queues and constraints.
+- Improving one part of a pathway can move pressure somewhere else.
+- This is particularly important when modelling shifts from hospital to community care.
+- Simulation does not predict the future with certainty.
+- Every model depends on assumptions that should be visible and challengeable.
+- Sensitivity analysis helps determine whether conclusions are robust to reasonable changes in assumptions.
+- Models should be validated against both observed data and operational knowledge.
+- Precise model outputs should not be confused with certainty.
+- Evaluation and simulation answer different questions but can strengthen one another.
+- **The purpose of modelling is not to produce an impressive model. It is to support a better decision.**
+
+::: {.callout-important collapse="false"}
+## The Question to Remember
+
+Before making a major change to a healthcare system, ask:
+
+> **What might happen if our assumptions are wrong — and would we still make the same decision?**
+:::
