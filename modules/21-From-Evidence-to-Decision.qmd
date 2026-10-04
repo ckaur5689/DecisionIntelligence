@@ -621,7 +621,7 @@ This turns decision-making into a learning process.
 
 # 14. A Healthcare Decision Intelligence Framework
 
-![](..//images/Evidence-to-Better-Decisions.png)
+![](../images/Evidence-to-Better-Decisions.png)
 
 The whole process can now be brought together.
 
