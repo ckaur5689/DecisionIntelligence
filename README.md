@@ -84,8 +84,8 @@ Topics include:
     - Using scenarios and simulation to explore possible consequences
 20. Bringing Evidence Together ⭐
     - How do we combine different forms of evidence into a coherent picture?
-21. Making Better Healthcare Decisions ⭐
-    - How do we turn evidence into robust, transparent decisions when there are trade-offs, competing priorities and uncertainty?
+21. From Evidence to Decision ⭐⭐
+    - Making transparent decisions when there are trade-offs and uncertainty
 
 # Part 3 – Advanced Analytics, AI & the Future of Healthcare Decision-Making (to be confirmed)
 
