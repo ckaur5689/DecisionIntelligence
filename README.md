@@ -43,25 +43,25 @@ Topics include:
 
 1.  Counts vs Rates
     - What number should I be comparing?
-2.  Mean vs Median
+3.  Mean vs Median
     - What is the best way to summarise the data? 
-3.  Correlation vs Causation
+4.  Correlation vs Causation
     - Does this relationship actually imply cause and effect?
-4.  Variation & Distributions
+5.  Variation & Distributions
     - Is this difference meaningful or simply normal variation?
-5.  Standardisation & Fair Comparison
+6.  Standardisation & Fair Comparison
     - Are these populations really comparable?
-6.  How to Read a Dashboard
+7.  How to Read a Dashboard
     - What story is the dashboard actually telling me?
-7.  Theory of Change & Logic Models 
+8.  Theory of Change & Logic Models 
     - Connecting Interventions to Outcomes
-8.  Evaluating Interventions & Schemes (Thinking About Evidence)
+9.  Evaluating Interventions & Schemes (Thinking About Evidence)
     - How should I think about whether something worked?
-9.  Evaluating Interventions in Practice (Methods)
+10.  Evaluating Interventions in Practice (Methods)
     - How do I evaluate it properly?
-10.  Risk, Probability & Uncertainty
+11.  Risk, Probability & Uncertainty
     - How certain can I be about this evidence?
-11. Common Analytical Traps & Data Fallacies
+13. Common Analytical Traps & Data Fallacies
     - What mistakes could lead me to the wrong conclusion?
 
 # Part 2 — How do we understand, improve and evaluate complex healthcare systems?
