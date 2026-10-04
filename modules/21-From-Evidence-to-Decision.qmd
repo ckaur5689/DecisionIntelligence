@@ -623,54 +623,6 @@ This turns decision-making into a learning process.
 
 ![](../images/Evidence-to-Better-Decisions.png)
 
-The whole process can now be brought together.
-
-> **1. What decision are we making?**
-
-↓
-
-> **2. What does the evidence spine tell us?**
-
-↓
-
-> **3. What are the realistic options?**
-
-↓
-
-> **4. What are the expected benefits and harms?**
-
-↓
-
-> **5. Who benefits — and who might not?**
-
-↓
-
-> **6. What resources are required and what is forgone?**
-
-↓
-
-> **7. Is the option affordable and feasible?**
-
-↓
-
-> **8. What remains uncertain?**
-
-↓
-
-> **9. Could that uncertainty change the decision?**
-
-↓
-
-> **10. Make and document the judgement**
-
-↓
-
-> **11. Monitor and evaluate what happens**
-
-↓
-
-> **12. Revisit the decision when evidence or circumstances change**
-
 ::: {.callout-important collapse="false"}
 ## Healthcare Decision Intelligence
 
