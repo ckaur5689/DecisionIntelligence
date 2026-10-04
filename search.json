@@ -2250,13 +2250,213 @@
     ]
   },
   {
+    "objectID": "modules/16-Health-Economics-Methods.html",
+    "href": "modules/16-Health-Economics-Methods.html",
+    "title": "Healthcare Decision Intelligence",
+    "section": "",
+    "text": "This Module will focus on the methods health economists use and the decision questions those methods help answer.",
+    "crumbs": [
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>16-Health-Economics-Methods.html</span>"
+    ]
+  },
+  {
+    "objectID": "modules/17-Understanding-What-Made-the-Difference.html",
+    "href": "modules/17-Understanding-What-Made-the-Difference.html",
+    "title": "Module 17: Understanding What Made the Difference (DRAFT)",
+    "section": "",
+    "text": "Evaluating Multiple Interventions in Complex Healthcare Systems",
+    "crumbs": [
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Module 17: Understanding What Made the Difference (DRAFT)</span>"
+    ]
+  },
+  {
+    "objectID": "modules/17-Understanding-What-Made-the-Difference.html#evaluating-multiple-interventions-in-complex-healthcare-systems",
+    "href": "modules/17-Understanding-What-Made-the-Difference.html#evaluating-multiple-interventions-in-complex-healthcare-systems",
+    "title": "Module 17: Understanding What Made the Difference (DRAFT)",
+    "section": "",
+    "text": "🖨️ Print this module",
+    "crumbs": [
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Module 17: Understanding What Made the Difference (DRAFT)</span>"
+    ]
+  },
+  {
+    "objectID": "modules/17-Understanding-What-Made-the-Difference.html#why-this-module-matters",
+    "href": "modules/17-Understanding-What-Made-the-Difference.html#why-this-module-matters",
+    "title": "Module 17: Understanding What Made the Difference (DRAFT)",
+    "section": "1. Why This Module Matters",
+    "text": "1. Why This Module Matters\nHealthcare systems rarely introduce one intervention at a time.\nAn Integrated Care Board (ICB) may invest simultaneously in:\n\nproactive frailty care\nenhanced care home support\nUrgent Community Response (UCR)\nvirtual wards\nenhanced end-of-life care.\n\nThese programmes may reach the same people, operate at different points along the same pathway, and seek improvements in the same outcomes.\nSuppose emergency admissions among people living with severe frailty fall by 8%.\nSeveral programme reports describe admissions avoided.\nWhich intervention made the difference?\nDid the interventions work together?\nWere some patients counted more than once?\nAnd did the combined investment represent good value?\nThis module moves beyond evaluating schemes individually towards understanding the contribution and value of a portfolio of interventions.\n\n\n\n\n\n\nImportantThe Central Question\n\n\n\n\n\nWhat combination of interventions appears to be creating value, for whom, through what mechanisms, and how confident are we?\nThe purpose is not to award each programme a share of the improvement when the evidence cannot support that conclusion.\n\n\n\n\nBuilding on Earlier Modules\nThis module brings together ideas introduced throughout the series.\n\nTheory of Change and Logic Models make expected mechanisms, outcomes and assumptions explicit.\nThe evaluation modules introduce counterfactual thinking, comparison groups, Interrupted Time Series (ITS), Difference-in-Differences (DiD) and proportionate evaluation design.\nModule 15 distinguishes economic value, affordability, opportunity cost and different types of financial and non-financial benefit.\nModule 16 introduces methods for applying health economics, including approaches to comparing competing uses of resources and STAR.\n\nModule 17 brings these perspectives together in a realistic commissioning scenario.\nIt is a guide to asking better questions and designing a credible evaluation — not a technical manual for estimating causal effects or conducting STAR calculations.",
+    "crumbs": [
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Module 17: Understanding What Made the Difference (DRAFT)</span>"
+    ]
+  },
+  {
+    "objectID": "modules/17-Understanding-What-Made-the-Difference.html#learning-objectives",
+    "href": "modules/17-Understanding-What-Made-the-Difference.html#learning-objectives",
+    "title": "Module 17: Understanding What Made the Difference (DRAFT)",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nBy the end of this module, you should be able to:\n\nrecognise when separate programme evaluations are insufficient because populations and outcomes overlap\ndistinguish association, attribution and contribution\nunderstand why intervention exposure and timing matter\nrecognise selection bias and the need for a credible counterfactual\nconsider whether interventions are independent, complementary, sequential, substitutive or duplicative\nidentify the risk of double-counting avoided activity and financial benefits\nbring quantitative, qualitative and implementation evidence together\nuse portfolio-level evaluation findings to inform STAR-style consideration of alternative investments and configurations\nrecognise how contradictory evidence, equity and uncertainty can change a commissioning discussion\ndescribe conclusions proportionately when linked data or strong comparisons are unavailable.",
+    "crumbs": [
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Module 17: Understanding What Made the Difference (DRAFT)</span>"
+    ]
+  },
+  {
+    "objectID": "modules/17-Understanding-What-Made-the-Difference.html#agree-the-question-before-starting-the-analysis",
+    "href": "modules/17-Understanding-What-Made-the-Difference.html#agree-the-question-before-starting-the-analysis",
+    "title": "Module 17: Understanding What Made the Difference (DRAFT)",
+    "section": "Agree the Question Before Starting the Analysis",
+    "text": "Agree the Question Before Starting the Analysis\nThe commissioning team identifies three possible strategic choices to revisit once the evaluation is complete:\n\nmaintain the existing portfolio\nexpand proactive frailty care alongside UCR\nretarget virtual wards while strengthening coordination with end-of-life care.\n\nThe choices are introduced before the analysis so that the evaluation collects evidence relevant to an actual decision rather than producing five disconnected programme reports.\nThey are not assumed to be mutually exclusive.\nThe ICB agrees the following portfolio-level question:\n\nTo what extent has the combined portfolio improved outcomes for people living with severe frailty and those approaching the end of life, and what opportunities exist to improve its value?\n\nSevere frailty is the main analytical cohort.\nPeople approaching the end of life form an important overlapping group, rather than an interchangeable subgroup.\nThis means outcomes should be considered separately.\n\n\n\n\n\n\n\nCohort\nIllustrative outcomes to consider\n\n\n\n\nSevere frailty\nPotentially avoidable ED attendances and emergency admissions; time at home; independence; patient experience; inequalities\n\n\nApproaching end of life\nSymptom control; continuity; patient and carer experience; whether care aligns with recorded preferences; unwanted ED attendances or transfers\n\n\n\n\n\n\n\n\n\nImportantAn Outcome Is Only Valuable in Context\n\n\n\n\n\nAn emergency admission may be appropriate and beneficial.\nFor someone approaching the end of life, avoiding hospital is not automatically better if hospital care reflects their needs and preferences.\nEvaluation must therefore consider appropriateness and experience, not simply count activity reductions.",
+    "crumbs": [
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Module 17: Understanding What Made the Difference (DRAFT)</span>"
+    ]
+  },
+  {
+    "objectID": "modules/17-Understanding-What-Made-the-Difference.html#three-patients-different-combinations-of-care",
+    "href": "modules/17-Understanding-What-Made-the-Difference.html#three-patients-different-combinations-of-care",
+    "title": "Module 17: Understanding What Made the Difference (DRAFT)",
+    "section": "Three Patients, Different Combinations of Care",
+    "text": "Three Patients, Different Combinations of Care\nThe following fictional pathways make this overlap more tangible.\nThey illustrate exposure, rather than demonstrating that an intervention caused an outcome.\n\n\n\n\n\n\n\n\n\nPerson\nCharacteristics\nSequence of support\nRelevant outcome question\n\n\n\n\nA\nSevere frailty; lives at home\nFrailty assessment → shared care plan → UCR\nWas deterioration managed appropriately, and what might have happened otherwise?\n\n\nB\nSevere frailty; care home resident\nEnhanced care home support → UCR → hospital admission\nWas the admission clinically appropriate, and did earlier support improve the pathway?\n\n\nC\nSevere frailty; approaching end of life\nFrailty support → anticipatory care planning → end-of-life support\nDid care reflect recorded preferences, control symptoms and support carers?\n\n\n\nThe same outcome does not necessarily mean the same thing for all three people.\nPatient C’s care should not be judged principally by admissions avoided.\nNor should Patient B’s appropriate admission automatically be classified as programme failure.",
+    "crumbs": [
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Module 17: Understanding What Made the Difference (DRAFT)</span>"
+    ]
+  },
+  {
+    "objectID": "modules/17-Understanding-What-Made-the-Difference.html#build-the-patient-journey-through-the-data",
+    "href": "modules/17-Understanding-What-Made-the-Difference.html#build-the-patient-journey-through-the-data",
+    "title": "Module 17: Understanding What Made the Difference (DRAFT)",
+    "section": "Build the Patient Journey Through the Data",
+    "text": "Build the Patient Journey Through the Data\nWhere governance and data access permit, the evaluation team develops a longitudinal dataset:\n\nPatient → Baseline characteristics → Intervention exposure(s) → Timing → Outcomes\n\nRelevant characteristics might include:\n\nage\nfrailty\nmultimorbidity\ndeprivation\ncare home residence\nprevious emergency activity\nliving circumstances\nend-of-life status where appropriately identified.\n\nDates matter.\nThe team should ideally know:\n\nwhen someone became eligible\nwhen they were referred\nwhen they actually received an intervention\nhow long support continued\nwhen subsequent outcomes occurred.\n\nAn intervention cannot reasonably claim an effect on an event that occurred before the patient received it.\nSimilarly, defining an intervention group using care that patients only received later during follow-up can introduce serious bias.\n\n\n\n\n\n\nTipQuestions for the Analyst\n\n\n\n\n\n\nHow many unique people received each intervention or combination?\nWhen did each intervention begin?\nWhat was the patient’s baseline risk before exposure?\nWhich outcomes occurred after the relevant exposure?\nAre referral, eligibility and activity records sufficiently complete?",
+    "crumbs": [
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Module 17: Understanding What Made the Difference (DRAFT)</span>"
+    ]
+  },
+  {
+    "objectID": "modules/17-Understanding-What-Made-the-Difference.html#association-attribution-and-contribution",
+    "href": "modules/17-Understanding-What-Made-the-Difference.html#association-attribution-and-contribution",
+    "title": "Module 17: Understanding What Made the Difference (DRAFT)",
+    "section": "Association, Attribution and Contribution",
+    "text": "Association, Attribution and Contribution\nThese concepts should not be used interchangeably.\n\nAssociation\nAn intervention and an outcome occur together.\n\nPatients receiving the intervention subsequently had fewer admissions.\n\nThis does not establish why.\n\n\nAttribution\nEvidence supports the conclusion that an intervention caused a specified change.\nThis requires a credible evaluation design and counterfactual.\n\n\nContribution\nEvidence supports the conclusion that an intervention was one factor helping to produce change, while recognising the influence of other interventions and contextual factors.\nIn complex healthcare systems, contribution may sometimes be more defensible than precise attribution.",
+    "crumbs": [
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Module 17: Understanding What Made the Difference (DRAFT)</span>"
+    ]
+  },
+  {
+    "objectID": "modules/17-Understanding-What-Made-the-Difference.html#select-the-strongest-feasible-evaluation-design",
+    "href": "modules/17-Understanding-What-Made-the-Difference.html#select-the-strongest-feasible-evaluation-design",
+    "title": "Module 17: Understanding What Made the Difference (DRAFT)",
+    "section": "Select the Strongest Feasible Evaluation Design",
+    "text": "Select the Strongest Feasible Evaluation Design\n\n\n\n\n\n\n\n\nEvaluation approach\nWhat it might add\nImportant limitation\n\n\n\n\nDescriptive trends\nShow how outcomes and reach changed\nCannot establish what caused the change\n\n\nRisk-adjusted comparison\nAccount for measured differences in baseline risk\nUnmeasured differences may remain\n\n\nMatching or weighting\nImprove comparability of observed characteristics\nDoes not remove unmeasured confounding\n\n\nInterrupted Time Series\nExamine changes in level or trend around implementation\nConcurrent changes make attribution difficult\n\n\nDifference-in-Differences\nCompare changes across suitable localities or phased roll-outs\nRequires a defensible comparison and plausible parallel trends\n\n\nMixed-method contribution analysis\nTest mechanisms and alternative explanations using multiple sources\nDoes not automatically produce intervention-specific causal estimates\n\n\n\nIf several programmes begin at the same time across the entire ICB, ITS may help estimate a portfolio-level change.\nIt will usually be much harder to isolate each programme’s individual effect.\nWhere implementation varies across places or time, stronger comparisons may be possible — provided the assumptions are credible.\nThe evaluation design should follow:\n\nthe decision question and available evidence\n\nrather than:\n\nthe statistical method an analyst happens to have available.",
+    "crumbs": [
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Module 17: Understanding What Made the Difference (DRAFT)</span>"
+    ]
+  },
+  {
+    "objectID": "modules/17-Understanding-What-Made-the-Difference.html#match-the-strength-of-the-claim-to-the-evidence",
+    "href": "modules/17-Understanding-What-Made-the-Difference.html#match-the-strength-of-the-claim-to-the-evidence",
+    "title": "Module 17: Understanding What Made the Difference (DRAFT)",
+    "section": "Match the Strength of the Claim to the Evidence",
+    "text": "Match the Strength of the Claim to the Evidence\nA proportionate assurance framework can help decision-makers understand what the available evaluation can support.\nThese are illustrative assurance categories, not universal standards or guarantees of causality.\n\n\n\n\n\n\n\n\nAssurance\nIllustrative evidence\nWhat the ICB may reasonably conclude\n\n\n\n\nBronze\nAggregate trends, programme activity, implementation accounts and qualitative evidence\nWhat changed, who was reached and which contributions are plausible — but not an attributed impact estimate\n\n\nSilver\nMore reliable exposure data, baseline-risk adjustment, a defensible comparator where available, plus implementation evidence\nA more informative estimate of possible impact, conditional on comparability and other assumptions\n\n\nGold\nCredible quasi-experimental or other strong evaluation design, appropriate longitudinal analysis and triangulation\nStronger causal conclusions about the portfolio or clearly distinguishable changes, where the design genuinely identifies them\n\n\n\nA complex statistical model does not automatically produce Gold evidence.\nSimultaneous roll-out of several interventions may prevent separate causal estimates even with excellent linked data.\nAssurance should therefore be assessed for each claim.\n\n\n\n\n\n\nTipHow Much Evidence Is Enough?\n\n\n\n\n\nAsk:\nWhat could go wrong if we act now, how reversible is the decision, and which missing evidence could realistically change it?\nA low-cost, reversible improvement may justify proportionate monitoring.\nA major and difficult-to-reverse reallocation requires more demanding scrutiny.",
+    "crumbs": [
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Module 17: Understanding What Made the Difference (DRAFT)</span>"
+    ]
+  },
+  {
+    "objectID": "modules/17-Understanding-What-Made-the-Difference.html#how-might-interventions-relate-to-one-another",
+    "href": "modules/17-Understanding-What-Made-the-Difference.html#how-might-interventions-relate-to-one-another",
+    "title": "Module 17: Understanding What Made the Difference (DRAFT)",
+    "section": "How Might Interventions Relate to One Another?",
+    "text": "How Might Interventions Relate to One Another?\nInterventions may be:\nIndependent\nEach operates through largely separate mechanisms.\nComplementary\nOne increases the effectiveness of another.\nSequential\nOne enables a later stage of care.\nSubstitutive\nOne provides an alternative to another.\nDuplicative\nTwo services provide substantially overlapping activity without additional benefit.\nThis distinction matters for commissioning.\nA programme with a small apparent isolated effect may still be important if it enables another service to work effectively.\nConversely, two apparently successful services may partly duplicate one another.",
+    "crumbs": [
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Module 17: Understanding What Made the Difference (DRAFT)</span>"
+    ]
+  },
+  {
+    "objectID": "modules/17-Understanding-What-Made-the-Difference.html#illustrative-interaction-not-an-impact-estimate",
+    "href": "modules/17-Understanding-What-Made-the-Difference.html#illustrative-interaction-not-an-impact-estimate",
+    "title": "Module 17: Understanding What Made the Difference (DRAFT)",
+    "section": "Illustrative Interaction — Not an Impact Estimate",
+    "text": "Illustrative Interaction — Not an Impact Estimate\nImagine separate analyses suggest different outcomes among people receiving:\n\nproactive frailty care\nUCR\nboth interventions.\n\nThe combination might perform differently from the sum of the individual effects because early planning enables more effective rapid response.\nThat possibility should be tested rather than assumed.\nCrude comparisons between exposure groups cannot establish synergy because the patients may differ in risk, timing and clinical need.",
+    "crumbs": [
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Module 17: Understanding What Made the Difference (DRAFT)</span>"
+    ]
+  },
+  {
+    "objectID": "modules/17-Understanding-What-Made-the-Difference.html#when-the-evidence-disagrees",
+    "href": "modules/17-Understanding-What-Made-the-Difference.html#when-the-evidence-disagrees",
+    "title": "Module 17: Understanding What Made the Difference (DRAFT)",
+    "section": "When the Evidence Disagrees",
+    "text": "When the Evidence Disagrees\nReal-world evidence rarely fits together perfectly.\nImagine the comparative analysis suggests that the frailty portfolio is associated with fewer emergency admissions.\nHowever:\n\npatient interviews describe delays and inconsistent continuity\nUCR staff report that referrals frequently exceed capacity\nanalysis suggests people in more deprived neighbourhoods are less likely to receive proactive frailty assessment.\n\nThese findings should not be resolved by taking an average or selecting whichever result supports the original business case.\nInstead ask:\n\nWhy are the findings different?\n\nThe team might investigate:\n\nwhether improvements are concentrated in certain localities\nwhether access differs between population groups\nwhether implementation varies\nwhether the selected outcome measures overlook important experiences.\n\nA defensible synthesis might conclude:\n\nSome evidence supports improvement in hospital activity, but access, delivery and patient-experience concerns limit confidence in the portfolio’s overall value.\n\nModule 20 explores broader evidence synthesis in greater depth.",
+    "crumbs": [
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Module 17: Understanding What Made the Difference (DRAFT)</span>"
+    ]
+  },
+  {
+    "objectID": "modules/17-Understanding-What-Made-the-Difference.html#test-whether-benefits-are-equitably-distributed",
+    "href": "modules/17-Understanding-What-Made-the-Difference.html#test-whether-benefits-are-equitably-distributed",
+    "title": "Module 17: Understanding What Made the Difference (DRAFT)",
+    "section": "Test Whether Benefits Are Equitably Distributed",
+    "text": "Test Whether Benefits Are Equitably Distributed\nFor the severe frailty cohort, examine:\n\nEligible population → Referred → Accepted → Actually treated → Outcomes\n\nWhere possible, examine this by:\n\nlocality\ndeprivation\nliving arrangements\ncare home status\nother relevant population characteristics.\n\nA fall in admissions at ICB level can coexist with unequal access.\nLower uptake in deprived neighbourhoods might reflect unmet need, different eligibility, patient preferences, service availability or incomplete recording.\nThe evaluation should investigate rather than assume the explanation.\nFor people approaching the end of life, preference-concordant outcomes should be assessed separately.",
+    "crumbs": [
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Module 17: Understanding What Made the Difference (DRAFT)</span>"
+    ]
+  },
+  {
+    "objectID": "modules/17-Understanding-What-Made-the-Difference.html#a-financial-caution",
+    "href": "modules/17-Understanding-What-Made-the-Difference.html#a-financial-caution",
+    "title": "Module 17: Understanding What Made the Difference (DRAFT)",
+    "section": "A Financial Caution",
+    "text": "A Financial Caution\nSuppose the average reported cost of an emergency admission is £3,000.\nIt would be tempting to calculate:\n\n470 × £3,000 = £1.41 million saved\n\nBut this does not automatically represent a £1.41 million cash-releasing saving.\nStaff may remain employed.\nBeds may remain open.\nEstate costs may remain.\nCapacity might instead be used by other patients.\nThe economic interpretation might therefore involve:\n\ncapacity released\ncost avoided\nvalue realised elsewhere\npotentially some cash-releasing saving\nwider patient or societal value.\n\nSimilarly, monetised ED attendances, admissions and bed days should not simply be added if they represent overlapping consequences of the same patient episode.",
+    "crumbs": [
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Module 17: Understanding What Made the Difference (DRAFT)</span>"
+    ]
+  },
+  {
+    "objectID": "modules/17-Understanding-What-Made-the-Difference.html#worked-comparison-what-would-change-from-todays-portfolio",
+    "href": "modules/17-Understanding-What-Made-the-Difference.html#worked-comparison-what-would-change-from-todays-portfolio",
+    "title": "Module 17: Understanding What Made the Difference (DRAFT)",
+    "section": "Worked Comparison: What Would Change from Today’s Portfolio?",
+    "text": "Worked Comparison: What Would Change from Today’s Portfolio?\nSuppose the current portfolio costs:\n\n£4.0 million per year\n\nThe earlier portfolio evaluation produced an illustrative estimate of:\n\n470 fewer emergency admissions than its counterfactual\n\nwith substantial uncertainty.\nThat is a historical portfolio-level estimate.\nIt is not the benefit of any new proposal.\nFor the next planning year, the ICB considers three scenarios.\nThe figures below are hypothetical planning assumptions used only to demonstrate the decision process.\n\n\n\n\n\n\n\n\n\n\nScenario versus current arrangements\nAdditional annual cost\nAdditional people reached\nIllustrative incremental health benefit\nImportant uncertainty or dependency\n\n\n\n\nA. Maintain existing portfolio\n£0\n0\nReference case\nExisting benefits and delivery pressures require continued monitoring\n\n\nB. Expand frailty care and integrate UCR\n£450,000\n600\n25–55 additional QALYs if the combined pathway works as modelled\nUCR staffing, access to care plans, patient selection and interaction effects\n\n\nC. Retarget virtual wards and coordinate end-of-life care\n£250,000\n350\n10–35 additional QALYs for outcomes appropriately captured by QALYs\nClinical eligibility, safe alternatives and measurement of preference-concordant care\n\n\n\nAll costs, reach and benefits are incremental relative to Option A.\nThe QALY ranges are illustrative assumptions to be populated through appropriate health-economic analysis.\nThey are not inferred from the 470 avoided admissions.\nNor should the QALY ranges be interpreted as confidence intervals.\nOptions B and C may also reach some of the same people.\nTheir costs and benefits therefore cannot automatically be added together to create another option.",
+    "crumbs": [
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Module 17: Understanding What Made the Difference (DRAFT)</span>"
+    ]
+  },
+  {
+    "objectID": "modules/17-Understanding-What-Made-the-Difference.html#a-decision-conference-not-an-automatic-winner",
+    "href": "modules/17-Understanding-What-Made-the-Difference.html#a-decision-conference-not-an-automatic-winner",
+    "title": "Module 17: Understanding What Made the Difference (DRAFT)",
+    "section": "A Decision Conference, Not an Automatic Winner",
+    "text": "A Decision Conference, Not an Automatic Winner\nOption B appears to offer greater potential population reach, but depends heavily on additional UCR capacity.\nOption C has a lower stated incremental cost but greater uncertainty around how end-of-life benefits should be measured.\nStakeholders might therefore decide to:\n\nrequest stronger evidence\nrevise eligibility\nphase implementation\ndevelop a combined option\nstrengthen outcome measurement\nreconsider assumptions.\n\nThe numbers inform the decision. They do not make it.",
+    "crumbs": [
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Module 17: Understanding What Made the Difference (DRAFT)</span>"
+    ]
+  },
+  {
+    "objectID": "modules/17-Understanding-What-Made-the-Difference.html#separate-economic-value-from-budget-impact",
+    "href": "modules/17-Understanding-What-Made-the-Difference.html#separate-economic-value-from-budget-impact",
+    "title": "Module 17: Understanding What Made the Difference (DRAFT)",
+    "section": "Separate Economic Value from Budget Impact",
+    "text": "Separate Economic Value from Budget Impact\nFor each option, distinguish between:\n\n\n\n\n\n\n\nType of benefit\nPortfolio example\n\n\n\n\nCash-releasing saving\nSpecific expenditure genuinely removed from a budget\n\n\nCapacity released\nHospital capacity becomes available for other patients\n\n\nCost avoided\nFuture additional capacity or expenditure is no longer required\n\n\nValue realised elsewhere\nCommunity investment produces benefit in acute or social care\n\n\nWider economic or social benefit\nGreater independence or reduced burden on carers\n\n\n\nImplementation, transition, double-running and stranded costs also matter.\nA portfolio might:\n\nimprove health + release capacity + increase net expenditure\n\nand still represent good value.\nBut it should not be presented as a cash-saving intervention if expenditure has not actually fallen.",
+    "crumbs": [
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Module 17: Understanding What Made the Difference (DRAFT)</span>"
+    ]
+  },
+  {
+    "objectID": "modules/17-Understanding-What-Made-the-Difference.html#turn-the-discussion-into-a-testable-commissioning-plan",
+    "href": "modules/17-Understanding-What-Made-the-Difference.html#turn-the-discussion-into-a-testable-commissioning-plan",
+    "title": "Module 17: Understanding What Made the Difference (DRAFT)",
+    "section": "Turn the Discussion into a Testable Commissioning Plan",
+    "text": "Turn the Discussion into a Testable Commissioning Plan\nSuppose, for illustration, that the ICB decides to pilot closer integration between proactive frailty care and UCR in selected localities while reviewing virtual ward eligibility and the experience of people approaching the end of life.\nThis does not mean the previous evaluation proved that this was the correct option.\nIt demonstrates how a decision can be turned into a testable next step.\n\n\n\n\n\n\n\nDecision component\nIllustrative commitment\n\n\n\n\nReason for change\nTest whether accessible care plans and coordinated rapid response improve appropriate care at home\n\n\nPopulation and equity\nSpecify eligibility and monitor uptake across deprivation groups, living arrangements and localities\n\n\nResources\nIdentify incremental investment, staffing and double-running costs; do not promise cash savings without a cost-removal plan\n\n\nEvaluation\nRecord baseline trends, phased start dates where feasible, patient exposure and an appropriate comparator\n\n\nOutcomes\nAssess appropriate admissions and ED use, patient and carer experience, implementation and unintended effects; separately assess preference-concordant end-of-life care\n\n\nReassessment\nAgree when to review uptake, implementation, incremental costs, effects and the original assumptions\n\n\n\nThe cycle becomes:\n\nDecide → Specify expected value → Implement → Monitor → Evaluate → Revisit the decision\n\nThis avoids treating either the original business case or a single evaluation as the final word.\n\n\n\n\n\n\nTipQuestions for the Commissioning Discussion\n\n\n\n\n\n\nAre programmes reaching the same people, and at what points in their pathway?\nAre their intended outcomes genuinely the same?\nWhat comparison supports the portfolio’s estimated impact?\nCould baseline risk or timing explain apparent differences?\nWhich services are complementary, sequential, substitutive or duplicative?\nHave avoided outcomes or monetised benefits been claimed more than once?\nWhat incremental benefits and costs would realistic alternative configurations create?\nWho benefits, who might be excluded and what happens to inequalities?\nWhich benefits release cash, which release capacity and which arise elsewhere?\nWhat remains uncertain, and what additional evidence would change the decision?",
+    "crumbs": [
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Module 17: Understanding What Made the Difference (DRAFT)</span>"
+    ]
+  },
+  {
     "objectID": "Project.html",
     "href": "Project.html",
     "title": "Project - Healthcare Decision Intelligence Series",
     "section": "",
     "text": "Using Data, Evidence, Evaluation and AI to Make Better Healthcare Decisions\nTimeline: May 2026 to December 2026\nAuthor: Chandan Kaur\nAudience: Analysts and Decision Makers in healthcare systems",
     "crumbs": [
-      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Project - Healthcare Decision Intelligence Series</span>"
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Project - Healthcare Decision Intelligence Series</span>"
     ]
   },
   {
@@ -2266,7 +2466,7 @@
     "section": "The series aims to bridge the gap between:",
     "text": "The series aims to bridge the gap between:\nhealthcare analysts and decision-makers, operational leaders, clinicians and service managers.\nRather than focusing purely on statistical methods or software training, the series focuses on:\n\nanalytical reasoning\ninterpretation\noperational context\nfair comparison\nhealthcare systems thinking\ncommunicating uncertainty and complexity appropriately.\n\nThe resource will be developed as an openly accessible digital book and supporting learning materials using GitHub Pages and Quarto.",
     "crumbs": [
-      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Project - Healthcare Decision Intelligence Series</span>"
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Project - Healthcare Decision Intelligence Series</span>"
     ]
   },
   {
@@ -2276,7 +2476,7 @@
     "section": "Primary audiences include:",
     "text": "Primary audiences include:\n\nHealthcare operational leaders\nService managers\nClinicians\nPublic health teams\nBI and analytics teams\nIntegrated Care Board colleagues\nNHS transformation teams\nInformatics trainees and early-career analysts",
     "crumbs": [
-      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Project - Healthcare Decision Intelligence Series</span>"
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Project - Healthcare Decision Intelligence Series</span>"
     ]
   },
   {
@@ -2286,7 +2486,7 @@
     "section": "Secondary audiences may include:",
     "text": "Secondary audiences may include:\n\nLocal authorities\nHealthcare consultancies\nAcademic/public health programmes\nWider public sector analytical communities",
     "crumbs": [
-      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Project - Healthcare Decision Intelligence Series</span>"
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Project - Healthcare Decision Intelligence Series</span>"
     ]
   },
   {
@@ -2296,7 +2496,7 @@
     "section": "Platform",
     "text": "Platform\nGitHub Pages Quarto Book framework PDF and Word export options",
     "crumbs": [
-      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Project - Healthcare Decision Intelligence Series</span>"
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Project - Healthcare Decision Intelligence Series</span>"
     ]
   },
   {
@@ -2306,7 +2506,7 @@
     "section": "Style",
     "text": "Style\nVisual and example-led Operationally realistic Plain English where possible Progressive conceptual layering",
     "crumbs": [
-      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Project - Healthcare Decision Intelligence Series</span>"
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Project - Healthcare Decision Intelligence Series</span>"
     ]
   },
   {
@@ -2316,7 +2516,7 @@
     "section": "Phase 1 — Foundation Development",
     "text": "Phase 1 — Foundation Development",
     "crumbs": [
-      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Project - Healthcare Decision Intelligence Series</span>"
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Project - Healthcare Decision Intelligence Series</span>"
     ]
   },
   {
@@ -2326,7 +2526,7 @@
     "section": "Months 1–2",
     "text": "Months 1–2\n\nEstablish project structure\nDevelop initial visual identity and formatting\nCreate foundational modules\nBuild GitHub/Quarto publishing workflow",
     "crumbs": [
-      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Project - Healthcare Decision Intelligence Series</span>"
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Project - Healthcare Decision Intelligence Series</span>"
     ]
   },
   {
@@ -2336,7 +2536,7 @@
     "section": "Phase 2 — Core Content Development",
     "text": "Phase 2 — Core Content Development",
     "crumbs": [
-      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Project - Healthcare Decision Intelligence Series</span>"
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Project - Healthcare Decision Intelligence Series</span>"
     ]
   },
   {
@@ -2346,7 +2546,7 @@
     "section": "Months 3–5",
     "text": "Months 3–5\n\nDevelop additional modules\nExpand operational examples and visual content\nGather peer feedback from NHS analytical community\nRefine educational structure and readability",
     "crumbs": [
-      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Project - Healthcare Decision Intelligence Series</span>"
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Project - Healthcare Decision Intelligence Series</span>"
     ]
   },
   {
@@ -2356,7 +2556,7 @@
     "section": "Phase 3 — External Review & Refinement",
     "text": "Phase 3 — External Review & Refinement",
     "crumbs": [
-      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Project - Healthcare Decision Intelligence Series</span>"
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Project - Healthcare Decision Intelligence Series</span>"
     ]
   },
   {
@@ -2366,7 +2566,7 @@
     "section": "Months 5–6",
     "text": "Months 5–6\nSeek structured feedback from: - NHS CDAO network - AphA members - healthcare analysts - operational leaders and strategic commissioners - Improve content based on feedback - Refine visuals and accessibility",
     "crumbs": [
-      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Project - Healthcare Decision Intelligence Series</span>"
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Project - Healthcare Decision Intelligence Series</span>"
     ]
   },
   {
@@ -2376,7 +2576,7 @@
     "section": "Phase 4 — Publication & Dissemination",
     "text": "Phase 4 — Publication & Dissemination",
     "crumbs": [
-      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Project - Healthcare Decision Intelligence Series</span>"
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Project - Healthcare Decision Intelligence Series</span>"
     ]
   },
   {
@@ -2386,7 +2586,7 @@
     "section": "Month 6 onwards",
     "text": "Month 6 onwards\n\nPublic launch of the series\nSocial and professional dissemination\nPresentation sessions/webinars\nOngoing iterative development\nSuccess Measures\n\nSuccess indicators may include:\n\nPositive feedback from NHS analysts and operational leaders\nAdoption within NHS analytical communities\nUse in analyst onboarding or data literacy initiatives\nEngagement through GitHub Pages analytics\nRequests for reuse/adaptation across organisations\nAphA and/or NHS analytical community endorsement\nEvidence of improved analytical questioning and interpretation",
     "crumbs": [
-      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Project - Healthcare Decision Intelligence Series</span>"
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Project - Healthcare Decision Intelligence Series</span>"
     ]
   },
   {
@@ -2396,7 +2596,7 @@
     "section": "Sign-Off:",
     "text": "Sign-Off:\nName: Chandan Kaur\nA passionate advocate of decision intelligence and decision analytics in healthcare",
     "crumbs": [
-      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Project - Healthcare Decision Intelligence Series</span>"
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Project - Healthcare Decision Intelligence Series</span>"
     ]
   }
 ]

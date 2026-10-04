@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Module 5 — Standardisation &amp; Fair Comparison – Healthcare Decision Intelligence</title>
+<title>health-economics-methods – Healthcare Decision Intelligence</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -33,8 +33,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../modules/06-How-to-Read-a-Dashboard.html" rel="next">
-<link href="../modules/04-Variation-&amp;-Distributions.html" rel="prev">
+<link href="../modules/17-Understanding-What-Made-the-Difference.html" rel="next">
+<link href="../modules/15-Health-Economics-&amp;-Value-in-Healthcare-Decision-Making.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -87,35 +87,6 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
@@ -129,7 +100,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../modules/05-Standardisation-&amp;-Fair-Comparison.html"><span class="chapter-title">Module 5 — Standardisation &amp; Fair Comparison</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../modules/16-Health-Economics-Methods.html"><span class="chapter-title">16-Health-Economics-Methods.html</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -191,7 +162,7 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../modules/05-Standardisation-&amp;-Fair-Comparison.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Module 5 — Standardisation &amp; Fair Comparison</span></a>
+  <a href="../modules/05-Standardisation-&amp;-Fair-Comparison.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Module 5 — Standardisation &amp; Fair Comparison</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -251,7 +222,7 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../modules/16-Health-Economics-Methods.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">16-Health-Economics-Methods.html</span></a>
+  <a href="../modules/16-Health-Economics-Methods.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">16-Health-Economics-Methods.html</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -269,501 +240,18 @@ window.Quarto = {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
-   
-  <ul>
-  <li><a href="#why-do-we-adjust-healthcare-data" id="toc-why-do-we-adjust-healthcare-data" class="nav-link active" data-scroll-target="#why-do-we-adjust-healthcare-data">Why do we adjust healthcare data?</a></li>
-  <li><a href="#age-adjustment" id="toc-age-adjustment" class="nav-link" data-scroll-target="#age-adjustment">Age Adjustment</a>
-  <ul class="collapse">
-  <li><a href="#age-specific-rate" id="toc-age-specific-rate" class="nav-link" data-scroll-target="#age-specific-rate">Age-specific rate</a></li>
-  <li><a href="#direct-age-standardised-rate" id="toc-direct-age-standardised-rate" class="nav-link" data-scroll-target="#direct-age-standardised-rate">Direct age-standardised rate</a></li>
-  </ul></li>
-  <li><a href="#which-standard-population-should-we-use" id="toc-which-standard-population-should-we-use" class="nav-link" data-scroll-target="#which-standard-population-should-we-use">Which Standard Population Should We Use?</a>
-  <ul class="collapse">
-  <li><a href="#european-standard-population-esp2013" id="toc-european-standard-population-esp2013" class="nav-link" data-scroll-target="#european-standard-population-esp2013">European Standard Population (ESP2013)</a></li>
-  <li><a href="#when-national-population-structures-may-be-useful" id="toc-when-national-population-structures-may-be-useful" class="nav-link" data-scroll-target="#when-national-population-structures-may-be-useful">When National Population Structures May Be Useful</a></li>
-  </ul></li>
-  <li><a href="#operational-interpretation-matters" id="toc-operational-interpretation-matters" class="nav-link" data-scroll-target="#operational-interpretation-matters">Operational Interpretation Matters</a></li>
-  <li><a href="#adjustment-using-regression-models" id="toc-adjustment-using-regression-models" class="nav-link" data-scroll-target="#adjustment-using-regression-models">Adjustment Using Regression Models</a>
-  <ul class="collapse">
-  <li><a href="#frailty-adjustment" id="toc-frailty-adjustment" class="nav-link" data-scroll-target="#frailty-adjustment">Frailty Adjustment</a></li>
-  </ul></li>
-  <li><a href="#fair-comparison-does-not-always-mean-fair-operational-expectations" id="toc-fair-comparison-does-not-always-mean-fair-operational-expectations" class="nav-link" data-scroll-target="#fair-comparison-does-not-always-mean-fair-operational-expectations">Fair Comparison Does Not Always Mean Fair Operational Expectations</a>
-  <ul class="collapse">
-  <li><a href="#why-this-matters" id="toc-why-this-matters" class="nav-link" data-scroll-target="#why-this-matters">Why This Matters</a></li>
-  <li><a href="#example" id="toc-example" class="nav-link" data-scroll-target="#example">Example:</a></li>
-  </ul></li>
-  <li><a href="#more-realistic-approaches-to-improvement" id="toc-more-realistic-approaches-to-improvement" class="nav-link" data-scroll-target="#more-realistic-approaches-to-improvement">More Realistic Approaches to Improvement</a>
-  <ul class="collapse">
-  <li><a href="#understand-reducible-vs-non-reducible-demand" id="toc-understand-reducible-vs-non-reducible-demand" class="nav-link" data-scroll-target="#understand-reducible-vs-non-reducible-demand">Understand Reducible vs Non-Reducible Demand</a></li>
-  <li><a href="#segment-by-cohort" id="toc-segment-by-cohort" class="nav-link" data-scroll-target="#segment-by-cohort">Segment by Cohort</a></li>
-  <li><a href="#improvement-opportunity-matters" id="toc-improvement-opportunity-matters" class="nav-link" data-scroll-target="#improvement-opportunity-matters">Improvement Opportunity Matters</a></li>
-  <li><a href="#better-questions-than-can-both-reduce-by-10" id="toc-better-questions-than-can-both-reduce-by-10" class="nav-link" data-scroll-target="#better-questions-than-can-both-reduce-by-10">Better Questions Than “Can Both Reduce by 10%?”</a></li>
-  <li><a href="#fair-comparison-fair-operational-expectations" id="toc-fair-comparison-fair-operational-expectations" class="nav-link" data-scroll-target="#fair-comparison-fair-operational-expectations">Fair Comparison ≠ Fair Operational Expectations</a></li>
-  </ul></li>
-  <li><a href="#key-takeaways" id="toc-key-takeaways" class="nav-link" data-scroll-target="#key-takeaways">Key Takeaways</a>
-  <ul class="collapse">
-  <li><a href="#a-key-question" id="toc-a-key-question" class="nav-link" data-scroll-target="#a-key-question">A Key Question</a></li>
-  </ul></li>
-  <li><a href="#questions-decision-makers-should-ask" id="toc-questions-decision-makers-should-ask" class="nav-link" data-scroll-target="#questions-decision-makers-should-ask">Questions Decision-Makers Should Ask</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title"><span class="chapter-title">Module 5 — Standardisation &amp; Fair Comparison</span></h1>
-</div>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
-<div class="quarto-title-meta">
 
-    
-  
-    
-  </div>
-  
+<p>This Module will focus on the methods health economists use and the decision questions those methods help answer.</p>
 
 
-</header>
-
-
-<button class="print-button" onclick="window.print()">
-🖨️ Print this module
-</button>
-<p>Healthcare organisations often compare: - admission rates - mortality - ED attendance - stroke outcomes - Length of Stay</p>
-<p>But populations are rarely directly comparable.</p>
-<ul>
-<li>Some areas are older.</li>
-<li>Some experience greater deprivation.</li>
-<li>Some have higher frailty or multimorbidity.</li>
-</ul>
-<p>This creates an important challenge:</p>
-<p>How can we compare healthcare outcomes fairly without losing sight of operational reality?</p>
-<section id="why-do-we-adjust-healthcare-data" class="level2">
-<h2 class="anchored" data-anchor-id="why-do-we-adjust-healthcare-data">Why do we adjust healthcare data?</h2>
-<p>Adjustment attempts to account for these differences so comparisons become fairer and more meaningful.</p>
-<hr>
-</section>
-<section id="age-adjustment" class="level2">
-<h2 class="anchored" data-anchor-id="age-adjustment">Age Adjustment</h2>
-<section id="age-specific-rate" class="level3">
-<h3 class="anchored" data-anchor-id="age-specific-rate">Age-specific rate</h3>
-<p>An age-specific rate is calculated separately for each age group:</p>
-<p><span class="math display">\[
-\text{Age-specific rate} =
-\frac{\text{Stroke deaths in age group}}
-{\text{Population in age group}}
-\times 100,000
-\]</span></p>
-<p>Example calculation:</p>
-<p><span class="math display">\[
-\frac{120}{50,000} \times 100,000
-=
-240 \text{ per 100,000}
-\]</span></p>
-<p>This allows comparison within similar age groups.</p>
-<hr>
-</section>
-<section id="direct-age-standardised-rate" class="level3">
-<h3 class="anchored" data-anchor-id="direct-age-standardised-rate">Direct age-standardised rate</h3>
-<p>Age-standardisation applies a standard population structure to both populations:</p>
-<p><span class="math display">\[
-\text{Age-standardised rate}
-=
-\frac{
-\sum(\text{age-specific rate} \times \text{standard population})
-}{
-\sum(\text{standard population})
-}
-\]</span></p>
-<p>This answers:</p>
-<blockquote class="blockquote">
-<p>“What would the outcome rate look like if both populations had the same age structure?”</p>
-</blockquote>
-</section>
-</section>
-<section id="which-standard-population-should-we-use" class="level2">
-<h2 class="anchored" data-anchor-id="which-standard-population-should-we-use">Which Standard Population Should We Use?</h2>
-<p>Age-standardisation requires the use of a standard population structure.</p>
-<p>In England, the most commonly used standard population is the:</p>
-<section id="european-standard-population-esp2013" class="level3">
-<h3 class="anchored" data-anchor-id="european-standard-population-esp2013">European Standard Population (ESP2013)</h3>
-<p>This provides a consistent age distribution that allows fairer comparison between populations with different age structures.</p>
-<p>However, the choice of standard population matters.</p>
-<p>The ESP2013 is widely used because it:</p>
-<ul>
-<li>supports consistency across analyses</li>
-<li>enables comparison between regions and countries</li>
-<li>removes some of the influence of differing age structures</li>
-</ul>
-<p>This is particularly useful for:</p>
-<ul>
-<li>mortality comparisons</li>
-<li>public health analysis</li>
-<li>disease incidence rates</li>
-<li>long-term trend analysis</li>
-</ul>
-<blockquote class="blockquote">
-<p>Important Limitation</p>
-</blockquote>
-<p>The ESP2013 is an artificial reference population.</p>
-<p>It does not necessarily reflect:</p>
-<ul>
-<li>the actual age structure of England</li>
-<li>local ICB populations</li>
-<li>operational healthcare demand</li>
-</ul>
-<blockquote class="blockquote">
-<p>Statistical comparability does not always equal operational comparability.</p>
-</blockquote>
-<p>Example — Older Populations</p>
-<p>Suppose:</p>
-<ul>
-<li>ICB A has a substantially older population</li>
-<li>ICB B has a younger working-age population</li>
-</ul>
-<p>After age-standardisation:</p>
-<p>their rates may appear more similar</p>
-<p>However:</p>
-<p>ICB A may still experience significantly greater operational pressure due to: * frailty * multimorbidity * discharge complexity * higher service utilisation</p>
-<p>This highlights an important distinction:</p>
-<blockquote class="blockquote">
-<p>Comparable performance does not imply equal opportunity for improvement.</p>
-</blockquote>
-</section>
-<section id="when-national-population-structures-may-be-useful" class="level3">
-<h3 class="anchored" data-anchor-id="when-national-population-structures-may-be-useful">When National Population Structures May Be Useful</h3>
-<p>In some operational analyses, national population distributions or age-specific rates may provide a more realistic reflection of healthcare demand.</p>
-<p>may provide a more realistic reflection of expected healthcare demand.</p>
-<p>This can be particularly relevant when analysing:</p>
-<ul>
-<li>specific age cohorts</li>
-<li>service planning</li>
-<li>operational capacity</li>
-<li>demand forecasting</li>
-</ul>
-<p>For example:</p>
-<ul>
-<li>ED attendance rates for people aged 75+</li>
-<li>frailty prevalence</li>
-<li>community service utilisation</li>
-</ul>
-<p>In these situations:</p>
-<ul>
-<li>age-specific operational demand may matter more than fully standardised comparison.</li>
-</ul>
-</section>
-</section>
-<section id="operational-interpretation-matters" class="level2">
-<h2 class="anchored" data-anchor-id="operational-interpretation-matters">Operational Interpretation Matters</h2>
-<p>Neither approach is universally “correct”.</p>
-<p>The appropriate approach depends on the question being asked. For example:</p>
-<p><img src="../images/AnalyticalQuestion_MostUsefulApproach.png" class="img-fluid"></p>
-<p><img src="../images/StatisticalFairnessvsOperationalReality.png" class="img-fluid"></p>
-</section>
-<section id="adjustment-using-regression-models" class="level2">
-<h2 class="anchored" data-anchor-id="adjustment-using-regression-models">Adjustment Using Regression Models</h2>
-<p>Standardisation is one approach to improving fairness in comparison.</p>
-<p>Healthcare analytics may also use statistical models to adjust simultaneously for multiple interacting factors.</p>
-<p>For example:</p>
-<ul>
-<li>age</li>
-<li>smoking</li>
-<li>hypertension</li>
-<li>diabetes</li>
-<li>frailty</li>
-</ul>
-<p>may all influence stroke outcomes simultaneously.</p>
-<hr>
-<section id="frailty-adjustment" class="level3">
-<h3 class="anchored" data-anchor-id="frailty-adjustment">Frailty Adjustment</h3>
-<p>Frailty can be represented in several ways:</p>
-<ul>
-<li>frailty score</li>
-<li>mild/moderate/severe frailty categories</li>
-<li>electronic frailty index (EFI)</li>
-</ul>
-<p>Example model:</p>
-<p><span class="math display">\[
-\begin{aligned}
-\log\left(\frac{p}{1-p}\right)
-&amp;=
-\beta_0 \\
-&amp;+
-\beta_1(\text{deprivation}) \\
-&amp;+
-\beta_2(\text{age}) \\
-&amp;+
-\beta_3(\text{smoking}) \\
-&amp;+
-\beta_4(\text{hypertension}) \\
-&amp;+
-\beta_5(\text{diabetes}) \\
-&amp;+
-\beta_6(\text{frailty})
-\end{aligned}
-\]</span></p>
-<p>This estimates whether deprivation still appears associated with stroke mortality after accounting for these additional risk factors.</p>
-<p>The diagram below illustrates how regression adjustment attempts to account for multiple interacting factors simultaneously when analysing healthcare outcomes.</p>
-<p><img src="../images/HowRegressionAdjustmentAidsHealthcareAnalysis.png" class="img-fluid"></p>
-</section>
-</section>
-<section id="fair-comparison-does-not-always-mean-fair-operational-expectations" class="level2">
-<h2 class="anchored" data-anchor-id="fair-comparison-does-not-always-mean-fair-operational-expectations">Fair Comparison Does Not Always Mean Fair Operational Expectations</h2>
-<p>Adjustment does not “remove” inequalities.</p>
-<p>Instead, it helps us understand:</p>
-<ul>
-<li>which factors may explain part of the observed difference</li>
-<li>which inequalities remain after accounting for measurable risk factors</li>
-</ul>
-<p>For example:</p>
-<p>Before adjustment:</p>
-<blockquote class="blockquote">
-<p>Stroke mortality may appear substantially higher in deprived populations.</p>
-</blockquote>
-<p>After adjustment:</p>
-<blockquote class="blockquote">
-<p>Some of the gap may reduce because smoking, hypertension, diabetes and frailty explain part of the difference.</p>
-</blockquote>
-<p>However:</p>
-<blockquote class="blockquote">
-<p>a remaining gap may still exist due to wider social, behavioural and healthcare inequalities.</p>
-</blockquote>
-<p>Even after adjustment, statistically fair comparison does not necessarily imply equal operational opportunity.</p>
-<p>For example:</p>
-<blockquote class="blockquote">
-<p>should two ICBs with similar ED attendance rates be expected to achieve the same reduction target?</p>
-</blockquote>
-<p>Often:</p>
-<blockquote class="blockquote">
-<p><strong>no</strong></p>
-</blockquote>
-<p>Identical percentage reductions assume the same underlying opportunity, risk profile and pathway flexibility.</p>
-<p>That is rarely true.</p>
-<p>This is where healthcare systems move from simple benchmarking towards population-adjusted operational planning.</p>
-<section id="why-this-matters" class="level3">
-<h3 class="anchored" data-anchor-id="why-this-matters">Why This Matters</h3>
-<p>Imagine:</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>ICB</th>
-<th>Population Profile</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>ICB A</td>
-<td>Younger, urban, lower frailty</td>
-</tr>
-<tr class="even">
-<td>ICB B</td>
-<td>Older, rural, higher frailty</td>
-</tr>
-</tbody>
-</table>
-<p>Even after using age-specific ED attendance rates, the systems may still differ because of:</p>
-<ul>
-<li>deprivation</li>
-<li>multimorbidity</li>
-<li>access to primary care</li>
-<li>transport</li>
-<li>care home prevalence</li>
-<li>community service availability</li>
-<li>rurality</li>
-<li>ambulance conveyance patterns</li>
-<li>social care capacity</li>
-</ul>
-<p>So:</p>
-<blockquote class="blockquote">
-<p>a 10% reduction target may be much more achievable in one system than another.</p>
-</blockquote>
-</section>
-<section id="example" class="level3">
-<h3 class="anchored" data-anchor-id="example">Example:</h3>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th></th>
-<th>ICB A</th>
-<th>ICB B</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Population</td>
-<td>Younger / urban</td>
-<td>Older / rural</td>
-</tr>
-<tr class="even">
-<td>65+ ED rate</td>
-<td>8,000</td>
-<td>8,200</td>
-</tr>
-<tr class="odd">
-<td>Likely drivers</td>
-<td>Pathway gaps</td>
-<td>Frailty / care homes</td>
-</tr>
-<tr class="even">
-<td>Opportunity for reduction</td>
-<td>Higher</td>
-<td>Lower</td>
-</tr>
-</tbody>
-</table>
-<p>Similar rates. Very different operational reality.</p>
-<p>A blanket:</p>
-<blockquote class="blockquote">
-<p>“reduce by 10%”</p>
-</blockquote>
-<p>implicitly assumes equal reducibility.</p>
-<p>That’s often false.</p>
-<hr>
-</section>
-</section>
-<section id="more-realistic-approaches-to-improvement" class="level2">
-<h2 class="anchored" data-anchor-id="more-realistic-approaches-to-improvement">More Realistic Approaches to Improvement</h2>
-<section id="understand-reducible-vs-non-reducible-demand" class="level3">
-<h3 class="anchored" data-anchor-id="understand-reducible-vs-non-reducible-demand">Understand Reducible vs Non-Reducible Demand</h3>
-<p>Some ED activity is:</p>
-<ul>
-<li>clinically appropriate</li>
-<li>structurally unavoidable</li>
-<li>demographically driven</li>
-</ul>
-<p>Some is potentially avoidable.</p>
-<p>Operationally, the focus should be:</p>
-<ul>
-<li>avoidable admissions</li>
-<li>ambulatory-sensitive conditions</li>
-<li>pathway gaps</li>
-<li>delayed community response</li>
-<li>repeat attendance cohorts</li>
-</ul>
-<p>rather than crude overall reductions alone.</p>
-<hr>
-</section>
-<section id="segment-by-cohort" class="level3">
-<h3 class="anchored" data-anchor-id="segment-by-cohort">Segment by Cohort</h3>
-<p>Better targets are often cohort-specific:</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Cohort</th>
-<th>Better Target</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Frailty</td>
-<td>reduce avoidable conveyances</td>
-</tr>
-<tr class="even">
-<td>LTCs</td>
-<td>improve proactive management</td>
-</tr>
-<tr class="odd">
-<td>Frequent attenders</td>
-<td>reduce repeat attendances</td>
-</tr>
-<tr class="even">
-<td>Care homes</td>
-<td>improve in-place care</td>
-</tr>
-<tr class="odd">
-<td>Children</td>
-<td>improve same-day access</td>
-</tr>
-</tbody>
-</table>
-<hr>
-</section>
-<section id="improvement-opportunity-matters" class="level3">
-<h3 class="anchored" data-anchor-id="improvement-opportunity-matters">Improvement Opportunity Matters</h3>
-<p>Two ICBs may have:</p>
-<ul>
-<li>similar rates</li>
-<li>different pathway maturity</li>
-</ul>
-<blockquote class="blockquote">
-<p>Similar performance does not imply equal opportunity for improvement.</p>
-</blockquote>
-<hr>
-</section>
-<section id="better-questions-than-can-both-reduce-by-10" class="level3">
-<h3 class="anchored" data-anchor-id="better-questions-than-can-both-reduce-by-10">Better Questions Than “Can Both Reduce by 10%?”</h3>
-<p>Ask:</p>
-<ul>
-<li>What proportion is avoidable?</li>
-<li>Which cohorts drive growth?</li>
-<li>Which attendances are pathway-sensitive?</li>
-<li>What operational levers exist?</li>
-<li>What capacity exists outside ED?</li>
-<li>What does good look like for similar systems?</li>
-<li>What inequities are driving demand?</li>
-</ul>
-<hr>
-</section>
-<section id="fair-comparison-fair-operational-expectations" class="level3">
-<h3 class="anchored" data-anchor-id="fair-comparison-fair-operational-expectations">Fair Comparison ≠ Fair Operational Expectations</h3>
-<p>The diagram below illustrates a key principle:</p>
-<blockquote class="blockquote">
-<p>fair comparison does not automatically imply equal operational opportunity</p>
-</blockquote>
-<p>Even where rates appear comparable, factors such as frailty, deprivation, pathway maturity and community capacity may influence achievable improvement.</p>
-<p><img src="../images/CountvsRates_UnfairReductionTargets.png" class="img-fluid"></p>
-<hr>
-</section>
-</section>
-<section id="key-takeaways" class="level2">
-<h2 class="anchored" data-anchor-id="key-takeaways">Key Takeaways</h2>
-<p>Adjustment improves fairness and interpretation.</p>
-<p>But healthcare systems remain complex.</p>
-<p>Even sophisticated adjustment models cannot fully capture:</p>
-<ul>
-<li>social context</li>
-<li>behavioural factors</li>
-<li>housing</li>
-<li>service access</li>
-<li>operational pressures</li>
-<li>community support capacity</li>
-</ul>
-<p>This is why:</p>
-<blockquote class="blockquote">
-<p>healthcare analytics should support thoughtful interpretation, not simplistic conclusions.</p>
-</blockquote>
-<section id="a-key-question" class="level3">
-<h3 class="anchored" data-anchor-id="a-key-question">A Key Question</h3>
-<blockquote class="blockquote">
-<p>Have we made a genuinely fair comparison — or simply made the numbers look more comparable?</p>
-</blockquote>
-<p>For example:</p>
-<p>two systems may show similar age-standardised rates while still experiencing very different levels of frailty, discharge complexity and service pressure.</p>
-<p>That is the central tension in healthcare analytics: fair comparison does not automatically imply comparable operational reality.</p>
-</section>
-</section>
-<section id="questions-decision-makers-should-ask" class="level2">
-<h2 class="anchored" data-anchor-id="questions-decision-makers-should-ask">Questions Decision-Makers Should Ask</h2>
-<ul>
-<li>Could standardisation be masking genuine operational pressure?</li>
-<li>Are we interpreting statistical fairness as operational fairness?</li>
-<li>Does the adjustment method fit the question being asked?</li>
-<li>Are we trying to understand epidemiological risk, operational demand, or both?</li>
-<li>Would peer comparison be fairer than national comparison?</li>
-<li>What important context remains unmeasured?</li>
-<li>Could inequalities still be hidden within subgroups?</li>
-<li>Are equal targets operationally realistic across different systems?</li>
-</ul>
-
-
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -1168,13 +656,13 @@ window.Quarto = {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../modules/04-Variation-&amp;-Distributions.html" class="pagination-link" aria-label="Module 4 — Variation &amp; Distributions">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Module 4 — Variation &amp; Distributions</span></span>
+      <a href="../modules/15-Health-Economics-&amp;-Value-in-Healthcare-Decision-Making.html" class="pagination-link" aria-label="Module 15: Health Economics &amp; Value in Healthcare Decision-Making">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Module 15: Health Economics &amp; Value in Healthcare Decision-Making</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../modules/06-How-to-Read-a-Dashboard.html" class="pagination-link" aria-label="Module 6 — How to Read a Dashboard">
-        <span class="nav-page-text"><span class="chapter-title">Module 6 — How to Read a Dashboard</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../modules/17-Understanding-What-Made-the-Difference.html" class="pagination-link" aria-label="Module 17: Understanding What Made the Difference (DRAFT)">
+        <span class="nav-page-text"><span class="chapter-title">Module 17: Understanding What Made the Difference (DRAFT)</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
