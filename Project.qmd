@@ -10,6 +10,10 @@ Profile: linkedin.com/in/chandan-kaur-41032668
 
 Audience: Analysts and Decision Makers in healthcare systems
 
+Endorsed by:
+![](AphA_logo.png)
+![](AphAOrganisationalAim.png)
+
 # Project Overview
 
 The Healthcare Decision Intelligence Series is a practical, NHS-focused educational resource designed to improve understanding, interpretation and use of healthcare analytics across healthcare systems.
