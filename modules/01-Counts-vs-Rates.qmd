@@ -1,3 +1,4 @@
+![](AphA_logo.png)  ![](AphAOrganisationalAim.png)
 # Module 1 - Counts vs Rates
 
 <button class="print-button" onclick="window.print()">🖨️ Print this module</button>
