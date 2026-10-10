@@ -1,4 +1,4 @@
-# 👥 Healthcare Decision Intelligence Series
+# 👥 Healthcare Decision Intelligence Series ![](AphA.png)
 
 **Healthcare Decision Intelligence**
 
