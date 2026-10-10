@@ -1,6 +1,6 @@
 # Welcome
 
-![](AphA_logo.png) ![](AphAOrganisationalAim.png)
+![](AphA_logo.png)  ![](AphAOrganisationalAim.png)
 
 **Healthcare Decision Intelligence**
 
