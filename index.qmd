@@ -1,5 +1,7 @@
 # Welcome
 
+![](AphA_logo.png) ![](AphAOrganisationalAim.png)
+
 **Healthcare Decision Intelligence**
 
 Helping healthcare professionals make better decisions through data, evidence and expertise.
