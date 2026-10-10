@@ -1,5 +1,4 @@
-![](AphA_logo.png) 
-![](AphaOrganisationalAim.png)
+![](AphA_logo.png)  ![](AphaOrganisationalAim.png)
 
 # 👥 Healthcare Decision Intelligence Series 
 
