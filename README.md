@@ -78,8 +78,8 @@ Topics include:
     - Is the improvement worth the investment?
 16. Methods for Applying Health Economics to Healthcare Decisions 
     - Comparing options, costs, outcomes and value
-17. Understanding What Made the Difference ⭐
-    - Evaluating Multiple Interventions in Complex Healthcare Systems 
+17. Evaluating Multiple Interventions in Complex Healthcare Systems ⭐
+    - Understanding What Made the Difference 
 18. Population Health Management & Population Segmentation
     - Who should we intervene with, and why?
 19. Testing Decisions Before We Make Them ⭐
