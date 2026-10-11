@@ -22,7 +22,7 @@ The module focuses on practical healthcare examples, particularly interventions 
 * delayed discharge
 * operational pressure
 
-It introduces practical approaches to evaluation without assuming prior statistical knowledge.
+It introduces practical approaches to evaluation without assuming prior statistical knowledge. It also helps readers distinguish **observed change**, **estimated causal impact**, and **plausible contribution**. Detailed evaluation designs follow in Module 9, while Module 17 applies them to integrated care and overlapping interventions.
 
 # Why Evaluating Healthcare Interventions Matters
 
@@ -96,7 +96,7 @@ The service provides:
 * medication review
 * rapid response care coordination
 
-After six months:
+After six months (using comparable six-month periods and consistent population definitions):
 
 | Measure              | Before Scheme | After Scheme |
 | -------------------- | ------------: | -----------: |
@@ -245,6 +245,33 @@ Without considering the counterfactual:
 
 ## Counterfactual Thinking in Practice
 
+A counterfactual is not simply a prediction of the future. It is an estimate of the outcome **under a specified alternative**, such as continuing usual care instead of introducing the new frailty service. We cannot observe both possibilities for the same people at the same time.
+
+### Worked example: observed improvement is not estimated impact
+
+Suppose the frailty service recorded **980 ED attendances** in the follow-up period, compared with **1,200** in the equivalent baseline period. That is an observed reduction of **220 attendances (18.3%)**.
+
+Now imagine a credible evaluation estimated that, *without the frailty service*, the same eligible population would have experienced **1,080 attendances** in the follow-up period.
+
+| Quantity | Illustrative ED attendances | Interpretation |
+|---|---:|---|
+| Before implementation | 1,200 | Historical observation |
+| After implementation | 980 | Observed outcome |
+| Without implementation | 1,080 | **Estimated**, unobserved counterfactual |
+| Observed before–after change | −220 | Descriptive change; **not** the causal effect |
+| Estimated intervention effect | −100 | Difference between observed and counterfactual outcomes |
+
+In this example, **100 fewer attendances** is the illustrative impact estimate, *if* the counterfactual is defensible. The figure of 1,080 must come from an appropriate evaluation design and evidence; it must **not** be selected merely to produce a favourable result.
+
+The counterfactual estimate would normally carry uncertainty. Even if the observed result is exact, the intervention effect is not known with certainty.
+
+::: {.callout-important}
+## Three Numbers, Three Different Meanings
+
+**1,200 → 980** describes what happened. **1,080** represents an estimated alternative outcome. **980 − 1,080 = −100** is a possible causal effect **only if the evaluation design supports the comparison**.
+:::
+
+
 Evaluation becomes stronger when we compare reality with a plausible alternative.
 
 In simple terms:
@@ -276,6 +303,40 @@ The purpose of counterfactual thinking is not to dismiss improvement.
 Instead, it encourages us to ask:
 
 > *How confident are we that the intervention caused the change?*
+
+## Why Fair Comparisons Are Difficult
+
+A useful comparison should resemble the intervention population in the factors that influence outcomes **before** the intervention. This is harder than comparing two groups with similar average ages.
+
+### Selection bias and confounding
+
+People referred to a frailty service may have higher clinical need, more recent emergency admissions, or better access to community services than those not referred. These characteristics can affect both **who receives care** and **what happens next**.
+
+For example, patients receiving urgent community support might have more admissions than non-recipients because they were already more unwell. This does not demonstrate that the service caused admissions.
+
+**Confounding** occurs when another factor helps explain an apparent relationship between intervention and outcome. **Selection bias** can arise when the people included in the analysis or intervention groups are systematically different in ways that distort the comparison.
+
+### Timing and regression to the mean
+
+Patients may be selected after unusually high hospital use. Some subsequent reduction could occur naturally as an acute episode resolves or activity returns towards a more typical level (**regression to the mean**).
+
+An intervention also cannot cause an event that occurred **before** it was delivered. Analysts need to distinguish eligibility, referral, treatment start and outcome dates, and avoid assigning patients to a treated group based on treatment received only later in follow-up.
+
+### Changing population need
+
+If the eligible population becomes older or more clinically complex, raw activity may rise even when care improves. Conversely, falling admissions might reflect a changing denominator, admission thresholds or access constraints. Rates, consistent eligibility definitions and appropriate adjustment for **baseline** population differences can improve interpretation.
+
+Adjustment should be guided by the causal question: variables changed *by* the intervention may lie on the causal pathway and should not automatically be controlled away.
+
+::: {.callout-tip}
+## Questions to Ask Before Comparing Groups
+
+- Were people eligible at the same point in time?
+- Were the groups comparable **before** implementation?
+- Could prior hospital use, frailty or deprivation influence both referral and outcomes?
+- Did the intervention start before the outcomes being attributed to it?
+- Did the population, recording rules or access to hospital care change?
+:::
 
 ## Multiple Interventions Often Happen at the Same Time
 
@@ -320,15 +381,11 @@ Decision-makers may instead need to ask:
 This illustrates why evaluation often focuses on **contribution rather than simple attribution**, particularly in complex healthcare systems.
 
 ::: {.callout-note}
-## Looking Ahead
+## Looking Ahead: Modules 9 and 17
 
-This module has focused on evaluating a single intervention.
+**Module 9** introduces practical methods for constructing comparisons, including randomised designs, Interrupted Time Series (ITS) and Difference-in-Differences (DiD). **Module 17** examines the harder problem of evaluating an integrated portfolio of care, where multiple interventions overlap and the evaluation may begin after implementation.
 
-In reality, healthcare organisations often introduce **multiple schemes at the same time**, all aiming to improve the same outcome—for example, reducing Emergency Department attendances or emergency admissions.
-
-Understanding the contribution of each individual intervention becomes increasingly difficult as healthcare systems become more integrated.
-
-**Module 18: Why Evaluating Healthcare Improvement Is Difficult** explores this challenge in more detail, including why attribution becomes increasingly difficult in complex healthcare systems and how organisations can build greater confidence in their evaluation findings despite that complexity.
+At portfolio level, the first causal question is whether the **combined model** improved outcomes for the eligible population compared with what would otherwise have happened. Explaining the contribution of individual services is a related but different task.
 :::
 
 # Levels of Evaluation Confidence
@@ -360,6 +417,31 @@ Sometimes a simple before-and-after comparison may be all that is practical.
 However:
 
 > decision-makers should recognise its limitations.
+
+## What Makes an Evaluation Claim Credible?
+
+Different designs construct a comparison in different ways. None guarantees that the comparison is valid.
+
+| Approach | What makes it useful | Assumption or threat to examine |
+|---|---|---|
+| Before-and-after monitoring | Shows whether outcomes changed | Secular trends, seasonality and changing populations may explain the change |
+| Interrupted Time Series (ITS) | Tests whether outcome level or trend changed around implementation | Other simultaneous changes, seasonal patterns, autocorrelation and the number of observations |
+| Difference-in-Differences (DiD) | Compares changes between intervention and comparison populations | Whether outcomes would have followed **parallel trends without the intervention**, and whether spillovers or different concurrent changes undermine comparison |
+| Randomised allocation | Helps make intervention and comparison groups comparable at baseline | Adherence, contamination, attrition, implementation and chance remain relevant |
+
+A sharp change after implementation is not proof of impact. Nor does choosing a neighbouring locality automatically make a comparison credible. **Method choice, assumptions and data quality matter together.** Module 9 develops these methods in more detail.
+
+### Test how sensitive the conclusion is
+
+Return to the illustrative 980 ED attendances observed after implementation. Different plausible counterfactual estimates produce different conclusions:
+
+| Counterfactual assumption | Expected attendances without service | Estimated difference versus observed 980 |
+|---|---:|---:|
+| Lower expected demand | 950 | **30 more** than expected |
+| Central estimate | 1,080 | **100 fewer** than expected |
+| Higher expected demand | 1,150 | **170 fewer** than expected |
+
+These are **illustrative scenarios**, not statistical confidence intervals. They show why analysts should test assumptions and report uncertainty rather than present one number as an unquestionable fact. If a commissioning decision changes under plausible alternative assumptions, that uncertainty is decision-relevant.
 
 ## A Practical NHS Reality
 
@@ -398,6 +480,34 @@ Evaluation therefore becomes less about certainty and more about:
 
 > making proportionate, evidence-informed judgements.
 
+## If the Service Has Already Started
+
+Many NHS evaluations begin only after a scheme is operating. This does **not** automatically make causal evaluation impossible.
+
+- **Historical data and a reliable start date exist:** a retrospective time-series analysis may be feasible.
+- **A credible comparison population exists:** a controlled comparison may be possible, subject to its assumptions.
+- **Neither is available:** use descriptive monitoring, implementation and qualitative evidence to understand reach, delivery, experience and plausible contribution, **without inventing admissions avoided**.
+- **An expansion or redesign is planned:** agree eligibility, outcomes, baseline data and a feasible comparison *before the next change*.
+
+::: {.callout-important}
+## Do Not Manufacture a Counterfactual
+
+When a credible counterfactual cannot be constructed, evaluation still has value. It can explain **what changed, for whom, how care was delivered and what may need improvement**. But it should not claim a quantified causal impact that the evidence cannot identify.
+:::
+
+Module 17 applies these choices to an established integrated frailty model and explores how to use the next commissioning decision to strengthen evaluation.
+
+## Match the Language to the Evidence
+
+| Claim | What it means |
+|---|---|
+| “ED attendances fell by 18.3% after the service began.” | A descriptive before–after finding |
+| “Attendances were lower than projected from historical trends.” | A model-based comparison, dependent on assumptions |
+| “The evaluation estimates 100 fewer attendances attributable to the service.” | A causal claim requiring a credible counterfactual and uncertainty assessment |
+| “Patient and staff accounts suggest improved coordination.” | Evidence about experience or plausible mechanisms, not proof of an admissions effect |
+
+Strong evaluation is not always about making stronger claims. Sometimes it is about making **more accurate, proportionate claims**.
+
 ## Reflection
 
 Before moving on, ask:
@@ -428,6 +538,10 @@ to ask:
 - stronger evaluation asks what might have happened anyway
 - evaluation is about improving confidence, not proving certainty
 - good decision-making balances pragmatism with evidence
+- selection, timing, population change and regression to the mean can distort comparisons
+- ITS and DiD depend on assumptions, not simply the presence of a statistical model
+- sensitivity analysis can reveal whether conclusions depend on uncertain assumptions
+- retrospective and theory-based evaluation remain useful when schemes have already started, but they support different claims
 
 Good evaluation moves beyond:
 
@@ -447,6 +561,9 @@ Before acting on evaluation findings, ask:
 - What evidence would increase our confidence?
 - How certain do we really need to be before acting?
 - What level of confidence is proportionate for this decision?
+- What assumptions make our counterfactual credible?
+- How sensitive is the conclusion to alternative plausible assumptions?
+- If the scheme is already running, can we reconstruct a comparison—or should we change the evaluation question?
 
 In the next module, we explore practical approaches that healthcare systems use to improve confidence in evaluation findings — from pragmatic NHS evaluation methods through to Randomised Controlled Trials, Interrupted Time Series and Difference-in-Differences.
 
