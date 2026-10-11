@@ -1,65 +1,145 @@
-![](images/Part2.png)
-
 # Part 2 — How do we understand, improve and evaluate complex healthcare systems?
 
-Part 2 moves beyond interpreting individual statistics and focuses on how healthcare systems behave, how interventions are designed and evaluated, and how evidence is brought together to support better decisions.
+Part 2 builds on the foundations of healthcare data literacy established in Part 1.
 
-The modules in this section explore:
+Understanding an individual statistic, chart or comparison is essential, but healthcare decisions rarely concern a single measure or service in isolation. Healthcare is a **complex, interconnected system**: patients move between services, demand and capacity change, populations have different needs, and interventions can influence outcomes across several pathways at once.
 
-- demand, capacity and operational flow
-- trustworthy data and assurance
-- pathway analytics and intervention design
-- evaluation of complex healthcare systems
-- population health management and segmentation
-- quantitative and qualitative evidence
-- health economics and value
-- evidence-informed decision-making
-- simulation and scenario modelling
+Part 2 therefore moves from **interpreting healthcare data correctly** to **using evidence to understand systems, design improvements, evaluate interventions and make defensible decisions**.
+
+The ten modules explore:
+
+1. **Module 12 — Demand, Capacity & Operational Flow** — Why are patients waiting, and where is the bottleneck?
+2. **Module 13 — Data Quality, Assurance & Trustworthy Data** — Can we trust the data before making decisions?
+3. **Module 14 — Designing Better Healthcare Pathways** — How do we redesign, implement and evaluate better pathways?
+4. **Module 15 — Health Economics & Value in Healthcare Decision-Making** — Is the improvement worth the investment?
+5. **Module 16 — Methods for Applying Health Economics to Healthcare Decisions** — How do we compare options, costs, outcomes and value?
+6. **Module 17 — Evaluating Multiple Interventions in Complex Healthcare Systems** — How do we understand what made the difference?
+7. **Module 18 — Population Health Management & Population Segmentation** — Who should we intervene with, and why?
+8. **Module 19 — Testing Decisions Before We Make Them** — How can scenarios and simulation help us explore possible consequences?
+9. **Module 20 — Bringing Evidence Together** — How do we combine different forms of evidence into a coherent picture?
+10. **Module 21 — From Evidence to Decision** — How do we make transparent decisions when there are trade-offs and uncertainty?
+
+Together, these modules help readers move beyond isolated performance measures or programme-level claims towards a more integrated understanding of **need, flow, outcomes, implementation, equity, costs and value**.
 
 # Bringing Part 2 Together
 
-The modules in Part 2 are not standalone topics.
+The modules in Part 2 are not standalone topics, nor do they represent a rigid sequence that every project must follow.
 
-Together, they provide a way of moving from **understanding a healthcare problem** to **making a better-informed decision**.
+They provide complementary perspectives on the journey from **understanding a healthcare problem** to **making a better-informed decision**. In practice, teams may revisit earlier questions as new evidence emerges, data limitations become apparent or the proposed intervention changes.
 
-![](images/Part2_MindMap.png)
+![](images/Part2_MindMap.png){fig-align="center" width="100%"}
+
+## 1. Understand the system and establish a trustworthy evidence base
+
+**Modules 12–13**
+
+Demand, capacity and operational flow help explain why patients wait, where bottlenecks occur and how pressures in one part of a pathway affect another. Data quality and assurance help establish whether the information used to understand those pressures is sufficiently complete, consistent and fit for purpose.
+
+A compelling dashboard or a rising activity trend is not, by itself, a reliable diagnosis of the problem. We need to understand both **how the system operates** and **how confidently the data describe it**.
+
+## 2. Design better pathways and understand who they should serve
+
+**Modules 14 and 18**
+
+Pathway design considers how care could be organised differently, including the practical implications for implementation and evaluation. Population health management and segmentation help identify differing levels of need, complexity and risk, and where targeted approaches may be appropriate.
+
+These perspectives should inform one another: **the right intervention depends on the needs of the population, while the likely benefits depend on how the pathway is designed and delivered**.
+
+## 3. Evaluate impact, implementation and economic value
+
+**Modules 15–17**
+
+Health economics introduces the questions of opportunity cost, outcomes and value. Applied economic methods help compare options and assess their costs and consequences. Evaluation of multiple interventions examines what changed, what may have contributed to that change, and why causal attribution is particularly challenging when services and patient populations overlap.
+
+A reduction in hospital activity is not automatically evidence of better care or cash-releasing savings. Evaluation should also consider safety, patient and carer experience, equity, implementation fidelity, costs shifted between services and uncertainty about what would have happened otherwise.
+
+The methodological foundations from **Modules 7–9 in Part 1** remain important: a Theory of Change clarifies expected mechanisms, while appropriate evaluation designs help distinguish observed change from credible evidence of impact.
+
+## 4. Explore future consequences before committing resources
+
+**Module 19**
+
+Scenario and simulation methods allow decision-makers to explore **what might happen** under different assumptions about demand, capacity, pathways, staffing or service configurations.
+
+These methods can help identify trade-offs and unintended pressures before implementation. However, a simulation is only as useful as its assumptions, input data and validation; it is not proof that a proposed change will deliver the predicted result.
+
+## 5. Bring evidence together and make a defensible decision
+
+**Modules 20–21**
+
+Complex commissioning decisions rarely rest on one dataset or one method. Quantitative findings, qualitative evidence, published research, clinical and operational knowledge, economic analysis and the experiences of patients and communities may each illuminate different aspects of the problem.
+
+Bringing evidence together means **triangulating findings**, explaining where sources agree or disagree, and being explicit about gaps and uncertainty. Moving from evidence to decision then requires judgement about benefits, harms, affordability, equity, opportunity costs and competing priorities.
+
+The aim is not to remove judgement from healthcare decisions. It is to make that judgement **better informed, transparent and open to challenge**.
 
 ::: {.callout-important}
 ## The Big Picture
 
 Good healthcare decisions rarely come from a single dataset, metric or analytical method.
 
-They require us to:
+They require us to ask:
 
-**understand the system**
-
-↓
-
-**trust the data**
+**What is happening across the system, and where are the pressures?**
 
 ↓
 
-**understand the pathway and population**
+**Can we trust the data and understand its limitations?**
 
 ↓
 
-**evaluate what changed**
+**Whose needs are we trying to meet, and how should the pathway respond?**
 
 ↓
 
-**combine different forms of evidence**
+**What changed, what may have caused it, and was the intervention delivered as intended?**
 
 ↓
 
-**consider value and trade-offs**
+**What are the benefits, harms, costs, equity implications and opportunity costs?**
 
 ↓
 
-**make an evidence-informed decision**
+**What could happen under different future scenarios?**
 
 ↓
 
-**explore what might happen next**
+**How do different forms of evidence fit together, and where do they disagree?**
 
-Each module contributes a different piece of that decision-making journey.
+↓
+
+**What should we do next, given the trade-offs and uncertainty?**
+
+This is an **iterative decision-making process**, not a one-way checklist. New evidence may require us to revisit the problem, redesign the intervention or reconsider the decision.
 :::
+
+# What Should You Be Able to Do After Part 2?
+
+The aim is not for every healthcare decision-maker to become a specialist in simulation, health economics or causal inference.
+
+It is to develop the confidence to:
+
+- Understand how demand, capacity and patient flow interact across pathways.
+- Question whether data are reliable and appropriate for the decision.
+- Connect population need to pathway and intervention design.
+- Recognise the challenges of evaluating overlapping services and complex interventions.
+- Distinguish observed changes, plausible contributions and credible causal effects.
+- Consider outcomes that matter to patients and communities, alongside safety and equity.
+- Interpret economic evidence, including costs, consequences and opportunity costs.
+- Understand what scenarios and simulation can — and cannot — tell us.
+- Triangulate quantitative, qualitative and other evidence without disguising disagreement or uncertainty.
+- Make transparent, proportionate and defensible decisions about service improvement and resource allocation.
+
+# From Understanding Systems to Better Healthcare Decisions
+
+**Part 1** helps us interpret healthcare data and evidence correctly.
+
+**Part 2** helps us use that understanding to examine how healthcare systems behave, assess possible improvements, evaluate what happened and decide what to do next.
+
+Across both parts, the central principle remains the same:
+
+> **Better questions. Better evidence. Better decisions. Better outcomes.**
+
+And, throughout the decision-making journey, we should continue to ask:
+
+> **Is this the right evidence, for the right question, for the people we are trying to help?**
