@@ -278,13 +278,28 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#counterfactual-thinking-what-would-have-happened-anyway" id="toc-counterfactual-thinking-what-would-have-happened-anyway" class="nav-link" data-scroll-target="#counterfactual-thinking-what-would-have-happened-anyway">Counterfactual Thinking: What Would Have Happened Anyway?</a>
   <ul class="collapse">
   <li><a href="#a-simple-example" id="toc-a-simple-example" class="nav-link" data-scroll-target="#a-simple-example">A Simple Example</a></li>
-  <li><a href="#counterfactual-thinking-in-practice" id="toc-counterfactual-thinking-in-practice" class="nav-link" data-scroll-target="#counterfactual-thinking-in-practice">Counterfactual Thinking in Practice</a></li>
+  <li><a href="#counterfactual-thinking-in-practice" id="toc-counterfactual-thinking-in-practice" class="nav-link" data-scroll-target="#counterfactual-thinking-in-practice">Counterfactual Thinking in Practice</a>
+  <ul class="collapse">
+  <li><a href="#worked-example-observed-improvement-is-not-estimated-impact" id="toc-worked-example-observed-improvement-is-not-estimated-impact" class="nav-link" data-scroll-target="#worked-example-observed-improvement-is-not-estimated-impact">Worked example: observed improvement is not estimated impact</a></li>
+  </ul></li>
   <li><a href="#why-counterfactual-thinking-matters" id="toc-why-counterfactual-thinking-matters" class="nav-link" data-scroll-target="#why-counterfactual-thinking-matters">Why Counterfactual Thinking Matters</a></li>
+  <li><a href="#why-fair-comparisons-are-difficult" id="toc-why-fair-comparisons-are-difficult" class="nav-link" data-scroll-target="#why-fair-comparisons-are-difficult">Why Fair Comparisons Are Difficult</a>
+  <ul class="collapse">
+  <li><a href="#selection-bias-and-confounding" id="toc-selection-bias-and-confounding" class="nav-link" data-scroll-target="#selection-bias-and-confounding">Selection bias and confounding</a></li>
+  <li><a href="#timing-and-regression-to-the-mean" id="toc-timing-and-regression-to-the-mean" class="nav-link" data-scroll-target="#timing-and-regression-to-the-mean">Timing and regression to the mean</a></li>
+  <li><a href="#changing-population-need" id="toc-changing-population-need" class="nav-link" data-scroll-target="#changing-population-need">Changing population need</a></li>
+  </ul></li>
   <li><a href="#multiple-interventions-often-happen-at-the-same-time" id="toc-multiple-interventions-often-happen-at-the-same-time" class="nav-link" data-scroll-target="#multiple-interventions-often-happen-at-the-same-time">Multiple Interventions Often Happen at the Same Time</a></li>
   </ul></li>
   <li><a href="#levels-of-evaluation-confidence" id="toc-levels-of-evaluation-confidence" class="nav-link" data-scroll-target="#levels-of-evaluation-confidence">Levels of Evaluation Confidence</a>
   <ul class="collapse">
+  <li><a href="#what-makes-an-evaluation-claim-credible" id="toc-what-makes-an-evaluation-claim-credible" class="nav-link" data-scroll-target="#what-makes-an-evaluation-claim-credible">What Makes an Evaluation Claim Credible?</a>
+  <ul class="collapse">
+  <li><a href="#test-how-sensitive-the-conclusion-is" id="toc-test-how-sensitive-the-conclusion-is" class="nav-link" data-scroll-target="#test-how-sensitive-the-conclusion-is">Test how sensitive the conclusion is</a></li>
+  </ul></li>
   <li><a href="#a-practical-nhs-reality" id="toc-a-practical-nhs-reality" class="nav-link" data-scroll-target="#a-practical-nhs-reality">A Practical NHS Reality</a></li>
+  <li><a href="#if-the-service-has-already-started" id="toc-if-the-service-has-already-started" class="nav-link" data-scroll-target="#if-the-service-has-already-started">If the Service Has Already Started</a></li>
+  <li><a href="#match-the-language-to-the-evidence" id="toc-match-the-language-to-the-evidence" class="nav-link" data-scroll-target="#match-the-language-to-the-evidence">Match the Language to the Evidence</a></li>
   <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection">Reflection</a></li>
   <li><a href="#key-takeaways" id="toc-key-takeaways" class="nav-link" data-scroll-target="#key-takeaways">Key Takeaways</a></li>
   <li><a href="#questions-decision-makers-should-ask" id="toc-questions-decision-makers-should-ask" class="nav-link" data-scroll-target="#questions-decision-makers-should-ask">Questions Decision-Makers Should Ask</a></li>
@@ -338,7 +353,7 @@ ul.task-list li input[type="checkbox"] {
 <li>delayed discharge</li>
 <li>operational pressure</li>
 </ul>
-<p>It introduces practical approaches to evaluation without assuming prior statistical knowledge.</p>
+<p>It introduces practical approaches to evaluation without assuming prior statistical knowledge. It also helps readers distinguish <strong>observed change</strong>, <strong>estimated causal impact</strong>, and <strong>plausible contribution</strong>. Detailed evaluation designs follow in Module 9, while Module 17 applies them to integrated care and overlapping interventions.</p>
 </section>
 <section id="why-evaluating-healthcare-interventions-matters" class="level1">
 <h1>Why Evaluating Healthcare Interventions Matters</h1>
@@ -416,7 +431,7 @@ ul.task-list li input[type="checkbox"] {
 <li>medication review</li>
 <li>rapid response care coordination</li>
 </ul>
-<p>After six months:</p>
+<p>After six months (using comparable six-month periods and consistent population definitions):</p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -562,6 +577,67 @@ After intervention:
 </section>
 <section id="counterfactual-thinking-in-practice" class="level2">
 <h2 class="anchored" data-anchor-id="counterfactual-thinking-in-practice">Counterfactual Thinking in Practice</h2>
+<p>A counterfactual is not simply a prediction of the future. It is an estimate of the outcome <strong>under a specified alternative</strong>, such as continuing usual care instead of introducing the new frailty service. We cannot observe both possibilities for the same people at the same time.</p>
+<section id="worked-example-observed-improvement-is-not-estimated-impact" class="level3">
+<h3 class="anchored" data-anchor-id="worked-example-observed-improvement-is-not-estimated-impact">Worked example: observed improvement is not estimated impact</h3>
+<p>Suppose the frailty service recorded <strong>980 ED attendances</strong> in the follow-up period, compared with <strong>1,200</strong> in the equivalent baseline period. That is an observed reduction of <strong>220 attendances (18.3%)</strong>.</p>
+<p>Now imagine a credible evaluation estimated that, <em>without the frailty service</em>, the same eligible population would have experienced <strong>1,080 attendances</strong> in the follow-up period.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 30%">
+<col style="width: 40%">
+<col style="width: 30%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Quantity</th>
+<th style="text-align: right;">Illustrative ED attendances</th>
+<th>Interpretation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Before implementation</td>
+<td style="text-align: right;">1,200</td>
+<td>Historical observation</td>
+</tr>
+<tr class="even">
+<td>After implementation</td>
+<td style="text-align: right;">980</td>
+<td>Observed outcome</td>
+</tr>
+<tr class="odd">
+<td>Without implementation</td>
+<td style="text-align: right;">1,080</td>
+<td><strong>Estimated</strong>, unobserved counterfactual</td>
+</tr>
+<tr class="even">
+<td>Observed before–after change</td>
+<td style="text-align: right;">−220</td>
+<td>Descriptive change; <strong>not</strong> the causal effect</td>
+</tr>
+<tr class="odd">
+<td>Estimated intervention effect</td>
+<td style="text-align: right;">−100</td>
+<td>Difference between observed and counterfactual outcomes</td>
+</tr>
+</tbody>
+</table>
+<p>In this example, <strong>100 fewer attendances</strong> is the illustrative impact estimate, <em>if</em> the counterfactual is defensible. The figure of 1,080 must come from an appropriate evaluation design and evidence; it must <strong>not</strong> be selected merely to produce a favourable result.</p>
+<p>The counterfactual estimate would normally carry uncertainty. Even if the observed result is exact, the intervention effect is not known with certainty.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Three Numbers, Three Different Meanings
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>1,200 → 980</strong> describes what happened. <strong>1,080</strong> represents an estimated alternative outcome. <strong>980 − 1,080 = −100</strong> is a possible causal effect <strong>only if the evaluation design supports the comparison</strong>.</p>
+</div>
+</div>
 <p>Evaluation becomes stronger when we compare reality with a plausible alternative.</p>
 <p>In simple terms:</p>
 <pre class="text"><code>Observed outcome
@@ -571,6 +647,7 @@ What might reasonably have happened anyway</code></pre>
 <blockquote class="blockquote">
 <p>the greater our confidence that the intervention genuinely contributed to the observed change.</p>
 </blockquote>
+</section>
 </section>
 <section id="why-counterfactual-thinking-matters" class="level2">
 <h2 class="anchored" data-anchor-id="why-counterfactual-thinking-matters">Why Counterfactual Thinking Matters</h2>
@@ -586,6 +663,45 @@ What might reasonably have happened anyway</code></pre>
 <blockquote class="blockquote">
 <p><em>How confident are we that the intervention caused the change?</em></p>
 </blockquote>
+</section>
+<section id="why-fair-comparisons-are-difficult" class="level2">
+<h2 class="anchored" data-anchor-id="why-fair-comparisons-are-difficult">Why Fair Comparisons Are Difficult</h2>
+<p>A useful comparison should resemble the intervention population in the factors that influence outcomes <strong>before</strong> the intervention. This is harder than comparing two groups with similar average ages.</p>
+<section id="selection-bias-and-confounding" class="level3">
+<h3 class="anchored" data-anchor-id="selection-bias-and-confounding">Selection bias and confounding</h3>
+<p>People referred to a frailty service may have higher clinical need, more recent emergency admissions, or better access to community services than those not referred. These characteristics can affect both <strong>who receives care</strong> and <strong>what happens next</strong>.</p>
+<p>For example, patients receiving urgent community support might have more admissions than non-recipients because they were already more unwell. This does not demonstrate that the service caused admissions.</p>
+<p><strong>Confounding</strong> occurs when another factor helps explain an apparent relationship between intervention and outcome. <strong>Selection bias</strong> can arise when the people included in the analysis or intervention groups are systematically different in ways that distort the comparison.</p>
+</section>
+<section id="timing-and-regression-to-the-mean" class="level3">
+<h3 class="anchored" data-anchor-id="timing-and-regression-to-the-mean">Timing and regression to the mean</h3>
+<p>Patients may be selected after unusually high hospital use. Some subsequent reduction could occur naturally as an acute episode resolves or activity returns towards a more typical level (<strong>regression to the mean</strong>).</p>
+<p>An intervention also cannot cause an event that occurred <strong>before</strong> it was delivered. Analysts need to distinguish eligibility, referral, treatment start and outcome dates, and avoid assigning patients to a treated group based on treatment received only later in follow-up.</p>
+</section>
+<section id="changing-population-need" class="level3">
+<h3 class="anchored" data-anchor-id="changing-population-need">Changing population need</h3>
+<p>If the eligible population becomes older or more clinically complex, raw activity may rise even when care improves. Conversely, falling admissions might reflect a changing denominator, admission thresholds or access constraints. Rates, consistent eligibility definitions and appropriate adjustment for <strong>baseline</strong> population differences can improve interpretation.</p>
+<p>Adjustment should be guided by the causal question: variables changed <em>by</em> the intervention may lie on the causal pathway and should not automatically be controlled away.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Questions to Ask Before Comparing Groups
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Were people eligible at the same point in time?</li>
+<li>Were the groups comparable <strong>before</strong> implementation?</li>
+<li>Could prior hospital use, frailty or deprivation influence both referral and outcomes?</li>
+<li>Did the intervention start before the outcomes being attributed to it?</li>
+<li>Did the population, recording rules or access to hospital care change?</li>
+</ul>
+</div>
+</div>
+</section>
 </section>
 <section id="multiple-interventions-often-happen-at-the-same-time" class="level2">
 <h2 class="anchored" data-anchor-id="multiple-interventions-often-happen-at-the-same-time">Multiple Interventions Often Happen at the Same Time</h2>
@@ -632,14 +748,12 @@ What might reasonably have happened anyway</code></pre>
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Looking Ahead
+<span class="screen-reader-only">Note</span>Looking Ahead: Modules 9 and 17
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>This module has focused on evaluating a single intervention.</p>
-<p>In reality, healthcare organisations often introduce <strong>multiple schemes at the same time</strong>, all aiming to improve the same outcome—for example, reducing Emergency Department attendances or emergency admissions.</p>
-<p>Understanding the contribution of each individual intervention becomes increasingly difficult as healthcare systems become more integrated.</p>
-<p><strong>Module 18: Why Evaluating Healthcare Improvement Is Difficult</strong> explores this challenge in more detail, including why attribution becomes increasingly difficult in complex healthcare systems and how organisations can build greater confidence in their evaluation findings despite that complexity.</p>
+<p><strong>Module 9</strong> introduces practical methods for constructing comparisons, including randomised designs, Interrupted Time Series (ITS) and Difference-in-Differences (DiD). <strong>Module 17</strong> examines the harder problem of evaluating an integrated portfolio of care, where multiple interventions overlap and the evaluation may begin after implementation.</p>
+<p>At portfolio level, the first causal question is whether the <strong>combined model</strong> improved outcomes for the eligible population compared with what would otherwise have happened. Explaining the contribution of individual services is a related but different task.</p>
 </div>
 </div>
 </section>
@@ -668,6 +782,83 @@ What might reasonably have happened anyway</code></pre>
 <blockquote class="blockquote">
 <p>decision-makers should recognise its limitations.</p>
 </blockquote>
+<section id="what-makes-an-evaluation-claim-credible" class="level2">
+<h2 class="anchored" data-anchor-id="what-makes-an-evaluation-claim-credible">What Makes an Evaluation Claim Credible?</h2>
+<p>Different designs construct a comparison in different ways. None guarantees that the comparison is valid.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Approach</th>
+<th>What makes it useful</th>
+<th>Assumption or threat to examine</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Before-and-after monitoring</td>
+<td>Shows whether outcomes changed</td>
+<td>Secular trends, seasonality and changing populations may explain the change</td>
+</tr>
+<tr class="even">
+<td>Interrupted Time Series (ITS)</td>
+<td>Tests whether outcome level or trend changed around implementation</td>
+<td>Other simultaneous changes, seasonal patterns, autocorrelation and the number of observations</td>
+</tr>
+<tr class="odd">
+<td>Difference-in-Differences (DiD)</td>
+<td>Compares changes between intervention and comparison populations</td>
+<td>Whether outcomes would have followed <strong>parallel trends without the intervention</strong>, and whether spillovers or different concurrent changes undermine comparison</td>
+</tr>
+<tr class="even">
+<td>Randomised allocation</td>
+<td>Helps make intervention and comparison groups comparable at baseline</td>
+<td>Adherence, contamination, attrition, implementation and chance remain relevant</td>
+</tr>
+</tbody>
+</table>
+<p>A sharp change after implementation is not proof of impact. Nor does choosing a neighbouring locality automatically make a comparison credible. <strong>Method choice, assumptions and data quality matter together.</strong> Module 9 develops these methods in more detail.</p>
+<section id="test-how-sensitive-the-conclusion-is" class="level3">
+<h3 class="anchored" data-anchor-id="test-how-sensitive-the-conclusion-is">Test how sensitive the conclusion is</h3>
+<p>Return to the illustrative 980 ED attendances observed after implementation. Different plausible counterfactual estimates produce different conclusions:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 27%">
+<col style="width: 36%">
+<col style="width: 36%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Counterfactual assumption</th>
+<th style="text-align: right;">Expected attendances without service</th>
+<th style="text-align: right;">Estimated difference versus observed 980</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Lower expected demand</td>
+<td style="text-align: right;">950</td>
+<td style="text-align: right;"><strong>30 more</strong> than expected</td>
+</tr>
+<tr class="even">
+<td>Central estimate</td>
+<td style="text-align: right;">1,080</td>
+<td style="text-align: right;"><strong>100 fewer</strong> than expected</td>
+</tr>
+<tr class="odd">
+<td>Higher expected demand</td>
+<td style="text-align: right;">1,150</td>
+<td style="text-align: right;"><strong>170 fewer</strong> than expected</td>
+</tr>
+</tbody>
+</table>
+<p>These are <strong>illustrative scenarios</strong>, not statistical confidence intervals. They show why analysts should test assumptions and report uncertainty rather than present one number as an unquestionable fact. If a commissioning decision changes under plausible alternative assumptions, that uncertainty is decision-relevant.</p>
+</section>
+</section>
 <section id="a-practical-nhs-reality" class="level2">
 <h2 class="anchored" data-anchor-id="a-practical-nhs-reality">A Practical NHS Reality</h2>
 <p>Healthcare systems rarely operate under ideal evaluation conditions.</p>
@@ -703,6 +894,64 @@ What might reasonably have happened anyway</code></pre>
 <p>making proportionate, evidence-informed judgements.</p>
 </blockquote>
 </section>
+<section id="if-the-service-has-already-started" class="level2">
+<h2 class="anchored" data-anchor-id="if-the-service-has-already-started">If the Service Has Already Started</h2>
+<p>Many NHS evaluations begin only after a scheme is operating. This does <strong>not</strong> automatically make causal evaluation impossible.</p>
+<ul>
+<li><strong>Historical data and a reliable start date exist:</strong> a retrospective time-series analysis may be feasible.</li>
+<li><strong>A credible comparison population exists:</strong> a controlled comparison may be possible, subject to its assumptions.</li>
+<li><strong>Neither is available:</strong> use descriptive monitoring, implementation and qualitative evidence to understand reach, delivery, experience and plausible contribution, <strong>without inventing admissions avoided</strong>.</li>
+<li><strong>An expansion or redesign is planned:</strong> agree eligibility, outcomes, baseline data and a feasible comparison <em>before the next change</em>.</li>
+</ul>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Do Not Manufacture a Counterfactual
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>When a credible counterfactual cannot be constructed, evaluation still has value. It can explain <strong>what changed, for whom, how care was delivered and what may need improvement</strong>. But it should not claim a quantified causal impact that the evidence cannot identify.</p>
+</div>
+</div>
+<p>Module 17 applies these choices to an established integrated frailty model and explores how to use the next commissioning decision to strengthen evaluation.</p>
+</section>
+<section id="match-the-language-to-the-evidence" class="level2">
+<h2 class="anchored" data-anchor-id="match-the-language-to-the-evidence">Match the Language to the Evidence</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Claim</th>
+<th>What it means</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>“ED attendances fell by 18.3% after the service began.”</td>
+<td>A descriptive before–after finding</td>
+</tr>
+<tr class="even">
+<td>“Attendances were lower than projected from historical trends.”</td>
+<td>A model-based comparison, dependent on assumptions</td>
+</tr>
+<tr class="odd">
+<td>“The evaluation estimates 100 fewer attendances attributable to the service.”</td>
+<td>A causal claim requiring a credible counterfactual and uncertainty assessment</td>
+</tr>
+<tr class="even">
+<td>“Patient and staff accounts suggest improved coordination.”</td>
+<td>Evidence about experience or plausible mechanisms, not proof of an admissions effect</td>
+</tr>
+</tbody>
+</table>
+<p>Strong evaluation is not always about making stronger claims. Sometimes it is about making <strong>more accurate, proportionate claims</strong>.</p>
+</section>
 <section id="reflection" class="level2">
 <h2 class="anchored" data-anchor-id="reflection">Reflection</h2>
 <p>Before moving on, ask:</p>
@@ -735,6 +984,10 @@ What might reasonably have happened anyway</code></pre>
 <li>stronger evaluation asks what might have happened anyway</li>
 <li>evaluation is about improving confidence, not proving certainty</li>
 <li>good decision-making balances pragmatism with evidence</li>
+<li>selection, timing, population change and regression to the mean can distort comparisons</li>
+<li>ITS and DiD depend on assumptions, not simply the presence of a statistical model</li>
+<li>sensitivity analysis can reveal whether conclusions depend on uncertain assumptions</li>
+<li>retrospective and theory-based evaluation remain useful when schemes have already started, but they support different claims</li>
 </ul>
 <p>Good evaluation moves beyond:</p>
 <blockquote class="blockquote">
@@ -755,6 +1008,9 @@ What might reasonably have happened anyway</code></pre>
 <li>What evidence would increase our confidence?</li>
 <li>How certain do we really need to be before acting?</li>
 <li>What level of confidence is proportionate for this decision?</li>
+<li>What assumptions make our counterfactual credible?</li>
+<li>How sensitive is the conclusion to alternative plausible assumptions?</li>
+<li>If the scheme is already running, can we reconstruct a comparison—or should we change the evaluation question?</li>
 </ul>
 <p>In the next module, we explore practical approaches that healthcare systems use to improve confidence in evaluation findings — from pragmatic NHS evaluation methods through to Randomised Controlled Trials, Interrupted Time Series and Difference-in-Differences.</p>
 
