@@ -1,5 +1,3 @@
-![](images/Part1_MindMap.png)
-
 # Part 1 — How do we interpret healthcare data correctly?
 
 Part 1 builds the foundations of **healthcare data literacy and evidence-informed thinking**.
