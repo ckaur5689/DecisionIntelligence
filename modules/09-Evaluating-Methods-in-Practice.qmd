@@ -28,9 +28,9 @@ Rather than assuming healthcare systems can ever prove impact with complete cert
 
 through more thoughtful and structured approaches.
 
-# From Module 7 to Module 8
+# From Module 8 to Module 9
 
-In Module 7 we introduced an important idea:
+In Module 8 we explored an important idea:
 
 > **improvement alone does not prove impact**
 
@@ -58,7 +58,7 @@ The question now becomes:
 
 > **How do healthcare systems improve confidence that an intervention genuinely contributed to observed change?**
 
-This  introduces practical approaches that are commonly used in healthcare evaluation.
+This module introduces practical approaches that are commonly used in healthcare evaluation.
 
 These approaches do not eliminate uncertainty.
 
@@ -191,6 +191,12 @@ Because patients were randomly allocated, we can generally have:
 
 > **greater confidence that observed differences are more likely to reflect the intervention rather than underlying differences between patients.**
 
+## Interpreting the Trial Result Fairly
+
+The hypothetical counts above are **illustrative, not a complete trial analysis**. The groups' sizes, follow-up time, baseline risks and uncertainty would be needed before drawing conclusions. Report comparable outcomes (such as admissions per 1,000 eligible people or person-years), an estimated effect and its confidence interval rather than interpreting counts alone. Randomisation does not guarantee identical groups in every trial; non-adherence, missing outcomes, contamination between groups and chance can still affect interpretation.
+
+Where possible, analyse people according to their original allocation (*intention-to-treat*) to preserve the benefits of randomisation. A cluster-randomised trial—for example, allocating PCNs rather than individual patients—must account for similarity among patients within each cluster and requires sufficient clusters, not simply many patients.
+
 ## Why Randomisation Matters
 
 Without randomisation:
@@ -300,7 +306,7 @@ This introduces:
 
 # Sample Size, Statistical Power and Confidence in Findings
 
-In  6, we introduced an important question:
+In Module 8, we introduced an important question:
 
 > *How confident are we that an intervention genuinely contributed to observed change?*
 
@@ -317,6 +323,12 @@ This is where:
 become important.
 
 Fortunately, the core idea is much simpler than the terminology suggests.
+
+## Precision, Confidence Intervals and Practical Significance
+
+A point estimate is not the whole finding. For example, an estimated 6% reduction in admissions with a 95% confidence interval ranging from a 2% increase to a 13% reduction is compatible with materially different effects. A confidence interval describes the range produced by a statistical procedure with a specified long-run coverage property; it is **not** a 95% probability that the true effect lies in this particular interval.
+
+Ask whether the range includes clinically important benefit, little change or harm. A statistically significant result need not be clinically meaningful; a non-significant result does not prove that the intervention has no effect. Power depends on expected effect size, variability, sample size, design, follow-up and—where relevant—clustering and autocorrelation.
 
 ## Why Small Numbers Can Mislead
 
@@ -684,7 +696,7 @@ In the next section, we explore practical ways healthcare systems strengthen con
 ## Part 3 — Strengthening Evaluation in Real-World Healthcare
 
 
-In Part 1 and Part 2 of this , we explored:
+In the preceding sections, we explored:
 
 * fair comparison through Randomised Controlled Trials (RCTs)
 * why small numbers can mislead
@@ -806,7 +818,7 @@ monthly emergency admissions over time
 Suppose the intervention begins in:
 
 ```
-Month 8
+Month 13 (after 12 monthly baseline observations, still a short pre-period)
 ```
 
 Question:
@@ -835,7 +847,7 @@ Question:
 
 > *Could this represent intervention impact?*
 
-Confidence increases.
+This is consistent with an intervention effect, **but a concurrent change could also explain it**.
 
 ### Scenario 3 — Sustained Improvement
 
@@ -845,7 +857,7 @@ Question:
 
 > *Does this suggest a meaningful shift in trajectory?*
 
-Confidence increases further.
+A sustained shift may strengthen the case for an effect, **but only if alternative explanations and model assumptions have been examined**.
 
 The image below illustrates the key question ITS asks:
 
@@ -891,6 +903,18 @@ when outcomes may have improved anyway.
 A useful question becomes:
 
 > *Did outcomes improve — or did the trajectory change?*
+
+## What an ITS Actually Estimates
+
+An ITS generally uses repeated observations before and after a defined change to estimate a shift in **level** (an immediate difference) and/or **slope** (a change in trend). The projected pre-intervention trend provides a model-based counterfactual; it is **not observed fact**. An ITS can be fitted retrospectively when sufficiently reliable historical data exist.
+
+An analyst should consider seasonality, serial correlation (nearby months are not independent), changes in population size or need, shifts in coding and measurement, delayed or phased implementation, and other policies introduced at the same time. A controlled ITS adds a suitable comparison series to help distinguish intervention-associated changes from wider system changes. A short pre-period or only a few observations after implementation makes estimates fragile; there is no universally sufficient number of time points.
+
+::: {.callout-warning}
+## A visible change is not proof of causation
+
+A sharp fall in admissions following launch is not necessarily evidence of impact if admission thresholds changed at the same time. Likewise, a sustained change may reflect wider system trends. Examine alternative explanations and uncertainty before describing an ITS estimate as causal.
+:::
 
 ## Using Interrupted Time Series in Practice
 
@@ -950,7 +974,7 @@ The important principle is not selecting the most complex model, but choosing th
 
 Real-world healthcare improvement rarely involves a single intervention delivered in a single organisation.
 
-Later in this series, **Module 15: Evaluating Change in Complex Healthcare Systems** explores more advanced evaluation challenges, including:
+Later in this series, **Module 17: Understanding What Made the Difference** explores more advanced evaluation challenges, including:
 
 * multiple interventions introduced at the same time
 * phased implementation across organisations
@@ -1063,6 +1087,21 @@ The image below illustrates the core idea behind Difference-in-Differences:
 
 ![](../images/DifferenceInDifferences_7.png)
 
+## The Parallel-Trends Assumption: The Essential Test
+
+DiD compares the **change in an intervention population** with the **change in a comparison population**. Its central identifying assumption is that, without the intervention, their outcome trends would have been parallel (or sufficiently comparable after appropriate adjustment). Similar baseline admission rates do not establish parallel trends. Inspect several pre-intervention periods and consider differences in population need, coding, service capacity, concurrent initiatives and spillovers.
+
+For a numerical example, suppose emergency admission rates per 1,000 eligible person-years are:
+
+| Locality | Before | After | Change |
+|---|---:|---:|---:|
+| PCN A: frailty pathway | 120 | 100 | −20 |
+| PCN B: usual care | 110 | 105 | −5 |
+
+The **illustrative DiD estimate is −15 admissions per 1,000 eligible person-years**: (100 − 120) − (105 − 110) = −15. This is a relative change, not automatically 15 admissions prevented by the pathway. A causal interpretation requires a defensible design and assumptions, appropriate uncertainty estimates and no material interference or anticipatory changes. If the two populations have changing age, deprivation or frailty profiles, consider how rates and adjustment should reflect those changes.
+
+When services roll out at different times, a conventional two-way fixed-effects DiD can be misleading if effects differ across groups or over time. Use methods appropriate to staggered adoption and examine event-time patterns rather than assuming a standard DiD model is valid.
+
 ## Why DiD Matters for Healthcare Decision-Making
 
 Healthcare systems frequently implement interventions:
@@ -1129,6 +1168,59 @@ to ask:
 
 > *How confident are we that the intervention genuinely contributed to change?*
 
+# Choosing an Evaluation When the Scheme Has Already Started
+
+An ICB may commission an evaluation in October 2026 for a pathway launched in April 2024. No evaluation plan was written at launch. This does **not** automatically mean that causal evaluation is impossible: historical records may allow the eligible population, outcomes, intervention timing and a suitable comparison to be reconstructed.
+
+| What can be recovered? | Sensible approach | Claim it may support |
+|---|---|---|
+| Consistent monthly data before and after implementation | Retrospective ITS; controlled ITS if a credible comparator exists | Estimated level or trend change, subject to assumptions |
+| A credible untreated or later-treated population with pre- and post-data | DiD or suitable phased-rollout analysis | Relative change, potentially causal under identifying assumptions |
+| Patient-level eligibility, exposure and outcomes | Longitudinal observational design with careful adjustment | Association; causal effect only with a credible identification strategy |
+| Only post-implementation data, no defensible comparison | Descriptive, process and theory-based evaluation | What happened, how delivery worked and plausible contribution—not an attributable impact estimate |
+| Future expansion or pathway redesign is planned | Prospective design, possibly controlled or randomised phased rollout | Stronger evidence about the **next change**, if feasible and appropriately designed |
+
+::: {.callout-important}
+## Do not manufacture a counterfactual
+
+A projection from historical data is only a useful counterfactual if its assumptions are defensible. National averages, neighbouring ICBs or model predictions are not automatically valid comparisons. If no credible causal design is available, evaluate implementation, reach, patient and carer experience, outcomes, equity and plausible mechanisms—and report the limits clearly.
+:::
+
+## An Evaluation Design Checklist
+
+Before selecting a statistical technique, record:
+
+1. **Decision and estimand:** What commissioning decision is at stake, and whose outcome under what intervention versus what alternative are we trying to estimate?
+2. **Population and eligibility:** Who was eligible, including those who did not take up the offer? Are cohorts fixed at baseline or updated over time?
+3. **Intervention and timing:** What changed, when, for whom and with what implementation intensity? Was introduction gradual?
+4. **Outcome and follow-up:** Are the outcomes meaningful, measured consistently and assessed over a suitable horizon? Include safety and unintended consequences.
+5. **Comparison and assumptions:** Is a counterfactual plausible? What selection, confounding, spillover or simultaneous changes threaten it?
+6. **Data and precision:** Are denominators, missingness, seasonality, clustering and statistical uncertainty adequately addressed?
+7. **Equity and complexity:** Could results vary by frailty, age, deprivation or place? How will changing need, mortality and competing events be considered?
+8. **Triangulation and use:** What do patients, carers and staff say? What implementation and economic evidence is needed? What decision would different findings support?
+
+## Different Questions Require Different Evidence
+
+Causal impact evaluation asks **whether an intervention made a difference compared with an alternative**. Process evaluation asks **whether it was delivered as intended**. Theory-based or realist evaluation examines **how, why and under what circumstances outcomes may arise**. Equity analysis asks **who benefits or is missed**. Economic evaluation asks **whether benefits justify resources and opportunity costs**.
+
+These approaches complement rather than substitute for one another. Interviews and implementation evidence can strengthen an explanation, but do not by themselves establish the number of admissions prevented. Conversely, a credible average impact estimate does not reveal why the pathway worked, whether patients experienced better care or whether it was worth the investment.
+
+For an integrated frailty portfolio, start by assessing impact at the **eligible cohort/model-of-care level**, where the causal design permits. Pathway analysis may explain mechanisms and variation, but comparing patients who received different components rarely isolates each component's causal effect because clinical need influences exposure. **Module 17** develops this issue in detail.
+
+## Sensitivity Analysis: Would the Conclusion Survive Reasonable Alternatives?
+
+A single result should not be presented as certain. Test how findings change when plausible assumptions vary—for example, different start dates, pre-intervention periods, comparison localities, eligible cohorts, seasonal specifications or adjustment for changing population need. Report the range of credible estimates, not only the most favourable one. These checks do not rescue a fundamentally invalid design, and scenario ranges are not the same as statistical confidence intervals.
+
+## Match the Claim to the Evidence
+
+| Evidence available | Proportionate statement |
+|---|---|
+| Only post-implementation monitoring | “Admissions were lower during the reporting period; causation cannot be established.” |
+| Pre/post comparison only | “Admissions fell following implementation, but other explanations remain.” |
+| ITS with defensible assumptions | “The model estimates a change in admissions beyond the projected prior trend, subject to model assumptions.” |
+| Credible controlled evaluation | “The estimated impact relative to the comparison was X, with uncertainty and assumptions reported.” |
+| Theory-based mixed-method evidence | “Findings support a plausible contribution to improved coordination, but do not quantify attributable admissions avoided.” |
+
 ## Matching the Evaluation Method to the Question
 
 One of the most important principles in evaluation is that **the evaluation question should determine the evaluation method**.
@@ -1145,14 +1237,14 @@ This is known as the **counterfactual**.
 
 Different evaluation methods estimate the counterfactual in different ways.
 
-| Evaluation Question | How is the Counterfactual Considered? | Methods Commonly Used |
+| Evaluation Question | What evidence is needed? | Methods Commonly Used |
 |---------------------|----------------------------------------|-----------------------|
 | **Did it work?** | Compare outcomes with what would probably have happened without the intervention. | Randomised Controlled Trial (RCT), Interrupted Time Series (ITS), Difference-in-Differences (DiD), Controlled ITS |
-| **How was it implemented?** | Understand how the intervention was delivered and whether implementation influenced outcomes. | Process evaluation, implementation evaluation, qualitative interviews |
-| **Why did it work (or not)?** | Explore the mechanisms that contributed to success or failure. | Qualitative research, Realist Evaluation |
+| **How was it implemented?** | Examine reach, fidelity, adaptations, resources and experience. | Process evaluation, implementation evaluation, qualitative interviews |
+| **Why did it work (or not)?** | Explore mechanisms, contexts and alternative explanations. | Qualitative research, Realist Evaluation |
 | **Did it work consistently across organisations?** | Compare patterns of change across multiple organisations while accounting for differences in starting position, trends and implementation. | Multi-site evaluation, mixed-effects models, meta-analysis | 
-| **Was it worth it?** | Compare the benefits achieved against the resources invested. | Health economics, Cost-effectiveness analysis, cost-benefit analysis, cost-utility analysis |
-| **Should we scale it?** | Combine evidence on effectiveness, implementation, value and context to judge wider adoption. | Mixed-method evaluation, evidence synthesis, implementation evaluation |
+| **Was it worth it?** | Assess incremental outcomes, costs and opportunity costs, using causal estimates where possible. | Health economics, Cost-effectiveness analysis, cost-benefit analysis, cost-utility analysis |
+| **Should we scale it?** | Integrate impact, implementation, equity, costs and transferability. | Mixed-method evaluation, evidence synthesis, implementation evaluation |
 
 ::: {.callout-tip}
 ## Key Principle
@@ -1167,9 +1259,9 @@ Strong evaluations often combine quantitative and qualitative approaches to unde
 * whether it represented good value for money
 * whether it should be adopted more widely
 
-Although different methods estimate the counterfactual in different ways, they all aim to increase confidence that observed changes genuinely resulted from the intervention rather than from chance, natural variation or external influences.
+Impact designs attempt to identify a counterfactual; process, realist and qualitative methods instead investigate implementation, experience and mechanisms. They answer complementary questions and should not all be presented as methods of estimating a counterfactual.
 
-The stronger the evaluation design, the greater our confidence in the conclusions—but no evaluation can eliminate uncertainty completely.
+The credibility of a causal conclusion depends on whether the design and its assumptions fit the question and setting—not simply on the sophistication of the statistical model. No evaluation eliminates uncertainty completely.
 :::
 
 ## Key Takeaways
@@ -1180,7 +1272,11 @@ The stronger the evaluation design, the greater our confidence in the conclusion
 - some improvement may happen naturally
 - trajectories matter
 - comparison groups strengthen confidence
- - the evaluation question should determine the evaluation method
+- the evaluation question should determine the evaluation method
+- ITS and DiD depend on explicit assumptions, not just visible improvements
+- retrospective causal evaluation may be possible even when no evaluation was planned
+- when no credible counterfactual exists, implementation and contribution evidence can still inform decisions
+- impact, mechanisms, equity and value are different but complementary questions
 
 Good evaluation asks:
 
@@ -1193,6 +1289,9 @@ Good evaluation asks:
 - Could improvement have happened naturally?
 - Was the evaluation large enough to be informative?
 - How strong is our confidence in attribution?
+- Are the ITS or DiD assumptions plausible and tested?
+- What would change our conclusion in sensitivity analysis?
+- If causal impact cannot be identified, what other evidence would inform the decision?
 
 
 ## Choosing the Right Evaluation Method
@@ -1200,10 +1299,15 @@ Good evaluation asks:
 ![](../images/ChoosingRightEvaluationMethod.png)
 
 
+## Linking the Three Modules
+
+- **Module 8 — Thinking About Evidence & Evaluation:** why improvement is not automatically impact, and how to scrutinise claims.
+- **Module 9 — Evaluation Methods in Practice:** how to choose a design, understand assumptions, interpret uncertainty and evaluate an existing scheme.
+- **Module 17 — Understanding What Made the Difference:** how to assess the combined effect of overlapping interventions, investigate mechanisms and equity, and inform portfolio commissioning decisions.
+
 ## Further Reading
 
 Readers who would like to explore evaluation methods in greater depth may find the following resources useful:
 
 - **[The Magenta Book: Guidance for Evaluation](https://www.gov.uk/government/publications/the-magenta-book)** – UK Government guidance on designing, conducting and using evaluations.
-- **[Magenta Book – Annex A: Analytical Methods for Use Within an Evaluation](https://www.gov.uk/government/publications/the-magenta-book/magenta-book-annex-a-analytical-methods-for-use-within-an-evaluation-html)** – An overview of the strengths, limitations and applications of common evaluation methods.
-
+- **[Magenta Book – Annex A: Analytical Methods for Use Within an Evaluation](https://www.gov.uk/government/publications/the-magenta-book/magenta-book-annex-a-analytical-methods-for-use-within-an-evaluation-html)** – An overview of the strengths, limitations and applications of common evaluation methods
