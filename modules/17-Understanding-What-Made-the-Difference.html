@@ -327,7 +327,8 @@ window.Quarto = {
   <li><a href="#implementation-is-not-a-single-date" id="toc-implementation-is-not-a-single-date" class="nav-link" data-scroll-target="#implementation-is-not-a-single-date">Implementation is not a single date</a></li>
   <li><a href="#test-the-counterfactual-assumptions" id="toc-test-the-counterfactual-assumptions" class="nav-link" data-scroll-target="#test-the-counterfactual-assumptions">7.7 Test the Counterfactual Assumptions</a></li>
   <li><a href="#a-counterfactual-is-not-just-a-forecast" id="toc-a-counterfactual-is-not-just-a-forecast" class="nav-link" data-scroll-target="#a-counterfactual-is-not-just-a-forecast">7.8 A Counterfactual Is Not Just a Forecast</a></li>
-  <li><a href="#from-estimated-impact-to-a-commissioning-decision" id="toc-from-estimated-impact-to-a-commissioning-decision" class="nav-link" data-scroll-target="#from-estimated-impact-to-a-commissioning-decision">7.9 From Estimated Impact to a Commissioning Decision</a></li>
+  <li><a href="#what-if-the-scheme-has-already-started-and-no-counterfactual-was-planned" id="toc-what-if-the-scheme-has-already-started-and-no-counterfactual-was-planned" class="nav-link" data-scroll-target="#what-if-the-scheme-has-already-started-and-no-counterfactual-was-planned">7.9 What If the Scheme Has Already Started and No Counterfactual Was Planned?</a></li>
+  <li><a href="#from-estimated-impact-to-a-commissioning-decision" id="toc-from-estimated-impact-to-a-commissioning-decision" class="nav-link" data-scroll-target="#from-estimated-impact-to-a-commissioning-decision">7.10 From Estimated Impact to a Commissioning Decision</a></li>
   <li><a href="#match-the-strength-of-the-claim-to-the-evidence" id="toc-match-the-strength-of-the-claim-to-the-evidence" class="nav-link" data-scroll-target="#match-the-strength-of-the-claim-to-the-evidence">Match the Strength of the Claim to the Evidence</a></li>
   </ul></li>
   <li><a href="#examine-combinations-not-just-individual-services" id="toc-examine-combinations-not-just-individual-services" class="nav-link" data-scroll-target="#examine-combinations-not-just-individual-services">8. Examine Combinations, Not Just Individual Services</a></li>
@@ -427,6 +428,8 @@ window.Quarto = {
 <li>distinguish <strong>association</strong>, <strong>attribution</strong> and <strong>contribution</strong></li>
 <li>understand why intervention exposure and <strong>timing</strong> matter</li>
 <li>recognise selection bias and the need for a credible counterfactual</li>
+<li>distinguish a retrospectively reconstructable counterfactual from situations where causal impact cannot be estimated</li>
+<li>design a useful evaluation of an established service, and a stronger evaluation of its next expansion or redesign</li>
 <li>consider whether interventions are independent, complementary, sequential, substitutive or duplicative</li>
 <li>identify the risk of double-counting avoided activity and financial benefits</li>
 <li>bring quantitative, qualitative and implementation evidence together</li>
@@ -772,7 +775,8 @@ window.Quarto = {
 <section id="visualising-the-unobserved-alternative" class="level3">
 <h3 class="anchored" data-anchor-id="visualising-the-unobserved-alternative">7.3 Visualising the Unobserved Alternative</h3>
 <p>The chart below uses <strong>hypothetical annual data</strong> to illustrate observed admissions and an estimated no-intervention trajectory. The counterfactual is modelled, not observed.</p>
-<p><img src="../images/FrailtyCounterfactual.png" class="img-fluid"> Line chart of annual emergency admissions from 2022 to 2026.</p>
+<p><img src="../images/FrailtyCounterfactual.png" class="img-fluid"></p>
+<p>Line chart of annual emergency admissions from 2022 to 2026.</p>
 <p>Observed admissions decline to 900 in 2026, while the illustrative no-intervention counterfactual reaches 1,100.</p>
 <p>A widening gap may represent an intervention effect <strong>only if the assumptions used to estimate the no-intervention trajectory are credible</strong>. Other changes—population need, hospital capacity, clinical thresholds or wider policy—could also explain it.</p>
 </section>
@@ -959,8 +963,163 @@ Y_t=\beta_0+\beta_1t+\beta_2I_t+\beta_3(t-T_0)I_t+\varepsilon_t,
 <p>Both may use statistical modelling, but the counterfactual requires explicit assumptions about the alternative intervention and the causes of the outcome. A model that accurately predicts admissions does not, by itself, establish the causal effect of integrated care.</p>
 <p>This distinction becomes particularly important when linking evaluation with scenarios and simulation in Module 19.</p>
 </section>
+<section id="what-if-the-scheme-has-already-started-and-no-counterfactual-was-planned" class="level3">
+<h3 class="anchored" data-anchor-id="what-if-the-scheme-has-already-started-and-no-counterfactual-was-planned">7.9 What If the Scheme Has Already Started and No Counterfactual Was Planned?</h3>
+<p>In NHS practice, evaluation is frequently requested <strong>after</strong> a pathway, service or integrated model has begun. The business case may describe expected benefits, but nobody may have specified a comparison group, preserved a pre-implementation baseline or recorded consistent implementation dates.</p>
+<p>This does <strong>not</strong> automatically mean that causal evaluation is impossible. A counterfactual is an <em>unobserved alternative outcome</em>, not necessarily a control group recruited before implementation. In some circumstances it can be estimated retrospectively. In others, no defensible estimate is available, and the evaluation must answer more limited—but still useful—questions.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>The Principle
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-7" class="callout-7-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<p><strong>No counterfactual planned is not the same as no counterfactual possible.</strong> First assess whether a credible comparison can be reconstructed. If not, do not invent one: evaluate implementation, reach, outcomes, experience and plausible contribution, and design stronger evaluation around the next decision.</p>
+</div>
+</div>
+</div>
+<section id="worked-example-integrated-frailty-care-introduced-in-april-2024" class="level4">
+<h4 class="anchored" data-anchor-id="worked-example-integrated-frailty-care-introduced-in-april-2024">Worked example: Integrated frailty care introduced in April 2024</h4>
+<p>Imagine the ICB introduced its integrated frailty model in April 2024. It is now October 2026. Commissioners want to know whether the model has reduced emergency admissions, but no prospective evaluation design was agreed.</p>
+<p>The team starts with a <strong>retrospective evaluability assessment</strong>, not with a preferred statistical method:</p>
+<ol type="1">
+<li><strong>Clarify the decision.</strong> Is the ICB deciding whether to continue the model, expand it, change eligibility or redesign particular components?</li>
+<li><strong>Specify the intervention and alternative.</strong> What actually changed in April 2024, when did each component become operational, and what care would have been provided without it?</li>
+<li><strong>Define the eligible population.</strong> Can severe frailty eligibility be reconstructed consistently before and after implementation? Were criteria or coding changed by the scheme itself?</li>
+<li><strong>Inventory the data.</strong> What historical monthly outcomes, denominators, case-mix measures, implementation records and patient/carer evidence exist?</li>
+<li><strong>Look for credible comparisons.</strong> Were similar localities unaffected, or was rollout staggered? Did other changes occur at the same time?</li>
+<li><strong>Agree what claims are supportable.</strong> Record limitations before results are known and identify what further evidence could change the commissioning decision.</li>
+</ol>
+</section>
+<section id="scenario-a-historical-data-can-be-reconstructed" class="level4">
+<h4 class="anchored" data-anchor-id="scenario-a-historical-data-can-be-reconstructed">Scenario A: Historical data can be reconstructed</h4>
+<p>Suppose monthly admissions data are available from April 2021 and the eligible frailty population can be identified consistently. The team may conduct a <strong>retrospective ITS</strong>, comparing observed post-April-2024 admissions with a modelled continuation of the pre-intervention pattern.</p>
+<p>This is only credible if the pre-intervention observations are sufficient to characterise trends and seasonality, the intervention timing is meaningful, outcome definitions remain comparable, and important concurrent changes are investigated. Serial correlation, changing population size, frailty severity and mortality also need consideration.</p>
+<p>If suitable comparison areas exist, a <strong>controlled ITS</strong> or <strong>Difference-in-Differences</strong> design may strengthen the evaluation. However, comparison areas must be assessed for differences in baseline need, prior trends, service changes and spillovers. A neighbouring ICB is not automatically a valid control.</p>
+<p>Where eligibility is only recorded <em>because</em> patients entered the new service, the analyst must not treat the post-implementation recipient list as though it were an unbiased historical frailty cohort. Doing so can introduce selection bias. A consistent, pre-specified population definition—or a clearly stated alternative estimand—is needed.</p>
+<p><strong>Possible conclusion:</strong> <em>“Following introduction of the integrated frailty model, admissions were lower than estimated under the specified counterfactual trend, subject to assumptions about concurrent changes and cohort comparability.”</em></p>
+<p>This conclusion is stronger than a simple before-and-after comparison, but does not automatically identify the causal effect of each component.</p>
+</section>
+<section id="scenario-b-only-post-implementation-data-are-available" class="level4">
+<h4 class="anchored" data-anchor-id="scenario-b-only-post-implementation-data-are-available">Scenario B: Only post-implementation data are available</h4>
+<p>Now suppose reliable records begin in April 2024, the historical eligible cohort cannot be reconstructed and no defensible comparison population exists.</p>
+<p>The ICB <strong>cannot reliably estimate admissions avoided by the original introduction</strong> from these data alone. A reduction in admissions among people using the pathway is not evidence that those admissions would otherwise have occurred.</p>
+<p>The evaluation can instead ask:</p>
+<ul>
+<li><strong>Reach and equity:</strong> Who was eligible, referred, accepted and treated? Which neighbourhoods or groups are underrepresented?</li>
+<li><strong>Implementation:</strong> Was the model delivered as intended, with sufficient staffing, timely access and coordination between services?</li>
+<li><strong>Outcomes and safety:</strong> What admission rates, patient-reported experiences, functional outcomes, adverse events and unintended consequences are observed?</li>
+<li><strong>Mechanisms:</strong> Do shared care plans, rapid response and clinical coordination operate as expected in the Theory of Change?</li>
+<li><strong>Alternative explanations:</strong> Could coding changes, admission thresholds, other pathways, changing need or capacity constraints explain the observed patterns?</li>
+<li><strong>Decision relevance:</strong> What is working operationally, what should change, and which uncertainties matter most before further investment?</li>
+</ul>
+<p>Qualitative interviews, pathway audits, patient/carer accounts and implementation records are important here. They can explain experiences and test whether expected mechanisms are plausible, but <strong>triangulation does not turn a descriptive study into a causal impact estimate</strong>.</p>
+<p><strong>Possible conclusion:</strong> <em>“The evaluation identifies improvements in coordination and reported experience, alongside gaps in access and delivery. It cannot determine how many admissions were prevented by the original introduction of the model.”</em></p>
+</section>
+<section id="scenario-c-use-the-next-change-as-an-evaluation-opportunity" class="level4">
+<h4 class="anchored" data-anchor-id="scenario-c-use-the-next-change-as-an-evaluation-opportunity">Scenario C: Use the next change as an evaluation opportunity</h4>
+<p>The ICB is now considering expanding the integrated model to additional neighbourhoods or strengthening the connection between proactive frailty care and UCR.</p>
+<p>Although the original introduction cannot be evaluated causally with confidence, the <strong>incremental effect of the proposed change</strong> may be evaluable prospectively.</p>
+<p>Before implementation, the team can:</p>
+<ol type="1">
+<li>Define the new decision, eligibility criteria, outcomes and intended mechanisms.</li>
+<li>Record a common baseline for participating and potential comparison areas.</li>
+<li>Agree implementation dates and measure actual uptake and intensity.</li>
+<li>Consider a phased rollout, controlled comparison or randomised allocation <strong>only where feasible, ethical and operationally appropriate</strong>.</li>
+<li>Pre-specify how changing need, mortality, contamination and concurrent service changes will be handled.</li>
+<li>Include patient/carer experience, implementation fidelity, costs, equity and unintended consequences.</li>
+<li>Agree review points and what findings would justify continuation, redesign or wider expansion.</li>
+</ol>
+<p>The causal question is now <strong>“What additional difference did the expansion or redesign make compared with continuing the existing model?”</strong> It is <em>not</em> “What was the total historical impact of the original portfolio?”</p>
+</section>
+<section id="which-evaluation-route-is-feasible" class="level4">
+<h4 class="anchored" data-anchor-id="which-evaluation-route-is-feasible">Which evaluation route is feasible?</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Evidence situation</th>
+<th>Practical approach</th>
+<th>Appropriate claim</th>
+<th>Avoid claiming</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Consistent historical outcomes and a clear implementation point</td>
+<td>Retrospective ITS with sensitivity analyses</td>
+<td>Estimated change relative to a modelled no-change trend, conditional on assumptions</td>
+<td>That all contemporaneous changes were caused by the scheme</td>
+</tr>
+<tr class="even">
+<td>Suitable comparison population or phased implementation</td>
+<td>Controlled ITS, DiD or other appropriate comparative design</td>
+<td>A comparative impact estimate if design assumptions are credible</td>
+<td>That geographic proximity guarantees comparability</td>
+</tr>
+<tr class="odd">
+<td>Patient-level eligibility, timing and outcomes available</td>
+<td>Longitudinal analysis, potentially with causal methods</td>
+<td>An estimate for a clearly specified population and intervention contrast, subject to confounding assumptions</td>
+<td>That adjustment automatically removes selection bias</td>
+</tr>
+<tr class="even">
+<td>Post-implementation data only, no credible comparison</td>
+<td>Descriptive, implementation and qualitative evaluation</td>
+<td>Reach, observed outcomes, experiences, mechanisms and plausible contribution</td>
+<td>A precise number of admissions avoided</td>
+</tr>
+<tr class="odd">
+<td>Further expansion or redesign is planned</td>
+<td>Prospectively designed evaluation of the <em>next change</em></td>
+<td>Incremental effect of the change, if a credible design is implemented</td>
+<td>Retrospective proof of the original model’s impact</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="contribution-analysis-when-attribution-is-not-feasible" class="level4">
+<h4 class="anchored" data-anchor-id="contribution-analysis-when-attribution-is-not-feasible">Contribution analysis when attribution is not feasible</h4>
+<p>A structured <strong>theory-based contribution analysis</strong> can still be useful when causal identification is weak. It asks whether the intervention was implemented, whether the expected mechanisms operated, whether observed changes fit the Theory of Change, and how well alternative explanations have been investigated.</p>
+<p>For example, shared frailty care plans may help UCR clinicians treat suitable patients at home. Evidence might include documented care-plan availability, staff accounts, patient experiences and referral-to-response times. This can support a <strong>plausible contribution narrative</strong>, especially if contradictory findings are actively examined.</p>
+<p>It cannot, on its own, tell the ICB that the model prevented a specific number of emergency admissions. Similarly, benchmarking against a national average provides context but is not automatically a causal comparison.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>A Practical Reporting Rule
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-8" class="callout-8-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<p>Use distinct language for distinct evidence:</p>
+<ul>
+<li><strong>Observed change:</strong> “Emergency admissions fell after implementation.”</li>
+<li><strong>Comparative estimate:</strong> “Admissions were lower than the estimated counterfactual, under the stated assumptions.”</li>
+<li><strong>Plausible contribution:</strong> “Implementation and qualitative evidence support the model’s contribution to improved coordination.”</li>
+<li><strong>Unresolved causal impact:</strong> “The effect of the original implementation on admissions cannot be estimated reliably from the available data.”</li>
+</ul>
+<p>The absence of a defensible counterfactual does not mean abandoning evaluation. It means <strong>changing the question and being clear about the answer</strong>.</p>
+</div>
+</div>
+</div>
+</section>
+</section>
 <section id="from-estimated-impact-to-a-commissioning-decision" class="level3">
-<h3 class="anchored" data-anchor-id="from-estimated-impact-to-a-commissioning-decision">7.9 From Estimated Impact to a Commissioning Decision</h3>
+<h3 class="anchored" data-anchor-id="from-estimated-impact-to-a-commissioning-decision">7.10 From Estimated Impact to a Commissioning Decision</h3>
 <p>Even a credible cohort-level estimate cannot by itself tell us <strong>why</strong> the model worked, <strong>which components</strong> mattered, <strong>whether benefits were equitable</strong>, or <strong>whether the outcomes justified the investment</strong>.</p>
 <p>A rounded assessment draws on four complementary perspectives:</p>
 <ul>
@@ -1028,7 +1187,7 @@ Y_t=\beta_0+\beta_1t+\beta_2I_t+\beta_3(t-T_0)I_t+\varepsilon_t,
 </table>
 <p>A complex model does not automatically produce Gold evidence. Simultaneous roll-out of several interventions may prevent separate causal estimates even with excellent linked data. Assurance should be assessed <strong>for each claim</strong>, including the claim that an alternative configuration would deliver additional benefit.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="true" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -1037,7 +1196,7 @@ Y_t=\beta_0+\beta_1t+\beta_2I_t+\beta_3(t-T_0)I_t+\varepsilon_t,
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-8" class="callout-8-contents callout-collapse collapse show">
+<div id="callout-10" class="callout-10-contents callout-collapse collapse show">
 <div class="callout-body-container callout-body">
 <p>Ask: <strong>What could go wrong if we act now, how reversible is the decision, and which missing evidence could realistically change it?</strong> A low-cost reversible improvement may justify proportionate monitoring; a major irreversible reallocation needs more demanding scrutiny.</p>
 </div>
@@ -1157,7 +1316,7 @@ Y_t=\beta_0+\beta_1t+\beta_2I_t+\beta_3(t-T_0)I_t+\varepsilon_t,
 <p>This does <strong>not</strong> prove that exactly 280 admissions were double-counted. Differences may also reflect methods, populations, time periods and uncertainty. Nor does deduplicating patient records reveal the number of admissions avoided: an <em>avoided admission</em> is a counterfactual event, not an observed record.</p>
 <p>The team therefore reconciles definitions and methods, identifies overlapping claims and reports the portfolio-level estimate separately. It does not allocate the 470 among programmes unless the design supports that attribution.</p>
 <div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="true" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -1166,7 +1325,7 @@ Y_t=\beta_0+\beta_1t+\beta_2I_t+\beta_3(t-T_0)I_t+\varepsilon_t,
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-9" class="callout-9-contents callout-collapse collapse show">
+<div id="callout-11" class="callout-11-contents callout-collapse collapse show">
 <div class="callout-body-container callout-body">
 <p><strong>Adding programme-level avoided-activity estimates is not a valid portfolio impact estimate when interventions overlap.</strong> First establish whether the estimates measure compatible effects, populations and periods; then use the strongest defensible portfolio analysis.</p>
 </div>
@@ -1313,11 +1472,11 @@ Y_t=\beta_0+\beta_1t+\beta_2I_t+\beta_3(t-T_0)I_t+\varepsilon_t,
 </section>
 <section id="what-if-linked-patient-level-data-are-unavailable" class="level2">
 <h2 class="anchored" data-anchor-id="what-if-linked-patient-level-data-are-unavailable">12. What If Linked Patient-Level Data Are Unavailable?</h2>
-<p>The absence of linked data should change the <strong>strength of the conclusions</strong>, not prevent all useful evaluation.</p>
+<p>The absence of linked data should change the <strong>strength of the conclusions</strong>, not prevent all useful evaluation. Likewise, a scheme that began without an evaluation plan may still be assessed retrospectively if credible historical or comparison data exist (see Section 7.9).</p>
 <p>The team can begin with aggregate trends, service activity, implementation dates, variation across places, published evidence, available hospital and community data, audits and structured qualitative work. Where rollout differs between localities, appropriately designed comparisons may be possible.</p>
-<p>However, without reliable patient-level exposure and timing, it may be impossible to measure overlap accurately or estimate the effects of particular combinations. An aggregate improvement must not be presented as proof that a particular programme caused it.</p>
+<p>However, without reliable patient-level exposure and timing, it may be impossible to measure overlap accurately or estimate the effects of particular combinations. An aggregate improvement must not be presented as proof that a particular programme caused it. If neither historical outcomes nor a defensible comparison exist, focus on implementation, reach, equity, patient/carer experience and plausible contribution; use the next service change to establish a prospective evaluation.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-12-contents" aria-controls="callout-12" aria-expanded="true" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -1326,7 +1485,7 @@ Y_t=\beta_0+\beta_1t+\beta_2I_t+\beta_3(t-T_0)I_t+\varepsilon_t,
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-10" class="callout-10-contents callout-collapse collapse show">
+<div id="callout-12" class="callout-12-contents callout-collapse collapse show">
 <div class="callout-body-container callout-body">
 <p><strong>Stronger design:</strong> “The analysis estimates a change associated with implementation of the portfolio, subject to the stated assumptions and uncertainty.”</p>
 <p><strong>More limited evidence:</strong> “The available evidence is consistent with the portfolio contributing to improvement, but the contribution of individual interventions cannot be isolated.”</p>
@@ -1337,7 +1496,7 @@ Y_t=\beta_0+\beta_1t+\beta_2I_t+\beta_3(t-T_0)I_t+\varepsilon_t,
 </section>
 <section id="a-practical-portfolio-evidence-summary" class="level2">
 <h2 class="anchored" data-anchor-id="a-practical-portfolio-evidence-summary">13. A Practical Portfolio Evidence Summary</h2>
-<p>Before the commissioning discussion, the team prepares a shared evidence summary rather than five separate and potentially incompatible benefits reports.</p>
+<p>Before the commissioning discussion, the team prepares a shared evidence summary rather than five separate and potentially incompatible benefits reports. It also records whether causal impact was estimated, whether only contribution evidence was feasible, and what further evidence is needed for the next decision.</p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 14%">
@@ -1452,7 +1611,7 @@ Y_t=\beta_0+\beta_1t+\beta_2I_t+\beta_3(t-T_0)I_t+\varepsilon_t,
 </table>
 <p>The sequence becomes <strong>decide → specify expected incremental value → implement and monitor → re-evaluate → revisit the decision</strong>. This avoids treating an initial business case or one evaluation as the final word.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-13-contents" aria-controls="callout-13" aria-expanded="true" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -1461,7 +1620,7 @@ Y_t=\beta_0+\beta_1t+\beta_2I_t+\beta_3(t-T_0)I_t+\varepsilon_t,
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-11" class="callout-11-contents callout-collapse collapse show">
+<div id="callout-13" class="callout-13-contents callout-collapse collapse show">
 <div class="callout-body-container callout-body">
 <ol type="1">
 <li>Are programmes reaching the same people, and at what points in their pathway?</li>
@@ -1508,6 +1667,7 @@ Y_t=\beta_0+\beta_1t+\beta_2I_t+\beta_3(t-T_0)I_t+\varepsilon_t,
 <section id="key-takeaways" class="level2">
 <h2 class="anchored" data-anchor-id="key-takeaways">Key Takeaways</h2>
 <ul>
+<li>An intervention that began without an evaluation plan may still permit retrospective causal analysis; if not, evaluate delivery and contribution without inventing avoided activity, and plan stronger evaluation for the next change.</li>
 <li>The <strong>patient and population</strong>, rather than the programme business case, should help define the evaluation.</li>
 <li>Shared outcomes do not mean interventions have identical mechanisms or target exactly the same people.</li>
 <li>A fall in admissions is not, on its own, proof of portfolio impact—and is not always the right outcome for end-of-life care.</li>
@@ -1521,7 +1681,7 @@ Y_t=\beta_0+\beta_1t+\beta_2I_t+\beta_3(t-T_0)I_t+\varepsilon_t,
 <li>Make equity, contradictory findings, decision assumptions and plans for reassessment explicit.</li>
 </ul>
 <div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-12-contents" aria-controls="callout-12" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-14-contents" aria-controls="callout-14" aria-expanded="true" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -1530,7 +1690,7 @@ Y_t=\beta_0+\beta_1t+\beta_2I_t+\beta_3(t-T_0)I_t+\varepsilon_t,
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-12" class="callout-12-contents callout-collapse collapse show">
+<div id="callout-14" class="callout-14-contents callout-collapse collapse show">
 <div class="callout-body-container callout-body">
 <p><strong>Are we evaluating separate services—or understanding what combination of care makes the greatest difference for the people we serve?</strong></p>
 </div>
