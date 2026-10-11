@@ -1221,6 +1221,147 @@ A single result should not be presented as certain. Test how findings change whe
 | Credible controlled evaluation | “The estimated impact relative to the comparison was X, with uncertainty and assumptions reported.” |
 | Theory-based mixed-method evidence | “Findings support a plausible contribution to improved coordination, but do not quantify attributable admissions avoided.” |
 
+# From Evaluation Question to Evaluation Protocol
+
+A useful evaluation begins **before choosing a statistical model**. A short, written protocol makes the analysis transparent and reduces the temptation to change outcomes, time periods or comparison groups after seeing favourable results. If the scheme is already running, register the *retrospective* protocol before analysing outcomes where feasible, and disclose any exploratory decisions made after inspecting the data.
+
+## Seven Steps for a Proportionate NHS Evaluation
+
+| Step | What to document | Example: community frailty pathway |
+|---|---|---|
+| 1. Commissioning decision | Continue, redesign, expand or stop? By when? | Decide whether to extend the pathway to other PCNs |
+| 2. Target effect (estimand) | Eligible population, intervention, comparator, outcome and follow-up | Difference in 12-month emergency admission **rate** for eligible older adults if offered the pathway versus usual care |
+| 3. Theory of change | What should change first, and why? | Earlier assessment → quicker community response → fewer avoidable crises |
+| 4. Data and feasibility | Eligibility, dates, exposure, outcomes, denominators, missingness, linkage and approvals | Monthly admission data, GP population registers and service referral logs |
+| 5. Design and threats | Comparison strategy, assumptions, competing changes, contamination | Controlled ITS; check whether comparator PCNs received similar services |
+| 6. Analysis plan | Primary outcome, subgroups, uncertainty, sensitivity analyses and stopping rules | Pre-specify 12-month rate and adjustment for seasonality |
+| 7. Reporting and use | Limitations, implementation, patient experience, equity, costs and decision thresholds | Report both impact estimate and whether the pathway reached those in greatest need |
+
+::: {.callout-tip}
+## The estimand: specify what “impact” means
+
+“Did the pathway work?” is too vague for analysis. An **estimand** is the precise effect the evaluation seeks to estimate: *for which population, under which intervention compared with which alternative, over what period, on which outcome?*
+
+For example, the effect of **offering** the pathway to everyone eligible differs from the effect among people who **actually received** intensive MDT support. These are different questions and may require different designs.
+:::
+
+## Define the Population, Denominator and Outcome Fairly
+
+Raw activity counts can fall because the population at risk shrank, fewer people were eligible, patients died or records became incomplete. Where appropriate, compare **rates** using a clearly defined denominator or person-time rather than counts alone.
+
+| Measure | Potential problem | Better question |
+|---|---|---|
+| Total admissions | Changing population size or case mix | Admissions per 1,000 eligible people or person-years, with suitable adjustment |
+| Admissions among pathway users | People selected because they recently had a crisis | What happened to **all eligible people**, including those not referred? |
+| Average admissions per patient | Follow-up differs because people enter at different dates | How much person-time was each patient observed for? |
+| Admission rate among survivors | Death removes high-risk people from observation | Were mortality and competing events considered alongside admissions? |
+| Crude comparison between localities | Age, deprivation and frailty profiles differ | How would findings change after appropriate standardisation or adjustment? |
+
+For frailty and end-of-life pathways, interpret activity together with **need, complexity, mortality, safety and patient goals**. A lower admission rate is not automatically a better outcome. Avoid conditioning the primary analysis only on surviving patients when survival may itself be affected by the intervention.
+
+# Bias and Confounding in Observational Evaluation
+
+When random allocation is not possible, comparing those who received a service with those who did not is often misleading. **Confounding by indication** occurs when the clinical reasons for providing the service also predict outcomes. A frailty MDT may preferentially see people at highest risk of admission; their higher admission rate does not prove the MDT caused harm. Conversely, selective enrolment of easier-to-support patients may exaggerate apparent benefits.
+
+## Using a Causal Diagram (DAG) to Think Before Adjusting
+
+A **Directed Acyclic Graph (DAG)** is a simple map of hypothesised cause-and-effect relationships. It can help analysts identify variables that might confound an exposure–outcome relationship, and variables that should **not** automatically be adjusted for.
+
+```text
+Baseline frailty / illness severity ──→ MDT referral
+             │                            │
+             └────────────────────────────→ Emergency admission
+                                          ↑
+                                  Potential MDT effect
+```
+
+Here baseline severity influences both referral and admissions. A fair comparison may need to account for it. But a measure *changed by the MDT*—such as improved medication management—may be part of the pathway's effect; adjusting for it could remove some of the effect being studied. Variables affected by both exposure and outcome-related factors can also introduce collider bias when conditioned on. DAGs clarify assumptions; they do not prove those assumptions are true.
+
+## Adjustment, Matching and Weighting: What They Can and Cannot Do
+
+| Approach | Basic idea | Important limitation |
+|---|---|---|
+| Regression adjustment | Compare outcomes while accounting for measured baseline differences | Cannot remove bias from unmeasured or badly measured confounders |
+| Propensity-score matching | Match exposed and unexposed people with similar estimated probability of exposure | May discard patients and cannot correct unmeasured confounding |
+| Propensity-score weighting | Reweight groups to improve balance on measured baseline characteristics | Extreme weights and lack of overlap can make estimates unstable |
+| Stratification or standardisation | Compare within need/age strata or apply a common population distribution | Requires adequate information and comparable strata |
+
+**Practical checks:** Are relevant variables measured *before* treatment? Do intervention and comparison groups overlap in characteristics (**positivity**)? Are important baseline differences balanced after matching or weighting? Are results robust to alternative adjustment choices? Never present statistical adjustment alone as proof of causality.
+
+### When exposure and confounding change over time
+
+In a longer pathway, clinical deterioration may lead to additional support; that support may then alter later deterioration and admission risk. Ordinary regression adjustment for these time-varying factors can introduce bias. Methods such as **marginal structural models with inverse-probability weighting** or other longitudinal causal approaches may be appropriate, but require specialist design, reliable longitudinal data and strong assumptions. This is a sign to involve experienced evaluators rather than simply adding more variables to a model.
+
+## A Common Retrospective Trap: Immortal Time Bias
+
+Imagine defining the intervention group as patients who **received an MDT review within 90 days**, while counting outcomes from the initial eligibility date. To qualify as “reviewed”, patients must remain eligible and observable until their review; those admitted or dying before review may be disproportionately assigned elsewhere or excluded. This can make the intervention appear protective even when it is not.
+
+Avoid this by defining a common **time zero** (the date eligibility and follow-up begin), aligning eligibility and treatment strategies, and handling treatment initiation over time appropriately. In some settings a **target trial emulation** framework—explicitly specifying the trial we would ideally run—helps prevent these errors. Merely adjusting for age or frailty will not fix incorrect time alignment.
+
+# Missing Data, Data Linkage and Repeated Observations
+
+An evaluation can have an elegant design but still produce biased results if data are incomplete or inconsistently captured.
+
+## What Is Missing—and Why?
+
+- **Missing completely at random (MCAR):** missingness is unrelated to measured or unmeasured values; uncommon in operational data.
+- **Missing at random (MAR):** after conditioning on observed information, missingness does not depend on the missing value itself. Methods such as multiple imputation may be reasonable if assumptions are credible.
+- **Missing not at random (MNAR):** missingness still depends on unseen values or other unobserved factors. Sensitivity analysis is particularly important.
+
+For example, frailer patients may be less likely to complete experience questionnaires. Analysing only respondents could overstate satisfaction. Report the **amount, pattern and likely causes** of missing data; compare characteristics of people with and without records; and test plausible alternative assumptions. Do not automatically replace missing values with zero.
+
+## Linkage and Measurement Quality
+
+Before analysis, check whether NHS numbers or other permitted identifiers link reliably, whether patient residence and service boundaries changed, whether coding definitions stayed stable, and whether data flows were disrupted. Use appropriate information governance, secure processing and data minimisation. Poor linkage may disproportionately omit people who move, receive care across boundaries or use multiple services.
+
+## Patients, PCNs and Months Are Not Independent
+
+A patient may have repeated attendances; patients within a PCN share staff and pathways; monthly outcomes may be correlated with adjacent months. Standard errors that assume every observation is independent may be too small. Depending on the design, consider **cluster-robust uncertainty estimates**, mixed-effects models, generalised estimating equations or time-series models that address autocorrelation. With only a few clusters, ordinary cluster-robust methods may be unreliable; seek specialist advice.
+
+The effective amount of information depends on the **number of independent units**, not just the total number of records. Ten thousand admissions from two PCNs do not provide the same comparative evidence as data from many independently allocated PCNs.
+
+# Testing Whether the Result Is Robust
+
+Sensitivity analysis should be planned in advance where possible and distinguish statistical uncertainty from uncertainty about the **design and assumptions**.
+
+| Check | Example | What it can reveal |
+|---|---|---|
+| Alternative time windows | Repeat ITS excluding an unusual pandemic or data-disruption period | Dependence on selected history |
+| Alternative implementation dates | Treat rollout as gradual rather than a single abrupt change | Mis-specified timing |
+| Alternative comparators | Compare against several plausible localities | Sensitivity to comparator choice |
+| Placebo intervention date | Test for an apparent “effect” before the real launch | Unmodelled trends or spurious breaks |
+| Negative-control outcome | Examine an outcome the pathway should not plausibly affect | Shared confounding or coding artefacts, if the control is genuinely suitable |
+| Missing-data scenarios | Compare complete-case, imputed and plausible MNAR assumptions | Sensitivity to missingness |
+| Exposure and cohort definitions | Compare offer-based versus receipt-based definitions where valid | Selection and timing effects |
+
+A placebo or negative-control result does **not** validate causality by itself. Conversely, failure of one diagnostic is a reason to investigate and qualify the claim. Report all material analyses, not only those supporting the preferred conclusion.
+
+# A Worked Evaluation Protocol: Frailty Pathway Already in Place
+
+**Illustrative situation:** An ICB introduced proactive frailty care in April 2024 and requests an evaluation in October 2026. The aim is to inform whether to expand the model. This is an example, not a claim about any actual ICB.
+
+| Protocol element | Proposed specification |
+|---|---|
+| Decision | Whether to expand, adapt or retain the frailty pathway |
+| Population | All people meeting a consistent frailty eligibility definition in relevant PCNs, including those not referred |
+| Intervention | Availability of the integrated pathway, with actual rollout dates and coverage documented |
+| Comparator | Usual care in credible comparison PCNs, if available; otherwise a carefully assessed historical trend |
+| Primary outcome | Emergency admissions per 1,000 eligible person-years, with clear admission coding |
+| Secondary outcomes | ED attendances, bed days, mortality, experience, unmet need and costs |
+| Design | Prefer controlled ITS where comparable data and assumptions support it; otherwise consider ITS or non-causal evaluation |
+| Bias checks | Baseline need, deprivation, secular trends, seasonality, coding, contamination and changing eligibility |
+| Analysis | Pre-specify level/trend terms, uncertainty, clustering/autocorrelation and sensitivity checks |
+| Qualitative work | Ask patients, carers and staff about access, coordination, burden, implementation and unintended effects |
+| Interpretation | Distinguish estimated pathway impact from descriptive change; do not attribute separate effects to overlapping components without an appropriate design |
+
+If only post-April-2024 data can be obtained and no credible comparator exists, the team should **not** calculate “admissions avoided” by treating an arbitrary benchmark as what would otherwise have happened. It can still report reach, implementation, outcomes, equity, patient experience, cost and plausible contribution, and design stronger evaluation around the next pathway change.
+
+::: {.callout-note}
+## Connecting to Module 17
+
+Module 9 provides the **methodological toolkit and protocol discipline**. **Module 17 — Understanding What Made the Difference** applies these principles when several pathways overlap, their effects may interact and commissioners need to judge **impact, explanation, value and equity** at the integrated-model level. The same admissions avoided must not be credited independently to every pathway component.
+:::
+
 ## Matching the Evaluation Method to the Question
 
 One of the most important principles in evaluation is that **the evaluation question should determine the evaluation method**.
@@ -1277,6 +1418,9 @@ The credibility of a causal conclusion depends on whether the design and its ass
 - retrospective causal evaluation may be possible even when no evaluation was planned
 - when no credible counterfactual exists, implementation and contribution evidence can still inform decisions
 - impact, mechanisms, equity and value are different but complementary questions
+- a pre-specified evaluation protocol clarifies the estimand, data, design and intended decision
+- confounding, time alignment, missing data and clustering can undermine apparently convincing results
+- robustness checks help reveal when conclusions depend on fragile assumptions
 
 Good evaluation asks:
 
@@ -1292,6 +1436,9 @@ Good evaluation asks:
 - Are the ITS or DiD assumptions plausible and tested?
 - What would change our conclusion in sensitivity analysis?
 - If causal impact cannot be identified, what other evidence would inform the decision?
+- Is the eligible population and denominator consistent over time?
+- Could selection bias, immortal time, missing records or repeated observations distort the result?
+- Was the evaluation question and primary analysis documented before reviewing results?
 
 
 ## Choosing the Right Evaluation Method
@@ -1302,7 +1449,7 @@ Good evaluation asks:
 ## Linking the Three Modules
 
 - **Module 8 — Thinking About Evidence & Evaluation:** why improvement is not automatically impact, and how to scrutinise claims.
-- **Module 9 — Evaluation Methods in Practice:** how to choose a design, understand assumptions, interpret uncertainty and evaluate an existing scheme.
+- **Module 9 — Evaluation Methods in Practice:** how to specify an estimand and protocol, choose a design, address observational bias and data limitations, test assumptions, and evaluate an existing scheme.
 - **Module 17 — Understanding What Made the Difference:** how to assess the combined effect of overlapping interventions, investigate mechanisms and equity, and inform portfolio commissioning decisions.
 
 ## Further Reading
