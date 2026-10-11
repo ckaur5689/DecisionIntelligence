@@ -39,6 +39,8 @@ By the end of this module, you should be able to:
 - distinguish **association**, **attribution** and **contribution**
 - understand why intervention exposure and **timing** matter
 - recognise selection bias and the need for a credible counterfactual
+- distinguish a retrospectively reconstructable counterfactual from situations where causal impact cannot be estimated
+- design a useful evaluation of an established service, and a stronger evaluation of its next expansion or redesign
 - consider whether interventions are independent, complementary, sequential, substitutive or duplicative
 - identify the risk of double-counting avoided activity and financial benefits
 - bring quantitative, qualitative and implementation evidence together
@@ -214,7 +216,8 @@ If the size or composition of the eligible cohort changes, comparing admission c
 The chart below uses **hypothetical annual data** to illustrate observed admissions and an estimated no-intervention trajectory. The counterfactual is modelled, not observed.
 
 ![](../images/FrailtyCounterfactual.png)
-Line chart of annual emergency admissions from 2022 to 2026.
+
+Line chart of annual emergency admissions from 2022 to 2026. 
 
 Observed admissions decline to 900 in 2026, while the illustrative no-intervention counterfactual reaches 1,100.
 
@@ -334,7 +337,114 @@ Both may use statistical modelling, but the counterfactual requires explicit ass
 
 This distinction becomes particularly important when linking evaluation with scenarios and simulation in Module 19.
 
-### 7.9 From Estimated Impact to a Commissioning Decision
+### 7.9 What If the Scheme Has Already Started and No Counterfactual Was Planned?
+
+In NHS practice, evaluation is frequently requested **after** a pathway, service or integrated model has begun. The business case may describe expected benefits, but nobody may have specified a comparison group, preserved a pre-implementation baseline or recorded consistent implementation dates.
+
+This does **not** automatically mean that causal evaluation is impossible. A counterfactual is an *unobserved alternative outcome*, not necessarily a control group recruited before implementation. In some circumstances it can be estimated retrospectively. In others, no defensible estimate is available, and the evaluation must answer more limited—but still useful—questions.
+
+::: {.callout-important collapse="false"}
+## The Principle
+
+**No counterfactual planned is not the same as no counterfactual possible.** First assess whether a credible comparison can be reconstructed. If not, do not invent one: evaluate implementation, reach, outcomes, experience and plausible contribution, and design stronger evaluation around the next decision.
+:::
+
+#### Worked example: Integrated frailty care introduced in April 2024
+
+Imagine the ICB introduced its integrated frailty model in April 2024. It is now October 2026. Commissioners want to know whether the model has reduced emergency admissions, but no prospective evaluation design was agreed.
+
+The team starts with a **retrospective evaluability assessment**, not with a preferred statistical method:
+
+1. **Clarify the decision.** Is the ICB deciding whether to continue the model, expand it, change eligibility or redesign particular components?
+2. **Specify the intervention and alternative.** What actually changed in April 2024, when did each component become operational, and what care would have been provided without it?
+3. **Define the eligible population.** Can severe frailty eligibility be reconstructed consistently before and after implementation? Were criteria or coding changed by the scheme itself?
+4. **Inventory the data.** What historical monthly outcomes, denominators, case-mix measures, implementation records and patient/carer evidence exist?
+5. **Look for credible comparisons.** Were similar localities unaffected, or was rollout staggered? Did other changes occur at the same time?
+6. **Agree what claims are supportable.** Record limitations before results are known and identify what further evidence could change the commissioning decision.
+
+#### Scenario A: Historical data can be reconstructed
+
+Suppose monthly admissions data are available from April 2021 and the eligible frailty population can be identified consistently. The team may conduct a **retrospective ITS**, comparing observed post-April-2024 admissions with a modelled continuation of the pre-intervention pattern.
+
+This is only credible if the pre-intervention observations are sufficient to characterise trends and seasonality, the intervention timing is meaningful, outcome definitions remain comparable, and important concurrent changes are investigated. Serial correlation, changing population size, frailty severity and mortality also need consideration.
+
+If suitable comparison areas exist, a **controlled ITS** or **Difference-in-Differences** design may strengthen the evaluation. However, comparison areas must be assessed for differences in baseline need, prior trends, service changes and spillovers. A neighbouring ICB is not automatically a valid control.
+
+Where eligibility is only recorded *because* patients entered the new service, the analyst must not treat the post-implementation recipient list as though it were an unbiased historical frailty cohort. Doing so can introduce selection bias. A consistent, pre-specified population definition—or a clearly stated alternative estimand—is needed.
+
+**Possible conclusion:** *“Following introduction of the integrated frailty model, admissions were lower than estimated under the specified counterfactual trend, subject to assumptions about concurrent changes and cohort comparability.”*
+
+This conclusion is stronger than a simple before-and-after comparison, but does not automatically identify the causal effect of each component.
+
+#### Scenario B: Only post-implementation data are available
+
+Now suppose reliable records begin in April 2024, the historical eligible cohort cannot be reconstructed and no defensible comparison population exists.
+
+The ICB **cannot reliably estimate admissions avoided by the original introduction** from these data alone. A reduction in admissions among people using the pathway is not evidence that those admissions would otherwise have occurred.
+
+The evaluation can instead ask:
+
+- **Reach and equity:** Who was eligible, referred, accepted and treated? Which neighbourhoods or groups are underrepresented?
+- **Implementation:** Was the model delivered as intended, with sufficient staffing, timely access and coordination between services?
+- **Outcomes and safety:** What admission rates, patient-reported experiences, functional outcomes, adverse events and unintended consequences are observed?
+- **Mechanisms:** Do shared care plans, rapid response and clinical coordination operate as expected in the Theory of Change?
+- **Alternative explanations:** Could coding changes, admission thresholds, other pathways, changing need or capacity constraints explain the observed patterns?
+- **Decision relevance:** What is working operationally, what should change, and which uncertainties matter most before further investment?
+
+Qualitative interviews, pathway audits, patient/carer accounts and implementation records are important here. They can explain experiences and test whether expected mechanisms are plausible, but **triangulation does not turn a descriptive study into a causal impact estimate**.
+
+**Possible conclusion:** *“The evaluation identifies improvements in coordination and reported experience, alongside gaps in access and delivery. It cannot determine how many admissions were prevented by the original introduction of the model.”*
+
+#### Scenario C: Use the next change as an evaluation opportunity
+
+The ICB is now considering expanding the integrated model to additional neighbourhoods or strengthening the connection between proactive frailty care and UCR.
+
+Although the original introduction cannot be evaluated causally with confidence, the **incremental effect of the proposed change** may be evaluable prospectively.
+
+Before implementation, the team can:
+
+1. Define the new decision, eligibility criteria, outcomes and intended mechanisms.
+2. Record a common baseline for participating and potential comparison areas.
+3. Agree implementation dates and measure actual uptake and intensity.
+4. Consider a phased rollout, controlled comparison or randomised allocation **only where feasible, ethical and operationally appropriate**.
+5. Pre-specify how changing need, mortality, contamination and concurrent service changes will be handled.
+6. Include patient/carer experience, implementation fidelity, costs, equity and unintended consequences.
+7. Agree review points and what findings would justify continuation, redesign or wider expansion.
+
+The causal question is now **“What additional difference did the expansion or redesign make compared with continuing the existing model?”** It is *not* “What was the total historical impact of the original portfolio?”
+
+#### Which evaluation route is feasible?
+
+| Evidence situation | Practical approach | Appropriate claim | Avoid claiming |
+|---|---|---|---|
+| Consistent historical outcomes and a clear implementation point | Retrospective ITS with sensitivity analyses | Estimated change relative to a modelled no-change trend, conditional on assumptions | That all contemporaneous changes were caused by the scheme |
+| Suitable comparison population or phased implementation | Controlled ITS, DiD or other appropriate comparative design | A comparative impact estimate if design assumptions are credible | That geographic proximity guarantees comparability |
+| Patient-level eligibility, timing and outcomes available | Longitudinal analysis, potentially with causal methods | An estimate for a clearly specified population and intervention contrast, subject to confounding assumptions | That adjustment automatically removes selection bias |
+| Post-implementation data only, no credible comparison | Descriptive, implementation and qualitative evaluation | Reach, observed outcomes, experiences, mechanisms and plausible contribution | A precise number of admissions avoided |
+| Further expansion or redesign is planned | Prospectively designed evaluation of the *next change* | Incremental effect of the change, if a credible design is implemented | Retrospective proof of the original model's impact |
+
+#### Contribution analysis when attribution is not feasible
+
+A structured **theory-based contribution analysis** can still be useful when causal identification is weak. It asks whether the intervention was implemented, whether the expected mechanisms operated, whether observed changes fit the Theory of Change, and how well alternative explanations have been investigated.
+
+For example, shared frailty care plans may help UCR clinicians treat suitable patients at home. Evidence might include documented care-plan availability, staff accounts, patient experiences and referral-to-response times. This can support a **plausible contribution narrative**, especially if contradictory findings are actively examined.
+
+It cannot, on its own, tell the ICB that the model prevented a specific number of emergency admissions. Similarly, benchmarking against a national average provides context but is not automatically a causal comparison.
+
+::: {.callout-tip collapse="false"}
+## A Practical Reporting Rule
+
+Use distinct language for distinct evidence:
+
+- **Observed change:** “Emergency admissions fell after implementation.”
+- **Comparative estimate:** “Admissions were lower than the estimated counterfactual, under the stated assumptions.”
+- **Plausible contribution:** “Implementation and qualitative evidence support the model's contribution to improved coordination.”
+- **Unresolved causal impact:** “The effect of the original implementation on admissions cannot be estimated reliably from the available data.”
+
+The absence of a defensible counterfactual does not mean abandoning evaluation. It means **changing the question and being clear about the answer**.
+:::
+
+### 7.10 From Estimated Impact to a Commissioning Decision
 
 Even a credible cohort-level estimate cannot by itself tell us **why** the model worked, **which components** mattered, **whether benefits were equitable**, or **whether the outcomes justified the investment**.
 
@@ -530,11 +640,11 @@ Also account for implementation, transition, double-running and stranded costs. 
 
 ## 12. What If Linked Patient-Level Data Are Unavailable?
 
-The absence of linked data should change the **strength of the conclusions**, not prevent all useful evaluation.
+The absence of linked data should change the **strength of the conclusions**, not prevent all useful evaluation. Likewise, a scheme that began without an evaluation plan may still be assessed retrospectively if credible historical or comparison data exist (see Section 7.9).
 
 The team can begin with aggregate trends, service activity, implementation dates, variation across places, published evidence, available hospital and community data, audits and structured qualitative work. Where rollout differs between localities, appropriately designed comparisons may be possible.
 
-However, without reliable patient-level exposure and timing, it may be impossible to measure overlap accurately or estimate the effects of particular combinations. An aggregate improvement must not be presented as proof that a particular programme caused it.
+However, without reliable patient-level exposure and timing, it may be impossible to measure overlap accurately or estimate the effects of particular combinations. An aggregate improvement must not be presented as proof that a particular programme caused it. If neither historical outcomes nor a defensible comparison exist, focus on implementation, reach, equity, patient/carer experience and plausible contribution; use the next service change to establish a prospective evaluation.
 
 ::: {.callout-tip collapse="false"}
 ## Match the Claim to the Evidence
@@ -548,7 +658,7 @@ Do not manufacture precise percentages of contribution where the evidence does n
 
 ## 13. A Practical Portfolio Evidence Summary
 
-Before the commissioning discussion, the team prepares a shared evidence summary rather than five separate and potentially incompatible benefits reports.
+Before the commissioning discussion, the team prepares a shared evidence summary rather than five separate and potentially incompatible benefits reports. It also records whether causal impact was estimated, whether only contribution evidence was feasible, and what further evidence is needed for the next decision.
 
 | Intervention or combination | Reach and overlap | Evidence of contribution | Important dependencies | Incremental resources | Benefits and where realised | Uncertainty |
 |---|---|---|---|---|---|---|
@@ -620,6 +730,7 @@ The important shift is from **“Which programme can claim the improvement?”**
 
 ## Key Takeaways
 
+- An intervention that began without an evaluation plan may still permit retrospective causal analysis; if not, evaluate delivery and contribution without inventing avoided activity, and plan stronger evaluation for the next change.
 - The **patient and population**, rather than the programme business case, should help define the evaluation.
 - Shared outcomes do not mean interventions have identical mechanisms or target exactly the same people.
 - A fall in admissions is not, on its own, proof of portfolio impact—and is not always the right outcome for end-of-life care.
@@ -637,3 +748,4 @@ The important shift is from **“Which programme can claim the improvement?”**
 
 **Are we evaluating separate services—or understanding what combination of care makes the greatest difference for the people we serve?**
 :::
+
