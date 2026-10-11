@@ -1,64 +1,118 @@
-![](images/Part1.png)
+![](images/Part1_MindMap.png)
 
 # Part 1 — How do we interpret healthcare data correctly?
 
-Part 1 builds the foundations of health data literacy.
+Part 1 builds the foundations of **healthcare data literacy and evidence-informed thinking**.
 
-Before we can evaluate complex interventions, understand healthcare systems or use advanced analytical methods, we first need to be confident in how we **interpret the data in front of us**.
+Before we can evaluate complex interventions, understand healthcare systems or apply advanced analytical methods, we first need to be confident in how we **interpret the data in front of us, question the evidence and recognise the limits of what we know**.
 
-The modules in this section explore:
+Healthcare data can help us understand population needs, identify variation, assess performance and inform decisions. But numbers do not speak for themselves. The way we define, summarise, compare and interpret data can significantly influence the conclusions we reach.
 
-- when to use counts and rates
-- the difference between means and medians
-- why correlation does not necessarily mean causation
-- how to understand variation and distributions
-- how to make fair comparisons between different populations
-- how to think critically about evidence and evaluation
-- how different evaluation methods can help us understand impact
-- how to interpret risk, probability and uncertainty
-- how to read dashboards more critically
+The 11 modules in Part 1 explore:
 
-Together, these concepts provide the foundations for asking better questions of healthcare data.
+1. **Counts vs Rates** — What number should I be comparing?
+2. **Mean vs Median** — What is the best way to summarise the data?
+3. **Correlation vs Causation** — Does this relationship actually imply cause and effect?
+4. **Variation & Distributions** — Is this difference meaningful or simply normal variation?
+5. **Standardisation & Fair Comparison** — Are these populations really comparable?
+6. **How to Read a Dashboard** — What story is the dashboard actually telling me?
+7. **Theory of Change & Logic Models** — How do we connect interventions to intended outcomes?
+8. **Evaluating Interventions & Schemes (Thinking About Evidence)** — How should I think about whether something worked?
+9. **Evaluating Interventions in Practice (Methods)** — How do I evaluate it properly?
+10. **Risk, Probability & Uncertainty** — How certain can I be about this evidence?
+11. **Common Analytical Traps & Data Fallacies** — What mistakes could lead me to the wrong conclusion?
+
+Together, these modules provide the foundations for asking better questions, interpreting evidence critically and reaching more defensible conclusions.
+
+Importantly, **data literacy is not simply about understanding statistics**. It is also about recognising assumptions, challenging interpretations, understanding uncertainty and knowing when the available evidence is insufficient to support a particular claim.
 
 # Bringing Part 1 Together
 
-![](images/Part1_MindMap.png)
+![](images/Part1_MindMap.png){fig-align="center" width="100%"}
 
-The modules in Part 1 are not simply a collection of statistical concepts.
+The modules in Part 1 are not simply a collection of statistical concepts or analytical techniques.
 
-Together, they help build a way of **thinking about data**.
+Together, they develop a way of **thinking critically about healthcare data, evidence and decisions**.
 
-The aim is not for every healthcare decision-maker to become a statistician or analyst.
+The learning journey progresses through four connected capabilities.
 
-It is to develop enough data literacy to:
+## 1. Understand and interpret the data
 
-- ask better questions
-- recognise when a number may be misleading
-- understand what the data can — and cannot — tell us
-- challenge comparisons that may not be fair
-- recognise uncertainty
-- distinguish association from causation
-- understand the strength of the evidence
-- make more informed decisions
+**Modules 1–6**
 
-![](images/Part1_MindMap.png){fig-align="center"}
+Before drawing conclusions, we need to understand what the numbers represent.
+
+This means selecting appropriate measures, examining distributions and variation, making fair comparisons and interpreting dashboards in context.
+
+For example, a higher number of emergency admissions does not necessarily indicate poorer performance if the population is larger, older or has greater healthcare needs.
+
+The question is not simply whether one number is higher than another, but **whether the comparison is meaningful and fair**.
+
+## 2. Connect interventions to outcomes
+
+**Module 7**
+
+Healthcare organisations frequently introduce interventions with the expectation that they will improve outcomes.
+
+Theory of Change and Logic Models help make these expectations explicit.
+
+They encourage us to ask:
+
+- What problem are we trying to address?
+- What change are we expecting?
+- How is the intervention supposed to produce that change?
+- What assumptions need to hold?
+- What should we measure to determine whether progress is being made?
+
+This provides the bridge between understanding healthcare data and evaluating whether an intervention is making a difference.
+
+## 3. Think critically about evidence and evaluation
+
+**Modules 8–9**
+
+Observing an improvement after introducing an intervention does not necessarily mean that the intervention caused it.
+
+Module 8 introduces the thinking required to interpret evidence, distinguish association from causation and consider what might have happened without the intervention.
+
+Module 9 builds on these foundations by introducing practical evaluation approaches, including randomised trials, Interrupted Time Series, Difference-in-Differences and other methods for assessing impact.
+
+Together, these modules help readers distinguish:
+
+- **What changed?**
+- **What might explain the change?**
+- **What difference did the intervention make?**
+- **How confident can we be in that conclusion?**
+
+They also reinforce that the strength of any conclusion depends on the quality of the evaluation design, available data and assumptions.
+
+## 4. Recognise uncertainty and avoid misleading conclusions
+
+**Modules 10–11**
+
+Healthcare decisions are rarely made with complete information or absolute certainty.
+
+Understanding risk, probability and uncertainty helps us communicate findings appropriately and recognise the difference between possible, probable and well-supported conclusions.
+
+Recognising analytical traps and data fallacies helps us identify misleading comparisons, inappropriate interpretations and arguments that appear convincing but are not supported by the evidence.
+
+These skills are particularly important when analytical findings are used to inform commissioning, investment, service redesign or policy decisions.
 
 ::: {.callout-important}
 ## The Big Picture
 
-Good data literacy starts with asking the right questions.
+Good healthcare data literacy starts with asking the right questions.
 
-When looking at healthcare data, we need to understand:
+When interpreting data and evidence, we should work through a connected set of questions:
 
 **What exactly are we measuring?**
 
 ↓
 
-**Are we using the right measure?**
+**Are we using the right measure and summarising the data appropriately?**
 
 ↓
 
-**What does the distribution and variation tell us?**
+**What do the distribution, variation and trends tell us?**
 
 ↓
 
@@ -66,39 +120,90 @@ When looking at healthcare data, we need to understand:
 
 ↓
 
-**Could there be another explanation for what we are seeing?**
+**What change are we trying to achieve, and how is it expected to happen?**
 
 ↓
 
-**How strong is the evidence?**
+**What actually changed, and what else might explain it?**
 
 ↓
 
-**How certain are we about the conclusion?**
+**How strong is the evaluation evidence?**
 
 ↓
 
-**What should we reasonably conclude and act upon?**
+**How certain are we, and what analytical pitfalls should we consider?**
 
-These questions help us move from simply **seeing numbers** to **interpreting evidence with confidence**.
+↓
+
+**What can we reasonably conclude and act upon?**
+
+These questions help us move from simply **seeing numbers** to **interpreting evidence with confidence and making better-informed decisions**.
 :::
+
+# What Should You Be Able to Do After Part 1?
+
+The aim is not for every healthcare decision-maker to become a statistician, analyst or evaluation specialist.
+
+It is to develop sufficient data literacy and critical thinking to:
+
+- Ask better questions of healthcare data.
+- Choose and interpret appropriate measures.
+- Recognise when numbers or visualisations may be misleading.
+- Understand variation, distributions and population differences.
+- Challenge comparisons that may not be fair.
+- Connect proposed interventions to expected outcomes.
+- Distinguish observed change from evidence of causal impact.
+- Understand the purpose and limitations of different evaluation methods.
+- Interpret risk, probability and uncertainty.
+- Recognise analytical traps and unsupported conclusions.
+- Communicate findings and their limitations more clearly.
+- Use evidence more confidently and responsibly in decision-making.
+
+These capabilities are valuable whether you are an analyst producing evidence, a clinician interpreting findings, a commissioner assessing investment options or a leader making strategic decisions.
 
 # From Data Literacy to Understanding Healthcare Systems
 
 Part 1 provides the foundations, but healthcare decisions rarely depend on interpreting a single number or metric in isolation.
 
-Healthcare operates as a complex system.
+Healthcare operates as a **complex, interconnected system**.
 
-Demand changes. Patients move through pathways. Capacity is constrained. Populations have different needs. Multiple interventions may be introduced at the same time. Data may be incomplete. Resources are finite.
+Demand changes. Patients move through pathways. Capacity is constrained. Populations have different needs. Multiple interventions may be introduced at the same time. Data may be incomplete or inconsistent. Resources are finite.
 
-This means that good data literacy must eventually move beyond asking:
+An intervention that improves one part of a pathway may create pressure elsewhere. A reduction in hospital activity may reflect improved prevention, changing population need, reduced capacity or several factors acting together.
 
-> **"What does this number mean?"**
+Similarly, an intervention may improve patient experience or quality of care without immediately reducing hospital activity or generating cash-releasing savings.
+
+Understanding these relationships requires us to move beyond interpreting individual indicators towards understanding how the wider healthcare system behaves.
+
+This means progressing from asking:
+
+> **"What does this number mean, and how confident am I in its interpretation?"**
 
 towards asking:
 
-> **"What is happening across the wider system — and what should we do about it?"**
+> **"What is happening across the wider healthcare system, what options could improve outcomes, and how should we decide what to do?"**
 
-That is the focus of **Part 2**.
+That is the focus of **Part 2 — How do we understand, improve and evaluate complex healthcare systems?**
 
-Part 2 builds on these foundations to explore how we can better **understand, improve and evaluate complex healthcare systems**.
+Part 2 builds on these foundations through ten further modules (12–21), exploring:
+
+- Demand, capacity and operational flow.
+- Data quality, assurance and trustworthy data.
+- Designing and improving healthcare pathways.
+- Health economics and assessing value.
+- Methods for comparing costs, outcomes and alternative investments.
+- Evaluating multiple interventions in complex healthcare systems.
+- Population health management and segmentation.
+- Testing decisions through scenarios and simulation.
+- Bringing quantitative, qualitative and other forms of evidence together.
+- Making transparent, defensible decisions when faced with trade-offs and uncertainty.
+
+**Part 1 helps us interpret healthcare data and evidence correctly.**
+
+**Part 2 helps us use that understanding to improve healthcare systems and make better decisions.**
+
+Together, they support the central purpose of Healthcare Decision Intelligence:
+
+**Better questions. Better evidence. Better decisions. Better outcomes.**
+
