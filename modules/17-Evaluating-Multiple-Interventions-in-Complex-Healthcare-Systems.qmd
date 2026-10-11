@@ -1,6 +1,6 @@
-# Module 17: Understanding What Made the Difference
+# Module 17: Evaluating Multiple Interventions in Complex Healthcare Systems.qmd
 
-## Evaluating Multiple Interventions in Complex Healthcare Systems
+## Understanding What Made the Difference
 
 <button class="print-button" onclick="window.print()">🖨️ Print this module</button>
 
