@@ -99,6 +99,27 @@ Severe frailty is the main analytical cohort. People approaching the end of life
 An emergency admission may be appropriate and beneficial. For a person approaching the end of life, avoiding hospital is not automatically better if hospital care reflects their needs and preferences. The evaluation must consider **appropriateness and experience**, not simply count activity reductions.
 :::
 
+### Define a Balanced Set of Benefits, Harms and Safeguards
+
+An evaluation focused only on avoiding emergency admissions risks overlooking whether patients are safer, better supported or experiencing unintended harm. The ICB therefore agrees a **balanced outcome set**, with outcome definitions, denominators and follow-up periods specified before interpreting the results.
+
+| Domain | Illustrative measures | Interpretation and safeguards |
+|---|---|---|
+| Appropriate acute care | Emergency admissions and ED attendances per 1,000 eligible people or per person-year | Fewer admissions are not automatically better; examine clinical appropriateness |
+| Safety and deterioration | Unplanned readmissions, escalation after community assessment, adverse events and mortality | Check whether care is delayed or risk displaced rather than prevented |
+| Outcomes important to people | Time at home, symptom burden, independence and patient-reported experience where feasible | Consider whether the measures reflect patient priorities and differing care goals |
+| End-of-life care | Symptom control, continuity, carer experience and concordance with documented preferences | Avoid treating death or hospital avoidance as an uncomplicated success/failure measure |
+| Access and equity | Referral, acceptance, treatment and outcomes by deprivation, locality and relevant need | Compare access with the **eligible** population, not only people already referred |
+| System consequences | Community workload, waiting times, staff capacity, unpaid carer burden and acute bed use | Identify activity or costs shifted to another setting or group |
+
+For example, a fall in admissions accompanied by longer waits for urgent community assessment and more subsequent emergency escalations would not support a straightforward claim of net benefit. Conversely, some appropriate admissions may rise because proactive teams identify previously unmet need.
+
+Where death prevents subsequent admission or changes observation time, compare suitable rates and consider competing events; do not assume that everyone has the same opportunity to experience an admission. Module 9 introduces the underlying methodological issues.
+
+::: {.callout-important title="Avoid a one-sided benefits narrative"}
+A convincing evaluation considers **benefits, harms, unintended consequences and opportunity costs together**. No single utilisation measure should stand in for overall quality or value of care.
+:::
+
 ## 4. Make the Theory of Change Visible
 
 Before examining outcomes, programme leads, clinicians, patients, carers, commissioners and analysts work together to map how each intervention is expected to create change.
@@ -215,11 +236,7 @@ If the size or composition of the eligible cohort changes, comparing admission c
 
 The chart below uses **hypothetical annual data** to illustrate observed admissions and an estimated no-intervention trajectory. The counterfactual is modelled, not observed.
 
-![](../images/FrailtyCounterfactual.png)
-
-Line chart of annual emergency admissions from 2022 to 2026. 
-
-Observed admissions decline to 900 in 2026, while the illustrative no-intervention counterfactual reaches 1,100.
+![Illustrative observed admissions and estimated counterfactual. The counterfactual is modelled, not observed.](module17-frailty-counterfactual.png){fig-alt="Line chart of annual emergency admissions from 2022 to 2026. Observed admissions decline to 900 in 2026, while the illustrative no-intervention counterfactual reaches 1,100." width="100%"}
 
 A widening gap may represent an intervention effect **only if the assumptions used to estimate the no-intervention trajectory are credible**. Other changes—population need, hospital capacity, clinical thresholds or wider policy—could also explain it.
 
@@ -537,6 +554,29 @@ A useful conclusion might be:
 
 The strength of the wording must match the evidence.
 
+### Was the Integrated Model Delivered as Intended?
+
+A null or disappointing outcome does not, by itself, establish that the underlying care model is ineffective. The ICB first distinguishes **failure of the intervention theory** from **failure to implement or reach the intended population**.
+
+The evaluation should record:
+
+| Implementation question | Evidence to collect | Why it changes interpretation |
+|---|---|---|
+| **Reach** — who was offered support? | Eligible, referred, accepted and treated populations; reasons for non-participation | Low reach may dilute population-level impact and conceal inequitable access |
+| **Fidelity** — was the model delivered? | Care plans completed, MDT participation, response times and delivery against core service specifications | An intervention that was not delivered as designed is not a clean test of its theory |
+| **Dose and duration** — how much support occurred? | Number, timing and intensity of contacts; time from referral to first intervention | A single contact may not represent the intended longitudinal pathway |
+| **Capacity and context** — what constrained delivery? | Staffing, vacancies, caseloads, local service availability and referral bottlenecks | Implementation can vary with demand and operational pressure |
+| **Integration** — did components connect? | Shared plans, handovers, referrals between frailty care and UCR, and clinician/patient accounts | Benefits may depend on coordination rather than on individual components alone |
+| **Adaptation** — did the model change? | Dates and reasons for changes in eligibility, staffing, pathways and operating hours | A single implementation date may conceal several different versions of the intervention |
+
+**Interpretation example (illustrative):** suppose the portfolio-level analysis finds no clear reduction in admissions. Implementation records reveal that only 35% of the eligible population received a completed frailty review, and UCR access varied considerably by locality. The result may indicate that **the portfolio as implemented** did not demonstrate the intended population-level effect. It does **not** establish that full and equitable delivery would have been ineffective.
+
+The reverse is also true: high fidelity does not prove the model works. If delivery was strong but outcomes did not improve, the ICB should scrutinise the Theory of Change, time horizon, measures, comparator and plausible unintended effects.
+
+::: {.callout-tip title="Keep implementation and causal questions separate"}
+Implementation evidence helps explain **what was delivered, to whom and under what conditions**. It can support a contribution argument and guide redesign, but differences between high- and low-exposure patients should not be interpreted as causal dose–response effects without addressing selection and time-varying confounding. See Module 9.
+:::
+
 ### When the Evidence Disagrees
 
 Imagine the comparative analysis suggests that the frailty portfolio is associated with fewer emergency admissions. However, patient interviews describe delays and inconsistent continuity, while UCR staff report that referrals often exceed available capacity. Analysis also suggests that people in more deprived neighbourhoods are less likely to receive proactive frailty assessment.
@@ -670,6 +710,19 @@ Before the commissioning discussion, the team prepares a shared evidence summary
 
 This is **not a league table**. It makes assumptions, dependencies, costs and evidence visible so that the ICB can discuss maintaining, targeting, combining, redesigning, scaling, further evaluating or disinvesting in services.
 
+### Make the Final Decision Conditional on Both Benefit and Safety
+
+The portfolio evidence summary should present **benefits, harms and delivery fidelity side by side**, rather than relegating them to separate appendices. For each proposed option, commissioners should ask:
+
+1. **Impact:** Is there credible evidence of improved outcomes relative to an appropriate comparison, or only descriptive/contribution evidence?
+2. **Delivery:** Was the intended intervention actually accessible and delivered at sufficient intensity?
+3. **Safety and experience:** Are there signs of delayed care, adverse outcomes, increased carer burden or poorer experience?
+4. **Equity:** Are improvements and access distributed fairly relative to underlying need?
+5. **Value:** What are the incremental costs, opportunity costs and realistic capacity or cash consequences?
+6. **Action:** Should the ICB maintain, adapt, target, expand, stop or evaluate further — and what evidence would change that choice?
+
+A reasonable conclusion may be **continue with targeted redesign and explicit safety monitoring**, rather than declaring the whole portfolio either a success or failure. If evidence is weak, document that limitation and make the next change evaluable, using the protocol-design principles in Module 9.
+
 ### Turn the Discussion into a Testable Commissioning Plan
 
 To complete the example, suppose the ICB decides **for illustration only** to pilot closer integration between frailty care and UCR in selected localities, while reviewing virtual ward eligibility and the experience of people approaching the end of life. This is an example of *how to document a decision*, not a conclusion that the evaluation established this option as preferable.
@@ -683,6 +736,8 @@ The decision record should state:
 | **Resources** | Identify the incremental investment, staffing and any double-running costs; do not promise cash savings without a cost-removal plan |
 | **Evaluation** | Record baseline trends, phased start dates where feasible, patient exposure and an appropriate comparator |
 | **Outcomes** | Assess appropriate admissions and ED use, patient and carer experience, implementation and unintended effects; separately assess preference-concordant end-of-life care |
+| **Implementation fidelity** | Monitor eligible-to-treated reach, timeliness, core components delivered, exposure duration and variation between localities |
+| **Safety and unintended consequences** | Track delayed escalation, readmissions, adverse events, carer burden and any displacement of workload or cost |
 | **Reassessment** | Agree when to review uptake, implementation, incremental costs, effects and the original assumptions, including what would trigger redesign or discontinuation |
 
 The sequence becomes **decide → specify expected incremental value → implement and monitor → re-evaluate → revisit the decision**. This avoids treating an initial business case or one evaluation as the final word.
@@ -730,6 +785,9 @@ The important shift is from **“Which programme can claim the improvement?”**
 
 ## Key Takeaways
 
+- A reduction in acute activity is not necessarily a net benefit: assess safety, appropriateness, patient and carer experience, equity and unintended consequences alongside utilisation.
+- Distinguish an intervention that was not delivered as intended from a well-delivered intervention that did not achieve its hypothesised effect; neither distinction alone establishes causality.
+
 - An intervention that began without an evaluation plan may still permit retrospective causal analysis; if not, evaluate delivery and contribution without inventing avoided activity, and plan stronger evaluation for the next change.
 - The **patient and population**, rather than the programme business case, should help define the evaluation.
 - Shared outcomes do not mean interventions have identical mechanisms or target exactly the same people.
@@ -748,4 +806,5 @@ The important shift is from **“Which programme can claim the improvement?”**
 
 **Are we evaluating separate services—or understanding what combination of care makes the greatest difference for the people we serve?**
 :::
+
 
