@@ -2,8 +2,11 @@ project:
   type: book
 
 book:
-  title: "Healthcare Decision Intelligence"
-  author: "Chandan Kaur"
+  Title: "Healthcare Decision Intelligence"
+  Author: "Chandan Kaur"
+  Contributors:
+		- Nick Swart, Director of Health Economics, SWART Evaluation Limited; 
+		- Sam Williamson, Deputy Director of Health Economics and Evaluation, NHS Central East ICB
   chapters:
     - Book_Cover.qmd
     - index.qmd
