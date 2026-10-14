@@ -6,11 +6,11 @@ Timeline: May 2026 to November 2026
 
 Author: Chandan Kaur
 
-Contributors: 
-	- Nick Swart, Director of Health Economics, SWART Evaluation Limited
-	- Sam Williamson, Deputy Director of Health Economics and Evaluation, NHS Central East ICB
-
 Profile: linkedin.com/in/chandan-kaur-41032668
+
+Contributors: 
+		- Nick Swart, Director of Health Economics, SWART Evaluation Limited; 
+		- Sam Williamson, Deputy Director of Health Economics and Evaluation, NHS Central East ICB
 
 Audience: Analysts and Decision Makers in healthcare systems
 
