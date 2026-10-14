@@ -45,7 +45,7 @@ The examples throughout the series are intentionally grounded in realistic NHS o
 
 ::: {.callout-tip appearance="simple"}
 
-## 📱 New Healthcare Decision Intelligence Companion
+## 📱 New Healthcare Decision Intelligence Companion (In development)
 
 Need help finding the right module or deciding what to read next?
 
