@@ -78,10 +78,6 @@ Healthcare data often behaves this way.
 
 Length of Stay provides one of the clearest examples.
 
-Healthcare data often behaves this way.
-
-Length of Stay provides one of the clearest examples.
-
 Two hospitals may report the same average Length of Stay while experiencing very different operational realities.
 
 We return to this example shortly.
