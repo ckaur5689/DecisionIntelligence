@@ -4,7 +4,7 @@ project:
 book:
   Title: "Healthcare Decision Intelligence"
   Author: "Chandan Kaur"
-  Chapters:
+  chapters:
     - Book_Cover.qmd
     - index.qmd
     - Part_1.qmd
