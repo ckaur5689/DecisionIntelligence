@@ -236,9 +236,9 @@ If the size or composition of the eligible cohort changes, comparing admission c
 
 The chart below uses **hypothetical annual data** to illustrate observed admissions and an estimated no-intervention trajectory. The counterfactual is modelled, not observed.
 
-![](..images/
+![](../images/FrailtyCounterfactual.png)
 
-[Illustrative observed admissions and estimated counterfactual. The counterfactual is modelled, not observed.](module17-frailty-counterfactual.png){fig-alt="Line chart of annual emergency admissions from 2022 to 2026. Observed admissions decline to 900 in 2026, while the illustrative no-intervention counterfactual reaches 1,100." width="100%"}
+Line chart of annual emergency admissions from 2022 to 2026. Observed admissions decline to 900 in 2026, while the illustrative no-intervention counterfactual reaches 1,100.
 
 A widening gap may represent an intervention effect **only if the assumptions used to estimate the no-intervention trajectory are credible**. Other changes—population need, hospital capacity, clinical thresholds or wider policy—could also explain it.
 
