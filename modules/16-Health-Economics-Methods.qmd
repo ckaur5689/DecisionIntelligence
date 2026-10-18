@@ -142,7 +142,7 @@ An ICB is considering an enhanced multidisciplinary community frailty service fo
 
 An Illustrative economic evaluation: plus £100,000 incremental cost, 40 admissions avoided, six QALYs gained, £2,500 per admission avoided, £16,667 per QALY, plus £20,000 net monetary benefit at an illustrative £20,000 per QALY, and a separate £270,000 three-year net budget impact.
 
-![](..images/CommunityFrailtyExample.png)
+![](../images/CommunityFrailtyExample.png)
 
 The figure summarises fictional teaching calculations. The one-year economic evaluation and three-year budget scenario have different scopes and must not be added together.*
 
