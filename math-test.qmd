@@ -1,0 +1,19 @@
+
+---
+title: "Math Rendering Test"
+format:
+  html:
+    html-math-method: mathjax
+---
+
+## Test Equation
+
+$$
+\Delta C = \text{£}2{,}100{,}000 - \text{£}2{,}000{,}000 = \text{£}100{,}000
+$$
+
+$$
+ICER_{\mathrm{QALY}} =
+\frac{\text{£}100{,}000}{6}
+\approx \text{£}16{,}667
+$$
