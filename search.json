@@ -2704,7 +2704,17 @@
     "href": "modules/16-Health-Economics-Methods.html",
     "title": "Module 16: Methods for Applying Health Economics to Healthcare Decisions",
     "section": "",
-    "text": "1. From understanding value to applying methods\nHealthcare Decision Intelligence\nModule 15 established why health economics matters: healthcare decisions must consider benefits in relation to limited resources. This module moves from principles to practical analytical methods. It explains how to define a comparison, estimate resource use and outcomes, choose an appropriate method, calculate results and test whether conclusions are robust. It is not a substitute for specialist health economics advice on high-stakes decisions.",
+    "text": "Comparing options, costs, outcomes and value",
+    "crumbs": [
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Module 16: Methods for Applying Health Economics to Healthcare Decisions</span>"
+    ]
+  },
+  {
+    "objectID": "modules/16-Health-Economics-Methods.html#comparing-options-costs-outcomes-and-value",
+    "href": "modules/16-Health-Economics-Methods.html#comparing-options-costs-outcomes-and-value",
+    "title": "Module 16: Methods for Applying Health Economics to Healthcare Decisions",
+    "section": "",
+    "text": "🖨️ Print this module",
     "crumbs": [
       "<span class='chapter-number'>21</span>  <span class='chapter-title'>Module 16: Methods for Applying Health Economics to Healthcare Decisions</span>"
     ]
@@ -2713,8 +2723,8 @@
     "objectID": "modules/16-Health-Economics-Methods.html#from-understanding-value-to-applying-methods",
     "href": "modules/16-Health-Economics-Methods.html#from-understanding-value-to-applying-methods",
     "title": "Module 16: Methods for Applying Health Economics to Healthcare Decisions",
-    "section": "",
-    "text": "Learning objectives\n\nSpecify an economic analysis using a population, intervention, comparator, outcomes, perspective and time horizon.\nConstruct transparent resource-use and cost estimates, distinguishing economic costs from budget expenditure.\nChoose among partial evaluations, full economic evaluations and supporting financial analyses.\nCalculate and interpret incremental costs, incremental effects, ICERs and net monetary benefit.\nBuild a simple budget impact analysis and examine uncertainty and variation across groups.\nPresent limitations and evidence requirements clearly to commissioners.",
+    "section": "1. From understanding value to applying methods",
+    "text": "1. From understanding value to applying methods\nModule 15 established why health economics matters: healthcare decisions must consider benefits in relation to limited resources. This module moves from principles to practical analytical methods. It explains how to define a comparison, estimate resource use and outcomes, choose an appropriate method, calculate results and test whether conclusions are robust. It is not a substitute for specialist health economics advice on high-stakes decisions.\n\nLearning objectives\n\nSpecify an economic analysis using a population, intervention, comparator, outcomes, perspective and time horizon.\nConstruct transparent resource-use and cost estimates, distinguishing economic costs from budget expenditure.\nChoose among partial evaluations, full economic evaluations and supporting financial analyses.\nCalculate and interpret incremental costs, incremental effects, ICERs and net monetary benefit.\nBuild a simple budget impact analysis and examine uncertainty and variation across groups.\nPresent limitations and evidence requirements clearly to commissioners.",
     "crumbs": [
       "<span class='chapter-number'>21</span>  <span class='chapter-title'>Module 16: Methods for Applying Health Economics to Healthcare Decisions</span>"
     ]
