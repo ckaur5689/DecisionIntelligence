@@ -87,6 +87,35 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
@@ -365,9 +394,9 @@ ul.task-list li input[type="checkbox"] {
 <p>Begin with the decision to be supported, not with a preferred technique. Write a one-sentence decision question, then specify the elements below before collecting data.</p>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 15%">
-<col style="width: 41%">
-<col style="width: 41%">
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -421,44 +450,38 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="build-the-cost-and-resource-use-dataset">3. Build the cost and resource-use dataset</h2>
 <p>Use the sequence identify → measure → value. For each resource, record the unit, quantity, unit cost, source, price year and whether it is additional, displaced or already available. Separate set-up from recurrent resource use. Gross costing uses average episode costs; micro-costing itemises staff minutes, tests, supplies and other inputs. The right level of detail depends on the decision.</p>
 <table class="caption-top table">
-<colgroup>
-<col style="width: 39%">
-<col style="width: 19%">
-<col style="width: 19%">
-<col style="width: 19%">
-</colgroup>
 <thead>
 <tr class="header">
 <th style="text-align: left;">Resource</th>
 <th style="text-align: left;">Quantity</th>
-<th style="text-align: left;">Unit cost</th>
-<th style="text-align: left;">Total</th>
+<th style="text-align: right;">Unit cost</th>
+<th style="text-align: right;">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td style="text-align: left;">Nurse time</td>
 <td style="text-align: left;">1,200 hours</td>
-<td style="text-align: left;">£45/hour</td>
-<td style="text-align: left;">£54,000</td>
+<td style="text-align: right;">£45/hour</td>
+<td style="text-align: right;">£54,000</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Care coordinator</td>
 <td style="text-align: left;">800 hours</td>
-<td style="text-align: left;">£35/hour</td>
-<td style="text-align: left;">£28,000</td>
+<td style="text-align: right;">£35/hour</td>
+<td style="text-align: right;">£28,000</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Training and implementation</td>
 <td style="text-align: left;">One programme</td>
-<td style="text-align: left;">£18,000</td>
-<td style="text-align: left;">£18,000</td>
+<td style="text-align: right;">£18,000</td>
+<td style="text-align: right;">£18,000</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Total illustrative programme cost</td>
+<td style="text-align: left;"><strong>Total illustrative programme cost</strong></td>
 <td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">£100,000</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"><strong>£100,000</strong></td>
 </tr>
 </tbody>
 </table>
@@ -485,9 +508,9 @@ ul.task-list li input[type="checkbox"] {
 <p>A full economic evaluation compares at least two options on both costs and outcomes. Partial and supporting analyses are valuable, but cannot independently answer every question about comparative value.</p>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 26%">
-<col style="width: 31%">
-<col style="width: 41%">
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -566,9 +589,9 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <p>An ICB is considering an enhanced multidisciplinary community frailty service for older people with frailty and complex needs. The proposed service combines proactive assessment, medication review, care coordination and rapid community response. The analyst is asked whether to commission the service and what evidence is needed before scaling it.</p>
-<p>An Illustrative economic evaluation: plus £100,000 incremental cost, 40 admissions avoided, six QALYs gained, £2,500 per admission avoided, £16,667 per QALY, plus £20,000 net monetary benefit at an illustrative £20,000 per QALY, and a separate £270,000 three-year net budget impact.</p>
+<p>Illustrative economic evaluation: plus £100,000 incremental cost, 40 admissions avoided, six QALYs gained, £2,500 per admission avoided, £16,667 per QALY, plus £20,000 net monetary benefit at an illustrative £20,000 per QALY, and a separate £270,000 three-year net budget impact</p>
 <p><img src="../images/CommunityFrailtyExample.png" class="img-fluid"></p>
-<p>The figure summarises fictional teaching calculations. The one-year economic evaluation and three-year budget scenario have different scopes and must not be added together.*</p>
+<p>*The figure summarises fictional teaching calculations. The one-year economic evaluation and three-year budget scenario have different scopes and must not be added together.</p>
 <section id="step-1-specify-the-decision" class="level3">
 <h3 class="anchored" data-anchor-id="step-1-specify-the-decision">Step 1 — Specify the decision</h3>
 <table class="caption-top table">
@@ -657,24 +680,38 @@ ul.task-list li input[type="checkbox"] {
 <section id="step-3-calculate-cost-effectiveness-in-natural-units" class="level3">
 <h3 class="anchored" data-anchor-id="step-3-calculate-cost-effectiveness-in-natural-units">Step 3 — Calculate cost-effectiveness in natural units</h3>
 <p>Incremental cost:</p>
-<p>[ C = £2{,}100{,}000 - £2{,}000{,}000 = £100{,}000 ]</p>
+<p><span class="math display">\[
+\Delta C = \text{£}2{,}100{,}000 - \text{£}2{,}000{,}000 = \text{£}100{,}000
+\]</span></p>
 <p>Incremental admissions avoided:</p>
-<p>[ E_{} = 300 - 260 = 40 ]</p>
+<p><span class="math display">\[
+\Delta E_{\mathrm{admissions}} = 300 - 260 = 40
+\]</span></p>
 <p>Cost per additional admission avoided:</p>
-<p>[ ICER_{} = = £2{,}500&nbsp; ]</p>
+<p><span class="math display">\[
+ICER_{\mathrm{admissions}} = \frac{\text{£}100{,}000}{40}
+= \text{£}2{,}500\ \text{per admission avoided}
+\]</span></p>
 <p><strong>Interpretation:</strong> the enhanced service costs £2,500 more in total economic resources per additional admission avoided, under these assumptions. That is not automatically good or poor value: admissions avoided are not a universal measure of health benefit and there is no universal acceptable price per admission avoided.</p>
 </section>
 <section id="step-4-calculate-cost-utility" class="level3">
 <h3 class="anchored" data-anchor-id="step-4-calculate-cost-utility">Step 4 — Calculate cost-utility</h3>
 <p>A QALY combines length of life with health-related quality of life. The example assumes an incremental <strong>six QALYs across the cohort</strong>; it does not establish how those gains arose. In a real evaluation, explain the utility instrument and valuation set, survival assumptions, missing-data handling and any extrapolation.</p>
-<p>[ Q = 606-600 = 6&nbsp; ]</p>
-<p>[ ICER_{} = £16{,}667&nbsp; ]</p>
+<p><span class="math display">\[
+\Delta Q = 606-600 = 6\ \text{QALYs}
+\]</span></p>
+<p><span class="math display">\[
+ICER_{\mathrm{QALY}} = \frac{\text{£}100{,}000}{6}
+\approx \text{£}16{,}667\ \text{per additional QALY}
+\]</span></p>
 <p>The point estimate lies in the <strong>north-east quadrant</strong> of the cost-effectiveness plane: the service is more effective but also more costly. It therefore requires a judgement about the value of the additional benefit, rather than being automatically preferred.</p>
 </section>
 <section id="step-5-use-net-monetary-benefit-to-explore-the-decision" class="level3">
 <h3 class="anchored" data-anchor-id="step-5-use-net-monetary-benefit-to-explore-the-decision">Step 5 — Use net monetary benefit to explore the decision</h3>
 <p>Incremental net monetary benefit (INMB) expresses incremental QALYs and costs in a common monetary metric at an <strong>explicitly assumed</strong> value per QALY, ():</p>
-<p>[ INMB = (Q)-C ]</p>
+<p><span class="math display">\[
+INMB = (\lambda \times \Delta Q)-\Delta C
+\]</span></p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -703,7 +740,9 @@ ul.task-list li input[type="checkbox"] {
 </table>
 <p>These are <strong>illustrative values, not a statement of the applicable current NICE threshold or an ICB commissioning rule</strong>. At £20,000, the model’s positive INMB is only £20,000 for the entire cohort, making it important to test uncertain inputs.</p>
 <p>At an assumed £20,000 per QALY, the break-even QALY gain is:</p>
-<p>[ Q_{} = =5 ]</p>
+<p><span class="math display">\[
+\Delta Q_{\mathrm{break-even}} = \frac{\text{£}100{,}000}{\text{£}20{,}000}=5
+\]</span></p>
 <p>If the true gain were below five QALYs, the modelled INMB would be negative at that assumed value.</p>
 </section>
 <section id="step-6-present-a-cost-consequence-table" class="level3">
