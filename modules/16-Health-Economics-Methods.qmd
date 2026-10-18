@@ -26,21 +26,15 @@ Module 15 established why health economics matters: healthcare decisions must co
 
 Begin with the decision to be supported, not with a preferred technique. Write a one-sentence decision question, then specify the elements below before collecting data.
 
-  ----------------------------------------------------------------------------------------------------------------------------------------------------
-  Element                 What the analyst specifies                                    Example: community frailty service
-  ----------------------- ------------------------------------------------------------- --------------------------------------------------------------
-  Population              Eligibility, baseline risk, expected number and subgroups     1,000 eligible older adults with frailty
+| Element | What the analyst specifies | Example: community frailty service |
+|:--|:--|:--|
+| Population | Eligibility, baseline risk, expected number and subgroups | 1,000 eligible older adults with frailty |
+| Intervention | Service model, intensity, start-up and running requirements | Enhanced multidisciplinary support |
+| Comparator | What would realistically happen otherwise | Current community and acute pathway |
+| Outcomes | Health, patient experience and healthcare resource use | Admissions, quality of life, staff time |
+| Perspective | Which costs and outcomes are included | NHS and personal social services; additional ICB budget view |
+| Time horizon | Duration, price year and any discounting | 12 months for illustrative model; longer if benefits persist |
 
-  Intervention            Service model, intensity, start-up and running requirements   Enhanced multidisciplinary support
-
-  Comparator              What would realistically happen otherwise                     Current community and acute pathway
-
-  Outcomes                Health, patient experience and healthcare resource use        Admissions, quality of life, staff time
-
-  Perspective             Which costs and outcomes are included                         NHS and personal social services; additional ICB budget view
-
-  Time horizon            Duration, price year and any discounting                      12 months for illustrative model; longer if benefits persist
-  ----------------------------------------------------------------------------------------------------------------------------------------------------
 
 A comparator is essential for attributing incremental costs and outcomes. Observed changes in a single service are not automatically effects caused by that service; the evaluation design must support the effect estimate. Refer to earlier evaluation modules for causal methods.
 
@@ -56,17 +50,13 @@ An evaluation can be rigorous without being elaborate. The minimum defensible de
 
 Use the sequence identify → measure → value. For each resource, record the unit, quantity, unit cost, source, price year and whether it is additional, displaced or already available. Separate set-up from recurrent resource use. Gross costing uses average episode costs; micro-costing itemises staff minutes, tests, supplies and other inputs. The right level of detail depends on the decision.
 
-  -----------------------------------------------------------------------------------------
-  Resource                            Quantity          Unit cost         Total
-  ----------------------------------- ----------------- ----------------- -----------------
-  Nurse time                          1,200 hours       £45/hour          £54,000
+| Resource | Quantity | Unit cost | Total |
+|:--|:--|--:|--:|
+| Nurse time | 1,200 hours | £45/hour | £54,000 |
+| Care coordinator | 800 hours | £35/hour | £28,000 |
+| Training and implementation | One programme | £18,000 | £18,000 |
+| **Total illustrative programme cost** | | | **£100,000** |
 
-  Care coordinator                    800 hours         £35/hour          £28,000
-
-  Training and implementation         One programme     £18,000           £18,000
-
-  Total illustrative programme cost                                       £100,000
-  -----------------------------------------------------------------------------------------
 
 These values are invented for teaching, not NHS reference costs. Use current authoritative unit-cost sources and document local adjustments. Check whether the source represents actual resource cost, reimbursement price or cash expenditure: they are not interchangeable. For a multi-year analysis, apply the appropriate price-year adjustments and discounting conventions for the appraisal being undertaken.
 
@@ -94,31 +84,24 @@ Healthcare resource utilisation (HCRU) may be presented as an outcome (e.g. admi
 
 A full economic evaluation compares at least two options on both costs and outcomes. Partial and supporting analyses are valuable, but cannot independently answer every question about comparative value.
 
-  -----------------------------------------------------------------------------------------------------------------------------------------------
-  Method                                Typical output                                Best use
-  ------------------------------------- --------------------------------------------- -----------------------------------------------------------
-  Costing / cost of illness             Cost per service or disease burden            Size the resource requirement or problem
+| Method | Typical output | Best use |
+|:--|:--|:--|
+| Costing / cost of illness | Cost per service or disease burden | Size the resource requirement or problem |
+| Cost-consequence analysis (CCA) | Table of costs and multiple outcomes | Local pathways with several important outcomes |
+| Cost-effectiveness analysis (CEA) | Incremental cost per natural outcome | Comparable interventions with a common outcome |
+| Cost-utility analysis (CUA) | Incremental cost per QALY | Health gains compared on a common scale |
+| Cost-benefit analysis (CBA) | Monetary net benefit / benefit-cost ratio | Cross-sector public policy choices |
+| Cost-minimisation / cost comparison | Difference in costs | Only where comparable outcomes are adequately established |
+| Budget impact analysis (BIA) | Annual expenditure difference | Affordability for a defined budget holder |
+| Return on investment (ROI) | Net financial return relative to investment | Financial payback, with tightly specified cash flows |
 
-  Cost-consequence analysis (CCA)       Table of costs and multiple outcomes          Local pathways with several important outcomes
-
-  Cost-effectiveness analysis (CEA)     Incremental cost per natural outcome          Comparable interventions with a common outcome
-
-  Cost-utility analysis (CUA)           Incremental cost per QALY                     Health gains compared on a common scale
-
-  Cost-benefit analysis (CBA)           Monetary net benefit / benefit-cost ratio     Cross-sector public policy choices
-
-  Cost-minimisation / cost comparison   Difference in costs                           Only where comparable outcomes are adequately established
-
-  Budget impact analysis (BIA)          Annual expenditure difference                 Affordability for a defined budget holder
-
-  Return on investment (ROI)            Net financial return relative to investment   Financial payback, with tightly specified cash flows
-  -----------------------------------------------------------------------------------------------------------------------------------------------
 
 CCA, CEA, CUA and CBA are full evaluations when they compare relevant alternatives. Budget impact and ROI are supporting analyses rather than replacements for health-outcome assessment. In practice a local programme may require a CCA alongside a BIA, with a more detailed CUA if reliable utility evidence exists.
 
 Flowchart linking six decision questions to costing, budget impact, cost-consequence, cost-effectiveness, cost-utility and cost-benefit analysis.
 
 ![](../images/HealthEconomicMethods.png)
+
 
 The infographic is a method-selection aid, not a substitute for specifying the comparator and evidence. The accompanying table also covers cost-minimisation and ROI.
 
@@ -140,11 +123,11 @@ All populations, costs, effects, utility gains and scenarios below are fictional
 
 An ICB is considering an enhanced multidisciplinary community frailty service for older people with frailty and complex needs. The proposed service combines proactive assessment, medication review, care coordination and rapid community response. The analyst is asked whether to commission the service and what evidence is needed before scaling it.
 
-An Illustrative economic evaluation: plus £100,000 incremental cost, 40 admissions avoided, six QALYs gained, £2,500 per admission avoided, £16,667 per QALY, plus £20,000 net monetary benefit at an illustrative £20,000 per QALY, and a separate £270,000 three-year net budget impact.
+Illustrative economic evaluation: plus £100,000 incremental cost, 40 admissions avoided, six QALYs gained, £2,500 per admission avoided, £16,667 per QALY, plus £20,000 net monetary benefit at an illustrative £20,000 per QALY, and a separate £270,000 three-year net budget impact
 
 ![](../images/CommunityFrailtyExample.png)
 
-The figure summarises fictional teaching calculations. The one-year economic evaluation and three-year budget scenario have different scopes and must not be added together.*
+*The figure summarises fictional teaching calculations. The one-year economic evaluation and three-year budget scenario have different scopes and must not be added together.
 
 ### Step 1 — Specify the decision
 
@@ -177,22 +160,22 @@ The £2.1 million already represents **all included resource costs under the sta
 
 Incremental cost:
 
-\[
-\Delta C = £2{,}100{,}000 - £2{,}000{,}000 = £100{,}000
-\]
+$$
+\Delta C = \text{£}2{,}100{,}000 - \text{£}2{,}000{,}000 = \text{£}100{,}000
+$$
 
 Incremental admissions avoided:
 
-\[
+$$
 \Delta E_{\mathrm{admissions}} = 300 - 260 = 40
-\]
+$$
 
 Cost per additional admission avoided:
 
-\[
-ICER_{\mathrm{admissions}} = \frac{£100{,}000}{40}
-= £2{,}500\ \text{per admission avoided}
-\]
+$$
+ICER_{\mathrm{admissions}} = \frac{\text{£}100{,}000}{40}
+= \text{£}2{,}500\ \text{per admission avoided}
+$$
 
 **Interpretation:** the enhanced service costs £2,500 more in total economic resources per additional admission avoided, under these assumptions. That is not automatically good or poor value: admissions avoided are not a universal measure of health benefit and there is no universal acceptable price per admission avoided.
 
@@ -200,14 +183,14 @@ ICER_{\mathrm{admissions}} = \frac{£100{,}000}{40}
 
 A QALY combines length of life with health-related quality of life. The example assumes an incremental **six QALYs across the cohort**; it does not establish how those gains arose. In a real evaluation, explain the utility instrument and valuation set, survival assumptions, missing-data handling and any extrapolation.
 
-\[
+$$
 \Delta Q = 606-600 = 6\ \text{QALYs}
-\]
+$$
 
-\[
-ICER_{\mathrm{QALY}} = \frac{£100{,}000}{6}
-\approx £16{,}667\ \text{per additional QALY}
-\]
+$$
+ICER_{\mathrm{QALY}} = \frac{\text{£}100{,}000}{6}
+\approx \text{£}16{,}667\ \text{per additional QALY}
+$$
 
 The point estimate lies in the **north-east quadrant** of the cost-effectiveness plane: the service is more effective but also more costly. It therefore requires a judgement about the value of the additional benefit, rather than being automatically preferred.
 
@@ -215,9 +198,9 @@ The point estimate lies in the **north-east quadrant** of the cost-effectiveness
 
 Incremental net monetary benefit (INMB) expresses incremental QALYs and costs in a common monetary metric at an **explicitly assumed** value per QALY, \(\lambda\):
 
-\[
+$$
 INMB = (\lambda \times \Delta Q)-\Delta C
-\]
+$$
 
 | Illustrative value per QALY | Calculation | INMB |
 |---|---|---:|
@@ -229,9 +212,9 @@ These are **illustrative values, not a statement of the applicable current NICE 
 
 At an assumed £20,000 per QALY, the break-even QALY gain is:
 
-\[
-\Delta Q_{\mathrm{break-even}} = \frac{£100{,}000}{£20{,}000}=5
-\]
+$$
+\Delta Q_{\mathrm{break-even}} = \frac{\text{£}100{,}000}{\text{£}20{,}000}=5
+$$
 
 If the true gain were below five QALYs, the modelled INMB would be negative at that assumed value.
 
@@ -404,4 +387,3 @@ An ICB is considering extending a community service to a second locality. The in
 -   Briggs AH et al. Model parameter estimation and uncertainty analysis: ISPOR-SMDM good research practices, 2012.
 
 -   HM Treasury. The Green Book: current edition and supplementary guidance.
-
