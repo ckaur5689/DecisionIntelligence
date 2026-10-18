@@ -1,6 +1,6 @@
 # Module 16: Methods for Applying Health Economics to Healthcare Decisions 
 
-##
+## Comparing options, costs, outcomes and value
 
 <button class="print-button" onclick="window.print()">🖨️ Print this module</button>
 
