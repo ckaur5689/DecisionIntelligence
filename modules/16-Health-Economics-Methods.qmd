@@ -1,6 +1,8 @@
 # Module 16: Methods for Applying Health Economics to Healthcare Decisions 
 
-Healthcare Decision Intelligence
+##
+
+<button class="print-button" onclick="window.print()">🖨️ Print this module</button>
 
 ## 1. From understanding value to applying methods
 
