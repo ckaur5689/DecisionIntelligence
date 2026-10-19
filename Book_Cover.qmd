@@ -1,1 +1,3 @@
 ![](images/BookCover.png)
+
+![](images/BookQRcode.jpeg)
