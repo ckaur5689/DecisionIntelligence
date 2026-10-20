@@ -1,5 +1,7 @@
 # Module 16: Methods for applying health economics to healthcare decisions
 
+<button class="print-button" onclick="window.print()">🖨️ Print this module</button>
+
 ## Components of a health economic evaluation
 
 Every economic evaluation, from a simple cost analysis to a full cost-utility model, is built from the same parts. Before any numbers are calculated, the analyst needs to settle **who** the evaluation is about, **what** is being compared, **which** costs and outcomes count, **from whose point of view** and **for how long**. Health technology assessment bodies often set these out in a \"scope\" using the PICO framework: Population, Intervention, Comparator and Outcomes. Getting them right matters more than any modelling technique. A sophisticated model built on the wrong population or the wrong comparator will answer the wrong question very precisely.
