@@ -292,7 +292,7 @@ The plane (Figure 1.3) is the simplest way to picture a comparison. The horizont
 
 -   **South-west (less effective, cheaper):** also a trade-off. Is the money saved worth the health given up? This is rarer, but it matters when services are cut or scaled back.
 
-![](..images/CostEffectivenessPlane.png)
+![](../images/CostEffectivenessPlane.png)
 
 *Figure 1.3. The cost-effectiveness plane. Results below the threshold line are regarded as good value. Intervention\'s base case falls in the north-east quarter, just below the line at £25,000 per QALY.*
 
