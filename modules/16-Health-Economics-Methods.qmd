@@ -40,7 +40,7 @@ HCRU outcomes count how much health and care services people use: hospital admis
 
 HCRU outcomes play two roles. Counted in natural units, they are **outcomes** in their own right, as in \"cost per admission avoided\" or a row in a cost-consequence table. Multiplied by unit costs, they become part of the **costs** of each option. This dual role is useful, but it has a trap. An avoided admission can be counted as a health benefit or as a cost saving, but not both at once in the same total. It is also worth remembering that resource use is not health. Fewer GP visits can mean that patients are better, or that they have stopped seeking care they need. HCRU outcomes should be read alongside general health outcomes, not instead of them.
 
-**Methods in Economic Evaluation**
+## Methods in Economic Evaluation
 
 Health Economics uses a number of analytical methods to compare the resources invested against outcomes achieved. These methods differ in how they quantify and monetise health benefits and the availability of data. Main Economic evaluation approaches can be classified into partial economic evaluation and full economic evaluation. The dividing line is set by two simple tests:
 
@@ -96,7 +96,7 @@ Supporting analyses. Two widely used methods do not sit neatly in either box. Bu
   Cost-benefit analysis         Full            Money                                        Do the benefits exceed the costs?
   --------------------------------------------------------------------------------------------------------------------------------
 
-**Return on investment**
+## Return on investment
 
 **The question**
 
@@ -126,7 +126,7 @@ In health economic terms, ROI is a narrow form of cost-benefit analysis in which
 | **Using ROI as the only measure of value.** ROI ignores health. For health services, it should always sit alongside a cost-utility or cost-consequence analysis.                                                    |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-**Costing analysis**
+## Costing analysis
 
 The question
 
@@ -152,7 +152,7 @@ Gross costing (\"top-down\"). An average cost per episode is used, for example t
 
 In the UK, the standard sources of unit costs are the Unit Costs of Health and Social Care (published annually by the Personal Social Services Research Unit, PSSRU), the National Cost Collection for NHS hospital activity, and the British National Formulary (BNF) or Drug Tariff for medicines. Always state the source and the price year.
 
-**The Pitfalls**
+## The Pitfalls
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **Common mistakes in costing**                                                                                                                                                                                                                                                                                                                                                                                                               |
@@ -166,7 +166,7 @@ In the UK, the standard sources of unit costs are the Unit Costs of Health and S
 | **Ignoring capacity.** A cost per patient is only meaningful at a stated level of use. Always say what caseload the cost assumes.                                                                                                                                                                                                                                                                                                            |
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-**Cost of illness/burden of disease**
+## Cost of illness/burden of disease
 
 The question: How much does this condition cost us, or society?
 
@@ -196,7 +196,7 @@ A cost of illness study is useful for showing that a problem matters and for set
 | A second, subtler trap is **double counting**. If you add productivity losses to NHS costs, check that the same event is not counted twice (for example, counting both an admission and the wages lost during the same admission as separate \"savings\" in a later ROI).                                                                                            |
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-**Cost consequences analysis**
+## Cost consequences analysis
 
 **The question**
 
@@ -222,7 +222,7 @@ A cost-consequence analysis (CCA) sets out the costs of each option and a range 
 | **Mixing time horizons.** Costs over five years next to outcomes over six months is misleading. Use the same horizon for all rows, or label each clearly.                               |
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-**Cost minimisation analysis**
+## Cost minimisation analysis
 
 **The question**
 
@@ -258,7 +258,7 @@ The whole method rests on one condition: **the outcomes really must be the same*
 | **Comparing costs over too short a period.** A cheaper device that fails sooner may cost more over its life.                                                                          |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-**Cost effectiveness analysis and cost utility analysis**
+## Cost effectiveness analysis and cost utility analysis
 
 These two methods are closely related, and most of the ideas are shared, so they are covered together. Cost-utility analysis is really a special case of cost-effectiveness analysis in which the outcome is always a quality-adjusted life year (QALY). In the UK, \"cost-effectiveness analysis\" is often used loosely to mean both.
 
@@ -282,7 +282,7 @@ The ICER tells you the extra cost of buying one extra unit of effect by switchin
 | Suppose option A costs £10,000 and gives 5 QALYs (£2,000 per QALY on average), and option B costs £30,000 and gives 6 QALYs (£5,000 per QALY on average). The averages make B look only moderately more expensive. But moving from A to B costs £20,000 extra for just 1 extra QALY: an ICER of **£25,000 per QALY**. Decisions are about the change, so the ICER, not the average, is the right figure. |
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-**The cost-effectiveness plane**
+## The cost-effectiveness plane
 
 The plane (Figure 1.3) is the simplest way to picture a comparison. The horizontal axis shows the extra health gained. The vertical axis shows the extra cost. Every result falls into one of four quarters:
 
@@ -328,7 +328,7 @@ Both are positive, but at £25,000 the margin is thin: only about £147 per pati
 | **Using a time horizon that is too short or too long.** Too short, and long-term benefits are missed. Too long, and the model rests on guesses about effects far beyond the evidence. |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-**Cost benefit analysis**
+## Cost benefit analysis
 
 **The question**
 
@@ -372,7 +372,7 @@ For these reasons NICE does not use CBA for its health technology assessments, a
 | **Hiding the monetisation.** Always show the health benefits and their money value separately, so readers can apply their own value if they disagree.                                                             |
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-**Budget impact analysis**
+## Budget impact analysis
 
 **The question**
 
@@ -408,7 +408,7 @@ A budget impact analysis (BIA) estimates the change in spending for a specific b
 | **Discounting.** Budget impact figures are normally shown undiscounted, in the prices of the year of the analysis, because they are meant to match what appears in the accounts.                                  |
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-**Choosing the right method**
+## Choosing the right method
 
 No method is best in all situations. The right choice depends on **the question**, **the decision-maker**, and **the evidence available**. In practice, a good evaluation usually combines several methods: for example, a cost-utility analysis to show value for money, a budget impact analysis to show affordability, and a cost-consequence table to show everything the QALY misses.
 
@@ -462,7 +462,7 @@ Economic models draw their inputs from several kinds of source. Each brings its 
   Uncontrolled pilots and before-and-after studies                Early effect estimates for new services                                          Regression to the mean; selection of enthusiastic sites; no comparison group
   ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-**Types of uncertainty**
+## Types of uncertainty
 
 The ISPOR and Society for Medical Decision Making (SMDM) modelling good practice task force (Briggs et al, 2012) set out a widely used way of classifying uncertainty.
 
@@ -482,7 +482,7 @@ The ISPOR and Society for Medical Decision Making (SMDM) modelling good practice
 
 A common mistake is to treat all uncertainty as parameter uncertainty and put it into a probabilistic sensitivity analysis. This gives a false impression of completeness. A PSA can only show uncertainty **within the model as built**. It says nothing about whether the model was built correctly.
 
-**What to report**
+## What to report
 
 A good report of uncertainty includes:
 
@@ -513,7 +513,7 @@ A good report of uncertainty includes:
 +=============================================================================================================================================================================================+
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-Sources:
+## Sources:
 
 -   Drummond MF, Sculpher MJ, Claxton K, Stoddart GL, Torrance GW. *Methods for the Economic Evaluation of Health Care Programmes*. 4th ed. Oxford University Press; 2015.
 
