@@ -56,7 +56,7 @@ Health Economics uses a number of analytical methods to compare the resources in
 | > Two or more options compared | > Partial: cost analysis; effectiveness study    | > Full economic evaluation             |
 +--------------------------------+--------------------------------------------------+----------------------------------------+
 
-> Table1: *The two tests that separate partial from full economic evaluation.*
+> Table 1: *The two tests that separate partial from full economic evaluation.*
 
 It should be noted that a study that measures both costs and outcomes of the intervention with nothing to compare to is still a partial evaluation. In this case, you learn what the intervention costs and outcomes it achieves but not whether it is better value than the alternative, because there is no comparison.
 
