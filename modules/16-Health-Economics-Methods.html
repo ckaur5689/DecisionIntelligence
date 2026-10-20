@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Module 16: Methods for Applying Health Economics to Healthcare Decisions – Healthcare Decision Intelligence</title>
+<title>health-economics-methods – Healthcare Decision Intelligence</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -87,35 +87,6 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
@@ -129,7 +100,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../modules/16-Health-Economics-Methods.html"><span class="chapter-title">Module 16: Methods for Applying Health Economics to Healthcare Decisions</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../modules/16-Health-Economics-Methods.html"><span class="chapter-title">16-Health-Economics-Methods.html</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -256,7 +227,7 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../modules/16-Health-Economics-Methods.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Module 16: Methods for Applying Health Economics to Healthcare Decisions</span></a>
+  <a href="../modules/16-Health-Economics-Methods.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">16-Health-Economics-Methods.html</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -289,731 +260,629 @@ window.Quarto = {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
-   
-  <ul>
-  <li><a href="#comparing-options-costs-outcomes-and-value" id="toc-comparing-options-costs-outcomes-and-value" class="nav-link active" data-scroll-target="#comparing-options-costs-outcomes-and-value">Comparing options, costs, outcomes and value</a></li>
-  <li><a href="#from-understanding-value-to-applying-methods" id="toc-from-understanding-value-to-applying-methods" class="nav-link" data-scroll-target="#from-understanding-value-to-applying-methods">1. From understanding value to applying methods</a>
-  <ul class="collapse">
-  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives">Learning objectives</a></li>
-  </ul></li>
-  <li><a href="#specify-the-decision-and-analytical-scope" id="toc-specify-the-decision-and-analytical-scope" class="nav-link" data-scroll-target="#specify-the-decision-and-analytical-scope">2. Specify the decision and analytical scope</a>
-  <ul class="collapse">
-  <li><a href="#methodological-distinction-partial-and-full-evaluations" id="toc-methodological-distinction-partial-and-full-evaluations" class="nav-link" data-scroll-target="#methodological-distinction-partial-and-full-evaluations">Methodological distinction: partial and full evaluations</a></li>
-  </ul></li>
-  <li><a href="#build-the-cost-and-resource-use-dataset" id="toc-build-the-cost-and-resource-use-dataset" class="nav-link" data-scroll-target="#build-the-cost-and-resource-use-dataset">3. Build the cost and resource-use dataset</a>
-  <ul class="collapse">
-  <li><a href="#costing-checks" id="toc-costing-checks" class="nav-link" data-scroll-target="#costing-checks">Costing checks</a></li>
-  <li><a href="#practical-costing-bottom-up-and-top-down-approaches" id="toc-practical-costing-bottom-up-and-top-down-approaches" class="nav-link" data-scroll-target="#practical-costing-bottom-up-and-top-down-approaches">Practical costing: bottom-up and top-down approaches</a></li>
-  </ul></li>
-  <li><a href="#choose-the-method-that-answers-the-question" id="toc-choose-the-method-that-answers-the-question" class="nav-link" data-scroll-target="#choose-the-method-that-answers-the-question">4. Choose the method that answers the question</a>
-  <ul class="collapse">
-  <li><a href="#choosing-the-right-output" id="toc-choosing-the-right-output" class="nav-link" data-scroll-target="#choosing-the-right-output">Choosing the right output</a></li>
-  </ul></li>
-  <li><a href="#worked-case-study-evaluating-a-community-frailty-service" id="toc-worked-case-study-evaluating-a-community-frailty-service" class="nav-link" data-scroll-target="#worked-case-study-evaluating-a-community-frailty-service">5. Worked case study: evaluating a community frailty service</a>
-  <ul class="collapse">
-  <li><a href="#step-1-specify-the-decision" id="toc-step-1-specify-the-decision" class="nav-link" data-scroll-target="#step-1-specify-the-decision">Step 1 — Specify the decision</a></li>
-  <li><a href="#step-2-assemble-resource-use-and-outcome-evidence" id="toc-step-2-assemble-resource-use-and-outcome-evidence" class="nav-link" data-scroll-target="#step-2-assemble-resource-use-and-outcome-evidence">Step 2 — Assemble resource use and outcome evidence</a></li>
-  <li><a href="#step-3-calculate-cost-effectiveness-in-natural-units" id="toc-step-3-calculate-cost-effectiveness-in-natural-units" class="nav-link" data-scroll-target="#step-3-calculate-cost-effectiveness-in-natural-units">Step 3 — Calculate cost-effectiveness in natural units</a></li>
-  <li><a href="#step-4-calculate-cost-utility" id="toc-step-4-calculate-cost-utility" class="nav-link" data-scroll-target="#step-4-calculate-cost-utility">Step 4 — Calculate cost-utility</a></li>
-  <li><a href="#step-5-use-net-monetary-benefit-to-explore-the-decision" id="toc-step-5-use-net-monetary-benefit-to-explore-the-decision" class="nav-link" data-scroll-target="#step-5-use-net-monetary-benefit-to-explore-the-decision">Step 5 — Use net monetary benefit to explore the decision</a></li>
-  <li><a href="#step-6-present-a-cost-consequence-table" id="toc-step-6-present-a-cost-consequence-table" class="nav-link" data-scroll-target="#step-6-present-a-cost-consequence-table">Step 6 — Present a cost-consequence table</a></li>
-  <li><a href="#step-7-build-the-budget-impact-separately" id="toc-step-7-build-the-budget-impact-separately" class="nav-link" data-scroll-target="#step-7-build-the-budget-impact-separately">Step 7 — Build the budget impact separately</a></li>
-  <li><a href="#step-8-test-the-assumptions-that-could-change-the-result" id="toc-step-8-test-the-assumptions-that-could-change-the-result" class="nav-link" data-scroll-target="#step-8-test-the-assumptions-that-could-change-the-result">Step 8 — Test the assumptions that could change the result</a></li>
-  <li><a href="#step-9-translate-findings-into-an-analytical-recommendation" id="toc-step-9-translate-findings-into-an-analytical-recommendation" class="nav-link" data-scroll-target="#step-9-translate-findings-into-an-analytical-recommendation">Step 9 — Translate findings into an analytical recommendation</a></li>
-  </ul></li>
-  <li><a href="#test-uncertainty-before-drawing-conclusions" id="toc-test-uncertainty-before-drawing-conclusions" class="nav-link" data-scroll-target="#test-uncertainty-before-drawing-conclusions">6. Test uncertainty before drawing conclusions</a>
-  <ul class="collapse">
-  <li><a href="#one-way-and-scenario-sensitivity-analysis" id="toc-one-way-and-scenario-sensitivity-analysis" class="nav-link" data-scroll-target="#one-way-and-scenario-sensitivity-analysis">One-way and scenario sensitivity analysis</a></li>
-  <li><a href="#probabilistic-sensitivity-analysis" id="toc-probabilistic-sensitivity-analysis" class="nav-link" data-scroll-target="#probabilistic-sensitivity-analysis">Probabilistic sensitivity analysis</a></li>
-  <li><a href="#subgroups-and-equity" id="toc-subgroups-and-equity" class="nav-link" data-scroll-target="#subgroups-and-equity">Subgroups and equity</a></li>
-  <li><a href="#quantifying-uncertainty-from-scenarios-to-probabilities" id="toc-quantifying-uncertainty-from-scenarios-to-probabilities" class="nav-link" data-scroll-target="#quantifying-uncertainty-from-scenarios-to-probabilities">Quantifying uncertainty: from scenarios to probabilities</a></li>
-  </ul></li>
-  <li><a href="#a-practical-workflow-for-analysts" id="toc-a-practical-workflow-for-analysts" class="nav-link" data-scroll-target="#a-practical-workflow-for-analysts">7. A practical workflow for analysts</a>
-  <ul class="collapse">
-  <li><a href="#subgroups-equity-and-transferability" id="toc-subgroups-equity-and-transferability" class="nav-link" data-scroll-target="#subgroups-equity-and-transferability">Subgroups, equity and transferability</a></li>
-  </ul></li>
-  <li><a href="#communicating-the-analysis-to-decision-makers" id="toc-communicating-the-analysis-to-decision-makers" class="nav-link" data-scroll-target="#communicating-the-analysis-to-decision-makers">8. Communicating the analysis to decision-makers</a>
-  <ul class="collapse">
-  <li><a href="#questions-to-check-before-publication" id="toc-questions-to-check-before-publication" class="nav-link" data-scroll-target="#questions-to-check-before-publication">Questions to check before publication</a></li>
-  <li><a href="#minimum-reporting-standard" id="toc-minimum-reporting-standard" class="nav-link" data-scroll-target="#minimum-reporting-standard">Minimum reporting standard</a></li>
-  </ul></li>
-  <li><a href="#practical-exercise" id="toc-practical-exercise" class="nav-link" data-scroll-target="#practical-exercise">9. Practical exercise</a></li>
-  <li><a href="#key-messages" id="toc-key-messages" class="nav-link" data-scroll-target="#key-messages">10. Key messages</a></li>
-  <li><a href="#further-reading-and-methodological-references" id="toc-further-reading-and-methodological-references" class="nav-link" data-scroll-target="#further-reading-and-methodological-references">Further reading and methodological references</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title"><span class="chapter-title">Module 16: Methods for Applying Health Economics to Healthcare Decisions</span></h1>
-</div>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
-<div class="quarto-title-meta">
 
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<section id="comparing-options-costs-outcomes-and-value" class="level2">
-<h2 class="anchored" data-anchor-id="comparing-options-costs-outcomes-and-value">Comparing options, costs, outcomes and value</h2>
-<button class="print-button" onclick="window.print()">
-🖨️ Print this module
-</button>
-</section>
-<section id="from-understanding-value-to-applying-methods" class="level2">
-<h2 class="anchored" data-anchor-id="from-understanding-value-to-applying-methods">1. From understanding value to applying methods</h2>
-<p>Module 15 established why health economics matters: healthcare decisions must consider benefits in relation to limited resources. This module moves from principles to practical analytical methods. It explains how to define a comparison, estimate resource use and outcomes, choose an appropriate method, calculate results and test whether conclusions are robust. It is not a substitute for specialist health economics advice on high-stakes decisions.</p>
-<section id="learning-objectives" class="level3">
-<h3 class="anchored" data-anchor-id="learning-objectives">Learning objectives</h3>
-<ul>
-<li><p>Specify an economic analysis using a population, intervention, comparator, outcomes, perspective and time horizon.</p></li>
-<li><p>Construct transparent resource-use and cost estimates, distinguishing economic costs from budget expenditure.</p></li>
-<li><p>Choose among partial evaluations, full economic evaluations and supporting financial analyses.</p></li>
-<li><p>Calculate and interpret incremental costs, incremental effects, ICERs and net monetary benefit.</p></li>
-<li><p>Build a simple budget impact analysis and examine uncertainty and variation across groups.</p></li>
-<li><p>Present limitations and evidence requirements clearly to commissioners.</p></li>
-</ul>
-</section>
-</section>
-<section id="specify-the-decision-and-analytical-scope" class="level2">
-<h2 class="anchored" data-anchor-id="specify-the-decision-and-analytical-scope">2. Specify the decision and analytical scope</h2>
-<p>Begin with the decision to be supported, not with a preferred technique. Write a one-sentence decision question, then specify the elements below before collecting data.</p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Element</th>
-<th style="text-align: left;">What the analyst specifies</th>
-<th style="text-align: left;">Example: community frailty service</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">Population</td>
-<td style="text-align: left;">Eligibility, baseline risk, expected number and subgroups</td>
-<td style="text-align: left;">1,000 eligible older adults with frailty</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Intervention</td>
-<td style="text-align: left;">Service model, intensity, start-up and running requirements</td>
-<td style="text-align: left;">Enhanced multidisciplinary support</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Comparator</td>
-<td style="text-align: left;">What would realistically happen otherwise</td>
-<td style="text-align: left;">Current community and acute pathway</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Outcomes</td>
-<td style="text-align: left;">Health, patient experience and healthcare resource use</td>
-<td style="text-align: left;">Admissions, quality of life, staff time</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Perspective</td>
-<td style="text-align: left;">Which costs and outcomes are included</td>
-<td style="text-align: left;">NHS and personal social services; additional ICB budget view</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Time horizon</td>
-<td style="text-align: left;">Duration, price year and any discounting</td>
-<td style="text-align: left;">12 months for illustrative model; longer if benefits persist</td>
-</tr>
-</tbody>
-</table>
-<p>A comparator is essential for attributing incremental costs and outcomes. Observed changes in a single service are not automatically effects caused by that service; the evaluation design must support the effect estimate. Refer to earlier evaluation modules for causal methods.</p>
-<section id="methodological-distinction-partial-and-full-evaluations" class="level3">
-<h3 class="anchored" data-anchor-id="methodological-distinction-partial-and-full-evaluations">Methodological distinction: partial and full evaluations</h3>
-<p>A partial economic evaluation describes costs, outcomes, or both without comparing alternatives on both dimensions. Examples include costing a pathway and estimating the burden of COPD. These are legitimate analyses, but a high disease cost does not demonstrate that a particular intervention is cost-effective.</p>
-<p>A full economic evaluation compares at least two relevant alternatives on both costs and consequences. Cost-consequence, cost-effectiveness, cost-utility and cost-benefit analyses are different ways of organising those comparisons. Budget impact analysis and financial ROI answer additional financial questions; neither substitutes for a health-outcome comparison.</p>
-<p>An evaluation can be rigorous without being elaborate. The minimum defensible design is determined by the decision, the quality of comparative evidence and the consequences that can be credibly measured.</p>
-</section>
-</section>
-<section id="build-the-cost-and-resource-use-dataset" class="level2">
-<h2 class="anchored" data-anchor-id="build-the-cost-and-resource-use-dataset">3. Build the cost and resource-use dataset</h2>
-<p>Use the sequence identify → measure → value. For each resource, record the unit, quantity, unit cost, source, price year and whether it is additional, displaced or already available. Separate set-up from recurrent resource use. Gross costing uses average episode costs; micro-costing itemises staff minutes, tests, supplies and other inputs. The right level of detail depends on the decision.</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th style="text-align: left;">Resource</th>
-<th style="text-align: left;">Quantity</th>
-<th style="text-align: right;">Unit cost</th>
-<th style="text-align: right;">Total</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">Nurse time</td>
-<td style="text-align: left;">1,200 hours</td>
-<td style="text-align: right;">£45/hour</td>
-<td style="text-align: right;">£54,000</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Care coordinator</td>
-<td style="text-align: left;">800 hours</td>
-<td style="text-align: right;">£35/hour</td>
-<td style="text-align: right;">£28,000</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Training and implementation</td>
-<td style="text-align: left;">One programme</td>
-<td style="text-align: right;">£18,000</td>
-<td style="text-align: right;">£18,000</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><strong>Total illustrative programme cost</strong></td>
-<td style="text-align: left;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"><strong>£100,000</strong></td>
-</tr>
-</tbody>
-</table>
-<p>These values are invented for teaching, not NHS reference costs. Use current authoritative unit-cost sources and document local adjustments. Check whether the source represents actual resource cost, reimbursement price or cash expenditure: they are not interchangeable. For a multi-year analysis, apply the appropriate price-year adjustments and discounting conventions for the appraisal being undertaken.</p>
-<section id="costing-checks" class="level3">
-<h3 class="anchored" data-anchor-id="costing-checks">Costing checks</h3>
-<ul>
-<li><p>Does the caseload match the staffing model and utilisation assumptions?</p></li>
-<li><p>Are overheads, implementation, digital integration and ongoing maintenance included?</p></li>
-<li><p>Could changes in care shift costs to another provider or to patients and carers?</p></li>
-<li><p>Are resource-use outcomes counted consistently without duplicating the same event?</p></li>
-</ul>
-</section>
-<section id="practical-costing-bottom-up-and-top-down-approaches" class="level3">
-<h3 class="anchored" data-anchor-id="practical-costing-bottom-up-and-top-down-approaches">Practical costing: bottom-up and top-down approaches</h3>
-<p>Micro-costing measures individual resource inputs, such as minutes of nursing time, equipment, software licences and tests. It is particularly useful when a new service has no established unit cost. Gross or top-down costing applies average episode or service costs to activity counts. This is efficient for established pathways but may conceal variation in case mix and resource intensity.</p>
-<p>For example, 1,200 nurse hours at an illustrative £45 per hour cost £54,000. This is a resource-cost estimate, not automatically a new cash requirement: the financial implication depends on whether extra staff or paid sessions are needed. State the cost source, price year, caseload and assumptions about utilisation.</p>
-<p>Cost of illness studies may be prevalence-based (the cost associated with everyone living with a condition in a defined period) or incidence-based (the costs over time for a cohort of new cases). Such studies describe burden and inform planning, but do not establish the value of an intervention.</p>
-<p>Healthcare resource utilisation (HCRU) may be presented as an outcome (e.g.&nbsp;admissions avoided) and used to calculate costs. Keep the accounting transparent: do not add a monetised avoided admission to the same avoided admission already represented in total cost differences.</p>
-</section>
-</section>
-<section id="choose-the-method-that-answers-the-question" class="level2">
-<h2 class="anchored" data-anchor-id="choose-the-method-that-answers-the-question">4. Choose the method that answers the question</h2>
-<p>A full economic evaluation compares at least two options on both costs and outcomes. Partial and supporting analyses are valuable, but cannot independently answer every question about comparative value.</p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Method</th>
-<th style="text-align: left;">Typical output</th>
-<th style="text-align: left;">Best use</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">Costing / cost of illness</td>
-<td style="text-align: left;">Cost per service or disease burden</td>
-<td style="text-align: left;">Size the resource requirement or problem</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Cost-consequence analysis (CCA)</td>
-<td style="text-align: left;">Table of costs and multiple outcomes</td>
-<td style="text-align: left;">Local pathways with several important outcomes</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Cost-effectiveness analysis (CEA)</td>
-<td style="text-align: left;">Incremental cost per natural outcome</td>
-<td style="text-align: left;">Comparable interventions with a common outcome</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Cost-utility analysis (CUA)</td>
-<td style="text-align: left;">Incremental cost per QALY</td>
-<td style="text-align: left;">Health gains compared on a common scale</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Cost-benefit analysis (CBA)</td>
-<td style="text-align: left;">Monetary net benefit / benefit-cost ratio</td>
-<td style="text-align: left;">Cross-sector public policy choices</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Cost-minimisation / cost comparison</td>
-<td style="text-align: left;">Difference in costs</td>
-<td style="text-align: left;">Only where comparable outcomes are adequately established</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Budget impact analysis (BIA)</td>
-<td style="text-align: left;">Annual expenditure difference</td>
-<td style="text-align: left;">Affordability for a defined budget holder</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Return on investment (ROI)</td>
-<td style="text-align: left;">Net financial return relative to investment</td>
-<td style="text-align: left;">Financial payback, with tightly specified cash flows</td>
-</tr>
-</tbody>
-</table>
-<p>CCA, CEA, CUA and CBA are full evaluations when they compare relevant alternatives. Budget impact and ROI are supporting analyses rather than replacements for health-outcome assessment. In practice a local programme may require a CCA alongside a BIA, with a more detailed CUA if reliable utility evidence exists.</p>
-<p>Flowchart linking six decision questions to costing, budget impact, cost-consequence, cost-effectiveness, cost-utility and cost-benefit analysis.</p>
-<p><img src="../images/HealthEconomicMethods.png" class="img-fluid"></p>
-<p>The infographic is a method-selection aid, not a substitute for specifying the comparator and evidence. The accompanying table also covers cost-minimisation and ROI.</p>
-<section id="choosing-the-right-output" class="level3">
-<h3 class="anchored" data-anchor-id="choosing-the-right-output">Choosing the right output</h3>
-<p>Cost-consequence analysis (CCA) is often a practical starting point for integrated pathways: it presents costs, patient outcomes, activity, workforce effects and inequalities in separate rows. The decision-maker must still weigh these outcomes explicitly; the method does not make trade-offs disappear.</p>
-<p>Cost-effectiveness analysis (CEA) expresses incremental cost per natural unit, such as an admission avoided or an additional person receiving effective treatment. Different natural outcomes are not directly interchangeable. Cost-utility analysis (CUA) uses QALYs, which combine survival time and health-related quality of life, often informed by EQ-5D responses and a stated valuation set.</p>
-<p>Cost-benefit analysis (CBA) converts included consequences into monetary values, enabling comparison across sectors. Methods such as willingness-to-pay surveys and productivity valuation introduce ethical, equity and methodological assumptions. Cost-minimisation should be used only when sufficiently strong evidence establishes equivalent relevant outcomes; a non-significant difference is not proof of equivalence.</p>
-</section>
-</section>
-<section id="worked-case-study-evaluating-a-community-frailty-service" class="level2">
-<h2 class="anchored" data-anchor-id="worked-case-study-evaluating-a-community-frailty-service">5. Worked case study: evaluating a community frailty service</h2>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Illustrative teaching example — not an NHS effectiveness estimate
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>All populations, costs, effects, utility gains and scenarios below are fictional. The case demonstrates <strong>how an analyst would undertake and communicate an economic evaluation</strong>, not whether community frailty services actually achieve these effects. In practice, a robust comparison or evaluation design is needed to estimate causal impact.</p>
-</div>
-</div>
-<p>An ICB is considering an enhanced multidisciplinary community frailty service for older people with frailty and complex needs. The proposed service combines proactive assessment, medication review, care coordination and rapid community response. The analyst is asked whether to commission the service and what evidence is needed before scaling it.</p>
-<p>Illustrative economic evaluation: plus £100,000 incremental cost, 40 admissions avoided, six QALYs gained, £2,500 per admission avoided, £16,667 per QALY, plus £20,000 net monetary benefit at an illustrative £20,000 per QALY, and a separate £270,000 three-year net budget impact</p>
-<p><img src="../images/CommunityFrailtyExample.png" class="img-fluid"></p>
-<p>*The figure summarises fictional teaching calculations. The one-year economic evaluation and three-year budget scenario have different scopes and must not be added together.</p>
-<section id="step-1-specify-the-decision" class="level3">
-<h3 class="anchored" data-anchor-id="step-1-specify-the-decision">Step 1 — Specify the decision</h3>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-<th>Specification for this example</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Decision</td>
-<td>Commission enhanced community frailty support or continue the current pathway?</td>
-</tr>
-<tr class="even">
-<td>Population</td>
-<td>1,000 eligible people with frailty, followed for one year</td>
-</tr>
-<tr class="odd">
-<td>Intervention</td>
-<td>Enhanced multidisciplinary community service</td>
-</tr>
-<tr class="even">
-<td>Comparator</td>
-<td>Existing community and acute care pathway</td>
-</tr>
-<tr class="odd">
-<td>Perspective</td>
-<td>NHS and personal social services resource costs for economic evaluation</td>
-</tr>
-<tr class="even">
-<td>Time horizon</td>
-<td>One year, sufficient only for this teaching calculation</td>
-</tr>
-<tr class="odd">
-<td>Outcomes</td>
-<td>Emergency admissions, QALYs and other consequences</td>
-</tr>
-<tr class="even">
-<td>Additional analysis</td>
-<td>Annual budget impact from the relevant ICB budget-holder perspective</td>
-</tr>
-</tbody>
-</table>
-<p>In a real study, document the service specification, eligibility, baseline risk, outcome definitions, evidence sources, unit-cost price year and whether a longer horizon is needed. The intervention and comparator must be evaluated over a consistent period.</p>
-</section>
-<section id="step-2-assemble-resource-use-and-outcome-evidence" class="level3">
-<h3 class="anchored" data-anchor-id="step-2-assemble-resource-use-and-outcome-evidence">Step 2 — Assemble resource use and outcome evidence</h3>
-<p>Assume a credible comparative evaluation or appropriately justified model produced the following <strong>one-year totals for the same-sized cohorts</strong>:</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Measure</th>
-<th style="text-align: right;">Current pathway</th>
-<th style="text-align: right;">Enhanced service</th>
-<th style="text-align: right;">Increment</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Total economic resource cost</td>
-<td style="text-align: right;">£2,000,000</td>
-<td style="text-align: right;">£2,100,000</td>
-<td style="text-align: right;">+£100,000</td>
-</tr>
-<tr class="even">
-<td>Emergency admissions</td>
-<td style="text-align: right;">300</td>
-<td style="text-align: right;">260</td>
-<td style="text-align: right;">−40</td>
-</tr>
-<tr class="odd">
-<td>QALYs across 1,000 people</td>
-<td style="text-align: right;">600</td>
-<td style="text-align: right;">606</td>
-<td style="text-align: right;">+6</td>
-</tr>
-</tbody>
-</table>
-<p>The £2.1 million already represents <strong>all included resource costs under the stated perspective</strong>, including the intervention and changes in service use. Do not subtract an additional value for the 40 avoided admissions from this figure: doing so could double-count effects already reflected in total costs. Likewise, a reduction in admissions is not itself evidence of improved health; inspect patient outcomes, safety and access.</p>
-</section>
-<section id="step-3-calculate-cost-effectiveness-in-natural-units" class="level3">
-<h3 class="anchored" data-anchor-id="step-3-calculate-cost-effectiveness-in-natural-units">Step 3 — Calculate cost-effectiveness in natural units</h3>
-<p>Incremental cost:</p>
-<p><span class="math display">\[
-\Delta C = \text{£}2{,}100{,}000 - \text{£}2{,}000{,}000 = \text{£}100{,}000
-\]</span></p>
-<p>Incremental admissions avoided:</p>
-<p><span class="math display">\[
-\Delta E_{\mathrm{admissions}} = 300 - 260 = 40
-\]</span></p>
-<p>Cost per additional admission avoided:</p>
-<p><span class="math display">\[
-ICER_{\mathrm{admissions}} = \frac{\text{£}100{,}000}{40}
-= \text{£}2{,}500\ \text{per admission avoided}
-\]</span></p>
-<p><strong>Interpretation:</strong> the enhanced service costs £2,500 more in total economic resources per additional admission avoided, under these assumptions. That is not automatically good or poor value: admissions avoided are not a universal measure of health benefit and there is no universal acceptable price per admission avoided.</p>
-</section>
-<section id="step-4-calculate-cost-utility" class="level3">
-<h3 class="anchored" data-anchor-id="step-4-calculate-cost-utility">Step 4 — Calculate cost-utility</h3>
-<p>A QALY combines length of life with health-related quality of life. The example assumes an incremental <strong>six QALYs across the cohort</strong>; it does not establish how those gains arose. In a real evaluation, explain the utility instrument and valuation set, survival assumptions, missing-data handling and any extrapolation.</p>
-<p><span class="math display">\[
-\Delta Q = 606-600 = 6\ \text{QALYs}
-\]</span></p>
-<p><span class="math display">\[
-ICER_{\mathrm{QALY}} = \frac{\text{£}100{,}000}{6}
-\approx \text{£}16{,}667\ \text{per additional QALY}
-\]</span></p>
-<p>The point estimate lies in the <strong>north-east quadrant</strong> of the cost-effectiveness plane: the service is more effective but also more costly. It therefore requires a judgement about the value of the additional benefit, rather than being automatically preferred.</p>
-</section>
-<section id="step-5-use-net-monetary-benefit-to-explore-the-decision" class="level3">
-<h3 class="anchored" data-anchor-id="step-5-use-net-monetary-benefit-to-explore-the-decision">Step 5 — Use net monetary benefit to explore the decision</h3>
-<p>Incremental net monetary benefit (INMB) expresses incremental QALYs and costs in a common monetary metric at an <strong>explicitly assumed</strong> value per QALY, ():</p>
-<p><span class="math display">\[
-INMB = (\lambda \times \Delta Q)-\Delta C
-\]</span></p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Illustrative value per QALY</th>
-<th>Calculation</th>
-<th style="text-align: right;">INMB</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>£15,000</td>
-<td>(6 × £15,000) − £100,000</td>
-<td style="text-align: right;">−£10,000</td>
-</tr>
-<tr class="even">
-<td>£20,000</td>
-<td>(6 × £20,000) − £100,000</td>
-<td style="text-align: right;">+£20,000</td>
-</tr>
-<tr class="odd">
-<td>£25,000</td>
-<td>(6 × £25,000) − £100,000</td>
-<td style="text-align: right;">+£50,000</td>
-</tr>
-</tbody>
-</table>
-<p>These are <strong>illustrative values, not a statement of the applicable current NICE threshold or an ICB commissioning rule</strong>. At £20,000, the model’s positive INMB is only £20,000 for the entire cohort, making it important to test uncertain inputs.</p>
-<p>At an assumed £20,000 per QALY, the break-even QALY gain is:</p>
-<p><span class="math display">\[
-\Delta Q_{\mathrm{break-even}} = \frac{\text{£}100{,}000}{\text{£}20{,}000}=5
-\]</span></p>
-<p>If the true gain were below five QALYs, the modelled INMB would be negative at that assumed value.</p>
-</section>
-<section id="step-6-present-a-cost-consequence-table" class="level3">
-<h3 class="anchored" data-anchor-id="step-6-present-a-cost-consequence-table">Step 6 — Present a cost-consequence table</h3>
-<p>A cost-consequence analysis is useful for an ICB because it preserves outcomes that cannot responsibly be combined into one number.</p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Consequence</th>
-<th>Difference under illustrative assumptions</th>
-<th>Evidence required before decision</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Economic resource costs</td>
-<td>+£100,000</td>
-<td>Resource-use records and defensible unit costs</td>
-</tr>
-<tr class="even">
-<td>Emergency admissions</td>
-<td>40 fewer</td>
-<td>Comparative activity analysis with appropriate adjustment</td>
-</tr>
-<tr class="odd">
-<td>Health-related quality and survival</td>
-<td>+6 QALYs</td>
-<td>Utility and survival evidence</td>
-</tr>
-<tr class="even">
-<td>Patient and carer experience</td>
-<td>Not estimated</td>
-<td>Qualitative evidence and patient-reported measures</td>
-</tr>
-<tr class="odd">
-<td>Workforce demand</td>
-<td>Not estimated</td>
-<td>Staffing and implementation plan</td>
-</tr>
-<tr class="even">
-<td>Access and inequalities</td>
-<td>Not estimated</td>
-<td>Reach and outcomes by relevant population groups</td>
-</tr>
-<tr class="odd">
-<td>Patient safety or unintended harm</td>
-<td>Not estimated</td>
-<td>Clinical governance and safety monitoring</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Do not infer</strong> that omitted consequences are zero. In particular, a programme that reaches only people already well connected to services could worsen inequalities despite a favourable average economic result.</p>
-</section>
-<section id="step-7-build-the-budget-impact-separately" class="level3">
-<h3 class="anchored" data-anchor-id="step-7-build-the-budget-impact-separately">Step 7 — Build the budget impact separately</h3>
-<p>The economic analysis above covers <strong>one year for a fixed cohort of 1,000 people</strong>. An ICB also needs a multi-year spending plan as the service is rolled out. The following figures illustrate a <strong>separate, fictional three-year implementation scenario for the same type of service</strong>; they are not directly derivable from the one-year cohort totals.</p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 15%">
-<col style="width: 21%">
-<col style="width: 21%">
-<col style="width: 21%">
-<col style="width: 21%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Financial year</th>
-<th style="text-align: right;">People enrolled</th>
-<th style="text-align: right;">Incremental programme expenditure</th>
-<th style="text-align: right;">Verified cash budget offsets</th>
-<th style="text-align: right;">Net additional budget</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Year 1</td>
-<td style="text-align: right;">400</td>
-<td style="text-align: right;">£80,000</td>
-<td style="text-align: right;">£10,000</td>
-<td style="text-align: right;">£70,000</td>
-</tr>
-<tr class="even">
-<td>Year 2</td>
-<td style="text-align: right;">700</td>
-<td style="text-align: right;">£120,000</td>
-<td style="text-align: right;">£25,000</td>
-<td style="text-align: right;">£95,000</td>
-</tr>
-<tr class="odd">
-<td>Year 3</td>
-<td style="text-align: right;">1,000</td>
-<td style="text-align: right;">£150,000</td>
-<td style="text-align: right;">£45,000</td>
-<td style="text-align: right;">£105,000</td>
-</tr>
-<tr class="even">
-<td><strong>Three-year total</strong></td>
-<td style="text-align: right;">—</td>
-<td style="text-align: right;"><strong>£350,000</strong></td>
-<td style="text-align: right;"><strong>£80,000</strong></td>
-<td style="text-align: right;"><strong>£270,000</strong></td>
-</tr>
-</tbody>
-</table>
-<p>The net budget impact is <strong>£350,000 − £80,000 = £270,000</strong> over three years. The figures are annual flows, not cumulative enrolment costs. The offsets are <strong>assumed to be verifiable for teaching purposes</strong>; in a real business case they must be traced to actual reducible budget lines. If no expenditure can genuinely be reduced, the offsets must be removed. A released bed or an avoided admission does not automatically generate cash.</p>
-<p>The one-year economic cost increment (£100,000) and the three-year incremental programme expenditure (£350,000) are <strong>not additive</strong>: they cover different horizons, populations and accounting scopes.</p>
-</section>
-<section id="step-8-test-the-assumptions-that-could-change-the-result" class="level3">
-<h3 class="anchored" data-anchor-id="step-8-test-the-assumptions-that-could-change-the-result">Step 8 — Test the assumptions that could change the result</h3>
-<p>For a simple <strong>one-way sensitivity illustration</strong>, hold incremental economic cost at £100,000 and vary only the assumed QALY gain, using an illustrative £20,000 per QALY:</p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 26%">
-<col style="width: 26%">
-<col style="width: 26%">
-<col style="width: 20%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: right;">Incremental QALYs</th>
-<th style="text-align: right;">ICER per QALY</th>
-<th style="text-align: right;">INMB at £20,000/QALY</th>
-<th>Interpretation</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">£33,333</td>
-<td style="text-align: right;">−£40,000</td>
-<td>Negative INMB</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">5</td>
-<td style="text-align: right;">£20,000</td>
-<td style="text-align: right;">£0</td>
-<td>Break-even</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">6 (base case)</td>
-<td style="text-align: right;">£16,667</td>
-<td style="text-align: right;">+£20,000</td>
-<td>Positive INMB</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">£12,500</td>
-<td style="text-align: right;">+£60,000</td>
-<td>More favourable</td>
-</tr>
-</tbody>
-</table>
-<p>This table is <strong>not a confidence interval or a probability of cost-effectiveness</strong>. It only shows the sensitivity to one assumption. A fuller analysis should vary staffing costs, uptake, baseline admission risk, intervention effectiveness, implementation delay, the comparator and the time horizon; use probabilistic sensitivity analysis where defensible parameter distributions are available.</p>
-</section>
-<section id="step-9-translate-findings-into-an-analytical-recommendation" class="level3">
-<h3 class="anchored" data-anchor-id="step-9-translate-findings-into-an-analytical-recommendation">Step 9 — Translate findings into an analytical recommendation</h3>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>Example of a proportionate decision summary
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p><strong>Question:</strong> Should the ICB commission enhanced community frailty support?</p>
-<p><strong>Modelled finding:</strong> For a fictional 1,000-person cohort, the enhanced service has £100,000 higher one-year economic resource costs, 40 fewer emergency admissions and six additional QALYs. The ICER is approximately £16,667 per QALY. At an illustrative £20,000 per QALY, INMB is +£20,000.</p>
-<p><strong>Affordability:</strong> A separate fictional phased rollout requires £270,000 additional net budget over three years, assuming £80,000 of independently verifiable cash offsets.</p>
-<p><strong>Limitations:</strong> The estimates are assumed rather than observed. There is no established causal effect, subgroup evidence, safety assessment or real-world implementation cost.</p>
-<p><strong>Recommended next analytical action:</strong> Confirm the comparator, obtain local baseline and resource-use data, agree a prospective evaluation with suitable comparison, assess equity and feasibility, and update both the economic and budget models before any major scale-up decision.</p>
-</div>
-</div>
-<p>This sequence shows how an analyst can move from <strong>decision specification → evidence and costing → incremental comparison → multiple economic methods → budget impact → uncertainty → a defensible recommendation</strong> without confusing estimated value with actual cash savings.</p>
-</section>
-</section>
-<section id="test-uncertainty-before-drawing-conclusions" class="level2">
-<h2 class="anchored" data-anchor-id="test-uncertainty-before-drawing-conclusions">6. Test uncertainty before drawing conclusions</h2>
-<p>A base-case estimate is not a certainty. Test uncertainty in inputs and assumptions and explain how this changes the decision. Distinguish sampling uncertainty, real variation between subgroups, structural choices and uncertainty about transferability to the local NHS setting.</p>
-<section id="one-way-and-scenario-sensitivity-analysis" class="level3">
-<h3 class="anchored" data-anchor-id="one-way-and-scenario-sensitivity-analysis">One-way and scenario sensitivity analysis</h3>
-<p>Change one influential assumption at a time, such as uptake, staff costs or intervention effectiveness. A tornado diagram can show which assumptions move the result most. Scenario analysis changes coherent sets of assumptions, such as a slower rollout or a different comparator. A threshold analysis asks: at what effect size or cost does the preferred option cease to be attractive?</p>
-</section>
-<section id="probabilistic-sensitivity-analysis" class="level3">
-<h3 class="anchored" data-anchor-id="probabilistic-sensitivity-analysis">Probabilistic sensitivity analysis</h3>
-<p>Assign justified probability distributions to uncertain model parameters and repeatedly sample them. Plot simulated incremental costs and effects on a cost-effectiveness plane. A cost-effectiveness acceptability curve shows the proportion of simulations meeting each specified threshold. This proportion is conditional on the model and distributions; it does not account for omitted structural uncertainty.</p>
-</section>
-<section id="subgroups-and-equity" class="level3">
-<h3 class="anchored" data-anchor-id="subgroups-and-equity">Subgroups and equity</h3>
-<p>Where evidence permits, explore whether effects and costs differ by age, frailty severity, deprivation, ethnicity, geography or baseline risk. Pre-specify meaningful subgroup analyses, avoid overinterpreting small samples and distinguish genuine heterogeneity from noise. Economic results should not obscure unequal access or harms.</p>
-</section>
-<section id="quantifying-uncertainty-from-scenarios-to-probabilities" class="level3">
-<h3 class="anchored" data-anchor-id="quantifying-uncertainty-from-scenarios-to-probabilities">Quantifying uncertainty: from scenarios to probabilities</h3>
-<p>One-way sensitivity analysis varies one parameter while holding others fixed; a tornado chart can rank influential inputs. Scenario analysis changes several linked assumptions, for example a slower implementation and lower uptake. Threshold analysis identifies the cost or effect at which a conclusion changes.</p>
-<p>Probabilistic sensitivity analysis (PSA) assigns defensible distributions to uncertain parameters and runs repeated simulations. Appropriate distribution choices depend on the parameter: probabilities are bounded, costs are often skewed and correlated effects should not be sampled independently without justification. Results may be displayed as a cloud of points on the cost-effectiveness plane and as a cost-effectiveness acceptability curve.</p>
-<p>An acceptability curve reports the proportion of model simulations in which an option is cost-effective at a specified threshold, conditional on the model, evidence and distributions. It is not a guarantee of real-world success. Where data are weak, structural assumptions and alternative model forms may matter more than the apparent precision of the simulations.</p>
-<p>For interventions with longer-term consequences, decision trees may suit short, discrete pathways; state-transition (Markov) models may suit recurring health states; and discrete-event simulation may suit individual patient pathways, competing events and resource constraints. Select model complexity according to the decision and available evidence.</p>
-</section>
-</section>
-<section id="a-practical-workflow-for-analysts" class="level2">
-<h2 class="anchored" data-anchor-id="a-practical-workflow-for-analysts">7. A practical workflow for analysts</h2>
+<p>#Module 16 – Methods for applying health economics to healthcare decisions</p>
+<p>##Components of a health economic evaluation</p>
+<p>Every economic evaluation, from a simple cost analysis to a full cost-utility model, is built from the same parts. Before any numbers are calculated, the analyst needs to settle <strong>who</strong> the evaluation is about, <strong>what</strong> is being compared, <strong>which</strong> costs and outcomes count, <strong>from whose point of view</strong> and <strong>for how long</strong>. Health technology assessment bodies often set these out in a "scope" using the PICO framework: Population, Intervention, Comparator and Outcomes. Getting them right matters more than any modelling technique. A sophisticated model built on the wrong population or the wrong comparator will answer the wrong question very precisely.</p>
+<p><strong>Population</strong></p>
+<p>The population is the group of people whose treatment depends on the decision. It should be defined as precisely as the evidence allows: the condition, its severity, age range, previous treatment, and any other features that affect who would receive the intervention in practice. That definition matters because it sets the <strong>baseline risk</strong>. A service that prevents admissions can only do so in people who would otherwise have been admitted. The population also has a <strong>size</strong>, which matters in its own right. Budget impact analysis needs to know how many people are eligible and how many will take up the intervention each year.</p>
+<p><strong>Comparator</strong></p>
+<p>The comparator is the option the intervention is compared with. It should reflect what would actually happen if the intervention were not adopted. That is usually current standard care, not "doing nothing", and there may be more than one realistic alternative. Comparing a new service with an option nobody would choose makes almost anything look good.</p>
+<p><strong>Costs</strong></p>
+<p>In economic evaluation, a cost is not simply the price on an invoice. It is the value of the resources an intervention uses, which could have been used for something else. Staff time, equipment, consumables, drugs, buildings, IT, training and overheads all count, whether or not new money is spent. Costs are estimated in three steps: <strong>identify</strong> the resources used, <strong>measure</strong> how much of each is used, and <strong>value</strong> each at a unit cost from a stated source, such as the PSSRU <em>Unit Costs of Health and Social Care</em>, the National Cost Collection or the British National Formulary, with the price year given. Section 1.5 works through these steps in detail. Costs include those of the intervention itself and its knock-on effects on other services, which can go down as well as up.</p>
+<p><strong>Perspective and time horizon</strong></p>
+<p>The <strong>perspective</strong> decides whose costs and outcomes count. Who is the decision maker, and what costs/outcomes do they care about? NICE's reference case uses the perspective of the NHS and personal social services: only costs that fall on those budgets are included, and outcomes are the health effects on patients (and carers, where relevant). A <strong>societal</strong> perspective is wider. It also counts patients' own spending (travel, prescriptions, home adaptations), time off work, and unpaid care by family and friends. The choice can change the result. A service that moves care from hospital to home may save the NHS money while moving costs onto patients and carers. Whatever perspective is used, it should be stated at the outset and applied to costs and outcomes alike. Budget impact analysis uses a narrower perspective again: the specific budget holder making the decision.</p>
+<p>The <strong>time horizon</strong> is how long the evaluation follows costs and outcomes. NICE asks for a horizon long enough to capture all important differences between the options. For long-term conditions, that often means a lifetime. The choice can transform the answer, because costs usually come early and benefits build up later. The horizon should be chosen for clinical reasons and justified in advance, not picked to suit the result. Over any horizon longer than a year, future costs and outcomes are <strong>discounted</strong> to their value today.</p>
+<p><strong>Health outcomes</strong></p>
+<p>Health outcomes are the changes an intervention makes to people's health. They range from <strong>clinical</strong> measures (lung function, blood pressure, exacerbation rates) to <strong>final</strong> outcomes that patients and the health system care about directly: deaths avoided, life-years gained and quality of life. An important distinction is between <strong>intermediate</strong> and final outcomes. Intermediate outcomes, such as oxygen readings or how often patients use an app, are quicker and cheaper to measure. But they only show value if there is good evidence that they lead to a final outcome. A digital service with excellent engagement and no effect on admissions or quality of life has not yet shown any value.</p>
+<p>The most widely used ‘generic health outcome’ in health economics is the <strong>quality-adjusted life year (QALY)</strong>. It combines length and quality of life in one number:</p>
+<p>QALYs = years lived × quality of life weight</p>
+<p>Quality of life weights (also called <em>utilities</em>) are scored on a scale where 1 is full health and 0 is a state judged as bad as being dead. Some very severe states score below zero. One year in full health is 1 QALY. One year at a weight of 0.5 is 0.5 QALYs, and so are six months in full health. The weights usually come from the <strong>EQ-5D</strong> questionnaire. Patients describe their health on five dimensions: mobility, self-care, usual activities, pain or discomfort, and anxiety or depression.</p>
+<p><strong>Healthcare resource use outcomes</strong></p>
+<p>HCRU outcomes count how much health and care services people use: hospital admissions, bed days, A&amp;E attendances, GP and nurse appointments, outpatient visits, prescriptions, tests and social care. They are often the outcomes commissioners care most about, because they link directly to capacity and spending.</p>
+<p>HCRU outcomes play two roles. Counted in natural units, they are <strong>outcomes</strong> in their own right, as in "cost per admission avoided" or a row in a cost-consequence table. Multiplied by unit costs, they become part of the <strong>costs</strong> of each option. This dual role is useful, but it has a trap. An avoided admission can be counted as a health benefit or as a cost saving, but not both at once in the same total. It is also worth remembering that resource use is not health. Fewer GP visits can mean that patients are better, or that they have stopped seeking care they need. HCRU outcomes should be read alongside general health outcomes, not instead of them.</p>
+<p><strong>Methods in Economic Evaluation</strong></p>
+<p>Health Economics uses a number of analytical methods to compare the resources invested against outcomes achieved. These methods differ in how they quantify and monetise health benefits and the availability of data. Main Economic evaluation approaches can be classified into partial economic evaluation and full economic evaluation. The dividing line is set by two simple tests:</p>
 <ol type="1">
-<li><p>Frame the decision and comparator; agree the perspective and time horizon.</p></li>
-<li><p>Build the population denominator and resource-use dataset.</p></li>
-<li><p>Identify credible comparative effect estimates and document evidence quality.</p></li>
-<li><p>Choose the method the evidence can support; do not overclaim from partial analyses.</p></li>
-<li><p>Calculate incremental costs and effects, with a reproducible audit trail.</p></li>
-<li><p>Prepare annual budget impact separately from economic value.</p></li>
-<li><p>Test uncertainty, implementation scenarios and important population subgroups.</p></li>
-<li><p>Produce a decision-ready summary: results, assumptions, limitations and next evidence needs.</p></li>
+<li><p>Does the study look at both costs and outcomes?</p></li>
+<li><p>Does it compare two or more options?</p></li>
 </ol>
-<section id="subgroups-equity-and-transferability" class="level3">
-<h3 class="anchored" data-anchor-id="subgroups-equity-and-transferability">Subgroups, equity and transferability</h3>
-<p>Check whether baseline risk, treatment effect, access and delivery cost differ meaningfully across relevant groups or places. Age, frailty, multimorbidity and deprivation may affect both baseline outcomes and expected programme impact. Report subgroup sample sizes and uncertainty, and avoid treating exploratory differences as established effects.</p>
-<p>An intervention may have a favourable overall average while offering little benefit to people facing barriers to access. Distributional cost-effectiveness analysis can formally examine health inequality impacts when appropriate data and specialist expertise are available. For many local analyses, a transparent subgroup and access assessment is the more proportionate first step.</p>
-<p>Before transferring published economic results to an ICB, test whether the comparator, local service configuration, workforce costs, population risk, uptake and capacity constraints are sufficiently similar.</p>
-</section>
-</section>
-<section id="communicating-the-analysis-to-decision-makers" class="level2">
-<h2 class="anchored" data-anchor-id="communicating-the-analysis-to-decision-makers">8. Communicating the analysis to decision-makers</h2>
-<p>An effective analytical output should show: the decision question; the options compared; population and time horizon; the base-case cost and outcome differences; the method used; the principal uncertainties; annual budget implications; distributional effects; and what evidence could change the conclusion. Present one-page results supported by a transparent technical appendix. Never describe a modelled association as a demonstrated causal impact.</p>
-<section id="questions-to-check-before-publication" class="level3">
-<h3 class="anchored" data-anchor-id="questions-to-check-before-publication">Questions to check before publication</h3>
+<blockquote class="blockquote">
+<p>A study is a full economic evaluation only if the answer to both questions is yes. If either answer is no, it is a partial evaluation.</p>
+</blockquote>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 26%">
+<col style="width: 40%">
+<col style="width: 32%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th><blockquote class="blockquote">
+<p><strong>Looks at costs only, or outcomes only</strong></p>
+</blockquote></th>
+<th><blockquote class="blockquote">
+<p><strong>Looks at both costs and outcomes</strong></p>
+</blockquote></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><blockquote class="blockquote">
+<p>No comparison (one option)</p>
+</blockquote></td>
+<td><blockquote class="blockquote">
+<p>Partial: cost description; outcome description</p>
+</blockquote></td>
+<td><blockquote class="blockquote">
+<p>Partial: cost-outcome description</p>
+</blockquote></td>
+</tr>
+<tr class="even">
+<td><blockquote class="blockquote">
+<p>Two or more options compared</p>
+</blockquote></td>
+<td><blockquote class="blockquote">
+<p>Partial: cost analysis; effectiveness study</p>
+</blockquote></td>
+<td><blockquote class="blockquote">
+<p>Full economic evaluation</p>
+</blockquote></td>
+</tr>
+</tbody>
+</table>
+<blockquote class="blockquote">
+<p>Table1: <em>The two tests that separate partial from full economic evaluation.</em></p>
+</blockquote>
+<p>It should be noted that a study that measures both costs and outcomes of the intervention with nothing to compare to is still a partial evaluation. In this case, you learn what the intervention costs and outcomes it achieves but not whether it is better value than the alternative, because there is no comparison.</p>
+<p>Partial evaluations are not second-class. They answer different, and often perfectly legitimate, questions: "how much does COPD cost us?", "what does it cost to run this pathway?", "can we afford this next year?". They also supply the building blocks (unit costs, resource use, disease burden, baseline event rates) that every full evaluation depends on. What they cannot do is show relative value for money, and so on their own they will not support a recommendation from a health technology assessment (HTA) body such as NICE. Partial evaluations tend to be used in three situations:</p>
 <ul>
-<li><p>Is the comparator realistic and does the effect estimate come from an appropriate evaluation design?</p></li>
-<li><p>Are resource costs, budget changes and health outcomes clearly distinguished?</p></li>
-<li><p>Can every numerical assumption be traced to a source, price year or explicit judgement?</p></li>
-<li><p>Does the model use an appropriate time horizon and discounting convention?</p></li>
-<li><p>Are uncertainty, omitted effects and local transferability clearly disclosed?</p></li>
-<li><p>Would the conclusion change under plausible assumptions or for important subgroups?</p></li>
+<li><p>The question does not need a comparison. Sizing a problem, or pricing a service, is a legitimate goal in itself.</p></li>
+<li><p>The evidence is not yet mature. An early-stage product may have cost data but no reliable outcome data, or no clear comparator.</p></li>
+<li><p>The decision-maker's question is about money, not value<strong>.</strong> Finance teams often need to know about cash flow and affordability, whatever the value for money.</p></li>
 </ul>
-</section>
-<section id="minimum-reporting-standard" class="level3">
-<h3 class="anchored" data-anchor-id="minimum-reporting-standard">Minimum reporting standard</h3>
-<p>Provide a one-page decision summary with the decision and comparator; population and setting; perspective and horizon; cost source and price year; incremental costs and outcomes; uncertainty; budget profile; subgroup impacts; limitations; and evidence needed before implementation or scaling. Retain a reproducible model, data dictionary and assumption log.</p>
-<p>Use CHEERS 2022 as a reporting checklist for full health economic evaluations, alongside the relevant current NICE methods guidance where applicable. Do not present a local exploratory costing exercise as though it meets the evidential standards of a formal technology appraisal.</p>
-</section>
-</section>
-<section id="practical-exercise" class="level2">
-<h2 class="anchored" data-anchor-id="practical-exercise">9. Practical exercise</h2>
-<p>An ICB is considering extending a community service to a second locality. The initial proposal estimates £250,000 annual spending, 50 fewer emergency admissions and improved patient experience, but has no comparison group. Draft a two-page analysis plan: specify the comparator, the minimum dataset, the preferred initial economic method, a three-year BIA, the evaluation design needed to estimate admissions avoided, and two scenarios for uncertainty. Explain which claims cannot yet be made.</p>
-</section>
-<section id="key-messages" class="level2">
-<h2 class="anchored" data-anchor-id="key-messages">10. Key messages</h2>
+<p>Full evaluations comprise cost-consequence, cost-minimisation, cost-effectiveness, cost-utility and cost-benefit analysis. They differ in one main way: how they measure and combine the outcomes.</p>
+<p>Supporting analyses. Two widely used methods do not sit neatly in either box. Budget impact analysis compares options and covers both costs and some outcomes, but it asks "can we afford it?", not "is it good value?". It does not weigh costs against health gains. Return on investment asks "does it pay back in cash?". It counts outcomes only if they can be turned into money. Both are best thought of as <em>supporting</em> analyses: essential companions to a full evaluation, but not substitutes for one. (You will see budget impact analysis placed in different boxes by different textbooks. What matters is being clear about the question it answers.)</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 22%">
+<col style="width: 12%">
+<col style="width: 34%">
+<col style="width: 29%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>Method</strong></th>
+<th style="text-align: left;"><strong>Group</strong></th>
+<th style="text-align: left;"><strong>How outcomes are measured</strong></th>
+<th style="text-align: left;"><strong>Question answered</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Costing analysis</td>
+<td style="text-align: left;">Partial</td>
+<td style="text-align: left;">Not measured</td>
+<td style="text-align: left;">What does it cost to deliver?</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Cost of illness</td>
+<td style="text-align: left;">Partial</td>
+<td style="text-align: left;">Not measured (or described)</td>
+<td style="text-align: left;">How big is the problem?</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Budget impact analysis</td>
+<td style="text-align: left;">Supporting</td>
+<td style="text-align: left;">Resource use, in cash per year</td>
+<td style="text-align: left;">Can we afford it?</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Return on investment</td>
+<td style="text-align: left;">Supporting</td>
+<td style="text-align: left;">Cash savings only</td>
+<td style="text-align: left;">Does it pay back?</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Cost-consequence analysis</td>
+<td style="text-align: left;">Full</td>
+<td style="text-align: left;">Many outcomes, listed side by side</td>
+<td style="text-align: left;">What are all the effects?</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Cost-minimisation analysis</td>
+<td style="text-align: left;">Full</td>
+<td style="text-align: left;">Assumed (and shown) to be equal</td>
+<td style="text-align: left;">Which is cheaper?</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Cost-effectiveness analysis</td>
+<td style="text-align: left;">Full</td>
+<td style="text-align: left;">One natural unit (e.g.&nbsp;admissions avoided)</td>
+<td style="text-align: left;">What does each unit of effect cost?</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Cost-utility analysis</td>
+<td style="text-align: left;">Full</td>
+<td style="text-align: left;">QALYs</td>
+<td style="text-align: left;">What does each QALY cost?</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Cost-benefit analysis</td>
+<td style="text-align: left;">Full</td>
+<td style="text-align: left;">Money</td>
+<td style="text-align: left;">Do the benefits exceed the costs?</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Return on investment</strong></p>
+<p><strong>The question</strong></p>
+<p><em>For every pound we put in, how many pounds come back?</em></p>
+<p><strong>How it is done</strong></p>
+<p>Return on investment (ROI) is a financial measure borrowed from business. In its simplest form:</p>
+<p>ROI = (financial benefits − investment) ÷ investment</p>
+<p>An ROI of 0.5 (or 50%) means every £1 invested returns £1.50 in total, a net gain of 50p. An ROI of zero means the investment exactly pays for itself. A negative ROI means it does not pay for itself in cash. Some reports instead give a "return per £1", the total benefit divided by the investment. Check which version is being used: a "£1.50 return per £1" and an "ROI of 50%" describe the same result.</p>
+<p>ROI is popular with commissioners and finance directors because it speaks their language. It has been widely used in public health, where national bodies have published ROI tools to help local authorities choose prevention programmes.</p>
+<p>In health economic terms, ROI is a narrow form of cost-benefit analysis in which <em>only cash benefits count</em>. Health gains are ignored unless they can be converted to money.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 100%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><p><strong>Common mistakes in ROI</strong></p>
+<p><strong>Mixing cashable and non-cashable savings.</strong> Only cash that actually leaves a budget counts as a cash return. Released time, freed beds and avoided activity are benefits, but not cash, unless something is cut.</p>
+<p><strong>Choosing the time horizon to suit the answer.</strong> Prevention programmes look poor over one year and good over twenty. Always report the time horizon next to the ROI, and test more than one.</p>
+<p><strong>Leaving out who pays and who gains.</strong> A service funded by a local authority may save money for the NHS. The overall ROI can be positive while the funder loses. Split the ROI by budget holder when this matters.</p>
+<p><strong>Using ROI as the only measure of value.</strong> ROI ignores health. For health services, it should always sit alongside a cost-utility or cost-consequence analysis.</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Costing analysis</strong></p>
+<p>The question</p>
+<p>What does it cost to deliver this service or treatment?</p>
+<p>Every other method in this chapter rests on getting this right. If the costs are wrong, the budget impact, the return on investment and the cost per QALY are all wrong too.</p>
+<p>How it is done</p>
+<p>Costing follows three steps, often summarised as identify, measure, value:</p>
+<p>1. Identify every resource the service uses: staff time, equipment, consumables, drugs, tests, buildings, IT, training, management and overheads.</p>
+<p>2. Measure how much of each resource is used, per patient or per year.</p>
+<p>3. Value each resource at a unit cost, such as a cost per hour of nurse time or per test.</p>
+<p>There are two broad approaches.</p>
+<p>Micro-costing ("bottom-up"). Each resource item is counted and priced separately. This is slow but accurate, and it is the only option for new services that do not yet have a national price. Most digital health technologies fall into this group.</p>
+<p>Gross costing ("top-down"). An average cost per episode is used, for example the national average cost of a COPD admission from the National Cost Collection. This is quick but hides variation. A frail 85-year-old with pneumonia and a 60-year-old admitted overnight both count as "one admission".</p>
+<p>In the UK, the standard sources of unit costs are the Unit Costs of Health and Social Care (published annually by the Personal Social Services Research Unit, PSSRU), the National Cost Collection for NHS hospital activity, and the British National Formulary (BNF) or Drug Tariff for medicines. Always state the source and the price year.</p>
+<p><strong>The Pitfalls</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 100%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><p><strong>Common mistakes in costing</strong></p>
+<p><strong>Confusing price with cost.</strong> An NHS tariff or a list price is what someone pays, not the value of the resources used. A national tariff can be well above or below the true local cost.</p>
+<p><strong>Counting "released time" as cash.</strong> If the intervention saves 2,000 hours of GP time a year, that is only a <em>cash</em> saving if a GP post is cut or locum spending falls. If the time is used to see other patients, the benefit is real, but it is extra activity, not money back in the budget. Value cases that add up "hours saved × hourly rate" and call the total a saving are the single most common overclaim in digital health.</p>
+<p><strong>Leaving out overheads and set-up costs.</strong> Training, IT integration, information governance, project management and clinical safety work are real costs. They are often left out because they fall on a different budget.</p>
+<p><strong>Ignoring capacity.</strong> A cost per patient is only meaningful at a stated level of use. Always say what caseload the cost assumes.</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Cost of illness/burden of disease</strong></p>
+<p>The question: How much does this condition cost us, or society?</p>
+<p>How it is done: A cost of illness study adds up the resources used because of a disease. There are two main designs.</p>
+<p>• Prevalence-based: all the costs of everyone with the disease in one year. This is useful for budgets and planning. ("COPD costs our ICB £X this year.")</p>
+<p>• Incidence-based: the lifetime costs of the new cases that start in a year. This is useful for judging prevention. ("Each new case we prevent saves £Y over its lifetime.")</p>
+<p>Costs are usually grouped into three types:</p>
+<p>• Direct costs: NHS and social care resources, such as GP visits, drugs, admissions and care home places.</p>
+<p>• Indirect (productivity) costs: time off work, early retirement, unpaid care by family members.</p>
+<p>• Intangible costs: pain, distress and lost quality of life. These are rarely given a money value in a cost of illness study, but they should at least be described.</p>
+<p><strong>What cost of illness can and cannot tell you</strong></p>
+<p>A cost of illness study is useful for showing that a problem matters and for setting priorities for research and service development. It tells you where the money is going. What it cannot tell you is whether any particular intervention is worth funding. A disease that costs £8 million a year in healthcare resource use is a problem, but an intervention targeting the disease would only ever affect part of that cost, and it costs money to run. Knowing the size of the burden says nothing about whether your intervention can alleviate the cost, or at what price.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 100%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><p><strong>Common mistake: treating burden as proof of value</strong></p>
+<p>A pitch deck that opens with "COPD costs the NHS billions of pounds a year" and then presents a product is borrowing credibility from the size of the problem. The size of the burden is not evidence that the product works, or that it is good value. Always ask: "How much of this burden does <em>this</em> intervention actually change, and what does that cost?"</p>
+<p>A second, subtler trap is <strong>double counting</strong>. If you add productivity losses to NHS costs, check that the same event is not counted twice (for example, counting both an admission and the wages lost during the same admission as separate "savings" in a later ROI).</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Cost consequences analysis</strong></p>
+<p><strong>The question</strong></p>
+<p><em>What are all the costs and all the effects of each option, side by side?</em></p>
+<p><strong>How it is done</strong></p>
+<p>A cost-consequence analysis (CCA) sets out the costs of each option and a range of outcomes in a single table, <strong>without combining them into one number</strong>. The outcomes can be in any units: clinical measures, events avoided, patient experience, staff workload, waiting times. The decision-maker then weighs them up.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 100%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><p><strong>Where you will see cost-consequence analysis</strong></p>
+<p>NICE uses cost-consequence approaches in several places, including parts of its public health and social care work and some of its evaluations of medical technologies, where the main question is often whether a device saves money compared with current practice. For digital health, a CCA is often the most honest first analysis: it shows what is known and what is not, before a full cost-utility model is justified.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 100%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><p><strong>Common mistakes in cost-consequence analysis</strong></p>
+<p><strong>Listing only good news.</strong> Include outcomes that go the wrong way (staff workload, false alarms, patients who cannot use the technology).</p>
+<p><strong>Adding up outcomes that overlap.</strong> "Admissions avoided" and "bed days saved" are largely the same benefit. Listing both is fine. Adding their values together is double counting.</p>
+<p><strong>Mixing time horizons.</strong> Costs over five years next to outcomes over six months is misleading. Use the same horizon for all rows, or label each clearly.</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Cost minimisation analysis</strong></p>
+<p><strong>The question</strong></p>
+<p><em>If two options produce the same outcomes, which is cheaper?</em></p>
+<p><strong>How it is done</strong></p>
+<p>Cost-minimisation analysis (CMA) is the simplest full evaluation. If you can show that two options have <strong>the same outcomes</strong>, you only need to compare their costs. The cheaper one wins.</p>
+<p>The whole method rests on one condition: <strong>the outcomes really must be the same</strong>. And this is where CMA usually goes wrong.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 100%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><p><strong>Where cost-minimisation is appropriate</strong></p>
+<p>CMA is still the right tool when equivalence is clear on good grounds. Common examples include:</p>
 <ul>
-<li><p>The method follows the decision question and the available evidence.</p></li>
-<li><p>Incremental analysis compares a new option with a realistic alternative.</p></li>
-<li><p>Costing, full economic evaluation and budget impact are complementary but distinct.</p></li>
-<li><p>CEA, CUA and CCA express outcomes differently; no single method fits every local decision.</p></li>
-<li><p>Uncertainty, model assumptions and differences between population groups are part of the result.</p></li>
-<li><p>A transparent, limited analysis is more useful than an elaborate model that answers the wrong question.</p></li>
+<li><p>a generic medicine replacing a branded one with the same active ingredient;</p></li>
+<li><p>a biosimilar medicine that regulators have judged to be highly similar to the original biological medicine;</p></li>
+<li><p>two ways of delivering exactly the same service (for example, a clinic moving to a cheaper building).</p></li>
 </ul>
-</section>
-<section id="further-reading-and-methodological-references" class="level2">
-<h2 class="anchored" data-anchor-id="further-reading-and-methodological-references">Further reading and methodological references</h2>
+<p>NICE offers a <strong>cost-comparison</strong> route for some technology appraisals, where a company can show that its technology is likely to give similar or greater health benefits at similar or lower cost than a technology NICE has already recommended for the same use. This is a formal version of the same logic, with the evidence for similar benefit examined by an independent committee.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 100%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><p><strong>Common mistakes in cost-minimisation analysis</strong></p>
+<p><strong>Treating "no significant difference" as "no difference".</strong> Always look at the confidence interval, not just the p-value.</p>
+<p><strong>Ignoring differences in side effects, convenience or patient experience.</strong> Two drugs with the same effect on blood pressure are not "the same" if one causes a troublesome cough.</p>
+<p><strong>Comparing costs over too short a period.</strong> A cheaper device that fails sooner may cost more over its life.</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Cost effectiveness analysis and cost utility analysis</strong></p>
+<p>These two methods are closely related, and most of the ideas are shared, so they are covered together. Cost-utility analysis is really a special case of cost-effectiveness analysis in which the outcome is always a quality-adjusted life year (QALY). In the UK, "cost-effectiveness analysis" is often used loosely to mean both.</p>
+<p><strong>The question</strong></p>
 <ul>
-<li><p>Drummond MF et al.&nbsp;Methods for the Economic Evaluation of Health Care Programmes. 4th ed.&nbsp;Oxford University Press, 2015.</p></li>
-<li><p>NICE. Health technology evaluations: the manual (PMG36); consult current version and relevant appraisal reference case.</p></li>
-<li><p>Husereau D et al.&nbsp;CHEERS 2022 statement. Value in Health, 2022.</p></li>
-<li><p>Sullivan SD et al.&nbsp;Budget impact analysis: principles of good practice. Value in Health, 2014.</p></li>
-<li><p>Briggs AH et al.&nbsp;Model parameter estimation and uncertainty analysis: ISPOR-SMDM good research practices, 2012.</p></li>
-<li><p>HM Treasury. The Green Book: current edition and supplementary guidance.</p></li>
+<li><p><strong>Cost-effectiveness analysis (CEA):</strong> <em>What does each extra unit of a single health outcome cost?</em></p></li>
+<li><p><strong>Cost-utility analysis (CUA):</strong> <em>What does each extra quality-adjusted life year cost?</em></p></li>
+</ul>
+<p><strong>The key idea: think in increments</strong></p>
+<p>Economic evaluation is always about the <strong>difference</strong> between options. The question is not "what does the intervention cost per health effect?" but "what does the intervention cost <em>compared with the alternative</em>, and what does it achieve <em>compared with the alternative</em>?". The central summary is the <strong>incremental cost-effectiveness ratio (ICER)</strong>:</p>
+<p>ICER = (cost of new option − cost of comparator) ÷ (effect of new option − effect of comparator)</p>
+<p>The ICER tells you the extra cost of buying one extra unit of effect by switching from the comparator to the new option.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 100%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><p><strong>Why averages mislead</strong></p>
+<p>Suppose option A costs £10,000 and gives 5 QALYs (£2,000 per QALY on average), and option B costs £30,000 and gives 6 QALYs (£5,000 per QALY on average). The averages make B look only moderately more expensive. But moving from A to B costs £20,000 extra for just 1 extra QALY: an ICER of <strong>£25,000 per QALY</strong>. Decisions are about the change, so the ICER, not the average, is the right figure.</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>The cost-effectiveness plane</strong></p>
+<p>The plane (Figure 1.3) is the simplest way to picture a comparison. The horizontal axis shows the extra health gained. The vertical axis shows the extra cost. Every result falls into one of four quarters:</p>
+<ul>
+<li><p><strong>South-east (more effective, cheaper):</strong> the new option <strong>dominates</strong>. Adopt it. There is no trade-off.</p></li>
+<li><p><strong>North-west (less effective, more expensive):</strong> the new option is <strong>dominated</strong>. Reject it.</p></li>
+<li><p><strong>North-east (more effective, more expensive):</strong> a trade-off. Is the extra health worth the extra cost? This is where the ICER and the threshold come in. Most new treatments fall here.</p></li>
+<li><p><strong>South-west (less effective, cheaper):</strong> also a trade-off. Is the money saved worth the health given up? This is rarer, but it matters when services are cut or scaled back.</p></li>
+</ul>
+<p><img src="..images/CostEffectivenessPlane.png" class="img-fluid"></p>
+<p><em>Figure 1.3. The cost-effectiveness plane. Results below the threshold line are regarded as good value. Intervention's base case falls in the north-east quarter, just below the line at £25,000 per QALY.</em></p>
+<p><strong>Net monetary benefit: an easier number to work with</strong></p>
+<p>ICERs have awkward properties. A negative ICER could mean the new option is better and cheaper, or worse and more expensive: you cannot tell from the number alone. And ratios behave badly when the difference in QALYs is close to zero.</p>
+<p>An alternative is the <strong>net monetary benefit (NMB)</strong>. You convert the QALY gain into money using the threshold, then subtract the extra cost:</p>
+<p>NMB = (QALYs gained × threshold) − extra cost</p>
+<p>If the NMB is positive, the new option is good value at that threshold. For an intervention if:</p>
+<ul>
+<li><p>at £25,000 per QALY: (0.0544 × £25,000) − £1,214 = <strong>+£147</strong> per patient;</p></li>
+<li><p>at £35,000 per QALY: (0.0544 × £35,000) − £1,214 = <strong>+£691</strong> per patient.</p></li>
+</ul>
+<p>Both are positive, but at £25,000 the margin is thin: only about £147 per patient. A small change in any input could push it below zero. Chapter 2 explores exactly how fragile this result is.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 100%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><p><strong>Common mistakes in cost-effectiveness and cost-utility analysis</strong></p>
+<p><strong>Using average ratios instead of incremental ones.</strong> Always compare against the next best option.</p>
+<p><strong>Comparing with the wrong option.</strong> Comparing a new service with "doing nothing" when the real alternative is an existing service makes almost anything look good.</p>
+<p><strong>Hiding the QALY source.</strong> State where the quality of life weights come from. A model that assumes a large utility gain without direct evidence can produce almost any ICER.</p>
+<p><strong>Reporting one ICER at one threshold.</strong> Report the net monetary benefit at more than one threshold, and show the uncertainty (Chapter 2).</p>
+<p><strong>Using a time horizon that is too short or too long.</strong> Too short, and long-term benefits are missed. Too long, and the model rests on guesses about effects far beyond the evidence.</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Cost benefit analysis</strong></p>
+<p><strong>The question</strong></p>
+<p><em>Is the total value of the benefits, in pounds, greater than the total costs?</em></p>
+<p><strong>How it is done</strong></p>
+<p>Cost-benefit analysis (CBA) puts <strong>everything into money</strong>, costs and benefits alike. The result is a net benefit (benefits minus costs) or a benefit-cost ratio (benefits divided by costs). A positive net benefit, or a ratio above 1, suggests the project is worth doing.</p>
+<p>The hard part is turning health into money. There are three main approaches:</p>
+<ul>
+<li><p><strong>Willingness to pay.</strong> People are asked, directly or through structured choice experiments (known as discrete choice experiments), how much they would pay for a health improvement or a feature of a service.</p></li>
+<li><p><strong>Human capital.</strong> Health is valued by the extra production it allows: wages earned, days of work not lost.</p></li>
+<li><p><strong>A standard value per QALY.</strong> A fixed money value is applied to each QALY gained. HM Treasury's <em>Green Book</em> guidance for government appraisal uses a value of around <strong>£70,000 per QALY</strong> for this purpose. (Check the current edition for the exact figure and price year.)</p></li>
+</ul>
+<p><strong>Strengths and weaknesses</strong></p>
+<p>CBA's great strength is <strong>breadth</strong>. Because everything is in money, it can compare spending on health with spending on education, housing, transport or the environment. That is why HM Treasury's Green Book is built on it. It can also capture benefits outside health, such as carers returning to work.</p>
+<p>Its weaknesses are just as real:</p>
+<ul>
+<li><p><strong>Putting a price on health is controversial.</strong> Many people are uneasy with the idea at all.</p></li>
+<li><p><strong>Willingness to pay depends on ability to pay.</strong> Richer people can afford to say they would pay more. Without adjustment, their health can appear "worth more".</p></li>
+<li><p><strong>Human capital ignores people outside paid work.</strong> Retired people, carers and children produce no wages, so their health can be valued at close to zero. For a COPD population, most of whom are over 65, this is a serious problem.</p></li>
+<li><p><strong>Survey results are sensitive to how questions are asked.</strong> Small changes in wording, order or the range of amounts offered can change the answers a great deal.</p></li>
+</ul>
+<p>For these reasons NICE does not use CBA for its health technology assessments, and it is rare in NHS commissioning. It is more common in wider public policy appraisal and in the evaluation of programmes whose benefits go well beyond health.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 100%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><p><strong>Common mistakes in cost-benefit analysis</strong></p>
+<p><strong>Double counting.</strong> If a QALY value already includes the value of being able to work, adding productivity gains on top counts the same benefit twice.</p>
+<p><strong>Mixing QALY values.</strong> Do not use a £70,000 QALY value in a CBA and then compare the result directly with a NICE threshold decision. They rest on different ideas of what a QALY is worth to the decision-maker.</p>
+<p><strong>Hiding the monetisation.</strong> Always show the health benefits and their money value separately, so readers can apply their own value if they disagree.</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Budget impact analysis</strong></p>
+<p><strong>The question</strong></p>
+<p><em>If we adopt this, what will happen to our spending over the next few years?</em></p>
+<p><strong>How it is done</strong></p>
+<p>A budget impact analysis (BIA) estimates the change in spending for a specific budget holder (an ICB, a trust, NHS England) if a new intervention is introduced. It compares two "worlds": the world <em>with</em> the new intervention and the world <em>without</em> it. The ISPOR good practice guidance on budget impact analysis (Sullivan and colleagues, 2014) sets out the standard approach. The key features are:</p>
+<ul>
+<li><p><strong>Perspective:</strong> the budget holder's own. Only costs that fall on that budget are counted.</p></li>
+<li><p><strong>Time horizon:</strong> short, usually one to five years, matching the budget cycle.</p></li>
+<li><p><strong>Population:</strong> the real, local eligible population, including how it changes over time as patients join, leave and die.</p></li>
+<li><p><strong>Uptake:</strong> a realistic estimate of how many eligible patients will use the new intervention each year. New services rarely reach full uptake immediately.</p></li>
+<li><p><strong>Costs:</strong> shown year by year, in cash terms, and <strong>not discounted</strong>. The finance director needs to know what will leave the account in each year.</p></li>
+<li><p><strong>Outcomes:</strong> included only as far as they change resource use, for example admissions avoided.</p></li>
+</ul>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 100%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><p><strong>Common mistakes in budget impact analysis</strong></p>
+<p><strong>Using the BIA as evidence of value.</strong> A cheap intervention that does nothing will show a small budget impact. That does not make it good value. A BIA answers "can we afford it?", not "should we buy it?".</p>
+<p><strong>Assuming 100% uptake from day one.</strong> This exaggerates both costs and savings in the early years and hides the real cash profile.</p>
+<p><strong>Counting all avoided activity as cash.</strong> Show at least two cases: cash-releasing and non-cash-releasing.</p>
+<p><strong>Forgetting that people die, move away or stop using the service.</strong> A static "cost × number of patients" calculation overstates long-run costs and savings.</p>
+<p><strong>Discounting.</strong> Budget impact figures are normally shown undiscounted, in the prices of the year of the analysis, because they are meant to match what appears in the accounts.</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Choosing the right method</strong></p>
+<p>No method is best in all situations. The right choice depends on <strong>the question</strong>, <strong>the decision-maker</strong>, and <strong>the evidence available</strong>. In practice, a good evaluation usually combines several methods: for example, a cost-utility analysis to show value for money, a budget impact analysis to show affordability, and a cost-consequence table to show everything the QALY misses.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 32%">
+<col style="width: 26%">
+<col style="width: 40%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>If the decision-maker asks...</strong></th>
+<th style="text-align: left;"><strong>Start with...</strong></th>
+<th style="text-align: left;"><strong>And add...</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">"How big is this problem?"</td>
+<td style="text-align: left;">Cost of illness</td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">"What will it cost to run?"</td>
+<td style="text-align: left;">Costing analysis</td>
+<td style="text-align: left;">Budget impact analysis</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">"Can we afford it over the next three years?"</td>
+<td style="text-align: left;">Budget impact analysis</td>
+<td style="text-align: left;">Scenarios on uptake and cash release</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">"Will it pay for itself?"</td>
+<td style="text-align: left;">Return on investment</td>
+<td style="text-align: left;">Cost-utility analysis, because the answer is usually no, and that is not the end of the story</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">"What are all the effects?"</td>
+<td style="text-align: left;">Cost-consequence analysis</td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">"These two options do the same job. Which is cheaper?"</td>
+<td style="text-align: left;">Cost-minimisation analysis, but only if equivalence is shown</td>
+<td style="text-align: left;">A full analysis if equivalence is doubtful</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">"What does it cost per event prevented?"</td>
+<td style="text-align: left;">Cost-effectiveness analysis</td>
+<td style="text-align: left;">Cost-utility analysis, to compare across areas</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">"Is it good value for the NHS?"</td>
+<td style="text-align: left;">Cost-utility analysis</td>
+<td style="text-align: left;">Budget impact analysis, sensitivity analysis (Chapter 2)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">"Is it good value for society as a whole, including non-health effects?"</td>
+<td style="text-align: left;">Cost-benefit analysis</td>
+<td style="text-align: left;">Cost-utility analysis for the health component</td>
+</tr>
+</tbody>
+</table>
+<p><em>Table 1.11. Matching the method to the question.</em></p>
+<p>A useful rule of thumb: <strong>use the most complete method the evidence can support, and never let a partial or supporting analysis stand in for a question it cannot answer</strong>. A budget impact analysis cannot tell you whether something is good value. A positive ROI cannot tell you it is the best use of the money. A cost of illness figure cannot tell you that any intervention will reduce it.</p>
+<p><strong>Uncertainty quantification</strong></p>
+<p>Every health economic evaluation relies on input parameters derived from trial data, observational data, expert opinion, or published or secondary data. Because these inputs are subject to sampling variations, measurement errors, and methodological/structural choices, the models built from these data are inherently uncertain. For robust commissioning decisions, the economic evaluations should be able to quantify and communicate the uncertainty rather than rely solely on average values or ‘point estimates’.</p>
+<p><strong>Where the inputs come from, and why they are uncertain</strong></p>
+<p>Economic models draw their inputs from several kinds of source. Each brings its own kind of uncertainty.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 26%">
+<col style="width: 33%">
+<col style="width: 38%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>Source</strong></th>
+<th style="text-align: left;"><strong>Typical inputs</strong></th>
+<th style="text-align: left;"><strong>Main weaknesses</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Randomised controlled trials</td>
+<td style="text-align: left;">Treatment effects, quality of life, resource use</td>
+<td style="text-align: left;">Small samples; short follow-up; trial patients and settings may not match real practice</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Observational data (registries, hospital records, GP records)</td>
+<td style="text-align: left;">Baseline event rates, costs, long-term outcomes</td>
+<td style="text-align: left;">Confounding: differences between groups other than the treatment; missing or miscoded data</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Published studies and meta-analyses</td>
+<td style="text-align: left;">Utilities, mortality, costs</td>
+<td style="text-align: left;">May not match the population or setting; varying quality; publication bias</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">National unit costs (PSSRU, National Cost Collection)</td>
+<td style="text-align: left;">Unit costs</td>
+<td style="text-align: left;">Averages that hide local variation; tariff may not equal true cost</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Expert opinion</td>
+<td style="text-align: left;">Anything with no data, such as future uptake or effect beyond the trial period</td>
+<td style="text-align: left;">Optimism; anchoring on first estimates; vested interests; hard to check</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Uncontrolled pilots and before-and-after studies</td>
+<td style="text-align: left;">Early effect estimates for new services</td>
+<td style="text-align: left;">Regression to the mean; selection of enthusiastic sites; no comparison group</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Types of uncertainty</strong></p>
+<p>The ISPOR and Society for Medical Decision Making (SMDM) modelling good practice task force (Briggs et al, 2012) set out a widely used way of classifying uncertainty.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 22%">
+<col style="width: 33%">
+<col style="width: 42%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>Type</strong></th>
+<th style="text-align: left;"><strong>Meaning</strong></th>
+<th style="text-align: left;"><strong>Main tool</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Stochastic (first-order) uncertainty</td>
+<td style="text-align: left;">Identical patients have different outcomes, by chance</td>
+<td style="text-align: left;">Averaged out in cohort models; matters in patient-level simulation</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Parameter (second-order) uncertainty</td>
+<td style="text-align: left;">We do not know the true value of an input exactly</td>
+<td style="text-align: left;">Deterministic and probabilistic sensitivity analysis</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Heterogeneity</td>
+<td style="text-align: left;">Real, explainable differences between groups of patients</td>
+<td style="text-align: left;">Subgroup analysis</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Structural uncertainty</td>
+<td style="text-align: left;">Doubt about how the model is built</td>
+<td style="text-align: left;">Scenario analysis; model averaging; turning the choice into a parameter</td>
+</tr>
+</tbody>
+</table>
+<p><em>Table 2.2. Types of uncertainty in economic evaluation.</em></p>
+<p>A common mistake is to treat all uncertainty as parameter uncertainty and put it into a probabilistic sensitivity analysis. This gives a false impression of completeness. A PSA can only show uncertainty <strong>within the model as built</strong>. It says nothing about whether the model was built correctly.</p>
+<p><strong>What to report</strong></p>
+<p>A good report of uncertainty includes:</p>
+<ul>
+<li><p>the <strong>base-case result</strong> (deterministic and probabilistic), with the net monetary benefit at more than one threshold;</p></li>
+<li><p>a <strong>tornado diagram</strong> or table, showing which inputs matter most;</p></li>
+<li><p>a <strong>threshold analysis</strong> for the key inputs, in plain language ("it remains good value as long as...");</p></li>
+<li><p>the <strong>cost-effectiveness scatter plot</strong> and <strong>CEAC</strong>, with the probability of being cost-effective at the relevant thresholds;</p></li>
+<li><p><strong>scenario analyses</strong> for structural and methodological choices, with a clear statement of which the analyst considers most plausible and why;</p></li>
+<li><p><strong>subgroup results</strong> where there is a good reason to expect differences;</p></li>
+<li><p>an honest, plain list of <strong>what the model does not capture</strong>.</p></li>
+</ul>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 100%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><p><strong>Common mistakes in communicating uncertainty</strong></p>
+<p><strong>Hiding it.</strong> A single ICER in the executive summary, with uncertainty buried in an appendix, is the most common failing.</p>
+<p><strong>Drowning the reader.</strong> Twenty tornado diagrams and a hundred scenarios are as unhelpful as none. Pick the results that bear on the decision.</p>
+<p><strong>Using jargon.</strong> "The ICER is £22,305 per QALY with a 54% probability of cost-effectiveness at a WTP of £25,000" is accurate and nearly useless to a non-specialist board. Translate it.</p>
+<p><strong>False precision.</strong> Reporting "£22,304.85 per QALY" suggests a level of accuracy the model does not have. Round sensibly.</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Sources:</p>
+<ul>
+<li><p>Drummond MF, Sculpher MJ, Claxton K, Stoddart GL, Torrance GW. <em>Methods for the Economic Evaluation of Health Care Programmes</em>. 4th ed.&nbsp;Oxford University Press; 2015.</p></li>
+<li><p>National Institute for Health and Care Excellence. <em>NICE health technology evaluations: the manual</em> (PMG36). Check for the latest update.</p></li>
+<li><p>National Institute for Health and Care Excellence. <em>Evidence standards framework for digital health technologies</em> (ECD7). 2022 update.</p></li>
+<li><p>Sullivan SD, Mauskopf JA, Augustovski F, et al.&nbsp;Budget impact analysis: principles of good practice. Report of the ISPOR 2012 Budget Impact Analysis Good Practice II Task Force. <em>Value in Health</em>. 2014;17(1):5–14.</p></li>
+<li><p>Briggs AH, O'Brien BJ. The death of cost-minimization analysis? <em>Health Economics</em>. 2001;10(2):179–184.</p></li>
+<li><p>Henderson C, Knapp M, Fernández JL, et al.&nbsp;Cost effectiveness of telehealth for patients with long term conditions (Whole Systems Demonstrator telehealth questionnaire study): nested economic evaluation in a pragmatic, cluster randomised controlled trial. <em>BMJ</em>. 2013;346:f1035.</p></li>
+<li><p>McLean S, Hoogendoorn M, Hoogenveen RT, et al.&nbsp;Projecting the COPD population and costs in England and Scotland: 2011 to 2030. <em>Scientific Reports</em>. 2016;6:31893.</p></li>
+<li><p>Masters R, Anwar E, Collins B, Cookson R, Capewell S. Return on investment of public health interventions: a systematic review. <em>Journal of Epidemiology and Community Health</em>. 2017;71(8):827–834.</p></li>
+<li><p>Claxton K, Martin S, Soares M, et al.&nbsp;Methods for the estimation of the National Institute for Health and Care Excellence cost-effectiveness threshold. <em>Health Technology Assessment</em>. 2015;19(14).</p></li>
+<li><p>HM Treasury. <em>The Green Book: Central Government Guidance on Appraisal and Evaluation</em>. Current edition, with supplementary guidance on wellbeing and health.</p></li>
+<li><p>Husereau D, Drummond M, Augustovski F, et al.&nbsp;Consolidated Health Economic Evaluation Reporting Standards 2022 (CHEERS 2022) statement. <em>Value in Health</em>. 2022;25(1):3–9.</p></li>
 </ul>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
