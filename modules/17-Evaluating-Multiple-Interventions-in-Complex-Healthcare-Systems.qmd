@@ -22,14 +22,24 @@ The purpose is not to award each programme a share of the improvement when the e
 **The first task is to establish whether the combined model of care improved outcomes for the eligible population compared with what would otherwise have happened.** Understanding individual pathways, interactions, equity and economic value then helps explain and use that estimate.
 :::
 
-### Building on Earlier Modules
+### Building on the Health Economics Modules
 
-- **Theory of Change and Logic Models** make expected mechanisms, outcomes and assumptions explicit.
-- **The evaluation modules** introduce counterfactual thinking, comparison groups, Interrupted Time Series (ITS), Difference-in-Differences (DiD) and proportionate evaluation design.
-- **Module 15** distinguishes economic value, affordability, opportunity cost and different types of financial and non-financial benefit.
-- **Module 16** explains methods for applying health economics, including the STAR approach to structured resource-allocation decisions.
+Module 15 introduced the principles of economic value, opportunity cost and affordability. Module 16 explored the different methods of economic evaluation, helping decision-makers understand what evidence to request and how to interpret the findings.
 
-Module 17 brings these perspectives together in a realistic commissioning scenario. It is a guide to asking better questions and designing a credible evaluation, **not** a technical manual for estimating causal effects or conducting STAR calculations.
+The evaluation question matters because it must ultimately inform a practical commissioning decision. We therefore return to the question introduced in Module 15:
+
+::: {.callout-note}
+
+## The Commissioning Question
+
+**How should an ICB decide whether to continue, expand, redesign or stop investment in integrated community care for people living with frailty, when resources are limited and the evidence of impact and value is uncertain?**
+:::
+
+The challenge is that several interventions may operate simultaneously, serve overlapping populations and influence the same outcomes. Before comparing their economic value, we need credible evidence about what difference the combined model has made, for whom and with what degree of certainty.
+
+This module brings together the economic thinking introduced in Modules 15 and 16 with the evaluation approaches covered earlier in the series, including Theory of Change, counterfactual reasoning and mixed-methods evidence.
+
+It focuses on how these approaches can inform realistic commissioning decisions about an integrated portfolio of care.
 
 ## Learning Objectives
 
@@ -310,27 +320,27 @@ Where treatment starts at different times in different areas, use methods suited
 
 ### 7.6 Why Frailty Makes Causal Evaluation Harder
 
-### Changing population need
+#### Changing population need
 
 Age-standardisation alone may not account for shifts in frailty severity, multimorbidity, deprivation or the proportion approaching end of life. However, **do not automatically adjust for every available variable**: adjusting for a factor changed by the intervention can remove part of the effect being estimated. Distinguish baseline confounders from potential mediators.
 
-### Regression to the mean
+#### Regression to the mean
 
 Patients are often identified following unusually high hospital use. Some reduction may occur naturally even without additional care. A simple before-and-after comparison among high users can therefore overstate impact.
 
-### Confounding by indication
+#### Confounding by indication
 
 Patients receiving intensive support may have greater underlying need than those receiving less. Worse outcomes in the intensively supported group do not necessarily imply that the service was harmful; conversely, better outcomes among participants may reflect selection.
 
-### Mortality and competing events
+#### Mortality and competing events
 
 Death changes a person's opportunity to be admitted. Analyse mortality alongside utilisation, consider person-time and competing-event approaches where relevant, and avoid reporting lower admission rates as unequivocally positive without examining survival and wellbeing.
 
-### Concurrent changes and spillovers
+#### Concurrent changes and spillovers
 
 Workforce constraints, discharge policies, coding practices, admission thresholds and other service developments may change at the same time. Comparison areas may also adopt similar practices or experience indirect effects, weakening their value as untreated controls.
 
-### Implementation is not a single date
+#### Implementation is not a single date
 
 An integrated model may expand gradually across neighbourhoods, with changing staffing, eligibility and uptake. Record implementation milestones and actual reach. Treating the first announcement date as a precise intervention boundary may be misleading.
 
@@ -624,9 +634,21 @@ Multiplying 470 estimated avoided admissions by an average admission cost may il
 
 Similarly, do not add monetised ED, admission and bed-day benefits if these measures represent overlapping consequences of the same episode. The economic assessment needs consistent boundaries and a clear account of what has—and has not—been counted.
 
+### From Evaluation Evidence to Resource Allocation
+
+Economic evaluation methods, as explored in Module 16, can help commissioners understand the costs and consequences of different interventions.
+
+However, when considering a portfolio of services, decision-makers also need to assess how resources might be allocated across competing priorities.
+
+One approach is **STAR (Socio-Technical Allocation of Resources)**, which combines evidence about costs, benefits and value with structured stakeholder deliberation to support resource allocation decisions.
+
+STAR is introduced here as an approach to portfolio-level decision-making, rather than as an additional economic evaluation method.
+
 ## 11. Bring the Findings into a STAR-Informed Portfolio Review
 
-Module 16 introduces the **Socio-Technical Allocation of Resources (STAR)** approach and its methods. Module 17 applies the principles to a more complicated situation: **the effectiveness and value of one intervention may depend on the presence of another**.
+Building on the STAR approach introduced above, the ICB now considers how evidence about costs, outcomes, equity and uncertainty can inform resource allocation across the portfolio. This is particularly important when the effectiveness and value of one intervention depend on the presence of another.
+
+The ICB brings together commissioners, finance, health economics, analysts, providers, clinicians, patients and carers to consider **realistic alternative configurations**, not simply a list of programmes competing in isolation.
 
 The ICB brings together commissioners, finance, health economics, analysts, providers, clinicians, patients and carers to consider **realistic alternative configurations**, not simply a list of programmes competing in isolation.
 
@@ -658,7 +680,7 @@ For the next planning year, the team considers three scenarios. The figures belo
 
 **How to read this table:** All costs, reach and benefits are *incremental relative to A*. The QALY ranges are assumed scenarios to be populated by a health economist using defensible evidence, not inferred from the 470 avoided admissions. The ranges do not constitute confidence intervals. B and C may reach some of the same people, so their costs and benefits cannot simply be added to describe a combined option.
 
-The team should first test whether each option is **clinically appropriate and deliverable**. It then checks the evidence for the estimated incremental health benefit, identifies who gains or loses access, and tests sensitivity to uptake, staffing, unit costs and intervention interactions. STAR methods covered in Module 16 can then help structure the comparison and facilitated deliberation.
+The team should first test whether each option is **clinically appropriate and deliverable**. It then checks the evidence for the estimated incremental health benefit, identifies who gains or loses access, and tests sensitivity to uptake, staffing, unit costs and intervention interactions. A STAR-informed approach can then help structure the comparison and facilitated deliberation, while recognising that the evidence may not support a precise ranking of the options.
 
 ::: {.callout-example collapse="false"}
 ## A Decision Conference, Not an Automatic Winner
