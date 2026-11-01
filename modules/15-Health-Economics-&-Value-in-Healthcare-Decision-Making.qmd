@@ -815,6 +815,36 @@ A good investment decision considers the **whole picture**:
 The aim is to use limited resources in the way most likely to improve outcomes and create the greatest value for patients and populations.
 :::
 
+## Bringing It Together: A Strategic Commissioning Question
+
+Imagine an ICB reviewing its investment in integrated community care for people living with frailty.
+
+The existing model includes proactive frailty management, neighbourhood multidisciplinary teams and services designed to reduce avoidable hospital activity while improving patient outcomes.
+
+The ICB must decide whether to continue, expand, redesign or stop elements of this investment.
+
+::: {.callout-note}
+## The Commissioning Question
+
+**How should an ICB decide whether to continue, expand, redesign or stop investment in integrated community care for people living with frailty, when resources are limited and the evidence of impact and value is uncertain?**
+:::
+
+Using the seven questions of value introduced in this module, consider:
+
+- **Need:** What population needs are we trying to address?
+- **Effectiveness:** What evidence suggests the current model is improving outcomes?
+- **Resources:** What is the full cost of delivering the model?
+- **Benefits:** What improvements are being achieved, and where?
+- **Equity:** Who benefits, and are some groups being left behind?
+- **Alternatives:** What else could we achieve with the same resources?
+- **Affordability:** Can we sustain or expand the investment?
+
+These questions help frame the commissioning decision, but they do not yet tell us which option represents the best value.
+
+The remaining sections of this module explore when specialist health economics input is needed, introduce common economic evaluation terminology and consider how uncertainty affects investment decisions.
+
+**Module 16 — Methods for Applying Health Economics to Healthcare Decisions** then examines the different economic evaluation methods, what commissioners should request and how to interpret their findings.
+
 ## 11. When Do We Need a Health Economist?
 
 Not every decision requires a full economic evaluation.
