@@ -1,6 +1,6 @@
 # Module 20: Bringing Evidence Together
 
-## Building an evidence spine for better healthcare decisions
+## Evidence synthesis and building an evidence spine for better healthcare decisions
 
 <button class="print-button" onclick="window.print()">🖨️ Print this module</button>
 
@@ -29,6 +29,14 @@ But numbers alone may not explain why people do not access a service, why clinic
 
 Qualitative evidence can help answer these questions.
 
+**Evidence synthesis** is the process of bringing together, critically appraising and interpreting evidence from different sources to develop a more complete understanding of a question or problem.
+
+In healthcare, this may involve combining quantitative data, qualitative intelligence, published research, evaluation findings and professional or operational knowledge.
+
+Evidence synthesis goes beyond collecting information. It involves assessing the quality and relevance of evidence, examining where findings converge, complement or conflict, and identifying what remains uncertain.
+
+The aim is to develop a coherent, balanced and transparent interpretation that can inform healthcare decisions.
+
 ::: {.callout-important collapse="false"}
 ## Key Principle
 
@@ -47,6 +55,8 @@ Healthcare Decision Intelligence requires both.
 
 By the end of this module, you should be able to:
 
+- understand the purpose and principles of evidence synthesis in healthcare decision-making
+- critically appraise and integrate evidence from different sources to develop a balanced interpretation
 - understand why healthcare decisions often require multiple forms of evidence
 - distinguish quantitative and qualitative evidence without creating an artificial hierarchy between them
 - recognise different sources of qualitative evidence
@@ -219,19 +229,29 @@ The relevant questions include:
 
 # 6. What Is an Evidence Spine?
 
-An **evidence spine** provides a structured connection between the decision being considered and the evidence supporting it.
+An **evidence spine** is a practical framework for evidence synthesis. It provides a structured connection between the question or decision being considered and the evidence used to inform it.
 
-It prevents decision-making from becoming a collection of disconnected statistics, reports and opinions.
+It helps prevent decision-making from becoming a collection of disconnected statistics, reports, research findings and opinions.
 
-Quantitative and qualitative evidence are sometimes treated as if they sit in separate analytical worlds.
+Evidence synthesis involves more than bringing different sources together. It requires critical appraisal, triangulation, recognition of uncertainty and the development of an integrated interpretation.
 
-They should not.
+The evidence spine supports this process through five connected activities:
 
-A useful way to think about them is as **two sides of the same coin**.
+1. **Define the question** — What problem are we trying to understand, and what decision needs to be informed?
+2. **Bring together the evidence** — What do quantitative data, qualitative intelligence, research and evaluation findings tell us?
+3. **Critically appraise and triangulate** — How reliable and relevant is the evidence? Where do sources converge, complement or conflict?
+4. **Identify gaps and uncertainty** — What is missing, what remains uncertain and whose perspectives may not be represented?
+5. **Develop an integrated interpretation** — What does the combined evidence tell us about the problem, plausible explanations and implications for decision-makers?
 
-![](../images/Two-Sides-to-Better-Decisions.png)
+![](../images/Evidence-Synthesis-Module20.png)
 
-The evidence spine does not imply that evidence is always linear. Rather, it creates a disciplined way of asking:
+Evidence synthesis infographic showing quantitative and qualitative evidence as two sides of the same coin, supplemented by research, evaluation and wider intelligence. The evidence spine progresses through defining the question, bringing together evidence, critical appraisal and triangulation, identifying gaps and uncertainty, and integrated interpretation, supporting better-informed decisions.
+
+The process is not necessarily linear. New evidence may challenge an initial interpretation, generate further questions or require additional analysis.
+
+The purpose is not to eliminate uncertainty but to develop a sufficiently credible and transparent understanding of the evidence to support better-informed decisions.
+
+The evidence spine provides a disciplined way of asking:
 
 1. What decision are we trying to make?
 2. What do we know about the population and need?
@@ -245,6 +265,8 @@ The evidence spine does not imply that evidence is always linear. Rather, it cre
 10. What does this collectively mean for the decision?
 
 # 7. Triangulation: Looking Across the Evidence
+
+**Triangulation is an important component of evidence synthesis, but the two are not synonymous.** Evidence synthesis encompasses identifying, critically appraising and integrating evidence, while triangulation focuses on examining how different sources relate to one another.
 
 Triangulation means examining a question using more than one source or form of evidence. The purpose is not simply to see whether everything agrees.
 
@@ -333,6 +355,8 @@ Discussions with professionals identify additional issues:
 This generates hypotheses that can be checked against available data. For example:
 
 > **Do areas with lower UCR utilisation have higher emergency admission rates after accounting for population need?**
+
+Any observed association would require cautious interpretation. Differences in UCR utilisation may reflect service availability, referral practices, population need or data quality, and would not by themselves establish that UCR provision causes changes in emergency admissions.
 
 The qualitative evidence has therefore generated a **testable analytical question**.
 
@@ -449,6 +473,8 @@ The key question is:
 
 This requires judgement. It should also be transparent.
 
+**Critical appraisal is a fundamental part of evidence synthesis.** It helps ensure that conclusions are informed by the strength and relevance of the available evidence, rather than simply by the number of sources supporting a particular interpretation. Evidence that appears consistent may still share common biases or limitations.
+
 # 11. Whose Voice Is Missing?
 
 An evidence spine can look comprehensive while still excluding important populations.
@@ -557,7 +583,11 @@ When presented with an evidence synthesis, ask:
 
 # Bringing It All Together
 
-Healthcare decisions are strengthened when different forms of evidence are connected rather than considered separately.
+**Evidence synthesis strengthens healthcare decision-making by bringing together, critically appraising and interpreting different forms of evidence.**
+
+Quantitative data, qualitative intelligence, research, evaluation findings and professional knowledge each contribute different perspectives. The evidence spine provides a practical structure for integrating these perspectives, examining their consistency and limitations, and communicating what is known and uncertain.
+
+The result is not a single definitive answer, but a more coherent and transparent evidence base for decision-making.
 
 > **Decision question**
 >
@@ -601,6 +631,7 @@ The aim is not to eliminate uncertainty. It is to provide decision-makers with a
 
 # Key Takeaways
 
+- **Evidence synthesis is more than collecting evidence: it involves critical appraisal, triangulation and integrated interpretation.**
 - No single dataset provides a complete understanding of a healthcare system.
 - **Quantitative and qualitative evidence are two sides of the same coin.**
 - Quantitative evidence helps identify scale, patterns, variation and outcomes.
@@ -628,6 +659,3 @@ Also ask:
 
 > **What do people, experience and context tell us — and what does the evidence tell us when we bring both sides together?**
 :::
-
-
-
