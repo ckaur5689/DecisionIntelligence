@@ -117,43 +117,21 @@ Before considering the evidence, ask:
 
 # 3. Bring Forward the Evidence Spine
 
-Module 20 introduced the **evidence spine**.
+Module 20 introduced **evidence synthesis** as the process of bringing together, critically appraising and interpreting different forms of evidence to develop a coherent understanding of a healthcare question.
 
-The evidence spine connects the decision question with different forms of evidence:
+It also introduced the **evidence spine** as a practical framework for organising this process.
 
-> **Decision question**
+The evidence spine connects the decision question with population need, quantitative and qualitative evidence, research and evaluation findings, critical appraisal, triangulation, evidence gaps and uncertainty.
 
-↓
+The result is an integrated interpretation of what is known, what remains uncertain and what the evidence suggests.
 
-> **Population and need**
+**Module 21 begins where Module 20 ends.**
 
-↓
-
-> **Quantitative evidence**
-
-+
-
-> **Qualitative evidence**
-
-+
-
-> **Research and evaluation evidence**
-
-↓
-
-> **Triangulated interpretation**
-
-↓
-
-> **Evidence gaps and uncertainty**
-
-The purpose of Module 21 is not to repeat this synthesis.
-
-It is to ask:
+The question is no longer simply what the combined evidence tells us, but what we should do with that understanding.
 
 > **Given that evidence picture, what should we do?**
 
-The evidence spine therefore becomes the starting point for the decision.
+The evidence spine therefore becomes the starting point for the decision, not a substitute for comparing options and making a judgement.
 
 # 4. Make the Decision Criteria Explicit
 
@@ -348,6 +326,25 @@ If it is attractive only when assuming a 15% effect, but unattractive at 5%, the
 
 This connects directly with the scenario testing introduced in Module 19.
 
+## When Is More Evidence Worth Gathering?
+
+Not every uncertainty needs to be resolved before making a decision.
+
+Further evidence is most valuable when it could realistically change the preferred option, reduce the risk of a costly mistake or improve how an intervention is implemented.
+
+Decision-makers should consider:
+
+- Could additional evidence change which option we prefer?
+- How significant would the consequences of making the wrong decision be?
+- How quickly could further evidence be obtained?
+- What would the additional analysis, research or evaluation cost?
+- What are the consequences of delaying action?
+
+This is closely related to the concept of **value of information** in health economics. Formal value-of-information analysis can estimate the expected benefit of reducing uncertainty, but the underlying questions are useful even without a formal calculation.
+
+The objective is not to gather evidence indefinitely, but to consider whether the expected benefit of reducing uncertainty justifies the time, resources and potential delay involved.
+
+
 ::: {.callout-tip collapse="false"}
 ## Decision-Maker Question
 
@@ -393,6 +390,11 @@ A decision-making group might therefore include:
 - relevant community or voluntary sector perspectives.
 
 Different decisions will require different voices.
+
+Deliberation should also take place within clear governance arrangements. Different stakeholders contribute evidence, expertise, values and perspectives, but responsibility for the final decision rests with the appropriately authorised decision-making body.
+
+Transparent governance should make clear who has decision authority, how relevant interests and potential conflicts are managed, and how the rationale is documented. Deliberation does not require everyone to agree, but it should allow differing perspectives to be heard and considered fairly.
+
 
 ::: {.callout-important collapse="false"}
 ## Evidence Informs Judgement
@@ -514,12 +516,14 @@ Without that capacity, the bottleneck may simply move from hospital to community
 
 The ICB identifies four realistic options:
 
-| Option | Potential benefit | Resource requirement | Equity | Feasibility | Uncertainty |
-|---|---|---|---|---|---|
-| **A. Maintain current model** | Limited | Low | Existing variation remains | High | Low |
-| **B. Expand everywhere** | Potentially high | High | Broad reach | Workforce challenging | Moderate |
-| **C. Target highest-need populations** | Potentially high | Moderate | Strong potential | More feasible | Moderate |
-| **D. Phased targeted expansion with evaluation** | Moderate initially | Moderate | Can prioritise need | High | Generates further evidence |
+| Option | Potential benefits | Main limitations or risks |
+|---|---|---|
+| **A. Maintain current model** | Avoids immediate expansion costs and disruption | Existing variation and unmet need may persist or worsen |
+| **B. Expand everywhere** | Potentially improves access across the population | High cost, workforce constraints and uncertain additional benefit |
+| **C. Target highest-need populations** | Prioritises need and may improve equity | Requires reliable targeting and may leave gaps elsewhere |
+| **D. Phased targeted expansion with evaluation** | Prioritises need, manages implementation risk and generates evidence | Benefits may emerge more slowly; evaluation and implementation require resources |
+
+These are illustrative comparisons rather than measured estimates. In practice, the ICB would need to examine costs, outcomes, equity, feasibility and uncertainty for each option using the best available evidence.
 
 No single analytical result automatically identifies the correct option.
 
@@ -530,6 +534,11 @@ The decision requires judgement.
 After considering the evidence, resources, equity, feasibility and uncertainty, the ICB might decide:
 
 > **Proceed with phased expansion targeted initially towards populations with the greatest need, accompanied by prospective evaluation and agreed review points.**
+
+The ICB prefers Option D because it balances the need to improve access for populations experiencing the greatest need with workforce constraints, affordability and uncertainty about intervention effectiveness. Phased implementation allows the organisation to assess delivery, outcomes, costs and equity before committing to wider expansion.
+
+However, this choice remains conditional on sufficient implementation capacity, an appropriate evaluation design and agreed criteria for continuation, adaptation or expansion.
+
 
 The important point is not whether this hypothetical decision is "correct".
 
@@ -566,10 +575,17 @@ A concise decision record might include:
 | **Why was this option selected?** | Decision rationale |
 | **What will be monitored?** | Measures and outcomes |
 | **When will the decision be reviewed?** | Review point |
+| **Who owns the decision?** | Accountable decision-maker or body |
+| **What outcomes are expected, and when?** | Intended changes and timeframe |
+| **What would trigger reconsideration?** | Pre-agreed review triggers |
+| **How will the decision be evaluated?** | Evaluation approach and measures |
+| **Who will report findings for review?** | Named review responsibility |
 
 This does not need to become bureaucratic.
 
 Its purpose is to make the decision **transparent and learnable**.
+
+Where practical, review triggers should be defined before implementation, with clear measures, thresholds or conditions, timescales and named responsibilities. These should be proportionate to the scale and risk of the decision, rather than creating unnecessary bureaucracy.
 
 # 13. Decide What Would Make You Reconsider
 
