@@ -16,15 +16,21 @@ By the end of this module you should be able to:
 - Appreciate why evaluation should be planned before implementation.
 - Ask better questions when reviewing proposals for service redesign.
 
-<!-- Learning Journey & Module Connections figure to be added after Modules 13–20 are finalised -->
+## Navigate This Module
 
-Builds on:
-- Module X
-- Module Y
+This is a **reference as well as a learning module**. You can read it from beginning to end or return to the stage most relevant to a pathway you are reviewing. The numbered sections, figures and examples are retained to make it easier to find and share specific guidance.
 
-Prepares for:
-- Module Z
-- Module A
+| Stage | Sections | What you will find |
+|---|---|---|
+| **Understand the pathway** | 1–2 | The patient journey, cross-organisational boundaries, pathway mapping and data limitations |
+| **Diagnose opportunities** | 3–4 | Variation, potential causes, systems thinking and identifying opportunities for improvement |
+| **Design the future pathway** | 5 | Patient-centred design, prevention, equity, value and sustainability |
+| **Put the redesign into practice** | 6 | Shared ownership, implementation, risk, monitoring and adaptation |
+| **Evaluate and learn** | 7 | Outcomes, evaluation planning and the continuing improvement cycle |
+
+**Using this module alongside the series:** Earlier modules on variation, standardisation, dashboards and evaluation provide supporting analytical methods. The next module, **Module 15 — Health Economics & Value in Healthcare Decision-Making**, develops the discussion of costs, benefits and opportunity cost. Module 20 explores evidence synthesis, while Module 21 focuses on choosing between options and making defensible decisions.
+
+**For readers returning to this reference:** Start with the section matching your current question, then use its *Decision-Maker Questions* as a practical checklist. The stages are connected and may need to be revisited as new evidence emerges.
 
 ## Why This Matters
 
@@ -135,24 +141,12 @@ The next section explores how routine healthcare data can be be used to understa
 
 When reviewing a healthcare pathway, ask yourself:
 
-- Are we viewing the pathway from the patient's perspective or from the perspective of individual organisations?
-- Which organisations contribute to this pathway?
-- Where are patients most likely to experience delays, duplication or fragmented care?
-- Which parts of the pathway create the greatest value for patients?
-- Are we measuring organisational performance or the performance of the whole pathway?
-:::
-
-::: {.callout-tip collapse="false"}
-## Decision-Maker Questions
-
-When considering a healthcare pathway, ask yourself:
-
-- Are we thinking about the whole patient journey or only our part of the system?
-- Which organisations, teams and professionals contribute to this pathway?
-- Where do patients experience transitions between services?
-- Could improving one part of the pathway unintentionally create problems elsewhere?
-- Are we measuring success from the perspective of the organisation or the patient?
-- Who else needs to be involved if we are to improve outcomes across the entire pathway?
+- Are we considering the whole patient journey rather than only one organisation's part of the system?
+- Which organisations, teams and professionals contribute to the pathway?
+- Where do patients experience transitions, delays, duplication or fragmented care?
+- Could improving one part of the pathway create problems elsewhere?
+- Are we measuring success from the patient's perspective as well as organisational performance?
+- Who needs to be involved to improve outcomes across the entire pathway?
 :::
 
 ## 2. Understanding the Current Pathway
@@ -464,7 +458,7 @@ Understanding **where** variation exists is only the beginning.
 
 The next challenge is determining **why** it occurs.
 
-Effective pathway redesign depends on identifying the underlying causes of variation rather than simply reacting to its symptoms.
+Effective pathway redesign depends on investigating the underlying and interacting causes of variation rather than simply reacting to its symptoms.
 
 ## 4. Investigating Why Variation Exists
 
@@ -481,9 +475,9 @@ Improvement efforts are most successful when they address the causes of variatio
 ::: {.callout-important collapse="false"}
 ## Key Principle
 
-Treat the symptom.
+Observe the symptom.
 
-Understand the cause.
+Investigate the contributing causes.
 
 Improve the system.
 :::
@@ -492,7 +486,7 @@ Improve the system.
 
 A symptom is something that can be observed.
 
-A root cause is the underlying factor that produces the symptom.
+An underlying cause is a factor that contributes to the symptom. In complex healthcare pathways, several causes often interact, and there may be no single root cause.
 
 For example, increasing emergency admissions may initially appear to be the problem. However, the true causes may include delayed diagnosis, poor access to community services, medication adherence, workforce shortages, socioeconomic factors or inadequate discharge planning.
 
@@ -524,6 +518,7 @@ Understanding these interactions helps avoid local optimisation that simply move
 
 Figure 14.5 illustrates how effective pathway improvement moves beyond treating visible symptoms. Rather than reacting to problems where they appear, organisations investigate upstream causes, understand the wider system, identify the greatest opportunities for improvement, design interventions that address the underlying issues and finally evaluate whether those changes have achieved their intended impact.
 
+<!-- Check the source image filename before publishing: Figure 14.5 currently uses a Figure13_5 filename. -->
 ![](../images/Figure13_5_Looking_Upstream_Pathway.png)
 
 *Figure 14.5: Effective pathway improvement follows a structured process: investigate the problem, understand the wider system, identify high-leverage opportunities, design interventions that address underlying causes and evaluate whether meaningful improvement has been achieved. Problems observed later in the pathway often originate much earlier.*
@@ -616,7 +611,7 @@ Numbers often tell us **where** to investigate.
 People often help us understand **why**.
 :::
 
-### Root Cause Analysis
+### Investigating Contributing Causes (Root Cause Analysis)
 
 Once sufficient evidence has been gathered, structured investigation techniques can help identify the underlying causes of variation.
 
@@ -645,7 +640,7 @@ However, further investigation shows that many patients struggle to obtain presc
 
 Although readmissions are the visible problem, they are not the underlying cause.
 
-The improvement effort therefore focuses on pharmacy processes, discharge education and community follow-up rather than simply increasing clinic capacity.
+The improvement effort therefore focuses on pharmacy processes, discharge education and community follow-up rather than simply increasing clinic capacity. These are plausible contributing factors to test, not proven causes based on the observations alone.
 
 By addressing the underlying causes rather than the symptom, the intervention is more likely to achieve sustainable improvement.
 :::
@@ -1701,7 +1696,7 @@ Taken together, these stages form a continuous pathway improvement cycle rather 
 2. Healthcare pathways frequently cross organisational boundaries.
 3. Routine data help us understand how pathways actually operate.
 4. Variation should prompt investigation rather than immediate conclusions.
-5. Understanding root causes is essential before redesigning services.
+5. Investigating underlying and interacting causes is essential before redesigning services.
 6. Good pathway design places patients, evidence and equity at the centre.
 7. Successful implementation depends upon collaboration across organisations.
 8. Monitoring implementation is different from evaluating impact.
